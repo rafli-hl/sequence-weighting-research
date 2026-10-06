@@ -1,0 +1,119 @@
+{
+  "version": "v0133",
+  "status": "SOURCE_PREPARED_INDEPENDENT_REVIEW_PENDING_NO_EXECUTION",
+  "utc": "2026-10-04T12:35:32.3106779Z",
+  "intended_bundle": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-clipping-interaction-v0133",
+  "files": [
+    {
+      "path": "audit.py",
+      "bytes": 23860,
+      "sha256": "5f5897d24f48983a148a27c9630a4ac8ce1de163dcf6cf4334bcb49871f7ed7c"
+    },
+    {
+      "path": "BACKGROUND_ANCHORS.json",
+      "bytes": 1211,
+      "sha256": "2d803a22b4e37114c4cbff73dd9215e59b2c687f8d4d1f46d4486133327ebca1"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5308,
+      "sha256": "dc59f0f264e6d3dce619fb88bbebfafc400dca3c75c3481c7eb1d3361d7cab49"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 3417,
+      "sha256": "aebba493728493249ba2dad254343f798029cc43c890c041b41ca3796c1773a9"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 18851,
+      "sha256": "050c3bb55379ba168479863d34fc72021041cc624c14afaa68207d27f177ccbe"
+    },
+    {
+      "path": "FRESHNESS_RECONCILIATION.json",
+      "bytes": 5585,
+      "sha256": "13a03f7346676f5d995ea02e1de3f91bd75cc4645871f78d503b3966d01b7947"
+    },
+    {
+      "path": "FROZEN_PROTOCOL.md",
+      "bytes": 8552,
+      "sha256": "21a25944baf180e65e9ecbc8466967a75c252019248b7742c1ca3dffb6da13d9"
+    },
+    {
+      "path": "manual_launch.sh",
+      "bytes": 11177,
+      "sha256": "cc7a70d0f3972a14b06e44c2fc35e859d3d963d28ede795e6e656ea3e256bea2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5115,
+      "sha256": "8d702d0e6e672034a888c71282c9c65f3b6a2801ce8d75f81370cec9325003fe"
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "bytes": 6081,
+      "sha256": "93db33e20011b7a1667d3e06e5e0a73a25fe94ee9e30f7b35d7187e3c737dcf2"
+    },
+    {
+      "path": "runtime_phases.sh",
+      "bytes": 648,
+      "sha256": "34f16436afc0462bb7a2cd9becad8d936b118989d0b574b630199b587cda6347"
+    },
+    {
+      "path": "SEED_CENSUS.json",
+      "bytes": 4215022,
+      "sha256": "d747a0b4cdc8ba621ffd67ca3274bb96e67938124a09e0df9a45f67640e4720b"
+    },
+    {
+      "path": "source_census.ps1",
+      "bytes": 4094,
+      "sha256": "3068373cdaba763e805e35d460ad2a5d616164929e6918a488479887e720f803"
+    },
+    {
+      "path": "SOURCE_PREPARATION_STATUS.md",
+      "bytes": 2052,
+      "sha256": "f6d41453a3f85ab723d3114910f80cef3e09384bf59a675d85e8cd6df2c2da43"
+    },
+    {
+      "path": "source_reconciliation.ps1",
+      "bytes": 5305,
+      "sha256": "c3c77f2ffdf03b098e601bafdbdbbd8dde1cea8dcd154501759cd7d305e98f00"
+    },
+    {
+      "path": "SOURCE_REVIEW_TEMPLATE.json",
+      "bytes": 370,
+      "sha256": "ac3473742329528cd4e0e9afa1f0844e854f230b56af869787cac6d4a3841f8a"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 9791,
+      "sha256": "597a7628b6ddfca899b0e12115479055cbf6b799a10d28137645762c5b867b93"
+    },
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "constraints": {
+    "runtime_total_seconds": 1800,
+    "audit_total_seconds": 600,
+    "additional_storage_bytes": 536870912,
+    "free_reserve_bytes": 2147483648
+  },
+  "accepted_planning": {
+    "path": "outputs/sequence-weighting-clipping-interaction-v0133-planning/PROPOSED_PROTOCOL.md",
+    "sha256": "0c5cde22d42db88e7218f29c783e96d20dd4478401ec711cfdbf7c799b44e1d1"
+  },
+  "exclusions": "Manifest self-hash and dynamic reviews/receipts/later results. No PASS or numerical result supplied."
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS_CALIBRATION_NUMERICAL_AUDIT",
+  "utc": "2026-10-05T06:39:39.697158+00:00",
+  "manifest_sha256": "6bc67e09f61bbeb78ad38f26778408b2b051671a8e26d4f657e62f6e7b2f7865",
+  "scientific_status": "CALIBRATION_FAILED",
+  "input_regenerations": 6,
+  "checkpoint_reevaluations": 24,
+  "trajectories": 12,
+  "nested_pairs": 6,
+  "independent_corpora": 3,
+  "discrepancy_count": 2779,
+  "snapshot_audit": [
+    {
+      "arm": "U",
+      "step": 1,
+      "snapshot_sha256": "b937f6b929e466c8e2f93ec64374ed4e034e10880b73db3df209d38bfbed70c6",
+      "gradient_absolute": 2e-07,
+      "gradient_relative": 2e-06,
+      "update_absolute": 2e-07,
+      "update_relative": 2e-06,
+      "scope": "First/last real update; does not replay intermediate trajectories"
+    },
+    {
+      "arm": "U",
+      "step": 160,
+      "snapshot_sha256": "a586fdb2aec5626cbaabe746a4c82221f23b150284dae0b99b9e7bd509251ce6",
+      "gradient_absolute": 2e-07,
+      "gradient_relative": 2e-06,
+      "update_absolute": 2e-07,
+      "update_relative": 2e-06,
+      "scope": "First/last real update; does not replay intermediate trajectories"
+    },
+    {
+      "arm": "R",
+      "step": 1,
+      "snapshot_sha256": "898d0e672a85a2016f5e37510c55824fb94ff3bc9ad1f8807830596c01277faf",
+      "gradient_absolute": 2e-07,
+      "gradient_relative": 2e-06,
+      "update_absolute": 2e-07,
+      "update_relative": 2e-06,
+      "scope": "First/last real update; does not replay intermediate trajectories"
+    },
+    {
+      "arm": "R",
+      "step": 160,
+      "snapshot_sha256": "cacf081bade656ce1b620203c91f7eeed8e5e1012a517b815b06ee3d0a57780e",
+      "gradient_absolute": 2e-07,
+      "gradient_relative": 2e-06,
+      "update_absolute": 2e-07,
+      "update_relative": 2e-06,
+      "scope": "First/last real update; does not replay intermediate trajectories"
+    }
+  ],
+  "fit_audit": "independent derivative roots, dense kernel, Decimal35/60, finite profile identification",
+  "parameter_tolerance": 1e-05,
+  "objective_absolute": 1e-10,
+  "objective_relative": 1e-08,
+  "scientific_PASS_is_not_numerical_PASS": true,
+  "confirmation_authorized": false,
+  "output_hashes": {
+    "CALIBRATION_DECISION.json": "777fd45feaf04e1fe7b7462fe12faf56857667d8d4702302461a062608ebde60",
+    "INDEPENDENT_FITS.json": "67a708adc1d3c7f6aa031b6aa3d27268599e6c2d45937d6524065fb2a6fec395"
+  }
+}

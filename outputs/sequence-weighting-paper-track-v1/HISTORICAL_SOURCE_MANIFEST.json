@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "source_id": "S1R",
+      "path": "outputs/sequence-weighting-pilot/results-mechanism-v02/REPORT.md",
+      "bytes": 7969,
+      "sha256": "a4c2f4c5ae1be37ed0d1ad8aad842a166b5178847a568488af00b68b4059f30a"
+    },
+    {
+      "source_id": "S2R",
+      "path": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/REPORT.md",
+      "bytes": 9918,
+      "sha256": "57370c681d4afbe11fb3e07fcddb75631f54a3eb0e2c87ed9b33bcbd9aa942fb"
+    },
+    {
+      "source_id": "S2J",
+      "path": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/summary.json",
+      "bytes": 20909,
+      "sha256": "e69d16edc43ea46a7e8124cbd66922fd6a41dad385beecb3016524aa8b9e5e9d"
+    },
+    {
+      "source_id": "S3R",
+      "path": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/REPORT.md",
+      "bytes": 14633,
+      "sha256": "6acb2b30112ac7c8f3f945d6b3a2000769554016a1f4259f93c8d6e1cd2dfb15"
+    },
+    {
+      "source_id": "S3J",
+      "path": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/policy-summary.json",
+      "bytes": 1805578,
+      "sha256": "65e4a348c209ccc6e31b752a1083f7a5274b02a056857ec23fcd23c85a5c2091"
+    },
+    {
+      "source_id": "S4R",
+      "path": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/REPORT.md",
+      "bytes": 17378,
+      "sha256": "abec4ebec014aaf3f8a5f37a3b10764594513d0cce3b9b9f1748b1554b58c68e"
+    },
+    {
+      "source_id": "S4J",
+      "path": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/policy-summary.json",
+      "bytes": 1137760,
+      "sha256": "9563957323502c2d6ac3e583c7f130267f3e1d7d3af9115b8e4f0709f3010559"
+    },
+    {
+      "source_id": "S5R",
+      "path": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/REPORT.md",
+      "bytes": 13737,
+      "sha256": "a96f69264ec140108d4d5eb69da8b086be710dffe3c80145dd4d453d1d20e1b4"
+    },
+    {
+      "source_id": "S5J",
+      "path": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/policy-summary.json",
+      "bytes": 1784544,
+      "sha256": "309ec11eb6d52bda92a237e38ba52f420d009ed49285caa5e2db16f065c94f17"
+    },
+    {
+      "source_id": "S6R",
+      "path": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/REPORT.md",
+      "bytes": 22446,
+      "sha256": "6d5b87a9417e9aa5c7303c012c13c16b040cd2b66fdb7e693eb3a6c0db43162f"
+    },
+    {
+      "source_id": "S6J",
+      "path": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/panel-summary.json",
+      "bytes": 11469093,
+      "sha256": "937d04ac61cdd1bae3ec1d545ee0bab5b4f72f996955452ffe084f67d741bcfb"
+    },
+    {
+      "source_id": "S7R",
+      "path": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/REPORT.md",
+      "bytes": 12472,
+      "sha256": "de5f874416dcdfd686d4fbc375e60a9a020b1bf5ec2012e7e157efc9bccf722e"
+    },
+    {
+      "source_id": "S7J",
+      "path": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/summaries.json",
+      "bytes": 867334,
+      "sha256": "61bd06bbb43635bec49dc27cafd592bf686e1f53a1a713cbcf1d31fcd9d24b44"
+    },
+    {
+      "source_id": "S8R",
+      "path": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/REPORT.md",
+      "bytes": 14499,
+      "sha256": "1b4cee0ccd486cab17d768f87907b8e7a004b70589223b022bf262773805ec90"
+    },
+    {
+      "source_id": "S8J",
+      "path": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/summaries.json",
+      "bytes": 524280,
+      "sha256": "7770380f5b8f2d65af8ea74df1af1d2d5d741cbfe8e6398d895732a2460bc89b"
+    },
+    {
+      "source_id": "S9R",
+      "path": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/REPORT.md",
+      "bytes": 14771,
+      "sha256": "8111865689e272da784a102c33d8a36a2bb3e9a9522f20bdb63da961bd42ae26"
+    },
+    {
+      "source_id": "S9J",
+      "path": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/summaries.json",
+      "bytes": 2610225,
+      "sha256": "1e72297f835e8dd52ad5cdce3851254b83373f665c9a161c3599f82308beb546"
+    },
+    {
+      "source_id": "S10R",
+      "path": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/REPORT.md",
+      "bytes": 21207,
+      "sha256": "8665989726a092dc694c6bfe413a2e86b50991d42dd21d873d66c80b8b68f02e"
+    },
+    {
+      "source_id": "S10J",
+      "path": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/summaries.json",
+      "bytes": 2401872,
+      "sha256": "7da6775bf8060c348274fbc3aa4a53f634ead6f930315081d3ab2e884ed663ca"
+    },
+    {
+      "source_id": "S10A",
+      "path": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/SUMMARY_AUDIT.json",
+      "bytes": 485,
+      "sha256": "a4d7762bce7d58de2eab7437f4820884dccdfd6f7bd470c895af5e5262b6e6dc"
+    }
+  ]
+}

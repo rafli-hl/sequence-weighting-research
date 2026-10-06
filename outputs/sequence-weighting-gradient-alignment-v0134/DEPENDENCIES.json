@@ -1,0 +1,35 @@
+{
+  "version": "v0134",
+  "parent_manifest_sha256": "baf8a3de3aab342b842f8d2fc0ce4b1899cf77b6e58987745df9d64b27ab5ab3",
+  "parent_audit_sha256": "915ecc81692fd6f7f7aba52f80d55af66e563139e6a64ae1e54b75ba89a16078",
+  "parent_result_review_turn": "01a1071e-967b-7735-8efd-3fa513484b5e",
+  "trusted_vendor": [
+    {
+      "path": "vendor/core.py",
+      "parent_path": "outputs/sequence-weighting-clipping-interaction-v0133-r1/vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/model.py",
+      "parent_path": "outputs/sequence-weighting-clipping-interaction-v0133-r1/vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "launcher_parent_path": "outputs/sequence-weighting-clipping-interaction-v0133-r1/manual_launch.sh",
+  "launcher_parent_sha256": "42392e3ec9c14c8888d9014840c9251be5dead67bf0c99fba035f894091eec09",
+  "environment_lock_path": "outputs/sequence-weighting-pilot/environment-lock-stage1.txt",
+  "environment_lock_sha256": "b67fe4f1937efa387cafa7e1968a9e77597791b5e1ab252667d8e3ed53ad0181",
+  "runtime_environment": {
+    "python": "3.12.3",
+    "torch": "2.7.0+cu126",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "precision": "float32",
+    "tf32": false,
+    "strict_determinism_claim": false
+  },
+  "shared_audit_dependencies": "Operational input/environment guards, trusted forward implementation and PyTorch autograd only; numerical diagnostic routines not imported.",
+  "containment_tail_byte_equivalent_after_identity_rename": true
+}

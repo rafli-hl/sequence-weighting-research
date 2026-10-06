@@ -1,0 +1,29 @@
+{
+  "completed_synthetic_adaptation_runs": 51,
+  "confirmation_runs": 30,
+  "pretrained_checkpoints": 10,
+  "source_hashes_match": true,
+  "test_only_in_confirmation": true,
+  "paired_baseline_hashes_match": true,
+  "paired_sequence_keys_match": true,
+  "figures_visually_inspected": [
+    "calibration.png",
+    "capacity-curves.png",
+    "duration-diagnostics.png",
+    "gain-fit.png"
+  ],
+  "text_checks": {
+    "completed_runs": 2,
+    "source_hashes_match": true,
+    "paired_initial_metrics_equal": true,
+    "cross_split_exact_token_duplicates": 0,
+    "selected_rows": {
+      "train": 512,
+      "validation": 128,
+      "test": 128
+    },
+    "figure_visually_inspected": true
+  },
+  "archive_crc_check": "PASS",
+  "report_utf8_check": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-30T13:17:42.853119+00:00",
+  "planned_inputs": 186,
+  "observed_rows": 186,
+  "policy_references": 324,
+  "native_checkpoints": 207,
+  "cells": 36,
+  "original_p_preserved": true,
+  "context_copied_exactly": true,
+  "selected_test_available": 324,
+  "test_gain_available": 270,
+  "unavailable_initial_test": 54,
+  "decimal_precision": 110,
+  "global_optimality_certified": false,
+  "end_status": "COMPLETE",
+  "numerical_audit_status": "PASS"
+}

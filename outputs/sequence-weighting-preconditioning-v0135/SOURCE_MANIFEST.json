@@ -1,0 +1,141 @@
+{
+  "version": "v0135",
+  "status": "SOURCE_PREPARED_REVIEW_PENDING_NO_EXECUTION",
+  "utc": "2026-10-05T03:24:29.7028061Z",
+  "intended_directory": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-preconditioning-v0135",
+  "run": "work/runs/preconditioning-v0135-20261005-01",
+  "results": "results-fresh-preconditioning-v0135-20261005-01",
+  "constraints": {
+    "runtime_seconds": 1800,
+    "audit_seconds": 600,
+    "additional_storage_bytes": 536870912,
+    "normal_write_bytes": 452984832,
+    "free_reserve_bytes": 2147483648
+  },
+  "freshness_sha256": "d9ef98fe6b58c8d71be72e8d6ec5bac89ad481059add295e259e34820e33565a",
+  "census_sha256": "6bd1ce68cb8f58e7b3e631fb5f4fb19101faf86d9458ffccfb386bd0f4141e2e",
+  "execution_authorized": false,
+  "exclusions": [
+    "SOURCE_MANIFEST.json",
+    "SOURCE_MANIFEST.sha256",
+    "reviews/*",
+    "future receipts and results"
+  ],
+  "files": [
+    {
+      "path": "audit_optimizer.py",
+      "bytes": 8216,
+      "sha256": "473195c81d388758f36e8293f97362d4642a1a6b5ce316c42285b882394ac911"
+    },
+    {
+      "path": "audit.py",
+      "bytes": 23071,
+      "sha256": "5c639142216b865e08d9266b10a311c2179e06b8fffe390f82dd5bf5a587eb30"
+    },
+    {
+      "path": "BACKGROUND_ANCHORS.json",
+      "bytes": 2549,
+      "sha256": "44882d8bbe98d6a4ddc8e95d9911c7e9e5309cd0767ea5b65b93689ce7a24d02"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5041,
+      "sha256": "d1dd69769a531dcc1c7f62bc28e864c65c738f2f830e3432ca4e89663e2b97b3"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 1916,
+      "sha256": "ae14cb2e7b7c86e91687c3f632527ce13319325d0ef766489d292565bbd987a6"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 17720,
+      "sha256": "718a5e68280a089401345942574e17798ba4ee19e3a7499f8503163e5d138330"
+    },
+    {
+      "path": "fixtures.py",
+      "bytes": 7235,
+      "sha256": "f412e778c259bd6247ddcf18d016afe9dcbf6c4550462985b4a57dd6123a99c2"
+    },
+    {
+      "path": "FRESHNESS_RECONCILIATION.json",
+      "bytes": 7173,
+      "sha256": "d9ef98fe6b58c8d71be72e8d6ec5bac89ad481059add295e259e34820e33565a"
+    },
+    {
+      "path": "FROZEN_PROTOCOL.md",
+      "bytes": 12481,
+      "sha256": "fd5559f89cf6b3563254c4d8806ee88e2d0f0204ef71677ff964bfcecdc76c0f"
+    },
+    {
+      "path": "manual_launch.sh",
+      "bytes": 11212,
+      "sha256": "f0578ea901a8bd217da9d10c56b4e4f89f95bc32fb25fa4d44e77d8806fea72c"
+    },
+    {
+      "path": "optimizer.py",
+      "bytes": 3831,
+      "sha256": "07d3605bfdc8fbeb9c6bddfa4c7136a80f664c92420ebd03f32472f8a90ef461"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6040,
+      "sha256": "84e4cc0e30641c5e7721930db3dcf1eb721b2025300acfa05ee345f0a6eced4c"
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "bytes": 4150,
+      "sha256": "308b07a49230988fd6ecc22ac1c0a8003470f743b38c46161caeff3287d6df6d"
+    },
+    {
+      "path": "runtime_phases.sh",
+      "bytes": 643,
+      "sha256": "5fcfc8cd77c800cf7da8fa9d411bd699770e2a4c33d0c769743358ad35580318"
+    },
+    {
+      "path": "SEED_CENSUS.json",
+      "bytes": 4289057,
+      "sha256": "6bd1ce68cb8f58e7b3e631fb5f4fb19101faf86d9458ffccfb386bd0f4141e2e"
+    },
+    {
+      "path": "SOURCE_PREPARATION_STATUS.md",
+      "bytes": 1536,
+      "sha256": "693db5fa9a0e10c78624f6e500b5fc60be058368bae88db35fd8eb07eca43d1e"
+    },
+    {
+      "path": "SOURCE_REVIEW_TEMPLATE.json",
+      "bytes": 483,
+      "sha256": "96f6b2b6114781c9e761d061f01286141c2b2af71ecb42756fc9362d77e503a7"
+    },
+    {
+      "path": "STATIC_SOURCE_CHECKS.json",
+      "bytes": 1012,
+      "sha256": "7ab7b87d81b5ba24a35e93ae753412f51a7dfc3b9d3f71362aad49360e3745d2"
+    },
+    {
+      "path": "STORAGE_BUDGET.json",
+      "bytes": 2909,
+      "sha256": "9e5769e897a413656c03bf9b4904593a4b53a5236bc60cad0e442af617a47593"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 10701,
+      "sha256": "ddea448fd165529d983bd9f38194deba5c4ea55c6466bb0383f70dc9bf644341"
+    },
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ]
+}

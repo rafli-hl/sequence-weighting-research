@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "analyze_stage5.py": "f0b2976db003f7193eb8f2a8e65bfad05bdbfe5b751e330f22bcee142f64e357",
+    "analysis_checks.py": "7979c50137756a33466661a2e7aa4dc3424e662a7eb93821ca629f08526b6ec8",
+    "audit_stage5.py": "2444922f2bf89fdc1205151aa80d3b665c209ebb7f583f3902de53bd80627dca",
+    "LITERATURE_CHECK.md": "84446b69f8a139046dd6c0dfa02d55cec24ad3c3a9d68c79f7f5578c86374f47",
+    "ANALYSIS_CLARIFICATIONS.md": "1a4d37c237b30fc20017147602ad07e685588129268476deda345e9ab1cd3bb4"
+  },
+  "fixture_checks": {
+    "status": "PASS",
+    "utc": "2026-09-29T07:29:33.659508+00:00",
+    "measured_outcomes_read": false,
+    "checks": [
+      "canonical zero winner and full-precision/tie ordering",
+      "undefined propagation and three-corpus statistics",
+      "signed positive/negative cancellation and zero denominator",
+      "uniform/no-adaptation p undefined",
+      "canonical zero component/Gram diagnostic",
+      "scaling can pass when utility fails at epoch zero",
+      "zero primary total with positive rounded component total preserves null normalized comparison",
+      "positive utility requires nonzero updates, all corpus gains and validation gate",
+      "independent audit reconstructs runner choices/candidates on three fictitious scenarios",
+      "all-zero canonical policy and arm aliases retain 54 initial cells and propagate undefined"
+    ]
+  }
+}

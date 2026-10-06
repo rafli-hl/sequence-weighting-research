@@ -1,0 +1,43 @@
+{
+  "note": "Public derivatives only. Original local records were not changed. Historical embedded hashes refer to original bytes; redacted derivatives are mapped here. Source code is retained at original relative paths.",
+  "transformations": [
+    {
+      "path": "outputs/g1-clipping-diagnostic-v0130/results/DECISION_RECORD.md",
+      "kind": "personal-home-prefix-redaction",
+      "matches": 1,
+      "original_sha256": "fd951f9a2f9b287f09f8a046c517cd28cf195d930ad0a863f623e23914ad8a9b",
+      "publication_sha256": "45dfcd6d1465b9488b1acaa2f4045ff6236f78419611cfd5066f24a58478e3eb"
+    },
+    {
+      "path": "outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/AUDITED_COMPARISON_METHODS.json",
+      "kind": "personal-home-prefix-redaction",
+      "matches": 2,
+      "original_sha256": "0e3b6051706efb23673a09e790f68c4e7c12e5fcb07fc9987b9a1a27cf568687",
+      "publication_sha256": "9a8f33fab4f8e3f71595060814da9cf88ae88d8249ab97bcb9de8ee64c5292ed"
+    },
+    {
+      "path": "figure/INDEX.md",
+      "kind": "unavailable-relative-link-annotation",
+      "before_sha256": "7e2c416bfbc894d5d7c0db930ac4b249d7b4fb6df0ef9db3cf85ba118e94602b",
+      "publication_sha256": "5f871279c6ef7259368c0e387967deba5c06e5b3440d077b0e9ab8d24a1c43b1"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/CLAIMS.md",
+      "kind": "unavailable-relative-link-annotation",
+      "before_sha256": "0b75b828ea9f718af6e524afb39b00cf22257bfa4e8747e84b842aa9ae25bfb1",
+      "publication_sha256": "33174f821f48c364978058c6ac94cb64ef5fef741b36fe9ac22f0755d519ae7c"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/LITERATURE_REVIEW.md",
+      "kind": "unavailable-relative-link-annotation",
+      "before_sha256": "1a2b46e91bddf618a784e3d3fd8067c26d7a0a9e10ce81bb0f642cdc65457bd0",
+      "publication_sha256": "0e8779e2df6382e926a6c9bc9addeaf67d6f7ff5c8a19cba6985bf2b44f9221d"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/README.md",
+      "kind": "unavailable-relative-link-annotation",
+      "before_sha256": "212fe0a648dc1f9964a2396926dc6f7c0dad41767a53562832e0c4138883ec1f",
+      "publication_sha256": "171b343181d1cc35225ea34583fc962aad563ce09b400523af3ad2a81d463e28"
+    }
+  ]
+}

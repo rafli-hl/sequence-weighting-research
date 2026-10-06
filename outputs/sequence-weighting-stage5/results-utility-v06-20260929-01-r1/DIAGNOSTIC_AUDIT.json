@@ -1,0 +1,11 @@
+{
+  "status": "PASS_WITH_PRESPECIFIED_ROUNDOFF_VERIFICATION",
+  "original_strict_failures": [],
+  "gain_identity_max_abs_error": 1.3665606579671419e-06,
+  "canonical_zero_cells": 54,
+  "canonical_zero_weight_views": 108,
+  "adapted_checkpoints": 864,
+  "all_primary_fits_equal_saved_training": true,
+  "undefined_zero_gain_and_uniform_preserved": true,
+  "undefined_primary_cumulative_comparisons": []
+}

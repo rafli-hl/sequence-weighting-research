@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-29T10:53:18.540883+00:00",
+  "source_sha256": {
+    "analyze_stage6.py": "0f41c0d62b510a6b9871256ac6201dd981113d74fa1aefc7f313ecc17013e357",
+    "analysis_core.py": "cfcc7801b0ecfd03fd3a186ef6a05f08a4bb73a15393901203760f9948bebe91",
+    "analysis_checks.py": "e55098e22b911b7b38de0ee205b974fc528ccaa10ec42f91d7e3fc75adf39598",
+    "audit_stage6.py": "50677b91a8e35b51d1b2511f1b2107f09db1b835f46c3958358583c241dcf600",
+    "LITERATURE_CHECK.md": "b7f30ba7d112b0cd99800e0d2b9311d2f12d53f031ff6a1a4382d11f65e7a3ee",
+    "ANALYSIS_CLARIFICATIONS.md": "7a6c6e4ce3ce74a677626febb2cae15a26cf9c8aa270847ac24c96bb82c21a1f"
+  },
+  "protocol_sha256": "9859d5644b8468506f47bd8c28ee594e2eb93f1371989f0fdb2c7e7c3be37164",
+  "selection_sha256": "678a1430ca845ab99ede2a4c683c40120a8641df4b76487fe0685f6aa3eb3de7",
+  "visual_review": "pending"
+}

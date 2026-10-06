@@ -1,0 +1,86 @@
+{
+  "status": "EXPLORATORY_COMPONENT_RESPONSE_PENDING_INDEPENDENT_REVIEW",
+  "version": "v0136-existing-data-component-response-20261005-01",
+  "original_source_manifest_sha256": "6bc67e09f61bbeb78ad38f26778408b2b051671a8e26d4f657e62f6e7b2f7865",
+  "original_calibration_decision_sha256": "777fd45feaf04e1fe7b7462fe12faf56857667d8d4702302461a062608ebde60",
+  "original_decision": "CALIBRATION_FAILED",
+  "files": [
+    {
+      "path": "analyze-existing.ps1",
+      "bytes": 15680,
+      "sha256": "cb3fb2cfea20e25d286e549733042998aac8adbd53f154d82fa592b4ccd5ebf8"
+    },
+    {
+      "path": "AUTHOR_CROSSCHECK.json",
+      "bytes": 5582,
+      "sha256": "548e2c78eecf107c4415d6c3713246118e15813a8be73f36497eb9e6ec3e112c"
+    },
+    {
+      "path": "CORPUS_COMPONENT_LOSSES.csv",
+      "bytes": 4653,
+      "sha256": "fd7ca3eca4dd8565b86f51ac7c292bfacf96ca216ca0f56c0e6bd24120d68578"
+    },
+    {
+      "path": "CORPUS_Q_QUARTILES.csv",
+      "bytes": 4345,
+      "sha256": "d26c9512e1be2a07ee8522ce689624b4bf708d1dfb9e5abdb28b80567bafbf2a"
+    },
+    {
+      "path": "CORPUS_RESPONSE.csv",
+      "bytes": 2352,
+      "sha256": "db73893b2497b08e49b22f5a115de372fb7f525d61603b594c1869f1b7ce8b8b"
+    },
+    {
+      "path": "EXPLORATORY_COMPONENT_RESPONSE.md",
+      "bytes": 12993,
+      "sha256": "957885718f118caf50a2e4e76154933463d1e891627b664b1b9ac5765e2a1ee5"
+    },
+    {
+      "path": "METHODS_AND_INPUTS.json",
+      "bytes": 16593,
+      "sha256": "427ea402aa2a65f7f865086802331d027b0decdd5687af7da35ed5184c4e6b08"
+    },
+    {
+      "path": "PREEXISTING_FILE_HASHES.json",
+      "bytes": 55292,
+      "sha256": "16cc489196873a04af0fff89e31dda500d4ba14a5039eddbcfb3fbc34466e49b"
+    },
+    {
+      "path": "PRESERVATION_RECEIPT.json",
+      "bytes": 491,
+      "sha256": "b11d85e3439ff08d86d7bedb2ec0610c8b1e4d12d142fd064f3428b993a3f074"
+    },
+    {
+      "path": "SavedLossReader.cs",
+      "bytes": 5411,
+      "sha256": "71f0e8cd95859fd27a7b1e4ba21aef1f73084fe1823d594b5710a4172989463c"
+    },
+    {
+      "path": "SEED_COMPONENT_LOSSES.csv",
+      "bytes": 11643,
+      "sha256": "d29f173d504c986040014bcb0ee23efde69dc50f7cffc0170d83f707a6940c44"
+    },
+    {
+      "path": "SEED_Q_QUARTILES.csv",
+      "bytes": 11108,
+      "sha256": "dbce1c0e6cfe9907a48123b1fd1c68a4642d4562ba55fd7711a9cdd31a0582a7"
+    },
+    {
+      "path": "SEED_RESPONSE.csv",
+      "bytes": 4990,
+      "sha256": "07dbc09212bfbdc32092bceeb0118521ccff7772b4792c6ce291a76a833fe21f"
+    },
+    {
+      "path": "SUMMARY_COMPONENT_RESPONSE.csv",
+      "bytes": 939,
+      "sha256": "e46211645381aafaddcf3c11ceadac0eebad330fca8bda2d239751e29d091d27"
+    },
+    {
+      "path": "TRAIN_SEQUENCE_GAINS.csv",
+      "bytes": 2167711,
+      "sha256": "e3e6475223a66d4d93d9c1e9650d31706c609871ad6076dca128ae1e68b3cfec"
+    }
+  ],
+  "payload_bytes": 2319783,
+  "scope": "Windows native saved-array arithmetic only; no models, WSL, Python, training, new data or calibration refit"
+}

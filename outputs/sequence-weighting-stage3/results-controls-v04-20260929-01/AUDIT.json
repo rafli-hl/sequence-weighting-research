@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T19:38:40.981453+00:00",
+  "runs": 108,
+  "pretraining": 27,
+  "test_evaluations": 540,
+  "baseline_pair_checks": 81,
+  "historical_files_unchanged": 3031,
+  "failed_runs": [],
+  "selection_sha256": "6515ec47aedf2e6ff0347007a130d2c51ab5506daed4d6f0da71630ba2ff8297",
+  "checks": [
+    "source/protocol snapshots immutable",
+    "historical v0.1/v0.2/v0.3 hashes unchanged",
+    "selection reconstructed independently using only tuning validation NLL",
+    "exact deduplicated run schedule",
+    "full corpus regeneration and test-toggle tokens/labels/types equal",
+    "disjoint phase/split keys",
+    "weight/order tensors regenerate and pair across capacities/configurations",
+    "full initial losses and checkpoint hashes equal across arms AND configurations",
+    "all saved model hashes verified",
+    "test exactly once at each preregistered epoch after freeze",
+    "every saved scalar/component metric and original p* reconstructed",
+    "compute cap respected"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "version": "v0133",
+  "utc": "2026-10-04T13:32:26.568037+00:00",
+  "primary_mean": 0.0007437080144882202,
+  "corpus_values": [
+    {
+      "data_seed": 91420101,
+      "primary_D": 0.0017459634691476822,
+      "Cclip": 0.03279196470975876,
+      "Cnoclip": 0.031046001240611076,
+      "Unoclip_own_baseline_group_gain": 2.7353084292262793
+    },
+    {
+      "data_seed": 91420102,
+      "primary_D": 0.0017593130469322205,
+      "Cclip": 0.0281260646879673,
+      "Cnoclip": 0.02636675164103508,
+      "Unoclip_own_baseline_group_gain": 2.7319827042520046
+    },
+    {
+      "data_seed": 91420103,
+      "primary_D": 0.002910800278186798,
+      "Cclip": 0.029685229063034058,
+      "Cnoclip": 0.02677442878484726,
+      "Unoclip_own_baseline_group_gain": 2.733415212482214
+    },
+    {
+      "data_seed": 91420104,
+      "primary_D": -0.0012919958680868149,
+      "Cclip": 0.0375334769487381,
+      "Cnoclip": 0.03882547281682491,
+      "Unoclip_own_baseline_group_gain": 2.749577732756734
+    },
+    {
+      "data_seed": 91420105,
+      "primary_D": -0.0014055408537387848,
+      "Cclip": 0.03158803656697273,
+      "Cnoclip": 0.03299357742071152,
+      "Unoclip_own_baseline_group_gain": 2.7389643117785454
+    }
+  ],
+  "corpus_sd": 0.001968223783821887,
+  "minimum": -0.0014055408537387848,
+  "maximum": 0.002910800278186798,
+  "positive_corpora": 3,
+  "verdict": "practical_interaction_not_supported",
+  "practical_threshold_nats": 0.01,
+  "practical_criterion_met": false,
+  "Unoclip_adequacy_pass": true,
+  "conditional_mean": {
+    "Cclip": 0.03194495439529419,
+    "Cnoclip": 0.03120124638080597
+  },
+  "conditional_sd": {
+    "Cclip": 0.00359745320724675,
+    "Cnoclip": 0.005107211415601845
+  },
+  "conditional_range": {
+    "Cclip": [
+      0.0281260646879673,
+      0.0375334769487381
+    ],
+    "Cnoclip": [
+      0.02636675164103508,
+      0.03882547281682491
+    ]
+  },
+  "adequacy_mean": 2.7378496780991552,
+  "adequacy_sd": 0.007059275592354718,
+  "adequacy_range": [
+    2.7319827042520046,
+    2.749577732756734
+  ],
+  "primary_units": "nats/group answer token; positive = more adverse or less beneficial instance effect under clip 1",
+  "inference": "Five independent fresh corpus draws; two nested seeds averaged before equal corpus weighting. Descriptive direction and dispersion; no p-value or mediation claim.",
+  "warnings": [
+    "Fixed optimizer/clipping/teacher-forced synthetic design only",
+    "No universal mechanism or mediation proof",
+    "Trace/source review is evidence of execution policy; intermediate updates not independently replayed"
+  ]
+}

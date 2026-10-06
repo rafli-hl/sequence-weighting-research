@@ -1,0 +1,62 @@
+[
+  {
+    "path": "AGENTS.md",
+    "sha256": "009f9a7869fceb8fe88219cef8a5be97ec039d04238daf4729a9ce43e499c19c"
+  },
+  {
+    "path": "HANDOFF.md",
+    "sha256": "ed5ae7fcdd99a17dcf8f20d9cfe4a5865bc6fce5e672e9a32c71486cc699c0fa"
+  },
+  {
+    "path": "NEXT_EXPERIMENT.md",
+    "sha256": "a6e863bdf35dfe8d65dff67fe8f93db6867b5f27088a2d641c2c9b2769418642"
+  },
+  {
+    "path": "RUNBOOK.md",
+    "sha256": "8032940838832a1a373da976d563708f6358243a7e59807574b47fd4e68685d1"
+  },
+  {
+    "path": "outputs/sequence-weighting-pilot/results-mechanism-v02/REPORT.md",
+    "sha256": "a4c2f4c5ae1be37ed0d1ad8aad842a166b5178847a568488af00b68b4059f30a"
+  },
+  {
+    "path": "outputs/sequence-weighting-pilot/environment-lock-stage1.txt",
+    "sha256": "b67fe4f1937efa387cafa7e1968a9e77597791b5e1ab252667d8e3ed53ad0181"
+  },
+  {
+    "path": "outputs/sequence-weighting-stage11/SEED_INVENTORY-20260930-r1.json",
+    "sha256": "92e52ad89843819bf12feca785130e7cccf7d46095f2a2f745eace4808564883"
+  },
+  {
+    "path": "work/runs/rule-tying-v0128-20261001-01/design.json",
+    "sha256": "a4f10afe8a94671051d7a779b2747d25ed3024bd40d6b184f660d772a7658927"
+  },
+  {
+    "path": "work/runs/factorial-v0132-20261004-01/DESIGN_FREEZE.json",
+    "sha256": "c4e7a658815de886a260086387e6f7ea883aadaf53aa116f397f2a20c5a21572"
+  },
+  {
+    "path": "work/runs/clipping-interaction-v0133-20261004-02/DESIGN_FREEZE.json",
+    "sha256": "177e1844e5905307cc6a538c3a62f4860f7bf137e0636d12347bf8b23819db7a"
+  },
+  {
+    "path": "outputs/sequence-weighting-clipping-interaction-v0133-r1/SOURCE_MANIFEST.json",
+    "sha256": "baf8a3de3aab342b842f8d2fc0ce4b1899cf77b6e58987745df9d64b27ab5ab3"
+  },
+  {
+    "path": "outputs/sequence-weighting-clipping-interaction-v0133-r1/FRESHNESS_RECONCILIATION.json",
+    "sha256": "13a03f7346676f5d995ea02e1de3f91bd75cc4645871f78d503b3966d01b7947"
+  },
+  {
+    "path": "outputs/sequence-weighting-gradient-alignment-v0134/INPUT_BINDINGS.json",
+    "sha256": "59a846e852d998ae431780eef57a19a4564d4bfc0c6ceb33f7dfeebf890df2f9"
+  },
+  {
+    "path": "outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01/AUDIT.json",
+    "sha256": "94ebc3b1195c7c384477d6d82d35de72c9290d2946a3610c596aa96e30d02d9b"
+  },
+  {
+    "path": "outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01/CURRENT_RESEARCH_SYNTHESIS_20261005.md",
+    "sha256": "79700d2d752dd45c4c92ce5d1b50c88e836fec2071f756d1751bd6ec5116d04f"
+  }
+]

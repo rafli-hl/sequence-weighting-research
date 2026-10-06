@@ -1,0 +1,40 @@
+# Local environments, packages and caches
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.cache/
+.matplotlib/
+.ipynb_checkpoints/
+.idea/
+# Experiment storage; small published provenance exceptions remain allowed
+work/runs/
+work/wheels*/
+work/prerequisites/
+work/text-assets/model/
+work/text-assets/dataset/
+work/text-assets/*-rows.json
+work/text-assets/install-report.json
+# Bulk artifacts and generated binary/download output
+*.pt
+*.pth
+*.safetensors
+*.whl
+*.zip
+*.part
+*.exe
+*.dll
+*.so
+*.log
+bin/
+obj/
+# Private credentials and operational conversations
+.env
+.env.*
+*.pem
+*.key
+context/
+# Generated audit/preparation receipt files are curated individually.
+# Do not ignore outputs/, all JSON/CSV, figures, or all work/.

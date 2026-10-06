@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": [
+    "paired utility and zero-update gates",
+    "separate scaling gate",
+    "signed K and undefined propagation"
+  ]
+}

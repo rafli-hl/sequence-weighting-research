@@ -1,0 +1,754 @@
+{
+  "summary": [
+    {
+      "variant": "S",
+      "width": 64,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 3.203516509797838,
+        "sd": 0.03661627623549337,
+        "minimum": 3.165884017944336,
+        "maximum": 3.279592514038086
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 3.182203663720025,
+        "sd": 0.030974593198797765,
+        "minimum": 3.1353349685668945,
+        "maximum": 3.2401156425476074
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.23253417842917973,
+        "sd": 0.0021818978154436283,
+        "minimum": 0.2294626384973526,
+        "maximum": 0.23514442145824432
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.624573230743408,
+        "sd": 0.08272457638879732,
+        "minimum": 4.513438701629639,
+        "maximum": 4.755446434020996
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.68950351079305,
+        "sd": 0.030571594758497283,
+        "minimum": 4.657422065734863,
+        "maximum": 4.744514465332031
+      }
+    },
+    {
+      "variant": "S",
+      "width": 128,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.134883986579047,
+        "sd": 0.04156277557885324,
+        "minimum": 4.083390235900879,
+        "maximum": 4.204030513763428
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.108480294545491,
+        "sd": 0.0318441494524164,
+        "minimum": 4.062378883361816,
+        "maximum": 4.155115127563477
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.04772302798098988,
+        "sd": 0.0004606410702084901,
+        "minimum": 0.04701393470168114,
+        "maximum": 0.048153385519981384
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 6.1052781740824384,
+        "sd": 0.09119112793683476,
+        "minimum": 5.974819660186768,
+        "maximum": 6.217339992523193
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 6.172439416249593,
+        "sd": 0.019613795054273946,
+        "minimum": 6.151327133178711,
+        "maximum": 6.199884414672852
+      }
+    },
+    {
+      "variant": "S",
+      "width": 256,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 5.370091014438206,
+        "sd": 0.06643240783771867,
+        "minimum": 5.275944232940674,
+        "maximum": 5.461883544921875
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 5.333983368343777,
+        "sd": 0.04845496235954979,
+        "minimum": 5.24964714050293,
+        "maximum": 5.406951427459717
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.008078555679983564,
+        "sd": 0.0001236865150926426,
+        "minimum": 0.007909100502729416,
+        "maximum": 0.008255748078227043
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 7.944113731384277,
+        "sd": 0.12498757283723574,
+        "minimum": 7.7203850746154785,
+        "maximum": 8.083346366882324
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 8.049757639567057,
+        "sd": 0.04487708653953886,
+        "minimum": 7.979256629943848,
+        "maximum": 8.129556655883789
+      }
+    },
+    {
+      "variant": "M",
+      "width": 64,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 3.119006633758545,
+        "sd": 0.028664266733481755,
+        "minimum": 3.093378782272339,
+        "maximum": 3.170274019241333
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 3.0986121230655246,
+        "sd": 0.023227849260647318,
+        "minimum": 3.0685956478118896,
+        "maximum": 3.1328084468841553
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.25184233652220833,
+        "sd": 0.003196461266558506,
+        "minimum": 0.24795463681221008,
+        "maximum": 0.25685951113700867
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.494441615210639,
+        "sd": 0.07628337672867595,
+        "minimum": 4.383174896240234,
+        "maximum": 4.587099552154541
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.549552652570936,
+        "sd": 0.016643979400678785,
+        "minimum": 4.524942398071289,
+        "maximum": 4.582625389099121
+      }
+    },
+    {
+      "variant": "M",
+      "width": 128,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.039570517010159,
+        "sd": 0.0420977740878669,
+        "minimum": 3.9903926849365234,
+        "maximum": 4.103518486022949
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 4.0143707063463,
+        "sd": 0.029805955649503568,
+        "minimum": 3.968041181564331,
+        "maximum": 4.0561699867248535
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.04927396484547191,
+        "sd": 0.0005352562429254429,
+        "minimum": 0.048371054232120514,
+        "maximum": 0.04974564164876938
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 5.962710009680854,
+        "sd": 0.09103728655578058,
+        "minimum": 5.82867956161499,
+        "maximum": 6.0732421875
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 6.03112808863322,
+        "sd": 0.012858143534645532,
+        "minimum": 6.013330936431885,
+        "maximum": 6.050220489501953
+      }
+    },
+    {
+      "variant": "M",
+      "width": 256,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 5.34909560945299,
+        "sd": 0.056678839478201445,
+        "minimum": 5.288297653198242,
+        "maximum": 5.452352046966553
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 5.313718371921116,
+        "sd": 0.04019605553866827,
+        "minimum": 5.253207206726074,
+        "maximum": 5.379137992858887
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.00787520543154743,
+        "sd": 0.00020171791119144987,
+        "minimum": 0.007677391637116671,
+        "maximum": 0.008236119523644447
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 7.916956000857883,
+        "sd": 0.11781922578409318,
+        "minimum": 7.736419677734375,
+        "maximum": 8.072132110595703
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 8.016324043273926,
+        "sd": 0.02462852279971617,
+        "minimum": 7.9755754470825195,
+        "maximum": 8.057601928710938
+      }
+    },
+    {
+      "variant": "U",
+      "width": 64,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.0091888109842935,
+        "sd": 0.0074538243499610276,
+        "minimum": 2.0015721321105957,
+        "maximum": 2.0229179859161377
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.0068101750479803,
+        "sd": 0.006068603445828981,
+        "minimum": 1.9975651502609253,
+        "maximum": 2.0178000926971436
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.4158017502890693,
+        "sd": 0.01644805707159912,
+        "minimum": 0.38701286911964417,
+        "maximum": 0.443195104598999
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.799329307344225,
+        "sd": 0.006630369472464963,
+        "minimum": 2.7881975173950195,
+        "maximum": 2.8082237243652344
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.8052994675106473,
+        "sd": 0.0028653378774967098,
+        "minimum": 2.8012161254882812,
+        "maximum": 2.8098819255828857
+      }
+    },
+    {
+      "variant": "U",
+      "width": 128,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.8759752776887682,
+        "sd": 0.001527730752139231,
+        "minimum": 1.873723030090332,
+        "maximum": 1.8781535625457764
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.8752650949690077,
+        "sd": 0.0012371118481836795,
+        "minimum": 1.8729017972946167,
+        "maximum": 1.8771990537643433
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.060028503752417035,
+        "sd": 0.0010231268537720265,
+        "minimum": 0.05840430408716202,
+        "maximum": 0.061210665851831436
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.78175867928399,
+        "sd": 0.002535316209797919,
+        "minimum": 2.7779958248138428,
+        "maximum": 2.7858097553253174
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.7840081055959067,
+        "sd": 0.0009828767753281744,
+        "minimum": 2.7823057174682617,
+        "maximum": 2.785163640975952
+      }
+    },
+    {
+      "variant": "U",
+      "width": 256,
+      "train_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.8542175822787814,
+        "sd": 0.0009629662217589625,
+        "minimum": 1.8531286716461182,
+        "maximum": 1.8557642698287964
+      },
+      "validation_nll": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.8536316421296861,
+        "sd": 0.0006741484814301543,
+        "minimum": 1.8524835109710693,
+        "maximum": 1.8544926643371582
+      },
+      "validation_shared_accuracy": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "validation_shared_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 0.00938008146153556,
+        "sd": 0.0002899661926329839,
+        "minimum": 0.009101208299398422,
+        "maximum": 0.010021512396633625
+      },
+      "validation_group_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.775110509660509,
+        "sd": 0.0018569988634133615,
+        "minimum": 2.771657943725586,
+        "maximum": 2.777064085006714
+      },
+      "validation_instance_loss": {
+        "n": 9,
+        "undefined": 0,
+        "positive": 9,
+        "negative": 0,
+        "zero": 0,
+        "mean": 2.7764042218526206,
+        "sd": 0.00044062153020141574,
+        "minimum": 2.7759125232696533,
+        "maximum": 2.777188777923584
+      }
+    }
+  ],
+  "checks": [
+    {
+      "width": 64,
+      "data_seed": 41843,
+      "U_minus_M": {
+        "shared": 0.1598159472147624,
+        "group": -1.7369393507639566,
+        "instance": -1.734413941701253
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 64,
+      "data_seed": 43997,
+      "U_minus_M": {
+        "shared": 0.1580905318260193,
+        "group": -1.7426794370015464,
+        "instance": -1.744452397028605
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 64,
+      "data_seed": 46219,
+      "U_minus_M": {
+        "shared": 0.1739717622598012,
+        "group": -1.6057181358337398,
+        "instance": -1.7538932164510088
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 128,
+      "data_seed": 41843,
+      "U_minus_M": {
+        "shared": 0.010522250086069107,
+        "group": -3.2134915987650556,
+        "instance": -3.2389816443125405
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 128,
+      "data_seed": 43997,
+      "U_minus_M": {
+        "shared": 0.011122365792592362,
+        "group": -3.2592000166575112,
+        "instance": -3.249369303385417
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 128,
+      "data_seed": 46219,
+      "U_minus_M": {
+        "shared": 0.010619000842173897,
+        "group": -3.0701623757680254,
+        "instance": -3.253009001413981
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 256,
+      "data_seed": 41843,
+      "U_minus_M": {
+        "shared": 0.0014866562560200691,
+        "group": -5.185418526331583,
+        "instance": -5.221336523691813
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 256,
+      "data_seed": 43997,
+      "U_minus_M": {
+        "shared": 0.00158978331213196,
+        "group": -5.2447761694590245,
+        "instance": -5.25037137667338
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    },
+    {
+      "width": 256,
+      "data_seed": 46219,
+      "U_minus_M": {
+        "shared": 0.001438188521812359,
+        "group": -4.995341777801514,
+        "instance": -5.248051563898722
+      },
+      "U_shared_accuracy": 1.0,
+      "group_improved": true,
+      "instance_improved": true,
+      "shared_gate": true
+    }
+  ],
+  "manipulation_pass": true
+}

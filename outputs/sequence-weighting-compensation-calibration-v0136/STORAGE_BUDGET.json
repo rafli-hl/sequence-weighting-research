@@ -1,0 +1,55 @@
+{
+  "version": "v0136",
+  "status": "STATIC_RESERVATION_NOT_MEASURED_RUNTIME",
+  "rows": [
+    {
+      "category": "18 checkpoint states including serialization allowance",
+      "bytes": 47121408
+    },
+    {
+      "category": "4 seven-vector snapshots including serialization allowance",
+      "bytes": 70154240
+    },
+    {
+      "category": "Full input tensors",
+      "bytes": 12582912
+    },
+    {
+      "category": "Per-sequence evaluation arrays",
+      "bytes": 8388608
+    },
+    {
+      "category": "Dataset/weight/seed metadata",
+      "bytes": 8388608
+    },
+    {
+      "category": "Candidate and independent fit profiles/results",
+      "bytes": 8388608
+    },
+    {
+      "category": "Update and pretraining traces",
+      "bytes": 8388608
+    },
+    {
+      "category": "Source/census/planning/reviews",
+      "bytes": 16777216
+    },
+    {
+      "category": "Bounded phase and outer logs/time receipts",
+      "bytes": 33554432
+    },
+    {
+      "category": "Allocation rounding and unallocated serialization slack",
+      "bytes": 16777216
+    }
+  ],
+  "estimated_normal_bytes": 230521856,
+  "normal_write_limit_bytes": 452984832,
+  "additional_total_limit_bytes": 536870912,
+  "archive_reserve_bytes": 67108864,
+  "receipt_reserve_bytes": 16777216,
+  "minimum_free_bytes": 2147483648.0,
+  "normal_headroom_bytes": 222462976,
+  "confirmation_implemented": false,
+  "note": "Includes original planning directory in runtime accounting; calibration evidence must remain if a later separately approved confirmation is designed. No combined calibration+confirmation feasibility claim."
+}

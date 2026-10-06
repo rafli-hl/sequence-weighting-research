@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-30T15:57:05.360033+00:00",
+  "scope": "Writing/planning artifacts and current root navigation; historical sources separately inventoried.",
+  "self_and_completion_excluded": true,
+  "files": [
+    {
+      "path": "CODEX_START.md",
+      "bytes": 4220,
+      "sha256": "375242f2457888ab855f5b822718f2d08747e70c6742dd6824a75775ec701b07"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 72369,
+      "sha256": "6e4e46826d9f1384c2274eb3a259f190181c459a7be95362d2d2538f5e568c56"
+    },
+    {
+      "path": "NEXT_EXPERIMENT.md",
+      "bytes": 33315,
+      "sha256": "13b2e0a881e17ac816ada613117cb095ad93cc7ab91ba8a4f17e139b84fea569"
+    },
+    {
+      "path": "RESEARCH_GOAL.md",
+      "bytes": 4490,
+      "sha256": "c45bde5da72598b070ed75b6c3429393ed3a0d0063961a5280b76255632fb325"
+    },
+    {
+      "path": "RESEARCH_STATE.json",
+      "bytes": 2291,
+      "sha256": "23bc480719c24dc02b4886795ed36ae2b40a2f72cfb4a7a35de0e27412bf20a3"
+    },
+    {
+      "path": "RUNBOOK.md",
+      "bytes": 20789,
+      "sha256": "7e2112547c0fb207c6a00eb641d7f5504fb86185b0cca6b88bed0502f597e368"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/ALIGNMENT_AND_DECISIONS.md",
+      "bytes": 5883,
+      "sha256": "8daa8c9f198bb594163463dd2f2832cc77730f70825d44e0bb0691d31ec9d2a7"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/CLAIMS.md",
+      "bytes": 15863,
+      "sha256": "0b75b828ea9f718af6e524afb39b00cf22257bfa4e8747e84b842aa9ae25bfb1"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/DESIGN_RATIONALE.md",
+      "bytes": 9792,
+      "sha256": "ab8527a281ff3781cc299c4aecf82439dea584abd09b61f4fb046ee2686ef820"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/HISTORICAL_SOURCE_MANIFEST.json",
+      "bytes": 4921,
+      "sha256": "1c9c9f85629eca75bd7f29c096b972dbc8599a67e810bb992c8dc3a9e20b0517"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/LITERATURE_REVIEW.md",
+      "bytes": 13014,
+      "sha256": "1a2b46e91bddf618a784e3d3fd8067c26d7a0a9e10ce81bb0f642cdc65457bd0"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/LITERATURE_SOURCES.json",
+      "bytes": 15946,
+      "sha256": "40ff8c9e6438ea335e67d10f10a9512fad946ef5b63b77f37996d83e36757bfc"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/NEXT_PROTOCOL_DRAFT.md",
+      "bytes": 20650,
+      "sha256": "ec058285c375b62c5c5b54e9b2e3e28450ffa83e12084ed5d2ac2bcea82de1ef"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/NOTE_REVIEW.json",
+      "bytes": 15697,
+      "sha256": "84a397bf68ce2ec3452acee624a86de1a5d29c1ce3bbd5bcf1f81ae7ab0ae409"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/PROTOCOL_REVIEW.json",
+      "bytes": 14283,
+      "sha256": "7980482fcf0005bfbb0ed1eb017e9cebe62c67fedd2be13a829ff16d9b468997"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/README.md",
+      "bytes": 2177,
+      "sha256": "212fe0a648dc1f9964a2396926dc6f7c0dad41767a53562832e0c4138883ec1f"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/RESEARCH_NOTE.md",
+      "bytes": 15851,
+      "sha256": "76e4b6647f9678bd8098ffe9241be93ae9b3a6cde7dfc7af8d06705e47e8ff2d"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/REVIEW.json",
+      "bytes": 31499,
+      "sha256": "11f41d36d3b25da93410b6ff5a7bf7521139f2dc0b101e4c6fce5a901ef66b14"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/ROOT_ACCEPTANCE.json",
+      "bytes": 4281,
+      "sha256": "e5406da3b0be0e3f8c46031f8316457349ecbdb21a294858803effb60a1e61fa"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/context_before/CODEX_START.md",
+      "bytes": 3199,
+      "sha256": "eddb0c672e0b0abeb9100a8a6818a7bb14d9c4b745f0be18ebc8a247ea87c3eb"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/context_before/HANDOFF.md",
+      "bytes": 69288,
+      "sha256": "6d9cf015114ef86ec6fb35efa2b5031d0a7ba3fd47f7ff7196fd01603af2ce6a"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/context_before/NEXT_EXPERIMENT.md",
+      "bytes": 31528,
+      "sha256": "0ef10beb375e532797119261454f542d11ae53927a7709e8ebd8b413f708989c"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/context_before/RESEARCH_GOAL.md",
+      "bytes": 4250,
+      "sha256": "ac11e28e4e3a8801d4e2b42daa7a3b61f7512a257c73a00ce5c1bf2876bc7ff9"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/context_before/RESEARCH_STATE.json",
+      "bytes": 1706,
+      "sha256": "98b64d6c9ec47bfcd23b699f28a41d5e33defee278ff73df1a9e562ec7c1b643"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/context_before/RUNBOOK.md",
+      "bytes": 20065,
+      "sha256": "02157a96edb5e909f41ef368556901359be4a2ba470258474889f797f66d5026"
+    },
+    {
+      "path": "outputs/sequence-weighting-paper-track-v1/finalize_package.py",
+      "bytes": 15557,
+      "sha256": "2d3b0fdea6b779198de400383b7eef7bdd3ecc8de45b19a7e6e11fdeb3d5484c"
+    }
+  ]
+}

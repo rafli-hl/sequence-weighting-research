@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T03:40:59.380486+00:00",
+  "source_sha256": {
+    "core.py": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a",
+    "stage7.py": "7dcf6b7b8cd0711102341ee8d6dd5b193836d23da54f557ba4ed0a6c3cd84ece",
+    "check_stage7.py": "86216a55ea5374a1a0f7254a140190d9a82e441f1f82815717b85daabf3af922",
+    "audit_stage7.py": "58abfa1d461a5f035234162db4a9de9dc665ca03fd283ed5e2fd3a947b6b3a65",
+    "analyze_stage7.py": "5748b2556acc1b4a61241ab917815424bc14b2f1293a175306a185ac1d836686",
+    "analysis_checks.py": "675f07ae46e3933cb9243a7f7dccc48b2ea2c8227fc801c55f1f614a9d8ea889",
+    "PROTOCOL_STAGE7.md": "32b40e9321cbf6dae142b35a171b62b7b7f89830ec8d1667c6d6ed4e0a69ef66",
+    "README.md": "de6a87b714d9cc2fe17076ab1686213a352fc67478beaf9480da1fc4ffdf97ea",
+    "SYNTHESIS_STAGE4_6.md": "afb525708b74b9082850deca8a5d14c318c7895160655771de1ae469710d93ca"
+  },
+  "source_snapshot_verified": true,
+  "visual_review": "pending"
+}

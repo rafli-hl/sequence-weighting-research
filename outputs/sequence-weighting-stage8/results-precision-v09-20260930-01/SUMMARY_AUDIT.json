@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-30T04:58:53.690088+00:00",
+  "profiles": 1536,
+  "cells": 24,
+  "grid_points": 161,
+  "grid_pairs_per_profile": 12880,
+  "original_p_preserved": true,
+  "decimal_calculation_precision": 110,
+  "reference": "D80 with frozen tau; independently checked at110",
+  "classification_unresolved": 0,
+  "no_filter_or_replacement": true
+}

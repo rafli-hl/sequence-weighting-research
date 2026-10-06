@@ -1,0 +1,1702 @@
+{
+  "syntax_checked_python_files": 295,
+  "syntax_errors": [],
+  "external_imports": {
+    "matplotlib": [
+      "outputs/sequence-weighting-pilot/mechanism_report.py",
+      "outputs/sequence-weighting-pilot/report.py",
+      "outputs/sequence-weighting-stage10/analyze_stage10.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/analyze_stage10.py",
+      "outputs/sequence-weighting-stage11-v0128/analyze_stage11.py",
+      "outputs/sequence-weighting-stage11/analyze_stage11.py",
+      "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "outputs/sequence-weighting-stage3/analyze_stage3.py",
+      "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "outputs/sequence-weighting-stage4/analyze_stage4.py",
+      "outputs/sequence-weighting-stage4/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage5/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/finalize_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/finalize_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "outputs/sequence-weighting-stage6/analyze_stage6.py",
+      "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analyze_stage6.py",
+      "outputs/sequence-weighting-stage7/analyze_stage7.py",
+      "outputs/sequence-weighting-stage7/finalize_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/analyze_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/finalize_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/analyze_stage7.py",
+      "outputs/sequence-weighting-stage8/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/figure-source-r1.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/figure-source-r2.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/analyze_stage8.py",
+      "outputs/sequence-weighting-stage9/analyze_stage9.py",
+      "outputs/sequence-weighting-stage9/analyze_stage9_r1.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9_r1.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9_r1.py",
+      "outputs/sequence-weighting-weighting-contrast-v0131/analyze.py"
+    ],
+    "numpy": [
+      "outputs/sequence-weighting-compensation-calibration-v0136/audit.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/audit_fit.py",
+      "outputs/sequence-weighting-stage10/analyze_stage10.py",
+      "outputs/sequence-weighting-stage10/check_stage10.py",
+      "outputs/sequence-weighting-stage10/common_stage10.py",
+      "outputs/sequence-weighting-stage10/inputs.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/analyze_stage10.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/check_stage10.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/common_stage10.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/inputs.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/stage10.py",
+      "outputs/sequence-weighting-stage10/stage10.py",
+      "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "outputs/sequence-weighting-stage3/analyze_stage3.py",
+      "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "outputs/sequence-weighting-stage4/analyze_stage4.py",
+      "outputs/sequence-weighting-stage4/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage5/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/finalize_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/finalize_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "outputs/sequence-weighting-stage6/analyze_stage6.py",
+      "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analyze_stage6.py",
+      "outputs/sequence-weighting-stage7/analyze_stage7.py",
+      "outputs/sequence-weighting-stage7/audit_stage7.py",
+      "outputs/sequence-weighting-stage7/finalize_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/analyze_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/audit_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/finalize_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/analyze_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/audit_stage7.py",
+      "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/stage7.py",
+      "outputs/sequence-weighting-stage7/stage7.py",
+      "outputs/sequence-weighting-stage8/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/audit_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/audit_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/figure-source-r1.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/audit_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/figure-source-r2.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/analyze_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/audit_stage8.py",
+      "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "outputs/sequence-weighting-stage8/stage8.py",
+      "outputs/sequence-weighting-stage9/analyze_stage9.py",
+      "outputs/sequence-weighting-stage9/analyze_stage9_r1.py",
+      "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "outputs/sequence-weighting-stage9/check_stage9.py",
+      "outputs/sequence-weighting-stage9/common_stage9.py",
+      "outputs/sequence-weighting-stage9/inputs_stage4.py",
+      "outputs/sequence-weighting-stage9/reference_math.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9_r1.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/audit_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/check_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/common_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/inputs_stage4.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/reference_math.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9_r1.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/audit_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/check_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/common_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/inputs_stage4.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/reference_math.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "outputs/sequence-weighting-stage9/stage9.py",
+      "outputs/sequence-weighting-stage9/verify_stage9_final.py",
+      "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py"
+    ],
+    "torch": [
+      "outputs/g1-clipping-diagnostic-v0129/analyze.py",
+      "outputs/g1-clipping-diagnostic-v0129/run.py",
+      "outputs/g1-clipping-diagnostic-v0130/analyze.py",
+      "outputs/g1-clipping-diagnostic-v0130/independent_audit.py",
+      "outputs/g1-clipping-diagnostic-v0130/run.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133-r1/audit.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133-r1/experiment.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133-r1/vendor/engine.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133-r1/vendor/model.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133/audit.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133/experiment.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133/vendor/engine.py",
+      "outputs/sequence-weighting-clipping-interaction-v0133/vendor/model.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/audit.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/audit_steps.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/experiment.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/fixtures.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/vendor/engine.py",
+      "outputs/sequence-weighting-compensation-calibration-v0136/vendor/model.py",
+      "outputs/sequence-weighting-factorial-v0132/audit.py",
+      "outputs/sequence-weighting-factorial-v0132/experiment.py",
+      "outputs/sequence-weighting-factorial-v0132/vendor/engine.py",
+      "outputs/sequence-weighting-factorial-v0132/vendor/model.py",
+      "outputs/sequence-weighting-gradient-alignment-v0134/audit.py",
+      "outputs/sequence-weighting-gradient-alignment-v0134/diagnose.py",
+      "outputs/sequence-weighting-gradient-alignment-v0134/inputs.py",
+      "outputs/sequence-weighting-gradient-alignment-v0134/vendor/model.py",
+      "outputs/sequence-weighting-pilot/check_runtime.py",
+      "outputs/sequence-weighting-pilot/mechanism.py",
+      "outputs/sequence-weighting-pilot/mechanism_report.py",
+      "outputs/sequence-weighting-pilot/pilot.py",
+      "outputs/sequence-weighting-pilot/text_check.py",
+      "outputs/sequence-weighting-preconditioning-v0135/audit.py",
+      "outputs/sequence-weighting-preconditioning-v0135/audit_optimizer.py",
+      "outputs/sequence-weighting-preconditioning-v0135/experiment.py",
+      "outputs/sequence-weighting-preconditioning-v0135/fixtures.py",
+      "outputs/sequence-weighting-preconditioning-v0135/optimizer.py",
+      "outputs/sequence-weighting-preconditioning-v0135/vendor/engine.py",
+      "outputs/sequence-weighting-preconditioning-v0135/vendor/model.py",
+      "outputs/sequence-weighting-stage10/inputs.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/inputs.py",
+      "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/stage10.py",
+      "outputs/sequence-weighting-stage10/stage10.py",
+      "outputs/sequence-weighting-stage11-v0128/benchmark_stage11.py",
+      "outputs/sequence-weighting-stage11-v0128/check_preparation.py",
+      "outputs/sequence-weighting-stage11-v0128/check_runner.py",
+      "outputs/sequence-weighting-stage11-v0128/check_stage11.py",
+      "outputs/sequence-weighting-stage11-v0128/engine.py",
+      "outputs/sequence-weighting-stage11-v0128/model.py",
+      "outputs/sequence-weighting-stage11-v0128/revision_evidence.py",
+      "outputs/sequence-weighting-stage11-v0128/stage11.py",
+      "outputs/sequence-weighting-stage11/benchmark_stage11.py",
+      "outputs/sequence-weighting-stage11/check_runner.py",
+      "outputs/sequence-weighting-stage11/check_stage11.py",
+      "outputs/sequence-weighting-stage11/engine.py",
+      "outputs/sequence-weighting-stage11/model.py",
+      "outputs/sequence-weighting-stage11/preparation-evidence/stage11-before-clock.py",
+      "outputs/sequence-weighting-stage11/stage11.py",
+      "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/model.py",
+      "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "outputs/sequence-weighting-stage2/stage2.py",
+      "outputs/sequence-weighting-stage3/analyze_stage3.py",
+      "outputs/sequence-weighting-stage3/diagnostics.py",
+      "outputs/sequence-weighting-stage3/engine.py",
+      "outputs/sequence-weighting-stage3/model.py",
+      "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "outputs/sequence-weighting-stage3/stage3.py",
+      "outputs/sequence-weighting-stage4/analyze_stage4.py",
+      "outputs/sequence-weighting-stage4/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/check_roundoff.py",
+      "outputs/sequence-weighting-stage4/diagnostics.py",
+      "outputs/sequence-weighting-stage4/diagnostics_roundoff.py",
+      "outputs/sequence-weighting-stage4/engine.py",
+      "outputs/sequence-weighting-stage4/model.py",
+      "outputs/sequence-weighting-stage4/probe_roundoff.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/check_roundoff.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/diagnostics_roundoff.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/probe_roundoff.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/check_roundoff.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/diagnostics_roundoff.py",
+      "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/probe_roundoff.py",
+      "outputs/sequence-weighting-stage4/stage4.py",
+      "outputs/sequence-weighting-stage5/analysis_checks.py",
+      "outputs/sequence-weighting-stage5/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/audit_stage5.py",
+      "outputs/sequence-weighting-stage5/diagnostics.py",
+      "outputs/sequence-weighting-stage5/diagnostics_roundoff.py",
+      "outputs/sequence-weighting-stage5/engine.py",
+      "outputs/sequence-weighting-stage5/model.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analysis_checks.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/audit_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analysis_checks.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/audit_stage5.py",
+      "outputs/sequence-weighting-stage5/stage5.py",
+      "outputs/sequence-weighting-stage6/analysis_checks.py",
+      "outputs/sequence-weighting-stage6/analysis_core.py",
+      "outputs/sequence-weighting-stage6/analyze_stage6.py",
+      "outputs/sequence-weighting-stage6/audit_stage6.py",
+      "outputs/sequence-weighting-stage6/diagnostics.py",
+      "outputs/sequence-weighting-stage6/diagnostics_roundoff.py",
+      "outputs/sequence-weighting-stage6/engine.py",
+      "outputs/sequence-weighting-stage6/model.py",
+      "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_checks.py",
+      "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_core.py",
+      "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analyze_stage6.py",
+      "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/audit_stage6.py",
+      "outputs/sequence-weighting-stage6/stage6.py",
+      "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "outputs/sequence-weighting-stage9/inputs_stage4.py",
+      "outputs/sequence-weighting-stage9/inputs_stage56.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/audit_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/inputs_stage4.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/inputs_stage56.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/audit_stage9.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/inputs_stage4.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/inputs_stage56.py",
+      "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "outputs/sequence-weighting-stage9/stage9.py",
+      "outputs/sequence-weighting-stage9/verify_stage9_final.py",
+      "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "outputs/sequence-weighting-weighting-contrast-v0131/analyze.py",
+      "outputs/sequence-weighting-weighting-contrast-v0131/reconcile.py"
+    ],
+    "transformers": [
+      "outputs/sequence-weighting-pilot/text_check.py"
+    ]
+  },
+  "missing_literal_paths": [
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/analyze.py",
+      "reference": "outputs/g1-clipping-diagnostic-v0129/results"
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/run.py",
+      "reference": "work/runs/rule-tying-v0128-20261001-01"
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/run.py",
+      "reference": "work/runs/g1-noclip-v0129-20261003-01"
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/run.py",
+      "reference": "work/runs/rule-tying-v0128-20261001-01"
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/run.py",
+      "reference": "work/runs/g1-noclip-v0130-20261003-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133/common.py",
+      "reference": "work/runs/clipping-interaction-v0133-20261004-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133-r1/common.py",
+      "reference": "work/runs/clipping-interaction-v0133-20261004-02"
+    },
+    {
+      "source": "outputs/sequence-weighting-compensation-calibration-v0136/common.py",
+      "reference": "work/runs/compensation-calibration-v0136-20261005-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-factorial-v0132/common.py",
+      "reference": "work/runs/factorial-v0132-20261004-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-gradient-alignment-v0134/common.py",
+      "reference": "work/runs/gradient-alignment-v0134-20261004-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-gradient-alignment-v0134/common.py",
+      "reference": "work/runs/clipping-interaction-v0133-20261004-02"
+    },
+    {
+      "source": "outputs/sequence-weighting-pilot/pilot.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-preconditioning-v0135/common.py",
+      "reference": "work/runs/preconditioning-v0135-20261005-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/analyze_stage10.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/analyze_stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/check_stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/common_stage10.py",
+      "reference": "work/runs/model-precision-v010-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/common_stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/finalize_stage10_notes.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/inputs.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/inputs.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/verify_stage10_final.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/inventory_seeds.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/inventory_seeds.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11-v0128/cap_guard_checks.py",
+      "reference": "work/runs/cap-guard-v0128-20261001-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11-v0128/inventory_seeds.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11-v0128/inventory_seeds.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11-v0128/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "reference": "migration/source-files.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/analyze_stage2.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/prepare_runtime.py",
+      "reference": "migration/validate_models.py"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/prepare_runtime.py",
+      "reference": "migration/PACKAGE_CHECK.txt"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/prepare_runtime.py",
+      "reference": "migration/STATUS.md"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/prepare_runtime.py",
+      "reference": "migration/RUNTIME_CHECK_D.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/stage2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/analyze_stage3.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/analyze_stage3.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/stage3.py",
+      "reference": "work/runs/generalization-v03-20260928-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/stage3.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/stage3.py",
+      "reference": "migration/source-files.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/stage3.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/analysis_checks.py",
+      "reference": "work/runs/baseline-v05-20260929-01/ANALYSIS_CHECKS.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/analyze_stage4.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/analyze_stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/analyze_stage4_r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/analyze_stage4_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/check_roundoff.py",
+      "reference": "work/runs/baseline-v05-20260929-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/finalize_stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/probe_roundoff.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/stage4.py",
+      "reference": "work/runs/controls-v04-20260929-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/analyze_stage5.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/finalize_stage5.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/stage5.py",
+      "reference": "work/runs/baseline-v05-20260929-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/stage5.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/analyze_stage6.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/stage6.py",
+      "reference": "work/runs/utility-v06-20260929-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/stage6.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/analyze_stage7.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/analyze_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/finalize_stage7.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/finalize_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/stage7.py",
+      "reference": "work/stage7-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/stage7.py",
+      "reference": "work/stage7-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/stage7.py",
+      "reference": "work/stage7-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/analyze_stage8.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/analyze_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/audit_stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/finalize_stage8_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/finalize_stage8_r2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/stage8.py",
+      "reference": "work/stage8-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/stage8.py",
+      "reference": "work/stage8-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/stage8.py",
+      "reference": "work/stage8-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/analyze_stage9.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/analyze_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/analyze_stage9_r1.py",
+      "reference": "work/stage9-analysis-repair-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/analyze_stage9_r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/analyze_stage9_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/common_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/common_stage9.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/finalize_stage9_r2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/inputs_stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/stage9.py",
+      "reference": "work/stage9-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/stage9.py",
+      "reference": "work/stage9-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/stage9.py",
+      "reference": "work/stage9-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/stage9.py",
+      "reference": "work/stage9-inventory-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "reference": "work/stage9-analysis-repair-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "reference": "work/stage9-analysis-repair-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "reference": "work/review_stage9_analysis_r1.py"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r1.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "reference": "work/stage9-analysis-repair-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "reference": "work/stage9-analysis-repair-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "reference": "work/review_stage9_analysis_r1.py"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/verify_stage9_final_r2.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-weighting-contrast-v0131/analyze.py",
+      "reference": "work/runs/rule-tying-v0128-20261001-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-weighting-contrast-v0131/reconcile.py",
+      "reference": "work/runs/rule-tying-v0128-20261001-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133/vendor/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133-r1/vendor/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-compensation-calibration-v0136/vendor/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-factorial-v0132/vendor/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-gradient-alignment-v0134/vendor/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-preconditioning-v0135/vendor/model.py",
+      "reference": "work/runs/pilot"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/analyze_stage10.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/analyze_stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/check_stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/common_stage10.py",
+      "reference": "work/runs/model-precision-v010-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/common_stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/inputs.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/inputs.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/stage10.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "reference": "migration/source-files.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "reference": "migration/source-files.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/check_roundoff.py",
+      "reference": "work/runs/baseline-v05-20260929-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/probe_roundoff.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/check_roundoff.py",
+      "reference": "work/runs/baseline-v05-20260929-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/finalize_stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/probe_roundoff.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/finalize_stage5.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analyze_stage6.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/analyze_stage7.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/analyze_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/stage7.py",
+      "reference": "work/stage7-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/stage7.py",
+      "reference": "work/stage7-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/stage7.py",
+      "reference": "work/stage7-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01/stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/analyze_stage7.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/analyze_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/audit_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/finalize_stage7.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/finalize_stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/stage7.py",
+      "reference": "work/stage7-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/stage7.py",
+      "reference": "work/stage7-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/stage7.py",
+      "reference": "work/stage7-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/stage7.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/analyze_stage8.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/analyze_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/audit_stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "reference": "work/stage8-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "reference": "work/stage8-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "reference": "work/stage8-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/analyze_stage8.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/analyze_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/audit_stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/figure-source-r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/finalize_stage8_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "reference": "work/stage8-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "reference": "work/stage8-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "reference": "work/stage8-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r1/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/analyze_stage8.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/analyze_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/audit_stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/audit_stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/figure-source-r2.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/finalize_stage8_r2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "reference": "work/runs/estimator-v08-20260930-01"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "reference": "work/stage8-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "reference": "work/stage8-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "reference": "work/stage8-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/stage8.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9_r1.py",
+      "reference": "work/stage9-analysis-repair-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9_r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/analyze_stage9_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/audit_stage9.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/audit_stage9.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/audit_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/audit_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/common_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/common_stage9.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/inputs_stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "reference": "work/stage9-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "reference": "work/stage9-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "reference": "work/stage9-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "reference": "work/stage9-inventory-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r1/stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9_r1.py",
+      "reference": "work/stage9-analysis-repair-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9_r1.py",
+      "reference": "work/.matplotlib"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/analyze_stage9_r1.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/audit_stage9.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/audit_stage9.py",
+      "reference": "work/runs/"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/audit_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/audit_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/common_stage9.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/common_stage9.py",
+      "reference": "outputs/sequence-weighting-stage"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/finalize_stage9_r2.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/inputs_stage4.py",
+      "reference": "work/runs"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "reference": "work/stage9-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "reference": "work/stage9-analysis-checks-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "reference": "work/stage9-design-review-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "reference": "work/stage9-inventory-20260930-01.json"
+    },
+    {
+      "source": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/stage9.py",
+      "reference": "work/runs"
+    }
+  ],
+  "limitations": [
+    "Module-name existence does not prove import resolution for every historical working directory.",
+    "Dynamic paths and generated runtime files are not fully resolved.",
+    "work/runs references require intentionally excluded original inputs.",
+    "No research code, fixture, shell launcher, installation or training was executed.",
+    "78 import occurrences resolve to modules outside their file directory. Historical sys.path setup and stage-root launch location must be respected; same-named modules in other stages are not interchangeable. This was inspected statically, not runtime-validated."
+  ],
+  "non_sibling_internal_imports": [
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/analyze.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/run.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/run.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0129/run.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/independent_audit.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/independent_audit.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/run.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/run.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/g1-clipping-diagnostic-v0130/run.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133/audit.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133/experiment.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133/experiment.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133-r1/audit.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133-r1/experiment.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-clipping-interaction-v0133-r1/experiment.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-compensation-calibration-v0136/audit.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-compensation-calibration-v0136/audit_steps.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-compensation-calibration-v0136/experiment.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-compensation-calibration-v0136/experiment.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-factorial-v0132/audit.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-factorial-v0132/experiment.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-factorial-v0132/experiment.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-gradient-alignment-v0134/inputs.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-preconditioning-v0135/audit.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-preconditioning-v0135/experiment.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-preconditioning-v0135/experiment.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/check_stage10.py",
+      "module": "verify_stage10_final",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/preparation-evidence/stage11-before-clock.py",
+      "module": "config",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/preparation-evidence/stage11-before-clock.py",
+      "module": "artifacts",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/preparation-evidence/stage11-before-clock.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/preparation-evidence/stage11-before-clock.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage11/preparation-evidence/stage11-before-clock.py",
+      "module": "policies",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01/analyze_stage2.py",
+      "module": "stage2",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/analyze_stage2.py",
+      "module": "stage2",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "module": "stage3",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/analyze_stage3.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "module": "stage4",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/analyze_stage4_r1.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/check_roundoff.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/check_roundoff.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/diagnostics_roundoff.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-analysis-r1/probe_roundoff.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "module": "stage4",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/analyze_stage4_r1.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/check_roundoff.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/check_roundoff.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/diagnostics_roundoff.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/finalize_stage4.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/probe_roundoff.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analysis_checks.py",
+      "module": "stage5",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analysis_checks.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analysis_checks.py",
+      "module": "diagnostics_roundoff",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "module": "stage5",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/analyze_stage5.py",
+      "module": "diagnostics_roundoff",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/audit_stage5.py",
+      "module": "stage5",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/audit_stage5.py",
+      "module": "core",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01/audit_stage5.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analysis_checks.py",
+      "module": "stage5",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analysis_checks.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analysis_checks.py",
+      "module": "diagnostics_roundoff",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "module": "stage5",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/analyze_stage5.py",
+      "module": "diagnostics_roundoff",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/audit_stage5.py",
+      "module": "stage5",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/audit_stage5.py",
+      "module": "core",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/audit_stage5.py",
+      "module": "model",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/finalize_stage5.py",
+      "module": "engine",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_checks.py",
+      "module": "stage6",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_checks.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_core.py",
+      "module": "stage6",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_core.py",
+      "module": "diagnostics",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analysis_core.py",
+      "module": "diagnostics_roundoff",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/analyze_stage6.py",
+      "module": "stage6",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/audit_stage6.py",
+      "module": "stage6",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/audit_stage6.py",
+      "module": "core",
+      "available_elsewhere": true
+    },
+    {
+      "source": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/audit_stage6.py",
+      "module": "model",
+      "available_elsewhere": true
+    }
+  ]
+}

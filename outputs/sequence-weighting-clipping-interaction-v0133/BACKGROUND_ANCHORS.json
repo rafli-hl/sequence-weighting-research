@@ -1,0 +1,34 @@
+[
+  {
+    "path": "AGENTS.md",
+    "sha256": "009f9a7869fceb8fe88219cef8a5be97ec039d04238daf4729a9ce43e499c19c"
+  },
+  {
+    "path": "HANDOFF.md",
+    "sha256": "ed5ae7fcdd99a17dcf8f20d9cfe4a5865bc6fce5e672e9a32c71486cc699c0fa"
+  },
+  {
+    "path": "NEXT_EXPERIMENT.md",
+    "sha256": "a6e863bdf35dfe8d65dff67fe8f93db6867b5f27088a2d641c2c9b2769418642"
+  },
+  {
+    "path": "RUNBOOK.md",
+    "sha256": "8032940838832a1a373da976d563708f6358243a7e59807574b47fd4e68685d1"
+  },
+  {
+    "path": "outputs/sequence-weighting-stage11-v0128/config.py",
+    "sha256": "b3d269d276d870da3a80039c7ac67ad82b67caa9873f63ea7712690f1b7c39ed"
+  },
+  {
+    "path": "outputs/sequence-weighting-stage11-v0128/stage11.py",
+    "sha256": "6864ed7b38202f3af07b7f94eeef621bc9c7b04b452919d91e99b7a6e3e6f9a1"
+  },
+  {
+    "path": "outputs/sequence-weighting-weighting-contrast-v0131/results-fixed-policy-v0131-20261003-01/SYNTHESIS_AND_DECISION.md",
+    "sha256": "869746f82696e89fade4cffaabd78715ebcffc70ea66f2bb6c6f76476093b4d1"
+  },
+  {
+    "path": "outputs/sequence-weighting-pilot/results-mechanism-v02/REPORT.md",
+    "sha256": "a4c2f4c5ae1be37ed0d1ad8aad842a166b5178847a568488af00b68b4059f30a"
+  }
+]

@@ -1,0 +1,35 @@
+{
+    "status":  "source_derivation_before_measured_profiles",
+    "parents":  [
+                    {
+                        "path":  "outputs/sequence-weighting-stage8/core.py",
+                        "sha256":  "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+                    },
+                    {
+                        "path":  "outputs/sequence-weighting-stage8/precision_math.py",
+                        "sha256":  "cf2c2d9533f7086ec9f342cc886dff13a07672c2e624fbde3027fce2d3e7fe94"
+                    },
+                    {
+                        "path":  "outputs/sequence-weighting-stage8/audit_stage8.py",
+                        "sha256":  "be67e97b440d732f843c3289ae97a33ecd11846687109c576d7cfec2c1bde229"
+                    },
+                    {
+                        "path":  "outputs/sequence-weighting-stage8/analyze_stage8.py",
+                        "sha256":  "e13d65a362af437c5601bbfb4e81371f9ed6b7f53f768eb58c025eb17b1ba796"
+                    },
+                    {
+                        "path":  "outputs/sequence-weighting-stage8/check_stage8.py",
+                        "sha256":  "6516f918db884a400358697077c08c45938c99033d18a1df0f3a87d0aeab3f68"
+                    }
+                ],
+    "exact_copies":  [
+                         "core.py",
+                         "precision_math.py"
+                     ],
+    "function_copies":  {
+                            "reference_math.py":  "independent profile, convergence and classification functions from Stage8 audit; imports/constants supplied locally",
+                            "metrics.py":  "Decimal/ranking metric functions from Stage8 analyzer; imports/constants supplied locally"
+                        },
+    "inputs":  "Stage4-6 saved arrays and selection/manifests; no model refits",
+    "checks":  "Parent hashes and copied-function AST equality checked before freeze"
+}

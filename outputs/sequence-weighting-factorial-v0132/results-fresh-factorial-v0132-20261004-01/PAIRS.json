@@ -1,0 +1,1992 @@
+[
+  {
+    "data_seed": 91320101,
+    "seed": 91340101,
+    "primary_instance_group_test_nll": 0.03020153008401394,
+    "group_R_minus_U": 0.04213373363018036,
+    "group_interaction": 0.0036666952073574066,
+    "group_shared_weight_effect": 0.01193220354616642,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9377467632293701,
+          "shared": {
+            "loss": 0.03288087248802185,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04079562425613403,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7395637035369873,
+            "accuracy": 0.0625
+          }
+        },
+        "validation": {
+          "loss": 0.9562762379646301,
+          "shared": {
+            "loss": 0.03326905146241188,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04339545965194702,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7921640872955322,
+            "accuracy": 0.0634765625
+          }
+        },
+        "test": {
+          "loss": 0.9553428292274475,
+          "shared": {
+            "loss": 0.03318767249584198,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.043356455862522125,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7894842624664307,
+            "accuracy": 0.0634765625
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9691015481948853,
+          "shared": {
+            "loss": 0.05296935886144638,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07844505459070206,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7758901119232178,
+            "accuracy": 0.0654296875
+          }
+        },
+        "validation": {
+          "loss": 0.9899379014968872,
+          "shared": {
+            "loss": 0.054250046610832214,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08434204757213593,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.831221580505371,
+            "accuracy": 0.0615234375
+          }
+        },
+        "test": {
+          "loss": 0.9903683066368103,
+          "shared": {
+            "loss": 0.054092276841402054,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08549018949270248,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.8315224647521973,
+            "accuracy": 0.06201171875
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9457119107246399,
+          "shared": {
+            "loss": 0.03831551969051361,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05008884519338608,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7487316131591797,
+            "accuracy": 0.0576171875
+          }
+        },
+        "validation": {
+          "loss": 0.9604464173316956,
+          "shared": {
+            "loss": 0.03898309916257858,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05286869406700134,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.789487361907959,
+            "accuracy": 0.0615234375
+          }
+        },
+        "test": {
+          "loss": 0.9602513313293457,
+          "shared": {
+            "loss": 0.03893054649233818,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05345531180500984,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.7883682250976562,
+            "accuracy": 0.06494140625
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.965472936630249,
+          "shared": {
+            "loss": 0.04938255995512009,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06622519344091415,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.780811071395874,
+            "accuracy": 0.07177734375
+          }
+        },
+        "validation": {
+          "loss": 0.9949508309364319,
+          "shared": {
+            "loss": 0.0503908172249794,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07145512849092484,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.863006114959717,
+            "accuracy": 0.064453125
+          }
+        },
+        "test": {
+          "loss": 0.9955376386642456,
+          "shared": {
+            "loss": 0.05049949139356613,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07172463834285736,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8643887042999268,
+            "accuracy": 0.06201171875
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.03502547740936279
+  },
+  {
+    "data_seed": 91320101,
+    "seed": 91340151,
+    "primary_instance_group_test_nll": 0.041231393814086914,
+    "group_R_minus_U": 0.057066723704338074,
+    "group_interaction": 0.004119277000427246,
+    "group_shared_weight_effect": 0.01583532989025116,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9436429142951965,
+          "shared": {
+            "loss": 0.03505386412143707,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.040106453001499176,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7557685375213623,
+            "accuracy": 0.064453125
+          }
+        },
+        "validation": {
+          "loss": 0.9558756351470947,
+          "shared": {
+            "loss": 0.03535298630595207,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04206521064043045,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7902088165283203,
+            "accuracy": 0.05859375
+          }
+        },
+        "test": {
+          "loss": 0.9541857242584229,
+          "shared": {
+            "loss": 0.03540785610675812,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04191581904888153,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.785233497619629,
+            "accuracy": 0.0654296875
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9809869527816772,
+          "shared": {
+            "loss": 0.05977078527212143,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.09207069128751755,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.791119337081909,
+            "accuracy": 0.060546875
+          }
+        },
+        "validation": {
+          "loss": 0.9976112842559814,
+          "shared": {
+            "loss": 0.06085129454731941,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.09855110943317413,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8334314823150635,
+            "accuracy": 0.0615234375
+          }
+        },
+        "test": {
+          "loss": 0.9938327074050903,
+          "shared": {
+            "loss": 0.06117187812924385,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0989825427532196,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8213436603546143,
+            "accuracy": 0.0634765625
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9540603160858154,
+          "shared": {
+            "loss": 0.0441485196352005,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05367494747042656,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.764357566833496,
+            "accuracy": 0.0595703125
+          }
+        },
+        "validation": {
+          "loss": 0.9631496667861938,
+          "shared": {
+            "loss": 0.04460417106747627,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05553876608610153,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.789306163787842,
+            "accuracy": 0.05859375
+          }
+        },
+        "test": {
+          "loss": 0.9615234136581421,
+          "shared": {
+            "loss": 0.04478681832551956,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05569151043891907,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7840914726257324,
+            "accuracy": 0.06494140625
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9702828526496887,
+          "shared": {
+            "loss": 0.048153672367334366,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07427014410495758,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7884247303009033,
+            "accuracy": 0.06787109375
+          }
+        },
+        "validation": {
+          "loss": 0.9910389184951782,
+          "shared": {
+            "loss": 0.04883978143334389,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07962216436862946,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8446550369262695,
+            "accuracy": 0.068359375
+          }
+        },
+        "test": {
+          "loss": 0.9889132380485535,
+          "shared": {
+            "loss": 0.04906049370765686,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08108757436275482,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8365914821624756,
+            "accuracy": 0.06591796875
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.03964698314666748
+  },
+  {
+    "data_seed": 91320102,
+    "seed": 91340201,
+    "primary_instance_group_test_nll": 0.03565884195268154,
+    "group_R_minus_U": 0.06373000517487526,
+    "group_interaction": 0.008705604821443558,
+    "group_shared_weight_effect": 0.028071163222193718,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9409487843513489,
+          "shared": {
+            "loss": 0.03692245110869408,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.043767787516117096,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7421562671661377,
+            "accuracy": 0.06640625
+          }
+        },
+        "validation": {
+          "loss": 0.9586895704269409,
+          "shared": {
+            "loss": 0.03748270124197006,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04610520973801613,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.792480945587158,
+            "accuracy": 0.068359375
+          }
+        },
+        "test": {
+          "loss": 0.9639703035354614,
+          "shared": {
+            "loss": 0.03739594295620918,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04605279490351677,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.808461904525757,
+            "accuracy": 0.06103515625
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9851816892623901,
+          "shared": {
+            "loss": 0.061026930809020996,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10231451690196991,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.792203664779663,
+            "accuracy": 0.060546875
+          }
+        },
+        "validation": {
+          "loss": 1.0013710260391235,
+          "shared": {
+            "loss": 0.062426306307315826,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10804729908704758,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.83363938331604,
+            "accuracy": 0.06640625
+          }
+        },
+        "test": {
+          "loss": 1.0078586339950562,
+          "shared": {
+            "loss": 0.06226736307144165,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10978280007839203,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8515255451202393,
+            "accuracy": 0.06103515625
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9542982578277588,
+          "shared": {
+            "loss": 0.04517830163240433,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06409703195095062,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7536191940307617,
+            "accuracy": 0.0595703125
+          }
+        },
+        "validation": {
+          "loss": 0.9694146513938904,
+          "shared": {
+            "loss": 0.045813389122486115,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07093047350645065,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7915003299713135,
+            "accuracy": 0.068359375
+          }
+        },
+        "test": {
+          "loss": 0.9732169508934021,
+          "shared": {
+            "loss": 0.04596041142940521,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06977115571498871,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8039193153381348,
+            "accuracy": 0.0634765625
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9723070859909058,
+          "shared": {
+            "loss": 0.051413122564554214,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07290570437908173,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7926025390625,
+            "accuracy": 0.0625
+          }
+        },
+        "validation": {
+          "loss": 0.9908232688903809,
+          "shared": {
+            "loss": 0.05234064534306526,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07683088630437851,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8432981967926025,
+            "accuracy": 0.0654296875
+          }
+        },
+        "test": {
+          "loss": 0.9984701871871948,
+          "shared": {
+            "loss": 0.05241412669420242,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07735883444547653,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8656375408172607,
+            "accuracy": 0.05908203125
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.04388833045959473
+  },
+  {
+    "data_seed": 91320102,
+    "seed": 91340251,
+    "primary_instance_group_test_nll": 0.03909558057785034,
+    "group_R_minus_U": 0.05960236117243767,
+    "group_interaction": 0.0007084831595420837,
+    "group_shared_weight_effect": 0.020506780594587326,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9377309083938599,
+          "shared": {
+            "loss": 0.033351220190525055,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.03900625929236412,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.740835428237915,
+            "accuracy": 0.07666015625
+          }
+        },
+        "validation": {
+          "loss": 0.9571443796157837,
+          "shared": {
+            "loss": 0.03359704092144966,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04216405004262924,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7956719398498535,
+            "accuracy": 0.0634765625
+          }
+        },
+        "test": {
+          "loss": 0.9583496451377869,
+          "shared": {
+            "loss": 0.03368407487869263,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04230693355202675,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.799057960510254,
+            "accuracy": 0.060546875
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9845784902572632,
+          "shared": {
+            "loss": 0.06275752186775208,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.09493773430585861,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.7960400581359863,
+            "accuracy": 0.0615234375
+          }
+        },
+        "validation": {
+          "loss": 1.0070005655288696,
+          "shared": {
+            "loss": 0.06461608409881592,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10400708764791489,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8523786067962646,
+            "accuracy": 0.06640625
+          }
+        },
+        "test": {
+          "loss": 1.0007189512252808,
+          "shared": {
+            "loss": 0.06565345078706741,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10190929472446442,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.834594249725342,
+            "accuracy": 0.06640625
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9513528347015381,
+          "shared": {
+            "loss": 0.04416104033589363,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.056466396898031235,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7534308433532715,
+            "accuracy": 0.07373046875
+          }
+        },
+        "validation": {
+          "loss": 0.9683098793029785,
+          "shared": {
+            "loss": 0.04492936283349991,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0636216253042221,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7963788509368896,
+            "accuracy": 0.0654296875
+          }
+        },
+        "test": {
+          "loss": 0.9674290418624878,
+          "shared": {
+            "loss": 0.04497838765382767,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06245947256684303,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.794849395751953,
+            "accuracy": 0.06298828125
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9725105166435242,
+          "shared": {
+            "loss": 0.0499238483607769,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0752158835530281,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.792391300201416,
+            "accuracy": 0.0673828125
+          }
+        },
+        "validation": {
+          "loss": 1.0003392696380615,
+          "shared": {
+            "loss": 0.0507119856774807,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08133787661790848,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8689680099487305,
+            "accuracy": 0.0625
+          }
+        },
+        "test": {
+          "loss": 0.9955035448074341,
+          "shared": {
+            "loss": 0.05129081755876541,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08104827255010605,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8541715145111084,
+            "accuracy": 0.06787109375
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.042369306087493896
+  },
+  {
+    "data_seed": 91320103,
+    "seed": 91340301,
+    "primary_instance_group_test_nll": 0.0322970487177372,
+    "group_R_minus_U": 0.04592907801270485,
+    "group_interaction": -0.0011397898197174072,
+    "group_shared_weight_effect": 0.013632029294967651,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9394537806510925,
+          "shared": {
+            "loss": 0.03365601226687431,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04283216595649719,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.741873264312744,
+            "accuracy": 0.07373046875
+          }
+        },
+        "validation": {
+          "loss": 0.9635034799575806,
+          "shared": {
+            "loss": 0.033964693546295166,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04500608891248703,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.811539649963379,
+            "accuracy": 0.060546875
+          }
+        },
+        "test": {
+          "loss": 0.9625709056854248,
+          "shared": {
+            "loss": 0.03397688269615173,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.045258428901433945,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8084774017333984,
+            "accuracy": 0.05517578125
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9759745001792908,
+          "shared": {
+            "loss": 0.05352458357810974,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08347538113594055,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.790923595428467,
+            "accuracy": 0.0791015625
+          }
+        },
+        "validation": {
+          "loss": 1.004198670387268,
+          "shared": {
+            "loss": 0.05496303364634514,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08909297734498978,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.868539810180664,
+            "accuracy": 0.0615234375
+          }
+        },
+        "test": {
+          "loss": 1.0033771991729736,
+          "shared": {
+            "loss": 0.05456709861755371,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0911875069141388,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.864377021789551,
+            "accuracy": 0.0556640625
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9491221308708191,
+          "shared": {
+            "loss": 0.041448235511779785,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05518091470003128,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.750737190246582,
+            "accuracy": 0.06640625
+          }
+        },
+        "validation": {
+          "loss": 0.9691197276115417,
+          "shared": {
+            "loss": 0.0417180098593235,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05891676992177963,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8067240715026855,
+            "accuracy": 0.0625
+          }
+        },
+        "test": {
+          "loss": 0.9684747457504272,
+          "shared": {
+            "loss": 0.041762396693229675,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0594603531062603,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.804201126098633,
+            "accuracy": 0.056640625
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9713223576545715,
+          "shared": {
+            "loss": 0.04725904017686844,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07154598832130432,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.795161724090576,
+            "accuracy": 0.083984375
+          }
+        },
+        "validation": {
+          "loss": 1.0068857669830322,
+          "shared": {
+            "loss": 0.04820733517408371,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07691139727830887,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.895538806915283,
+            "accuracy": 0.05859375
+          }
+        },
+        "test": {
+          "loss": 1.0033332109451294,
+          "shared": {
+            "loss": 0.048088882118463516,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07812537252902985,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8837852478027344,
+            "accuracy": 0.05908203125
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.04080629348754883
+  },
+  {
+    "data_seed": 91320103,
+    "seed": 91340351,
+    "primary_instance_group_test_nll": 0.027195364236831665,
+    "group_R_minus_U": 0.047624148428440094,
+    "group_interaction": 0.005595088005065918,
+    "group_shared_weight_effect": 0.02042878419160843,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9355438351631165,
+          "shared": {
+            "loss": 0.03226282447576523,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.041371721774339676,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.732996702194214,
+            "accuracy": 0.07080078125
+          }
+        },
+        "validation": {
+          "loss": 0.964134693145752,
+          "shared": {
+            "loss": 0.03276000916957855,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.044425372034311295,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.815218687057495,
+            "accuracy": 0.0625
+          }
+        },
+        "test": {
+          "loss": 0.9644516110420227,
+          "shared": {
+            "loss": 0.03290828317403793,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04431627690792084,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8161301612854004,
+            "accuracy": 0.0537109375
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9778133630752563,
+          "shared": {
+            "loss": 0.05647152289748192,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08379943668842316,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7931692600250244,
+            "accuracy": 0.0673828125
+          }
+        },
+        "validation": {
+          "loss": 0.9989883303642273,
+          "shared": {
+            "loss": 0.05768980085849762,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08799199759960175,
+            "accuracy": 0.9990234375
+          },
+          "instance": {
+            "loss": 2.851283073425293,
+            "accuracy": 0.0654296875
+          }
+        },
+        "test": {
+          "loss": 1.0029962062835693,
+          "shared": {
+            "loss": 0.058200813829898834,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.09194042533636093,
+            "accuracy": 0.9990234375
+          },
+          "instance": {
+            "loss": 2.858847141265869,
+            "accuracy": 0.0546875
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9479542374610901,
+          "shared": {
+            "loss": 0.04018477723002434,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.056404273957014084,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7472736835479736,
+            "accuracy": 0.06591796875
+          }
+        },
+        "validation": {
+          "loss": 0.9703227281570435,
+          "shared": {
+            "loss": 0.040969640016555786,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.060853078961372375,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.809145450592041,
+            "accuracy": 0.0634765625
+          }
+        },
+        "test": {
+          "loss": 0.9713560342788696,
+          "shared": {
+            "loss": 0.04125429689884186,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06194751709699631,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.810866355895996,
+            "accuracy": 0.05419921875
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9680774807929993,
+          "shared": {
+            "loss": 0.046727076172828674,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0647021234035492,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7928030490875244,
+            "accuracy": 0.07275390625
+          }
+        },
+        "validation": {
+          "loss": 0.9929735064506531,
+          "shared": {
+            "loss": 0.047417569905519485,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06750841438770294,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8639941215515137,
+            "accuracy": 0.0634765625
+          }
+        },
+        "test": {
+          "loss": 0.9961060285568237,
+          "shared": {
+            "loss": 0.047722227871418,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06871409714221954,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8718814849853516,
+            "accuracy": 0.0556640625
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.03854459524154663
+  },
+  {
+    "data_seed": 91320104,
+    "seed": 91340401,
+    "primary_instance_group_test_nll": 0.05951305106282234,
+    "group_R_minus_U": 0.07415738701820374,
+    "group_interaction": 0.0020527318120002747,
+    "group_shared_weight_effect": 0.014644335955381393,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9357719421386719,
+          "shared": {
+            "loss": 0.036036815494298935,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04137507826089859,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7299036979675293,
+            "accuracy": 0.0693359375
+          }
+        },
+        "validation": {
+          "loss": 0.9670295119285583,
+          "shared": {
+            "loss": 0.03610524535179138,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.044646162539720535,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8203372955322266,
+            "accuracy": 0.048828125
+          }
+        },
+        "test": {
+          "loss": 0.9601917266845703,
+          "shared": {
+            "loss": 0.03627918288111687,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04391343891620636,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.800382137298584,
+            "accuracy": 0.06298828125
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9813660979270935,
+          "shared": {
+            "loss": 0.06091192737221718,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10541342943906784,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.777772903442383,
+            "accuracy": 0.07958984375
+          }
+        },
+        "validation": {
+          "loss": 1.0290417671203613,
+          "shared": {
+            "loss": 0.06305694580078125,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.12413077801465988,
+            "accuracy": 0.9970703125
+          },
+          "instance": {
+            "loss": 2.899937629699707,
+            "accuracy": 0.0546875
+          }
+        },
+        "test": {
+          "loss": 1.0189614295959473,
+          "shared": {
+            "loss": 0.06286074221134186,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.1180708259344101,
+            "accuracy": 0.998046875
+          },
+          "instance": {
+            "loss": 2.875952959060669,
+            "accuracy": 0.064453125
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9454662799835205,
+          "shared": {
+            "loss": 0.04469131678342819,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05215615779161453,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.739551305770874,
+            "accuracy": 0.06396484375
+          }
+        },
+        "validation": {
+          "loss": 0.9732882380485535,
+          "shared": {
+            "loss": 0.04530578851699829,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05659928917884827,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.817959785461426,
+            "accuracy": 0.0478515625
+          }
+        },
+        "test": {
+          "loss": 0.9678738713264465,
+          "shared": {
+            "loss": 0.04529593139886856,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.057531408965587616,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.8007941246032715,
+            "accuracy": 0.0625
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9788215756416321,
+          "shared": {
+            "loss": 0.05493872985243797,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.09094136953353882,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7905848026275635,
+            "accuracy": 0.087890625
+          }
+        },
+        "validation": {
+          "loss": 1.0423626899719238,
+          "shared": {
+            "loss": 0.05574815347790718,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10496076196432114,
+            "accuracy": 0.998046875
+          },
+          "instance": {
+            "loss": 2.966379165649414,
+            "accuracy": 0.0576171875
+          }
+        },
+        "test": {
+          "loss": 1.0304789543151855,
+          "shared": {
+            "loss": 0.05577936768531799,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10240012407302856,
+            "accuracy": 0.99853515625
+          },
+          "instance": {
+            "loss": 2.9332573413848877,
+            "accuracy": 0.06103515625
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.05876970291137695
+  },
+  {
+    "data_seed": 91320104,
+    "seed": 91340451,
+    "primary_instance_group_test_nll": 0.02480834349989891,
+    "group_R_minus_U": 0.04312443733215332,
+    "group_interaction": 0.004365704953670502,
+    "group_shared_weight_effect": 0.01831609383225441,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9401856660842896,
+          "shared": {
+            "loss": 0.03278554975986481,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.03914489969611168,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.748626470565796,
+            "accuracy": 0.06201171875
+          }
+        },
+        "validation": {
+          "loss": 0.9609624743461609,
+          "shared": {
+            "loss": 0.03318575769662857,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.041360922157764435,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.808340311050415,
+            "accuracy": 0.044921875
+          }
+        },
+        "test": {
+          "loss": 0.956048309803009,
+          "shared": {
+            "loss": 0.03334323689341545,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04152928292751312,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7932724952697754,
+            "accuracy": 0.06201171875
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9695968627929688,
+          "shared": {
+            "loss": 0.05067787691950798,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07961168140172958,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.77850079536438,
+            "accuracy": 0.05908203125
+          }
+        },
+        "validation": {
+          "loss": 0.9938399195671082,
+          "shared": {
+            "loss": 0.05236821249127388,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.09036631882190704,
+            "accuracy": 0.9990234375
+          },
+          "instance": {
+            "loss": 2.838785171508789,
+            "accuracy": 0.0478515625
+          }
+        },
+        "test": {
+          "loss": 0.984938383102417,
+          "shared": {
+            "loss": 0.05199158936738968,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08465372025966644,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.8181698322296143,
+            "accuracy": 0.06103515625
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9493522644042969,
+          "shared": {
+            "loss": 0.03928471729159355,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.053994521498680115,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.754777431488037,
+            "accuracy": 0.0595703125
+          }
+        },
+        "validation": {
+          "loss": 0.9692441821098328,
+          "shared": {
+            "loss": 0.04004210978746414,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.059133052825927734,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8085570335388184,
+            "accuracy": 0.0439453125
+          }
+        },
+        "test": {
+          "loss": 0.9640323519706726,
+          "shared": {
+            "loss": 0.04001062363386154,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05766252428293228,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.794424057006836,
+            "accuracy": 0.0625
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9609704613685608,
+          "shared": {
+            "loss": 0.043795034289360046,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.060572151094675064,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7785441875457764,
+            "accuracy": 0.06103515625
+          }
+        },
+        "validation": {
+          "loss": 0.9840686321258545,
+          "shared": {
+            "loss": 0.044652923941612244,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06469087302684784,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8428616523742676,
+            "accuracy": 0.05078125
+          }
+        },
+        "test": {
+          "loss": 0.976233720779419,
+          "shared": {
+            "loss": 0.04459115117788315,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06415477395057678,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.819955348968506,
+            "accuracy": 0.0615234375
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.02889007329940796
+  },
+  {
+    "data_seed": 91320105,
+    "seed": 91340501,
+    "primary_instance_group_test_nll": 0.04253697395324707,
+    "group_R_minus_U": 0.0638716071844101,
+    "group_interaction": 0.006622448563575745,
+    "group_shared_weight_effect": 0.021334633231163025,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9323916435241699,
+          "shared": {
+            "loss": 0.03606896474957466,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04481324926018715,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7162928581237793,
+            "accuracy": 0.08837890625
+          }
+        },
+        "validation": {
+          "loss": 0.9663019776344299,
+          "shared": {
+            "loss": 0.036393553018569946,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0473499558866024,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.815162420272827,
+            "accuracy": 0.0625
+          }
+        },
+        "test": {
+          "loss": 0.966032087802887,
+          "shared": {
+            "loss": 0.03662291169166565,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04709809273481369,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.814375162124634,
+            "accuracy": 0.06103515625
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9906097650527954,
+          "shared": {
+            "loss": 0.06389941275119781,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.10436847060918808,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8035614490509033,
+            "accuracy": 0.0810546875
+          }
+        },
+        "validation": {
+          "loss": 1.0329573154449463,
+          "shared": {
+            "loss": 0.06536043435335159,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.11192818731069565,
+            "accuracy": 0.9990234375
+          },
+          "instance": {
+            "loss": 2.9215831756591797,
+            "accuracy": 0.0546875
+          }
+        },
+        "test": {
+          "loss": 1.025632381439209,
+          "shared": {
+            "loss": 0.06548580527305603,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.11096969991922379,
+            "accuracy": 0.9990234375
+          },
+          "instance": {
+            "loss": 2.9004411697387695,
+            "accuracy": 0.06689453125
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9492603540420532,
+          "shared": {
+            "loss": 0.047026000916957855,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06181875616312027,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.738936424255371,
+            "accuracy": 0.078125
+          }
+        },
+        "validation": {
+          "loss": 0.9722177982330322,
+          "shared": {
+            "loss": 0.047427527606487274,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06633027642965317,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8028955459594727,
+            "accuracy": 0.0615234375
+          }
+        },
+        "test": {
+          "loss": 0.9723225831985474,
+          "shared": {
+            "loss": 0.04767666012048721,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06512150168418884,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8041696548461914,
+            "accuracy": 0.060546875
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9814956784248352,
+          "shared": {
+            "loss": 0.05266488343477249,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08235521614551544,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.809466600418091,
+            "accuracy": 0.08544921875
+          }
+        },
+        "validation": {
+          "loss": 1.031164288520813,
+          "shared": {
+            "loss": 0.05344812572002411,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0868012011051178,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.9532432556152344,
+            "accuracy": 0.0556640625
+          }
+        },
+        "test": {
+          "loss": 1.023830771446228,
+          "shared": {
+            "loss": 0.053739309310913086,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08632384240627289,
+            "accuracy": 0.99951171875
+          },
+          "instance": {
+            "loss": 2.9314286708831787,
+            "accuracy": 0.06884765625
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.05960029363632202
+  },
+  {
+    "data_seed": 91320105,
+    "seed": 91340551,
+    "primary_instance_group_test_nll": 0.020511159673333168,
+    "group_R_minus_U": 0.03505781665444374,
+    "group_interaction": 0.005446743220090866,
+    "group_shared_weight_effect": 0.014546656981110573,
+    "arm_metrics": {
+      "U": {
+        "train": {
+          "loss": 0.9416711330413818,
+          "shared": {
+            "loss": 0.040660541504621506,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.043602198362350464,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.740750789642334,
+            "accuracy": 0.076171875
+          }
+        },
+        "validation": {
+          "loss": 0.961511492729187,
+          "shared": {
+            "loss": 0.04115718975663185,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04698271304368973,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7963945865631104,
+            "accuracy": 0.0625
+          }
+        },
+        "test": {
+          "loss": 0.9647018909454346,
+          "shared": {
+            "loss": 0.04103165119886398,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.04625105485320091,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8068227767944336,
+            "accuracy": 0.06005859375
+          }
+        }
+      },
+      "R": {
+        "train": {
+          "loss": 0.9653869867324829,
+          "shared": {
+            "loss": 0.05766797065734863,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.07604243606328964,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.762450695037842,
+            "accuracy": 0.072265625
+          }
+        },
+        "validation": {
+          "loss": 0.9880527853965759,
+          "shared": {
+            "loss": 0.05948597937822342,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08232006430625916,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8223519325256348,
+            "accuracy": 0.060546875
+          }
+        },
+        "test": {
+          "loss": 0.9897783398628235,
+          "shared": {
+            "loss": 0.05875754728913307,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.08130887150764465,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.82926869392395,
+            "accuracy": 0.06396484375
+          }
+        }
+      },
+      "S": {
+        "train": {
+          "loss": 0.9501758813858032,
+          "shared": {
+            "loss": 0.04851964861154556,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0538589172065258,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7481489181518555,
+            "accuracy": 0.07275390625
+          }
+        },
+        "validation": {
+          "loss": 0.9687387943267822,
+          "shared": {
+            "loss": 0.04959607124328613,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.058803535997867584,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.797816514968872,
+            "accuracy": 0.0576171875
+          }
+        },
+        "test": {
+          "loss": 0.9700937271118164,
+          "shared": {
+            "loss": 0.04907439276576042,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.05807434022426605,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8031325340270996,
+            "accuracy": 0.06298828125
+          }
+        }
+      },
+      "I": {
+        "train": {
+          "loss": 0.9571885466575623,
+          "shared": {
+            "loss": 0.04917699471116066,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.0606924407184124,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.7616961002349854,
+            "accuracy": 0.0751953125
+          }
+        },
+        "validation": {
+          "loss": 0.9800183773040771,
+          "shared": {
+            "loss": 0.05024971440434456,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06450024247169495,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.825305461883545,
+            "accuracy": 0.0634765625
+          }
+        },
+        "test": {
+          "loss": 0.9842371940612793,
+          "shared": {
+            "loss": 0.05006502568721771,
+            "accuracy": 1.0
+          },
+          "group": {
+            "loss": 0.06403884291648865,
+            "accuracy": 1.0
+          },
+          "instance": {
+            "loss": 2.8386075496673584,
+            "accuracy": 0.0634765625
+          }
+        }
+      }
+    },
+    "total_test_R_minus_U": 0.025076448917388916
+  }
+]

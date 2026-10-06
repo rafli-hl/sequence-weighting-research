@@ -1,0 +1,34 @@
+{
+  "status": "PASS_NUMERICAL_AND_PAIRING_AUDIT",
+  "utc": "2026-10-04T07:31:35.609547+00:00",
+  "manifest_sha256": "9405cf967cc6d9c38453fc1994e94d4dbd525b8872e48f19fd82cfdd971141b3",
+  "checkpoint_reevaluations": 50,
+  "full_input_regenerations": 10,
+  "adaptation_update_trace_rows": 6400,
+  "objective_fixtures": {
+    "status": "PASS",
+    "objective_and_gradient_arms": [
+      "U",
+      "R",
+      "S",
+      "I"
+    ],
+    "tolerance": 1e-07
+  },
+  "tolerance_nll": 2e-06,
+  "paired_seed_rows": 10,
+  "corpus_rows": 5,
+  "trajectories": 40,
+  "source_review_required_separately": true,
+  "output_hashes": {
+    "ALLOCATION.json": "79a193ffbcaa70db44273b7a929cdc80fb5b63285361ae87bb61a6ec7c8d19a0",
+    "CORPUS_CONTRASTS.csv": "dc31bbf2c89bd74e80d43ecf80aa6c7d4f1d5cb749400917c3d861b90178daca",
+    "CORPUS_SUMMARY.json": "2c7398f4cf5e74957997636f28645055909615f44d851e822135357ef04ec627",
+    "PAIRS.json": "1cc3cbc5c30db816feda0e5f9f821a2cc2cbc6cbd429ffca8dd80a361a9119ae"
+  },
+  "limitations": [
+    "Fixed optimizer/clipping/teacher-forced synthetic design only",
+    "No universal mechanism or mediation proof",
+    "Trace/source review is evidence of execution policy; intermediate updates not independently replayed"
+  ]
+}

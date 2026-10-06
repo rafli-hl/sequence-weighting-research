@@ -1,0 +1,2990 @@
+{
+  "status": "CANDIDATE_RAW_ARRAY_CHECKS_PASS_PENDING_OUTPUT_REVIEW",
+  "elapsed_seconds": 143.80434376199997,
+  "audit_source_sha256": "aee6f70e0decdb5b2b44a27090b2cfb212df9d690aee951d785428806e0d9071",
+  "timing_scope": "monotonic from main after heavyweight imports; external timeout covers startup",
+  "run": "/mnt/d/codex/sequence-weighting-research/work/runs/rule-tying-v0128-20261001-01",
+  "analysis": "/mnt/d/codex/sequence-weighting-research/outputs/sequence-weighting-stage11-v0128/results-analysis-20261002-01",
+  "trajectories": 212,
+  "raw_checkpoint_rows": 1272,
+  "checkpoint_evaluations": 214,
+  "checkpoint_identity_list": [
+    "tune-G16-w64-d88111-s140101-g02-random@10",
+    "tune-G16-w64-d88111-s140101-g02-uniform@10",
+    "tune-G16-w64-d88321-s140201-g02-random@10",
+    "tune-G16-w64-d88321-s140201-g02-uniform@10",
+    "tune-G16-w128-d88111-s140101-g02-random@10",
+    "tune-G16-w128-d88111-s140101-g02-uniform@10",
+    "tune-G16-w128-d88321-s140201-g02-random@10",
+    "tune-G16-w128-d88321-s140201-g02-uniform@10",
+    "tune-G16-w256-d88111-s140101-g02-random@10",
+    "tune-G16-w256-d88111-s140101-g02-uniform@10",
+    "tune-G16-w256-d88321-s140201-g02-random@10",
+    "tune-G16-w256-d88321-s140201-g02-uniform@10",
+    "tune-G1-w64-d88111-s140101-g02-random@10",
+    "tune-G1-w64-d88111-s140101-g02-uniform@10",
+    "tune-G1-w64-d88321-s140201-g02-random@10",
+    "tune-G1-w64-d88321-s140201-g02-uniform@10",
+    "tune-G1-w128-d88111-s140101-g02-random@10",
+    "tune-G1-w128-d88111-s140101-g02-uniform@10",
+    "tune-G1-w128-d88321-s140201-g02-random@10",
+    "tune-G1-w128-d88321-s140201-g02-uniform@10",
+    "tune-G1-w256-d88111-s140101-g02-random@10",
+    "tune-G1-w256-d88111-s140101-g02-uniform@10",
+    "tune-G1-w256-d88321-s140201-g02-random@10",
+    "tune-G1-w256-d88321-s140201-g02-uniform@10",
+    "confirm-G16-w64-d88547-s150101-g02-random@10",
+    "confirm-G16-w64-d88547-s150101-g02-uniform@10",
+    "confirm-G16-w64-d88547-s150201-g02-random@10",
+    "confirm-G16-w64-d88547-s150201-g02-uniform@10",
+    "confirm-G16-w64-d88771-s150101-g02-random@10",
+    "confirm-G16-w64-d88771-s150101-g02-uniform@10",
+    "confirm-G16-w64-d88771-s150201-g02-random@10",
+    "confirm-G16-w64-d88771-s150201-g02-uniform@10",
+    "confirm-G16-w64-d88993-s150101-g02-random@10",
+    "confirm-G16-w64-d88993-s150101-g02-uniform@10",
+    "confirm-G16-w64-d88993-s150201-g02-random@10",
+    "confirm-G16-w64-d88993-s150201-g02-uniform@10",
+    "confirm-G16-w64-d89203-s150101-g02-random@10",
+    "confirm-G16-w64-d89203-s150101-g02-uniform@10",
+    "confirm-G16-w64-d89203-s150201-g02-random@10",
+    "confirm-G16-w64-d89203-s150201-g02-uniform@10",
+    "confirm-G16-w64-d89431-s150101-g02-random@10",
+    "confirm-G16-w64-d89431-s150101-g02-uniform@10",
+    "confirm-G16-w64-d89431-s150201-g02-random@10",
+    "confirm-G16-w64-d89431-s150201-g02-uniform@10",
+    "confirm-G16-w128-d88547-s150101-g02-random@3",
+    "confirm-G16-w128-d88547-s150101-g02-random@10",
+    "confirm-G16-w128-d88547-s150101-g02-uniform@3",
+    "confirm-G16-w128-d88547-s150101-g02-uniform@10",
+    "confirm-G16-w128-d88547-s150201-g02-random@3",
+    "confirm-G16-w128-d88547-s150201-g02-random@10",
+    "confirm-G16-w128-d88547-s150201-g02-uniform@3",
+    "confirm-G16-w128-d88547-s150201-g02-uniform@10",
+    "confirm-G16-w128-d88771-s150101-g02-random@3",
+    "confirm-G16-w128-d88771-s150101-g02-random@10",
+    "confirm-G16-w128-d88771-s150101-g02-uniform@3",
+    "confirm-G16-w128-d88771-s150101-g02-uniform@10",
+    "confirm-G16-w128-d88771-s150201-g02-random@3",
+    "confirm-G16-w128-d88771-s150201-g02-random@10",
+    "confirm-G16-w128-d88771-s150201-g02-uniform@3",
+    "confirm-G16-w128-d88771-s150201-g02-uniform@10",
+    "confirm-G16-w128-d88993-s150101-g02-random@3",
+    "confirm-G16-w128-d88993-s150101-g02-random@10",
+    "confirm-G16-w128-d88993-s150101-g02-uniform@3",
+    "confirm-G16-w128-d88993-s150101-g02-uniform@10",
+    "confirm-G16-w128-d88993-s150201-g02-random@3",
+    "confirm-G16-w128-d88993-s150201-g02-random@10",
+    "confirm-G16-w128-d88993-s150201-g02-uniform@3",
+    "confirm-G16-w128-d88993-s150201-g02-uniform@10",
+    "confirm-G16-w128-d89203-s150101-g02-random@3",
+    "confirm-G16-w128-d89203-s150101-g02-random@10",
+    "confirm-G16-w128-d89203-s150101-g02-uniform@3",
+    "confirm-G16-w128-d89203-s150101-g02-uniform@10",
+    "confirm-G16-w128-d89203-s150201-g02-random@3",
+    "confirm-G16-w128-d89203-s150201-g02-random@10",
+    "confirm-G16-w128-d89203-s150201-g02-uniform@3",
+    "confirm-G16-w128-d89203-s150201-g02-uniform@10",
+    "confirm-G16-w128-d89431-s150101-g02-random@3",
+    "confirm-G16-w128-d89431-s150101-g02-random@10",
+    "confirm-G16-w128-d89431-s150101-g02-uniform@3",
+    "confirm-G16-w128-d89431-s150101-g02-uniform@10",
+    "confirm-G16-w128-d89431-s150201-g02-random@3",
+    "confirm-G16-w128-d89431-s150201-g02-random@10",
+    "confirm-G16-w128-d89431-s150201-g02-uniform@3",
+    "confirm-G16-w128-d89431-s150201-g02-uniform@10",
+    "confirm-G16-w256-d88547-s150101-g02-random@10",
+    "confirmation-G16-w256-d88547-s150101@R0",
+    "confirm-G16-w256-d88547-s150101-g02-uniform@10",
+    "confirm-G16-w256-d88547-s150201-g02-random@10",
+    "confirmation-G16-w256-d88547-s150201@R0",
+    "confirm-G16-w256-d88547-s150201-g02-uniform@10",
+    "confirm-G16-w256-d88771-s150101-g02-random@10",
+    "confirmation-G16-w256-d88771-s150101@R0",
+    "confirm-G16-w256-d88771-s150101-g02-uniform@10",
+    "confirm-G16-w256-d88771-s150201-g02-random@10",
+    "confirmation-G16-w256-d88771-s150201@R0",
+    "confirm-G16-w256-d88771-s150201-g02-uniform@10",
+    "confirm-G16-w256-d88993-s150101-g02-random@10",
+    "confirmation-G16-w256-d88993-s150101@R0",
+    "confirm-G16-w256-d88993-s150101-g02-uniform@10",
+    "confirm-G16-w256-d88993-s150201-g02-random@10",
+    "confirmation-G16-w256-d88993-s150201@R0",
+    "confirm-G16-w256-d88993-s150201-g02-uniform@10",
+    "confirm-G16-w256-d89203-s150101-g02-random@10",
+    "confirmation-G16-w256-d89203-s150101@R0",
+    "confirm-G16-w256-d89203-s150101-g02-uniform@10",
+    "confirm-G16-w256-d89203-s150201-g02-random@10",
+    "confirmation-G16-w256-d89203-s150201@R0",
+    "confirm-G16-w256-d89203-s150201-g02-uniform@10",
+    "confirm-G16-w256-d89431-s150101-g02-random@10",
+    "confirmation-G16-w256-d89431-s150101@R0",
+    "confirm-G16-w256-d89431-s150101-g02-uniform@10",
+    "confirm-G16-w256-d89431-s150201-g02-random@10",
+    "confirmation-G16-w256-d89431-s150201@R0",
+    "confirm-G16-w256-d89431-s150201-g02-uniform@10",
+    "confirm-G1-w64-d88547-s150101-g02-random@10",
+    "confirm-G1-w64-d88547-s150101-g02-random@30",
+    "confirm-G1-w64-d88547-s150101-g02-uniform@10",
+    "confirm-G1-w64-d88547-s150101-g02-uniform@30",
+    "confirm-G1-w64-d88547-s150201-g02-random@10",
+    "confirm-G1-w64-d88547-s150201-g02-random@30",
+    "confirm-G1-w64-d88547-s150201-g02-uniform@10",
+    "confirm-G1-w64-d88547-s150201-g02-uniform@30",
+    "confirm-G1-w64-d88771-s150101-g02-random@10",
+    "confirm-G1-w64-d88771-s150101-g02-random@30",
+    "confirm-G1-w64-d88771-s150101-g02-uniform@10",
+    "confirm-G1-w64-d88771-s150101-g02-uniform@30",
+    "confirm-G1-w64-d88771-s150201-g02-random@10",
+    "confirm-G1-w64-d88771-s150201-g02-random@30",
+    "confirm-G1-w64-d88771-s150201-g02-uniform@10",
+    "confirm-G1-w64-d88771-s150201-g02-uniform@30",
+    "confirm-G1-w64-d88993-s150101-g02-random@10",
+    "confirm-G1-w64-d88993-s150101-g02-random@30",
+    "confirm-G1-w64-d88993-s150101-g02-uniform@10",
+    "confirm-G1-w64-d88993-s150101-g02-uniform@30",
+    "confirm-G1-w64-d88993-s150201-g02-random@10",
+    "confirm-G1-w64-d88993-s150201-g02-random@30",
+    "confirm-G1-w64-d88993-s150201-g02-uniform@10",
+    "confirm-G1-w64-d88993-s150201-g02-uniform@30",
+    "confirm-G1-w64-d89203-s150101-g02-random@10",
+    "confirm-G1-w64-d89203-s150101-g02-random@30",
+    "confirm-G1-w64-d89203-s150101-g02-uniform@10",
+    "confirm-G1-w64-d89203-s150101-g02-uniform@30",
+    "confirm-G1-w64-d89203-s150201-g02-random@10",
+    "confirm-G1-w64-d89203-s150201-g02-random@30",
+    "confirm-G1-w64-d89203-s150201-g02-uniform@10",
+    "confirm-G1-w64-d89203-s150201-g02-uniform@30",
+    "confirm-G1-w64-d89431-s150101-g02-random@10",
+    "confirm-G1-w64-d89431-s150101-g02-random@30",
+    "confirm-G1-w64-d89431-s150101-g02-uniform@10",
+    "confirm-G1-w64-d89431-s150101-g02-uniform@30",
+    "confirm-G1-w64-d89431-s150201-g02-random@10",
+    "confirm-G1-w64-d89431-s150201-g02-random@30",
+    "confirm-G1-w64-d89431-s150201-g02-uniform@10",
+    "confirm-G1-w64-d89431-s150201-g02-uniform@30",
+    "confirm-G1-w128-d88547-s150101-g02-random@10",
+    "confirm-G1-w128-d88547-s150101-g02-uniform@10",
+    "confirm-G1-w128-d88547-s150201-g02-random@10",
+    "confirm-G1-w128-d88547-s150201-g02-uniform@10",
+    "confirm-G1-w128-d88771-s150101-g02-random@10",
+    "confirm-G1-w128-d88771-s150101-g02-uniform@10",
+    "confirm-G1-w128-d88771-s150201-g02-random@10",
+    "confirm-G1-w128-d88771-s150201-g02-uniform@10",
+    "confirm-G1-w128-d88993-s150101-g02-random@10",
+    "confirm-G1-w128-d88993-s150101-g02-uniform@10",
+    "confirm-G1-w128-d88993-s150201-g02-random@10",
+    "confirm-G1-w128-d88993-s150201-g02-uniform@10",
+    "confirm-G1-w128-d89203-s150101-g02-random@10",
+    "confirm-G1-w128-d89203-s150101-g02-uniform@10",
+    "confirm-G1-w128-d89203-s150201-g02-random@10",
+    "confirm-G1-w128-d89203-s150201-g02-uniform@10",
+    "confirm-G1-w128-d89431-s150101-g02-random@10",
+    "confirm-G1-w128-d89431-s150101-g02-uniform@10",
+    "confirm-G1-w128-d89431-s150201-g02-random@10",
+    "confirm-G1-w128-d89431-s150201-g02-uniform@10",
+    "confirm-G1-w256-d88547-s150101-g00-random@30",
+    "confirm-G1-w256-d88547-s150101-g00-uniform@30",
+    "confirm-G1-w256-d88547-s150101-g02-random@10",
+    "confirm-G1-w256-d88547-s150101-g02-uniform@10",
+    "confirm-G1-w256-d88547-s150201-g00-random@30",
+    "confirm-G1-w256-d88547-s150201-g00-uniform@30",
+    "confirm-G1-w256-d88547-s150201-g02-random@10",
+    "confirm-G1-w256-d88547-s150201-g02-uniform@10",
+    "confirm-G1-w256-d88771-s150101-g00-random@30",
+    "confirm-G1-w256-d88771-s150101-g00-uniform@30",
+    "confirm-G1-w256-d88771-s150101-g02-random@10",
+    "confirm-G1-w256-d88771-s150101-g02-uniform@10",
+    "confirm-G1-w256-d88771-s150201-g00-random@30",
+    "confirm-G1-w256-d88771-s150201-g00-uniform@30",
+    "confirm-G1-w256-d88771-s150201-g02-random@10",
+    "confirm-G1-w256-d88771-s150201-g02-uniform@10",
+    "confirm-G1-w256-d88993-s150101-g00-random@30",
+    "confirm-G1-w256-d88993-s150101-g00-uniform@30",
+    "confirm-G1-w256-d88993-s150101-g02-random@10",
+    "confirm-G1-w256-d88993-s150101-g02-uniform@10",
+    "confirm-G1-w256-d88993-s150201-g00-random@30",
+    "confirm-G1-w256-d88993-s150201-g00-uniform@30",
+    "confirm-G1-w256-d88993-s150201-g02-random@10",
+    "confirm-G1-w256-d88993-s150201-g02-uniform@10",
+    "confirm-G1-w256-d89203-s150101-g00-random@30",
+    "confirm-G1-w256-d89203-s150101-g00-uniform@30",
+    "confirm-G1-w256-d89203-s150101-g02-random@10",
+    "confirm-G1-w256-d89203-s150101-g02-uniform@10",
+    "confirm-G1-w256-d89203-s150201-g00-random@30",
+    "confirm-G1-w256-d89203-s150201-g00-uniform@30",
+    "confirm-G1-w256-d89203-s150201-g02-random@10",
+    "confirm-G1-w256-d89203-s150201-g02-uniform@10",
+    "confirm-G1-w256-d89431-s150101-g00-random@30",
+    "confirm-G1-w256-d89431-s150101-g00-uniform@30",
+    "confirm-G1-w256-d89431-s150101-g02-random@10",
+    "confirm-G1-w256-d89431-s150101-g02-uniform@10",
+    "confirm-G1-w256-d89431-s150201-g00-random@30",
+    "confirm-G1-w256-d89431-s150201-g00-uniform@30",
+    "confirm-G1-w256-d89431-s150201-g02-random@10",
+    "confirm-G1-w256-d89431-s150201-g02-uniform@10"
+  ],
+  "comparison_counts": {
+    "numbers": 754726,
+    "arrays": 1854
+  },
+  "observed_numerical_errors": {
+    "max_abs_by_tolerance": {
+      "2e-06": 6.66128471493721e-07,
+      "1e-12": 0.0,
+      "1e-09": 0.0,
+      "0.0001": 3.5195138492483125e-06,
+      "1e-08": 2.2737367544323206e-13,
+      "3e-06": 0.0,
+      "1e-10": 0.0
+    },
+    "array_max_abs": {
+      "loss": 0.0,
+      "component_loss": 0.0,
+      "component_accuracy": 0.0
+    },
+    "minimum_guard_distance": 0.018634557623999022,
+    "minimum_p_boundary_distance": 0.0,
+    "near_guard_count_1e_minus_8": 0,
+    "p_boundary_count": 54,
+    "number_comparisons": 754726,
+    "array_comparisons": 1854
+  },
+  "fit_reasons": {
+    "defined": 1233,
+    "constant_weights": 1272,
+    "nonpositive_total_gain": 39
+  },
+  "decisions": {
+    "G16": {
+      "64": {
+        "epoch": 10,
+        "grid_index": 2,
+        "score": 1.9697908163070679
+      },
+      "128": {
+        "epoch": 3,
+        "grid_index": 2,
+        "score": 1.874810516834259
+      },
+      "256": {
+        "epoch": 0,
+        "grid_index": null,
+        "score": 1.8545230627059937
+      }
+    },
+    "G1": {
+      "64": {
+        "epoch": 30,
+        "grid_index": 2,
+        "score": 1.0946281552314758
+      },
+      "128": {
+        "epoch": 10,
+        "grid_index": 2,
+        "score": 1.0122804641723633
+      },
+      "256": {
+        "epoch": 30,
+        "grid_index": 0,
+        "score": 0.9922613501548767
+      }
+    }
+  },
+  "primary_F10_G1_minus_G16_group_gain": {
+    "pairs": [
+      {
+        "data_seed": 88547,
+        "seed": 150101,
+        "value": 2.6492783427238464
+      },
+      {
+        "data_seed": 88547,
+        "seed": 150201,
+        "value": 2.76466728746891
+      },
+      {
+        "data_seed": 88771,
+        "seed": 150101,
+        "value": 2.700756222009659
+      },
+      {
+        "data_seed": 88771,
+        "seed": 150201,
+        "value": 2.7859993129968643
+      },
+      {
+        "data_seed": 88993,
+        "seed": 150101,
+        "value": 2.7233592122793198
+      },
+      {
+        "data_seed": 88993,
+        "seed": 150201,
+        "value": 2.7284069135785103
+      },
+      {
+        "data_seed": 89203,
+        "seed": 150101,
+        "value": 2.7197746336460114
+      },
+      {
+        "data_seed": 89203,
+        "seed": 150201,
+        "value": 2.720872014760971
+      },
+      {
+        "data_seed": 89431,
+        "seed": 150101,
+        "value": 2.732860319316387
+      },
+      {
+        "data_seed": 89431,
+        "seed": 150201,
+        "value": 2.7092265486717224
+      }
+    ],
+    "corpora": [
+      {
+        "data_seed": 88547,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.7069728150963783
+      },
+      {
+        "data_seed": 88771,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.7433777675032616
+      },
+      {
+        "data_seed": 88993,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.725883062928915
+      },
+      {
+        "data_seed": 89203,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.720323324203491
+      },
+      {
+        "data_seed": 89431,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.721043433994055
+      }
+    ],
+    "mean": 2.72352008074522,
+    "sd": 0.013134653023123966,
+    "all_positive": true,
+    "all_nonnegative": true
+  },
+  "primary_F10_G1_absolute_group_gain": {
+    "pairs": [
+      {
+        "data_seed": 88547,
+        "seed": 150101,
+        "value": 2.7065083384513855
+      },
+      {
+        "data_seed": 88547,
+        "seed": 150201,
+        "value": 2.697591081261635
+      },
+      {
+        "data_seed": 88771,
+        "seed": 150101,
+        "value": 2.689261347055435
+      },
+      {
+        "data_seed": 88771,
+        "seed": 150201,
+        "value": 2.703122392296791
+      },
+      {
+        "data_seed": 88993,
+        "seed": 150101,
+        "value": 2.6939250081777573
+      },
+      {
+        "data_seed": 88993,
+        "seed": 150201,
+        "value": 2.6872809007763863
+      },
+      {
+        "data_seed": 89203,
+        "seed": 150101,
+        "value": 2.7002176344394684
+      },
+      {
+        "data_seed": 89203,
+        "seed": 150201,
+        "value": 2.6919098794460297
+      },
+      {
+        "data_seed": 89431,
+        "seed": 150101,
+        "value": 2.700872890651226
+      },
+      {
+        "data_seed": 89431,
+        "seed": 150201,
+        "value": 2.694109857082367
+      }
+    ],
+    "corpora": [
+      {
+        "data_seed": 88547,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.70204970985651
+      },
+      {
+        "data_seed": 88771,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.696191869676113
+      },
+      {
+        "data_seed": 88993,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.6906029544770718
+      },
+      {
+        "data_seed": 89203,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.696063756942749
+      },
+      {
+        "data_seed": 89431,
+        "seeds": [
+          150101,
+          150201
+        ],
+        "mean": 2.6974913738667965
+      }
+    ],
+    "mean": 2.696479932963848,
+    "sd": 0.004087801560940176,
+    "all_positive": true,
+    "all_nonnegative": true
+  },
+  "selected_utility": {
+    "G16": {
+      "random": {
+        "64": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.04202699661254883
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.04598987102508545
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.04260611534118652
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.03654646873474121
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.04367256164550781
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.04929018020629883
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0598905086517334
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.036354899406433105
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0410304069519043
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.03865957260131836
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.04400843381881714
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.03957629203796387
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.04648137092590332
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.04812270402908325
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.03984498977661133
+              }
+            ],
+            "mean": 0.04360675811767578,
+            "sd": 0.0038475338696499542,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.03804349899291992
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.046163320541381836
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.04542112350463867
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.03809034824371338
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.04484891891479492
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.05053579807281494
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.06129717826843262
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.04033327102661133
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0412600040435791
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.045778632164001465
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.04210340976715088
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.041755735874176025
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.04769235849380493
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.05081522464752197
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.04351931810379028
+              }
+            ],
+            "mean": 0.04517720937728882,
+            "sd": 0.003937528403587195,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 10,
+          "undefined_p": 0
+        },
+        "128": {
+          "met": false,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.00796973705291748
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.004381418228149414
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": -0.001454472541809082
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": -0.001985788345336914
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.0020738840103149414
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.0018703937530517578
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.004969477653503418
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.0003675222396850586
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0010563135147094727
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.0025205612182617188
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.006175577640533447
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": -0.001720130443572998
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0019721388816833496
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0026684999465942383
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0017884373664855957
+              }
+            ],
+            "mean": 0.0021769046783447266,
+            "sd": 0.0028111727975895645,
+            "all_positive": false,
+            "all_nonnegative": false
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.005209207534790039
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.0047795772552490234
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.0005133152008056641
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": -0.0018641948699951172
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.0004818439483642578
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.002811908721923828
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0074013471603393555
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": -0.0019799470901489258
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0002900362014770508
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.0018535852432250977
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.004994392395019531
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": -0.0006754398345947266
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.001646876335144043
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.002710700035095215
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0010718107223510742
+              }
+            ],
+            "mean": 0.0019496679306030273,
+            "sd": 0.0020977978772719163,
+            "all_positive": false,
+            "all_nonnegative": false
+          },
+          "defined_p": 10,
+          "undefined_p": 0
+        },
+        "256": {
+          "met": false,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.0
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              }
+            ],
+            "mean": 0.0,
+            "sd": 0.0,
+            "all_positive": false,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.0
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              }
+            ],
+            "mean": 0.0,
+            "sd": 0.0,
+            "all_positive": false,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        }
+      },
+      "uniform": {
+        "64": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.08362996578216553
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.07141029834747314
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.0756235122680664
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.06611204147338867
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.07585334777832031
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.06852221488952637
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.07822620868682861
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.07363367080688477
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.07692229747772217
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.07344186305999756
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07752013206481934
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07086777687072754
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07218778133392334
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07592993974685669
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07518208026885986
+              }
+            ],
+            "mean": 0.07433754205703735,
+            "sd": 0.0027403738780582164,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.08144688606262207
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.07372498512268066
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.07678842544555664
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.06816470623016357
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.07425189018249512
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.06789970397949219
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0794377326965332
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.07409977912902832
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0772404670715332
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.07440125942230225
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07758593559265137
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07247656583786011
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07107579708099365
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07676875591278076
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.07582086324691772
+              }
+            ],
+            "mean": 0.07474558353424073,
+            "sd": 0.002825456895283654,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        },
+        "128": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.014052987098693848
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.009965062141418457
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.007885575294494629
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.008561849594116211
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.006751656532287598
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.0074034929275512695
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.00978696346282959
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.010487556457519531
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0076677799224853516
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.007665514945983887
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.012009024620056152
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.00822371244430542
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.007077574729919434
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.01013725996017456
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.007666647434234619
+              }
+            ],
+            "mean": 0.009022843837738038,
+            "sd": 0.0020261509401640733,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.01423954963684082
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.01141655445098877
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.009421110153198242
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.010413289070129395
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.007854938507080078
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.007677555084228516
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.008289337158203125
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.00897204875946045
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.008763909339904785
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.00862574577331543
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.012828052043914795
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.009917199611663818
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.007766246795654297
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.008630692958831787
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.008694827556610107
+              }
+            ],
+            "mean": 0.00956740379333496,
+            "sd": 0.001977192905054806,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        },
+        "256": {
+          "met": false,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.0
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              }
+            ],
+            "mean": 0.0,
+            "sd": 0.0,
+            "all_positive": false,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.0
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.0
+              }
+            ],
+            "mean": 0.0,
+            "sd": 0.0,
+            "all_positive": false,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        }
+      }
+    },
+    "G1": {
+      "random": {
+        "64": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.9372861385345459
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.92138671875
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.9288656711578369
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.909815788269043
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.9241089820861816
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.8996374607086182
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.9548183679580688
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.9221352338790894
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.9238057136535645
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.912604570388794
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.929336428642273
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9193407297134399
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9118732213973999
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9384768009185791
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9182051420211792
+              }
+            ],
+            "mean": 0.9234464645385743,
+            "sd": 0.010474626077208778,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.9351004362106323
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.925635814666748
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.9353758096694946
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.9184656143188477
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.9311504364013672
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.9091999530792236
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.9553908109664917
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.9108161926269531
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.9235572814941406
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.9094380140304565
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9303681254386902
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9269207119941711
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9201751947402954
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9331035017967224
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9164976477622986
+              }
+            ],
+            "mean": 0.9254130363464356,
+            "sd": 0.006944213254757233,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 10,
+          "undefined_p": 0
+        },
+        "128": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.8898249864578247
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.8824374079704285
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.8629685640335083
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.8817747235298157
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.8718233108520508
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.850313663482666
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.8735347986221313
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.8562829494476318
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.8813307285308838
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.8683840036392212
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8861311972141266
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.872371643781662
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8610684871673584
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8649088740348816
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8748573660850525
+              }
+            ],
+            "mean": 0.8718675136566162,
+            "sd": 0.009717094111107287,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.890868604183197
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.8872547745704651
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.8667302131652832
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.8791048526763916
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.8729479312896729
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.8575185537338257
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.8784499168395996
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.8584731817245483
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.8757959604263306
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.8647773265838623
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.889061689376831
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8729175329208374
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8652332425117493
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.868461549282074
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8702866435050964
+              }
+            ],
+            "mean": 0.8731921315193176,
+            "sd": 0.009301645743121941,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 10,
+          "undefined_p": 0
+        },
+        "256": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.8823633193969727
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.8635159134864807
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.8742190599441528
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.8745079636573792
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.8755377531051636
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.8627404570579529
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.8856353759765625
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.8646544814109802
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.8952081203460693
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.8369404077529907
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8729396164417267
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.874363511800766
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8691391050815582
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8751449286937714
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.86607426404953
+              }
+            ],
+            "mean": 0.8715322852134705,
+            "sd": 0.0038263861625623986,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.8786940574645996
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.8688812255859375
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.8749314546585083
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.8716500997543335
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.8736505508422852
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.8702853918075562
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.8825197815895081
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.8559383153915405
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.8946132659912109
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.845994234085083
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8737876415252686
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8732907772064209
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8719679713249207
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.8692290484905243
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.870303750038147
+              }
+            ],
+            "mean": 0.8717158377170563,
+            "sd": 0.0019374267109506821,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 10,
+          "undefined_p": 0
+        }
+      },
+      "uniform": {
+        "64": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 1.0106533765792847
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 1.0010096430778503
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 1.0208628177642822
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 1.0076886415481567
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 1.0119737386703491
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 1.0040050745010376
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 1.0191489458084106
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 1.0093534588813782
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 1.0163743495941162
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 1.0101306438446045
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0058315098285675
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0142757296562195
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0079894065856934
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0142512023448944
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0132524967193604
+              }
+            ],
+            "mean": 1.011120069026947,
+            "sd": 0.0039395222883337215,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 1.012330174446106
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 1.0056809782981873
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 1.0229251384735107
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 1.0123156309127808
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 1.0126726031303406
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 1.0064153671264648
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 1.0184547901153564
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 1.0052484273910522
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 1.0178601145744324
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 1.0096282958984375
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0090055763721466
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0176203846931458
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0095439851284027
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.0118516087532043
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 1.013744205236435
+              }
+            ],
+            "mean": 1.0123531520366669,
+            "sd": 0.003500999717060244,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        },
+        "128": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.9195395112037659
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.9154365658760071
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.912696361541748
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.921603262424469
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.9120075106620789
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.9086652994155884
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.9131907224655151
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.9106652140617371
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.9143235683441162
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.9131490588188171
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9174880385398865
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9171498119831085
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9103364050388336
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9119279682636261
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9137363135814667
+              }
+            ],
+            "mean": 0.9141277074813843,
+            "sd": 0.0031540036645509428,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.9191654920578003
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.9208402633666992
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.9124079942703247
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.9227587580680847
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.9141482710838318
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.912071943283081
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.916202187538147
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.913584291934967
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.9188743233680725
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.9152566194534302
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9200028777122498
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9175833761692047
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9131101071834564
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.914893239736557
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9170654714107513
+              }
+            ],
+            "mean": 0.9165310144424439,
+            "sd": 0.0026377953143196364,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        },
+        "256": {
+          "met": true,
+          "test": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.9099419713020325
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.9027560353279114
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.9141303896903992
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.9115741848945618
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.9092848300933838
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.908165693283081
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.9115311503410339
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.9070062637329102
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.9236201643943787
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.907263994216919
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9063490033149719
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9128522872924805
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9087252616882324
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.909268707036972
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9154420793056488
+              }
+            ],
+            "mean": 0.9105274677276611,
+            "sd": 0.0036003535557131328,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "validation": {
+            "pairs": [
+              {
+                "data_seed": 88547,
+                "seed": 150101,
+                "value": 0.9130141735076904
+              },
+              {
+                "data_seed": 88547,
+                "seed": 150201,
+                "value": 0.9079461097717285
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150101,
+                "value": 0.9141846299171448
+              },
+              {
+                "data_seed": 88771,
+                "seed": 150201,
+                "value": 0.9136671423912048
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150101,
+                "value": 0.9105183482170105
+              },
+              {
+                "data_seed": 88993,
+                "seed": 150201,
+                "value": 0.9118183851242065
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150101,
+                "value": 0.9104308485984802
+              },
+              {
+                "data_seed": 89203,
+                "seed": 150201,
+                "value": 0.9082703590393066
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150101,
+                "value": 0.9225086569786072
+              },
+              {
+                "data_seed": 89431,
+                "seed": 150201,
+                "value": 0.9098953604698181
+              }
+            ],
+            "corpora": [
+              {
+                "data_seed": 88547,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9104801416397095
+              },
+              {
+                "data_seed": 88771,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9139258861541748
+              },
+              {
+                "data_seed": 88993,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9111683666706085
+              },
+              {
+                "data_seed": 89203,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9093506038188934
+              },
+              {
+                "data_seed": 89431,
+                "seeds": [
+                  150101,
+                  150201
+                ],
+                "mean": 0.9162020087242126
+              }
+            ],
+            "mean": 0.9122254014015198,
+            "sd": 0.002789837333632906,
+            "all_positive": true,
+            "all_nonnegative": true
+          },
+          "defined_p": 0,
+          "undefined_p": 10
+        }
+      }
+    }
+  },
+  "readiness_criteria": {
+    "relative_response_positive": true,
+    "absolute_G1_group_gain_positive": true,
+    "selected_G1_middle_utility": true,
+    "mechanism_ready": true,
+    "G1_global_utility": true,
+    "capacity_ready": true
+  },
+  "reused_prior_review": {
+    "summary_sha256": "e9f61056553dc6c6a988655428ecf84566f627a5dadcd499d26f968b9d8b2354",
+    "prior_review_sha256": "177d91468e84054125b246c092fd0a81801e6f42935a980c9b1fe6673bafe4f2",
+    "scopes": [
+      "scalar report including K/scaling and all branches",
+      "three figure visual inspections",
+      "accepted prepared tensor equality"
+    ]
+  },
+  "remaining_protocol_checks": [
+    "independent audit output review",
+    "archive SHA256/CRC"
+  ],
+  "limitation": "Exact clipping-update reconstruction unavailable without gradient history; saved fractions are cross-checked."
+}

@@ -1,0 +1,106 @@
+{
+  "parent_bundle": "outputs/sequence-weighting-factorial-v0132",
+  "parent_manifest_sha256": "9405cf967cc6d9c38453fc1994e94d4dbd525b8872e48f19fd82cfdd971141b3",
+  "accepted_planning_sha256": "0c5cde22d42db88e7218f29c783e96d20dd4478401ec711cfdbf7c799b44e1d1",
+  "parent_payloads": [
+    {
+      "path": "audit.py",
+      "bytes": 18013,
+      "sha256": "a9e23fbec86da71a185d45105c3495abd23276caf70430622975b403d20be3e2"
+    },
+    {
+      "path": "BACKGROUND_ANCHORS.json",
+      "bytes": 1211,
+      "sha256": "2d803a22b4e37114c4cbff73dd9215e59b2c687f8d4d1f46d4486133327ebca1"
+    },
+    {
+      "path": "common.py",
+      "bytes": 4855,
+      "sha256": "711241288cb7d7e17cdcfbea81e5daad1e0952e3c935689a4a99ee0291a3af71"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 15566,
+      "sha256": "fcabdbde19465086c5de0e6e03dd782d4e1b8d7616272eb69a39aedb4f497432"
+    },
+    {
+      "path": "manual_launch.sh",
+      "bytes": 3150,
+      "sha256": "4451145fe84284db1b6674fa89c7514f356ea5db8e03163c12eca0fd08140a8c"
+    },
+    {
+      "path": "PREPARATION_STATUS.md",
+      "bytes": 2635,
+      "sha256": "b08705be026d11b6767e4a1bc1d6603f62c5861c2a9e6492340e08976b8f5456"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 9475,
+      "sha256": "dcf498d9380e17ee8fee879300f9e837508dfd663b8373fcd2a4f5d4affaa3e0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5009,
+      "sha256": "722d277962a8828f2d0ea80bdc6b43be352092e461c23f4ed963b98a5f0a9c9f"
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "bytes": 4591,
+      "sha256": "4c40ea43b07f26b431caed52858f9ec274c8d5d3b7e5971e0c7d3659e3c67646"
+    },
+    {
+      "path": "runtime_phases.sh",
+      "bytes": 637,
+      "sha256": "7b063a4d3464e830952503e480c197e99adc47d11e3012dcb928d34b189bce42"
+    },
+    {
+      "path": "SEED_CENSUS.json",
+      "bytes": 4176786,
+      "sha256": "936c3557f00392831938449d6fb5ee940ce494d9b0a52255b36ec0672052db86"
+    },
+    {
+      "path": "source_census.ps1",
+      "bytes": 4094,
+      "sha256": "4b4f3336df2369e55be5dc4a5d4747d7346ed219b0e7ef208b9967c3d84c39c0"
+    },
+    {
+      "path": "SOURCE_REVIEW_TEMPLATE.json",
+      "bytes": 389,
+      "sha256": "0c706593b3be2d06b1d6f4224f2c9634c5cfc133e3b43d5c1f8bd08b5af80ce8"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 9214,
+      "sha256": "a9afc0c7de32b44bfe57212d35686e42c3b63c81bbe7e190d69eb628b3355767"
+    },
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "unchanged_vendor": [
+    "core.py",
+    "model.py",
+    "engine.py"
+  ],
+  "adapted_files": [
+    "common.py",
+    "experiment.py",
+    "audit.py",
+    "supervise.py",
+    "manual_launch.sh",
+    "runtime_phases.sh"
+  ],
+  "changes": "Version/path/seed/arm updates, difference-in-differences and adequacy, shared initial test arrays, one reusable actual-step snapshot and independent audit fixtures/max discrepancies. Watchdog containment and caps retained."
+}

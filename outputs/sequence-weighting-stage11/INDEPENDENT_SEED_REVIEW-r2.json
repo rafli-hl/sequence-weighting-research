@@ -1,0 +1,949 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-30T16:14:08.836133+00:00",
+  "review": "Revised Stage11 seed identities and derived streams",
+  "config_sha256": "b3d269d276d870da3a80039c7ac67ad82b67caa9873f63ea7712690f1b7c39ed",
+  "inventory_source_sha256": "5fc4d27931ec0e33c6a57b6fec8b71519b7b08c80da1ad309e532726c89fd83f",
+  "inventory_binding": {
+    "path": "outputs/sequence-weighting-stage11/SEED_INVENTORY-20260930-r1.json",
+    "sha256": "92e52ad89843819bf12feca785130e7cccf7d46095f2a2f745eace4808564883",
+    "bytes": 39303059
+  },
+  "historical_inventory_source_sha256": "fd899d0bd5e819d1f4b1f8263adb876c3d0264ac0707e9a998652aa9f5de347e",
+  "historical_files_examined": 13617,
+  "historical_seed_values": 364,
+  "original_colliding_proposal": [
+    {
+      "value": 1501,
+      "proposed_roles": [
+        "model_weight"
+      ],
+      "base_or_literal_collisions": [],
+      "derived_stream_collisions": [
+        {
+          "role": "batch_order",
+          "base_seed": 501,
+          "formula": "999 + seed + epoch",
+          "epoch_range": [
+            1,
+            60
+          ],
+          "values": [
+            1501,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1510,
+            1511,
+            1512,
+            1513,
+            1514,
+            1515,
+            1516,
+            1517,
+            1518,
+            1519,
+            1520,
+            1521,
+            1522,
+            1523,
+            1524,
+            1525,
+            1526,
+            1527,
+            1528,
+            1529,
+            1530,
+            1531,
+            1532,
+            1533,
+            1534,
+            1535,
+            1536,
+            1537,
+            1538,
+            1539,
+            1540,
+            1541,
+            1542,
+            1543,
+            1544,
+            1545,
+            1546,
+            1547,
+            1548,
+            1549,
+            1550,
+            1551,
+            1552,
+            1553,
+            1554,
+            1555,
+            1556,
+            1557,
+            1558,
+            1559,
+            1560
+          ],
+          "context": {
+            "path": "work/runs/baseline-v05-20260929-01/runs/tune-M-w128-d37409-s501-g00-random/config.json",
+            "location": "$",
+            "epochs": 60,
+            "weighting": "random"
+          },
+          "coverage": "Declared duration; conservative if interrupted"
+        },
+        {
+          "role": "weight_assignment",
+          "base_seed": 501,
+          "formula": "1000 + seed",
+          "values": [
+            1501
+          ],
+          "context": {
+            "path": "work/runs/baseline-v05-20260929-01/runs/tune-M-w128-d37409-s501-g00-random/config.json",
+            "location": "$",
+            "epochs": 60,
+            "weighting": "random"
+          },
+          "coverage": "Saved random-arm model config/result"
+        }
+      ],
+      "clear": false
+    },
+    {
+      "value": 1502,
+      "proposed_roles": [
+        "model_weight"
+      ],
+      "base_or_literal_collisions": [],
+      "derived_stream_collisions": [
+        {
+          "role": "batch_order",
+          "base_seed": 501,
+          "formula": "999 + seed + epoch",
+          "epoch_range": [
+            1,
+            60
+          ],
+          "values": [
+            1501,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1510,
+            1511,
+            1512,
+            1513,
+            1514,
+            1515,
+            1516,
+            1517,
+            1518,
+            1519,
+            1520,
+            1521,
+            1522,
+            1523,
+            1524,
+            1525,
+            1526,
+            1527,
+            1528,
+            1529,
+            1530,
+            1531,
+            1532,
+            1533,
+            1534,
+            1535,
+            1536,
+            1537,
+            1538,
+            1539,
+            1540,
+            1541,
+            1542,
+            1543,
+            1544,
+            1545,
+            1546,
+            1547,
+            1548,
+            1549,
+            1550,
+            1551,
+            1552,
+            1553,
+            1554,
+            1555,
+            1556,
+            1557,
+            1558,
+            1559,
+            1560
+          ],
+          "context": {
+            "path": "work/runs/baseline-v05-20260929-01/runs/tune-M-w128-d37409-s501-g00-random/config.json",
+            "location": "$",
+            "epochs": 60,
+            "weighting": "random"
+          },
+          "coverage": "Declared duration; conservative if interrupted"
+        },
+        {
+          "role": "batch_order",
+          "base_seed": 502,
+          "formula": "999 + seed + epoch",
+          "epoch_range": [
+            1,
+            60
+          ],
+          "values": [
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1510,
+            1511,
+            1512,
+            1513,
+            1514,
+            1515,
+            1516,
+            1517,
+            1518,
+            1519,
+            1520,
+            1521,
+            1522,
+            1523,
+            1524,
+            1525,
+            1526,
+            1527,
+            1528,
+            1529,
+            1530,
+            1531,
+            1532,
+            1533,
+            1534,
+            1535,
+            1536,
+            1537,
+            1538,
+            1539,
+            1540,
+            1541,
+            1542,
+            1543,
+            1544,
+            1545,
+            1546,
+            1547,
+            1548,
+            1549,
+            1550,
+            1551,
+            1552,
+            1553,
+            1554,
+            1555,
+            1556,
+            1557,
+            1558,
+            1559,
+            1560,
+            1561
+          ],
+          "context": {
+            "path": "work/runs/baseline-v05-20260929-01/runs/tune-M-w128-d39623-s502-g00-random/config.json",
+            "location": "$",
+            "epochs": 60,
+            "weighting": "random"
+          },
+          "coverage": "Declared duration; conservative if interrupted"
+        },
+        {
+          "role": "weight_assignment",
+          "base_seed": 502,
+          "formula": "1000 + seed",
+          "values": [
+            1502
+          ],
+          "context": {
+            "path": "work/runs/baseline-v05-20260929-01/runs/tune-M-w128-d39623-s502-g00-random/config.json",
+            "location": "$",
+            "epochs": 60,
+            "weighting": "random"
+          },
+          "coverage": "Saved random-arm model config/result"
+        }
+      ],
+      "clear": false
+    }
+  ],
+  "replacement_proof": {
+    "proposed_rows": [
+      {
+        "phase": "TUNE",
+        "row": 0,
+        "role": "adaptation_data",
+        "value": 88111
+      },
+      {
+        "phase": "TUNE",
+        "row": 0,
+        "role": "model_weight",
+        "value": 140101
+      },
+      {
+        "phase": "TUNE",
+        "row": 0,
+        "role": "pretraining_data",
+        "value": 98101
+      },
+      {
+        "phase": "TUNE",
+        "row": 1,
+        "role": "adaptation_data",
+        "value": 88321
+      },
+      {
+        "phase": "TUNE",
+        "row": 1,
+        "role": "model_weight",
+        "value": 140201
+      },
+      {
+        "phase": "TUNE",
+        "row": 1,
+        "role": "pretraining_data",
+        "value": 98102
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 0,
+        "role": "adaptation_data",
+        "value": 88547
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 0,
+        "role": "model_weight",
+        "value": 150101
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 0,
+        "role": "pretraining_data",
+        "value": 98201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 1,
+        "role": "adaptation_data",
+        "value": 88547
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 1,
+        "role": "model_weight",
+        "value": 150201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 1,
+        "role": "pretraining_data",
+        "value": 98201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 2,
+        "role": "adaptation_data",
+        "value": 88771
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 2,
+        "role": "model_weight",
+        "value": 150101
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 2,
+        "role": "pretraining_data",
+        "value": 98202
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 3,
+        "role": "adaptation_data",
+        "value": 88771
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 3,
+        "role": "model_weight",
+        "value": 150201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 3,
+        "role": "pretraining_data",
+        "value": 98202
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 4,
+        "role": "adaptation_data",
+        "value": 88993
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 4,
+        "role": "model_weight",
+        "value": 150101
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 4,
+        "role": "pretraining_data",
+        "value": 98203
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 5,
+        "role": "adaptation_data",
+        "value": 88993
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 5,
+        "role": "model_weight",
+        "value": 150201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 5,
+        "role": "pretraining_data",
+        "value": 98203
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 6,
+        "role": "adaptation_data",
+        "value": 89203
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 6,
+        "role": "model_weight",
+        "value": 150101
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 6,
+        "role": "pretraining_data",
+        "value": 98204
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 7,
+        "role": "adaptation_data",
+        "value": 89203
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 7,
+        "role": "model_weight",
+        "value": 150201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 7,
+        "role": "pretraining_data",
+        "value": 98204
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 8,
+        "role": "adaptation_data",
+        "value": 89431
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 8,
+        "role": "model_weight",
+        "value": 150101
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 8,
+        "role": "pretraining_data",
+        "value": 98205
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 9,
+        "role": "adaptation_data",
+        "value": 89431
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 9,
+        "role": "model_weight",
+        "value": 150201
+      },
+      {
+        "phase": "CONFIRM",
+        "row": 9,
+        "role": "pretraining_data",
+        "value": 98205
+      }
+    ],
+    "checks": [
+      {
+        "value": 88111,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 88321,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 88547,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 88771,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 88993,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 89203,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 89431,
+        "proposed_roles": [
+          "adaptation_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98101,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98102,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98201,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98202,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98203,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98204,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 98205,
+        "proposed_roles": [
+          "pretraining_data"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 140101,
+        "proposed_roles": [
+          "model_weight"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 140201,
+        "proposed_roles": [
+          "model_weight"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 150101,
+        "proposed_roles": [
+          "model_weight"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      },
+      {
+        "value": 150201,
+        "proposed_roles": [
+          "model_weight"
+        ],
+        "base_or_literal_collisions": [],
+        "derived_stream_collisions": [],
+        "clear": true
+      }
+    ],
+    "new_model_streams": [
+      {
+        "base_seed": 140101,
+        "weight_seed": 141101,
+        "batch_seeds": [
+          141101,
+          141102,
+          141103,
+          141104,
+          141105,
+          141106,
+          141107,
+          141108,
+          141109,
+          141110,
+          141111,
+          141112,
+          141113,
+          141114,
+          141115,
+          141116,
+          141117,
+          141118,
+          141119,
+          141120,
+          141121,
+          141122,
+          141123,
+          141124,
+          141125,
+          141126,
+          141127,
+          141128,
+          141129,
+          141130
+        ],
+        "pretraining_batch_seeds": [
+          141101,
+          141102,
+          141103,
+          141104
+        ],
+        "historical_collisions": []
+      },
+      {
+        "base_seed": 140201,
+        "weight_seed": 141201,
+        "batch_seeds": [
+          141201,
+          141202,
+          141203,
+          141204,
+          141205,
+          141206,
+          141207,
+          141208,
+          141209,
+          141210,
+          141211,
+          141212,
+          141213,
+          141214,
+          141215,
+          141216,
+          141217,
+          141218,
+          141219,
+          141220,
+          141221,
+          141222,
+          141223,
+          141224,
+          141225,
+          141226,
+          141227,
+          141228,
+          141229,
+          141230
+        ],
+        "pretraining_batch_seeds": [
+          141201,
+          141202,
+          141203,
+          141204
+        ],
+        "historical_collisions": []
+      },
+      {
+        "base_seed": 150101,
+        "weight_seed": 151101,
+        "batch_seeds": [
+          151101,
+          151102,
+          151103,
+          151104,
+          151105,
+          151106,
+          151107,
+          151108,
+          151109,
+          151110,
+          151111,
+          151112,
+          151113,
+          151114,
+          151115,
+          151116,
+          151117,
+          151118,
+          151119,
+          151120,
+          151121,
+          151122,
+          151123,
+          151124,
+          151125,
+          151126,
+          151127,
+          151128,
+          151129,
+          151130
+        ],
+        "pretraining_batch_seeds": [
+          151101,
+          151102,
+          151103,
+          151104
+        ],
+        "historical_collisions": []
+      },
+      {
+        "base_seed": 150201,
+        "weight_seed": 151201,
+        "batch_seeds": [
+          151201,
+          151202,
+          151203,
+          151204,
+          151205,
+          151206,
+          151207,
+          151208,
+          151209,
+          151210,
+          151211,
+          151212,
+          151213,
+          151214,
+          151215,
+          151216,
+          151217,
+          151218,
+          151219,
+          151220,
+          151221,
+          151222,
+          151223,
+          151224,
+          151225,
+          151226,
+          151227,
+          151228,
+          151229,
+          151230
+        ],
+        "pretraining_batch_seeds": [
+          151201,
+          151202,
+          151203,
+          151204
+        ],
+        "historical_collisions": []
+      }
+    ],
+    "new_data_streams": [
+      {
+        "base_seed": 88111,
+        "key_sampling_seed": 88188,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 88321,
+        "key_sampling_seed": 88398,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 88547,
+        "key_sampling_seed": 88624,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 88771,
+        "key_sampling_seed": 88848,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 88993,
+        "key_sampling_seed": 89070,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 89203,
+        "key_sampling_seed": 89280,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 89431,
+        "key_sampling_seed": 89508,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98101,
+        "key_sampling_seed": 98178,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98102,
+        "key_sampling_seed": 98179,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98201,
+        "key_sampling_seed": 98278,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98202,
+        "key_sampling_seed": 98279,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98203,
+        "key_sampling_seed": 98280,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98204,
+        "key_sampling_seed": 98281,
+        "historical_collision": false
+      },
+      {
+        "base_seed": 98205,
+        "key_sampling_seed": 98282,
+        "historical_collision": false
+      }
+    ],
+    "tuning_confirmation_base_overlap": [],
+    "cross_model_batch_stream_overlaps": [],
+    "base_values_clear": true,
+    "model_derived_streams_clear": true,
+    "data_derived_streams_clear": true
+  },
+  "no_historical_rescan": true,
+  "no_model_outcomes": true,
+  "limitations": [
+    "Identical file-content aliases share the canonical parsed seed provenance; every alias path and SHA256 is retained.",
+    "Inventory covers historical saved JSON/JSONL, literal Python configurations/RNG constants and explicit Markdown seed declarations under both roots.",
+    "Binary tensors/checkpoints and zip archives were not loaded; their expanded metadata and frozen source are inventoried. Historical deleted or unsaved seeds cannot be reconstructed.",
+    "Nonliteral RNG expressions are retained. Runtime seed instances are reconstructed from saved configuration roles for the inherited weight/order/key formulas, while simulation weight/noise seeds come from structured records.",
+    "Declared epoch ranges and applying key-seed offsets to data-role metadata can be conservative; a derived collision carries its evidence and role.",
+    "The same integer in different PRNG engines/roles is a seed-identifier collision, not by itself evidence of identical datasets or contamination.",
+    "Within one model seed, inherited weight RNG seed and first batch-order seed coincide numerically across different PRNG engines; this documented pairing is intentional.",
+    "All proposals and replacement candidates are prospective; this script never edits config, protocols or historical records."
+  ],
+  "elapsed_seconds": 0.5031747769999981
+}

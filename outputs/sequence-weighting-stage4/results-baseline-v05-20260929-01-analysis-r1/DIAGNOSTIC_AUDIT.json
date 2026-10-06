@@ -1,0 +1,25 @@
+{
+  "status": "PASS_AFTER_DOCUMENTED_NUMERICAL_REPAIR",
+  "gain_identity_max_abs_error": 1.500127837061882e-06,
+  "original_strict_failures": [
+    {
+      "name": "confirm-U-w256-d46219-s603-g02-random",
+      "epoch": 3,
+      "original_absolute_tolerance": 1e-12,
+      "original_absolute_error": 7.275957614183426e-12,
+      "original_strict_pass": false,
+      "scale_normalized_error": 1.9999656516132232e-16,
+      "ulps_at_scale": 1.0,
+      "verification": "70_digit_recomputation_and_float64_roundoff_bound",
+      "decimal_identity_error": 6e-65,
+      "decimal_precision": 70,
+      "gram_roundoff": 6.1335840345664126e-12,
+      "objective_roundoff": 1.1423735796170131e-12,
+      "roundoff_bound": 3.308779275830283e-08
+    }
+  ],
+  "checkpoints": 1350,
+  "reference_diagonal_equals_primary": true,
+  "primary_definition_unchanged": true,
+  "every_primary_fit_matches_saved_training_result": true
+}

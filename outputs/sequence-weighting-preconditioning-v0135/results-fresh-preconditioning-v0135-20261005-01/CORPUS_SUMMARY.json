@@ -1,0 +1,98 @@
+{
+  "version": "v0135",
+  "utc": "2026-10-05T04:00:27.957684+00:00",
+  "primary_mean": 0.00622637402266264,
+  "corpus_values": [
+    {
+      "data_seed": 91520101,
+      "primary_D": 0.010731823742389679,
+      "CAdam": 0.033811867237091064,
+      "Cisotropic": 0.023080043494701385,
+      "U_Adam_own_baseline_group_gain": 2.7129159830510616,
+      "U_isotropic_own_baseline_group_gain": 2.7332568299025297,
+      "uniform_group_gap": -0.020340846851468086,
+      "direct_I_improvement": 0.031072670593857765
+    },
+    {
+      "data_seed": 91520102,
+      "primary_D": 0.006649668328464031,
+      "CAdam": 0.02979014813899994,
+      "Cisotropic": 0.023140479810535908,
+      "U_Adam_own_baseline_group_gain": 2.74242153018713,
+      "U_isotropic_own_baseline_group_gain": 2.7678429195657372,
+      "uniform_group_gap": -0.025421389378607273,
+      "direct_I_improvement": 0.032071057707071304
+    },
+    {
+      "data_seed": 91520103,
+      "primary_D": 0.004454885609447956,
+      "CAdam": 0.03469630889594555,
+      "Cisotropic": 0.030241423286497593,
+      "U_Adam_own_baseline_group_gain": 2.74370545335114,
+      "U_isotropic_own_baseline_group_gain": 2.772121242247522,
+      "uniform_group_gap": -0.028415788896381855,
+      "direct_I_improvement": 0.03287067450582981
+    },
+    {
+      "data_seed": 91520104,
+      "primary_D": 0.008801844902336597,
+      "CAdam": 0.027041615918278694,
+      "Cisotropic": 0.018239771015942097,
+      "U_Adam_own_baseline_group_gain": 2.734992915764451,
+      "U_isotropic_own_baseline_group_gain": 2.76157274376601,
+      "uniform_group_gap": -0.02657982800155878,
+      "direct_I_improvement": 0.03538167290389538
+    },
+    {
+      "data_seed": 91520105,
+      "primary_D": 0.0004936475306749344,
+      "CAdam": 0.029991358518600464,
+      "Cisotropic": 0.02949771098792553,
+      "U_Adam_own_baseline_group_gain": 2.7402060329914093,
+      "U_isotropic_own_baseline_group_gain": 2.766813727095723,
+      "uniform_group_gap": -0.02660769410431385,
+      "direct_I_improvement": 0.027101341634988785
+    }
+  ],
+  "corpus_sd": 0.003972204354273972,
+  "minimum": 0.0004936475306749344,
+  "maximum": 0.010731823742389679,
+  "positive_corpora": 5,
+  "verdict": "practical_preconditioning_attenuation_not_supported",
+  "practical_threshold_nats": 0.01,
+  "practical_criterion_met": false,
+  "interpretation_gates": {
+    "native_instance_penalty_positive_all5": true,
+    "U_Adam_improves_initial_all5": true,
+    "U_isotropic_improves_initial_all5": true,
+    "uniform_group_gap_within_utility_margin_all5": false,
+    "I_isotropic_improves_over_I_Adam_all5": true
+  },
+  "clean_attenuation_interpretation": false,
+  "uniform_utility_margin_nats": 0.01,
+  "secondary_mean": {
+    "CAdam": 0.03106625974178314,
+    "Cisotropic": 0.024839885719120502,
+    "U_Adam_own_baseline_group_gain": 2.734848383069038,
+    "U_isotropic_own_baseline_group_gain": 2.760321492515504,
+    "uniform_group_gap": -0.02547310944646597,
+    "direct_I_improvement": 0.03169948346912861
+  },
+  "secondary_sd": {
+    "CAdam": 0.0031502876356118772,
+    "Cisotropic": 0.005010451165279357,
+    "U_Adam_own_baseline_group_gain": 0.012703894326087749,
+    "U_isotropic_own_baseline_group_gain": 0.015588590864000907,
+    "uniform_group_gap": 0.003062444487676531,
+    "direct_I_improvement": 0.003025065189369148
+  },
+  "primary_units": "nats/group answer token; positive = more adverse instance effect under coordinate-wise Adam",
+  "inference": "Five fresh independent corpus pairs; two nested seeds averaged first, then five corpus means equally. No p-value or mediation claim.",
+  "warnings": [
+    "Uniform margin is prospective utility margin, not formal equivalence",
+    "Same-state counterfactual adaptive norm matching, not another arm step matching",
+    "Weight decay contributes to total steps; trajectories and moments diverge",
+    "Independent eight-step snapshots, not full optimization replay",
+    "Fixed synthetic optimizer-policy intervention only; no universal mechanism or peak claim"
+  ]
+}

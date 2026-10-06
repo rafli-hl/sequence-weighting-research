@@ -1,0 +1,178 @@
+{
+  "version": "v0136",
+  "status": "EXACT_SOURCE_SEED_ASSIGNMENTS_NOT_GENERATED",
+  "fixed_pool_seed": 991,
+  "corpora": [
+    {
+      "slot": "CAL-C01",
+      "adaptation_corpus_seed": 91620101,
+      "pretraining_corpus_seed": 91630101,
+      "adaptation_namespace_seed": 91620178,
+      "pretraining_namespace_seed": 91630178,
+      "nested": [
+        {
+          "slot": "N01",
+          "model_seed": 91640101,
+          "python_target_seed": 91641101,
+          "torch_order_seeds": [
+            91641101,
+            91641102,
+            91641103,
+            91641104,
+            91641105,
+            91641106,
+            91641107,
+            91641108,
+            91641109,
+            91641110
+          ],
+          "pretrain_torch_order_seeds": [
+            91641101,
+            91641102,
+            91641103,
+            91641104
+          ]
+        },
+        {
+          "slot": "N02",
+          "model_seed": 91640151,
+          "python_target_seed": 91641151,
+          "torch_order_seeds": [
+            91641151,
+            91641152,
+            91641153,
+            91641154,
+            91641155,
+            91641156,
+            91641157,
+            91641158,
+            91641159,
+            91641160
+          ],
+          "pretrain_torch_order_seeds": [
+            91641151,
+            91641152,
+            91641153,
+            91641154
+          ]
+        }
+      ]
+    },
+    {
+      "slot": "CAL-C02",
+      "adaptation_corpus_seed": 91620102,
+      "pretraining_corpus_seed": 91630102,
+      "adaptation_namespace_seed": 91620179,
+      "pretraining_namespace_seed": 91630179,
+      "nested": [
+        {
+          "slot": "N01",
+          "model_seed": 91640201,
+          "python_target_seed": 91641201,
+          "torch_order_seeds": [
+            91641201,
+            91641202,
+            91641203,
+            91641204,
+            91641205,
+            91641206,
+            91641207,
+            91641208,
+            91641209,
+            91641210
+          ],
+          "pretrain_torch_order_seeds": [
+            91641201,
+            91641202,
+            91641203,
+            91641204
+          ]
+        },
+        {
+          "slot": "N02",
+          "model_seed": 91640251,
+          "python_target_seed": 91641251,
+          "torch_order_seeds": [
+            91641251,
+            91641252,
+            91641253,
+            91641254,
+            91641255,
+            91641256,
+            91641257,
+            91641258,
+            91641259,
+            91641260
+          ],
+          "pretrain_torch_order_seeds": [
+            91641251,
+            91641252,
+            91641253,
+            91641254
+          ]
+        }
+      ]
+    },
+    {
+      "slot": "CAL-C03",
+      "adaptation_corpus_seed": 91620103,
+      "pretraining_corpus_seed": 91630103,
+      "adaptation_namespace_seed": 91620180,
+      "pretraining_namespace_seed": 91630180,
+      "nested": [
+        {
+          "slot": "N01",
+          "model_seed": 91640301,
+          "python_target_seed": 91641301,
+          "torch_order_seeds": [
+            91641301,
+            91641302,
+            91641303,
+            91641304,
+            91641305,
+            91641306,
+            91641307,
+            91641308,
+            91641309,
+            91641310
+          ],
+          "pretrain_torch_order_seeds": [
+            91641301,
+            91641302,
+            91641303,
+            91641304
+          ]
+        },
+        {
+          "slot": "N02",
+          "model_seed": 91640351,
+          "python_target_seed": 91641351,
+          "torch_order_seeds": [
+            91641351,
+            91641352,
+            91641353,
+            91641354,
+            91641355,
+            91641356,
+            91641357,
+            91641358,
+            91641359,
+            91641360
+          ],
+          "pretrain_torch_order_seeds": [
+            91641351,
+            91641352,
+            91641353,
+            91641354
+          ]
+        }
+      ]
+    }
+  ],
+  "confirmation": "UNASSIGNED_AND_UNIMPLEMENTED",
+  "fixture_only_seeds": [
+    123,
+    456
+  ],
+  "note": "Fixed fixture identities are diagnostics, not new calibration corpora; Python target and Torch first-order same integers intentional"
+}

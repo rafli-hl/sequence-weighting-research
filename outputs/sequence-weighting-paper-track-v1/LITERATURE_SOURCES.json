@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "status": "focused_primary_source_review",
+  "review_date": "2026-09-30",
+  "review_checked_utc": "2026-09-30T15:39:45Z",
+  "access_window_utc": ["2026-09-30T15:33:16Z", "2026-09-30T15:35:19Z"],
+  "access_timestamp_note": "Clock tool bounds the retrieval window. Individual HTTP response times were not separately timestamped; source access is recorded as a UTC date within that window.",
+  "source_count": 10,
+  "scope": "Jane Street sequence weighting and estimator definitions; importance-weighting optimization and implicit bias; repetition and scaling; bounded positioning of saved Stage 2-10 evidence.",
+  "systematic_review": false,
+  "priority_or_novelty_established": false,
+  "direct_quotes_used": false,
+  "new_experiments_run": false,
+  "search_queries": [
+    "Byrd Lipton 2019 What is the Effect of Importance Weighting in Deep Learning PMLR",
+    "importance weighting implicit bias gradient descent deep learning replication data repetition scaling language models Muennighoff 2023",
+    "site.arxiv.org Scaling Data-Constrained Language Models",
+    "site.jmlr.org The Implicit Bias of Gradient Descent on Separable Data",
+    "site.proceedings.mlr.press importance weighting polynomial tails",
+    "importance weighting polynomially Wang Chatterji 2022 arxiv",
+    "effective sequence weight exponent -site:blog.janestreet.com [restricted to arxiv.org, openreview.net, proceedings.mlr.press]",
+    "sequence weighting shared patterns language model [restricted to arxiv.org, openreview.net, proceedings.mlr.press]",
+    "data repetition scaling 2026 language models [restricted to arxiv.org, openreview.net, proceedings.mlr.press]"
+  ],
+  "selection_rule": "Retain up to ten directly relevant primary sources; follow the Jane Street bibliography, include foundational weighting theory and recent repetition findings that constrain interpretation; do not infer priority from search absence.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "A study of sequence weighting at scale",
+      "authors": ["Alex Renda", "Nitya Mani"],
+      "publication_date": "2026-09-14",
+      "publication_status": "Jane Street research blog",
+      "url": "https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["Methodology", "Results and Analysis", "footnotes 2 and 3", "linked technical note"],
+      "supported_claims": [
+        {"claim_id": "S01-C1", "support_location": "Methodology", "support_paraphrase": "Random log-uniform sequence weights range from 0.01 to 10; evaluation follows three training epochs. Validation tuning and regularization accompany improving held-out performance across scale."},
+        {"claim_id": "S01-C2", "support_location": "Results and Analysis; footnote 2", "support_paraphrase": "The exponent often rises then falls across model size; shared and specific patterns are a hypothesis. Inverse-exponent weight compensation remains untested."}
+      ],
+      "project_implication": "Useful held-out adaptation and a component mechanism are needed for a stronger alignment claim.",
+      "limitations": ["Private benchmark and in-house models prevent an exact local reproduction.", "Reported scaling patterns are empirical; the mechanism is proposed."]
+    },
+    {
+      "id": "S02",
+      "title": "An estimator for the effective sequence weight exponent",
+      "authors": [],
+      "author_attribution_note": "The one-page PDF has no author byline; published alongside the Renda-Mani Jane Street blog.",
+      "publication_date": null,
+      "associated_blog_date": "2026-09-14",
+      "publication_status": "Undated technical note attached to Jane Street blog",
+      "url": "https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/sequence-weighting-note.pdf",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["Complete one-page note: population definition, finite estimator, final remark"],
+      "supported_claims": [
+        {"claim_id": "S02-C1", "support_location": "Population definition", "support_paraphrase": "Optimization is over p>=0 with E[G]>0; individual gains may be negative."},
+        {"claim_id": "S02-C2", "support_location": "Finite estimator and Remark", "support_paraphrase": "Normalized gains and weight powers enter a percentile-rank kernel. The note states asymptotic recovery for an exact conditional power law and distinguishes its misspecified target from nonlinear least squares."}
+      ],
+      "project_implication": "Our finite interval, numerical guard and finite-sample stress tests require separate interpretation.",
+      "limitations": ["No implementation source was inspected; local numerical findings do not establish an upstream bug.", "The note does not supply our 1e-10 guard or p<=8 restriction."]
+    },
+    {
+      "id": "S03",
+      "title": "What is the Effect of Importance Weighting in Deep Learning?",
+      "authors": ["Jonathon Byrd", "Zachary Lipton"],
+      "publication_date": "2019-06",
+      "date_precision": "Conference held 9-15 June 2019; no exact article publication day asserted",
+      "publication_status": "ICML 2019, PMLR 97:872-881",
+      "url": "https://proceedings.mlr.press/v97/byrd19a.html",
+      "alternate_primary_url": "https://arxiv.org/abs/1812.03372",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["PMLR abstract and bibliographic record"],
+      "supported_claims": [
+        {"claim_id": "S03-C1", "support_location": "Abstract", "support_paraphrase": "Weighting effects diminish over epochs in the studied deep-learning settings; L2 regularization and batch normalization restore some effect, unlike dropout in those experiments."}
+      ],
+      "project_implication": "Duration and regularization dependence is prior work; the project can contribute a narrower controlled validation-selection case study.",
+      "limitations": ["This abstract-level review does not establish identical training regimes or metrics.", "Its general phenomenon should not be redescribed as our new discovery."]
+    },
+    {
+      "id": "S04",
+      "title": "The Implicit Bias of Gradient Descent on Separable Data",
+      "authors": ["Daniel Soudry", "Elad Hoffer", "Mor Shpigel Nacson", "Suriya Gunasekar", "Nathan Srebro"],
+      "publication_date": "2018-11",
+      "publication_status": "JMLR 19(70):1-57",
+      "url": "https://jmlr.org/papers/v19/18-188.html",
+      "alternate_primary_url": "https://arxiv.org/abs/1710.10345",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["JMLR metadata and abstract; publication month in paper header"],
+      "supported_claims": [
+        {"claim_id": "S04-C1", "support_location": "Abstract", "support_paraphrase": "For unregularized logistic regression with homogeneous linear predictors and linearly separable data, gradient descent approaches the maximum-margin direction; the paper gives specified extensions and slow convergence."}
+      ],
+      "project_implication": "Use as theoretical background while separating its assumptions from finite Transformer training.",
+      "limitations": ["Does not directly prove a sequence-loss-gain exponent law for AdamW Transformers."]
+    },
+    {
+      "id": "S05",
+      "title": "Understanding the role of importance weighting for deep learning",
+      "authors": ["Da Xu", "Yuting Ye", "Chuanwei Ruan"],
+      "publication_date": "2021-03-28",
+      "date_precision": "arXiv v1 submission",
+      "publication_status": "ICLR 2021, as stated on paper first page",
+      "url": "https://arxiv.org/abs/2103.15209",
+      "pdf_url": "https://arxiv.org/pdf/2103.15209",
+      "version": "v1",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["Abstract", "Sections 2-4", "Proposition 1", "Theorem 1 and discussion"],
+      "supported_claims": [
+        {"claim_id": "S05-C1", "support_location": "Section 3, Proposition 1", "support_paraphrase": "For the specified separable linear setting, weights can change finite-step convergence while preserving the asymptotic direction."},
+        {"claim_id": "S05-C2", "support_location": "Sections 2 and 4", "support_paraphrase": "The analysis states homogeneity, loss-tail and regularity assumptions and relates importance weighting to margins and distribution shift."}
+      ],
+      "project_implication": "Optimizer, stopping time and capacity should be separated before assigning a mechanism.",
+      "limitations": ["The theorem assumptions were inspected but not proved applicable to the local Transformer/AdamW setup."]
+    },
+    {
+      "id": "S06",
+      "title": "Is Importance Weighting Incompatible with Interpolating Classifiers?",
+      "authors": ["Ke Alexander Wang", "Niladri S. Chatterji", "Saminul Haque", "Tatsunori Hashimoto"],
+      "publication_date": "2022",
+      "first_preprint_date": "2021-12-24",
+      "revision_date": "2022-03-04",
+      "publication_status": "ICLR 2022",
+      "url": "https://arxiv.org/abs/2112.12986",
+      "version": "v2",
+      "alternate_primary_url": "https://openreview.net/forum?id=uqBOne3LUKy",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["arXiv abstract and metadata", "Primary OpenReview PDF indexed first-page excerpt"],
+      "supported_claims": [
+        {"claim_id": "S06-C1", "support_location": "Abstract", "support_paraphrase": "Polynomially tailed losses restore importance-weight effects in their analysis and experiments; exponentiating classical importance weights can help in the specified shift setting."}
+      ],
+      "project_implication": "Loss choice and prior exponentiation methods constrain broad novelty claims about compensation.",
+      "limitations": ["OpenReview direct access returned browser verification; accessible arXiv supplied the primary record.", "Distribution-shift importance weights are distinct from this project's randomized sequence weights."]
+    },
+    {
+      "id": "S07",
+      "title": "Scaling Data-Constrained Language Models",
+      "authors": ["Niklas Muennighoff", "Alexander M. Rush", "Boaz Barak", "Teven Le Scao", "Aleksandra Piktus", "Nouamane Tazi", "Sampo Pyysalo", "Thomas Wolf", "Colin Raffel"],
+      "publication_date": "2023",
+      "first_preprint_date": "2023-05-25",
+      "revision_date": "2025-06-28",
+      "publication_status": "NeurIPS 2023; inspected current arXiv v5 record",
+      "url": "https://arxiv.org/abs/2305.16264",
+      "version": "v5",
+      "alternate_primary_url": "https://papers.nips.cc/paper/2023/file/9d89448b63ce1e2e8dc7af72c984c196-Paper-Conference.pdf",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["arXiv abstract, authors, version dates; proceedings record"],
+      "supported_claims": [
+        {"claim_id": "S07-C1", "support_location": "Abstract", "support_paraphrase": "Experiments model diminishing returns from repeated tokens and excess parameters under limited unique data, with a compute-optimal scaling law."}
+      ],
+      "project_implication": "Repetition and compute budgets must be explicit when comparing weighting and scaling results.",
+      "limitations": ["Whole-dataset repetition and compute-optimal loss are different interventions and outcomes from p* on a fixed adaptation dataset."]
+    },
+    {
+      "id": "S08",
+      "title": "Scaling Domain Data Repetition in LLM Pretraining",
+      "authors": ["Jingwei Li", "Xinran Gu", "Rui Dai", "Xintong Hao", "Chengyin Xu", "Yan Wu", "Shuran Zheng", "Jingzhao Zhang"],
+      "publication_date": "2026-08-14",
+      "publication_status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2608.14071",
+      "pdf_url": "https://arxiv.org/pdf/2608.14071",
+      "version": "v1",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["Abstract and metadata; linked directly by Jane Street"],
+      "supported_claims": [
+        {"claim_id": "S08-C1", "support_location": "Abstract", "support_paraphrase": "At fixed tokens per parameter, optimal domain repetition mildly increases with model size; repetition optima vary with domain validation loss."}
+      ],
+      "project_implication": "Prespecify budget normalization and separate domain repetition optima from the effective sequence exponent.",
+      "limitations": ["Preprint status retained; the result does not predict our finite synthetic capacity contrast."]
+    },
+    {
+      "id": "S09",
+      "title": "Internal Data Repetition Destroys Language Models",
+      "authors": ["Jessica Chudnovsky", "Joshua Kazdan", "Noam Levi", "Rylan Schaeffer", "Yegor Denisov-Blanch", "Bo He", "Mehmet Donmez", "Sanmi Koyejo", "David Donoho"],
+      "publication_date": "2026-06-23",
+      "publication_status": "arXiv preprint; no main-conference status asserted",
+      "url": "https://arxiv.org/abs/2606.24998",
+      "version": "v1",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["Abstract, authors and submission history"],
+      "supported_claims": [
+        {"claim_id": "S09-C1", "support_location": "Abstract", "support_paraphrase": "At fixed compute allocated to duplicates, evaluation loss peaks at an intermediate repeat count; a misspecified linear model reproduces a qualitative loss peak."}
+      ],
+      "project_implication": "A nonmonotonicity or memorization-generalization trade-off claim alone has substantial prior overlap.",
+      "limitations": ["The outcome is evaluation loss as repetition changes, rather than the sequence-weight exponent as capacity changes.", "Abstract-level review; no theorem or numerical result is imported into our setting."]
+    },
+    {
+      "id": "S10",
+      "title": "Data Repetition Beats Data Scaling in Long-CoT Supervised Fine-Tuning",
+      "authors": ["Dawid J. Kopiczko", "Sagar Vaze", "Tijmen Blankevoort", "Yuki M. Asano"],
+      "publication_date": "2026-02-11",
+      "revision_date": "2026-08-09",
+      "publication_status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.11149",
+      "version": "v2",
+      "accessed_utc_date": "2026-09-30",
+      "primary_source": true,
+      "inspected": ["Abstract, authors and version history"],
+      "supported_claims": [
+        {"claim_id": "S10-C1", "support_location": "Abstract", "support_paraphrase": "At fixed update budget, repeated reasoning examples outperform larger single-pass datasets in the reported settings, and improvements plateau near complete training memorization."}
+      ],
+      "project_implication": "Keep synthetic utility failures local; memorization need not universally imply worse generalization.",
+      "limitations": ["Reasoning supervised fine-tuning is distinct from our answer-token synthetic task.", "Abstract-level review; no claim that its stopping rule transfers to our experiment."]
+    }
+  ],
+  "local_evidence": [
+    "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/REPORT.md",
+    "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/REPORT.md",
+    "outputs/sequence-weighting-stage10/SYNTHESIS_STAGE4_10.md",
+    "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/REPORT.md",
+    "HANDOFF.md sections 3 and 10-18"
+  ],
+  "review_limits": [
+    "Focused selection of ten primary sources, not an exhaustive related-work survey.",
+    "No secondary summaries serve as evidence for retained claims.",
+    "Ancillary literature claims are primarily abstract-level; direct theorem applicability was not established.",
+    "No new estimator, exact large-LM replication, Jane Street implementation bug, universal scaling law, useful compensation algorithm or publication guarantee is established.",
+    "Source versions and findings may change after the access date; refresh before submission."
+  ]
+}

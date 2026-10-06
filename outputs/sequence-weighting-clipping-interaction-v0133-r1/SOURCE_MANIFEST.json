@@ -1,0 +1,134 @@
+{
+  "version": "v0133",
+  "status": "SOURCE_PREPARED_INDEPENDENT_REVIEW_PENDING_NO_EXECUTION",
+  "utc": "2026-10-04T12:53:51.6818484Z",
+  "intended_bundle": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-clipping-interaction-v0133-r1",
+  "files": [
+    {
+      "path": "audit.py",
+      "bytes": 23860,
+      "sha256": "5f5897d24f48983a148a27c9630a4ac8ce1de163dcf6cf4334bcb49871f7ed7c"
+    },
+    {
+      "path": "BACKGROUND_ANCHORS.json",
+      "bytes": 1211,
+      "sha256": "2d803a22b4e37114c4cbff73dd9215e59b2c687f8d4d1f46d4486133327ebca1"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5656,
+      "sha256": "7203a4a7abd37b5de3222b1268c93ef43ae6c6d0c1ec5076cd8588cb5ffa44a4"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 3417,
+      "sha256": "aebba493728493249ba2dad254343f798029cc43c890c041b41ca3796c1773a9"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 18864,
+      "sha256": "0c20c7b72ffc279bf0d7740caf6fecf93cbb2ea9fcb200101b25b7a49a92a67b"
+    },
+    {
+      "path": "FAILED_ATTEMPT_BINDINGS.json",
+      "bytes": 7371,
+      "sha256": "82bd6550c224ea12a160b1f83755d409a4ae602a32edb9ff4c8064254ed2b770"
+    },
+    {
+      "path": "FRESHNESS_RECONCILIATION.json",
+      "bytes": 5585,
+      "sha256": "13a03f7346676f5d995ea02e1de3f91bd75cc4645871f78d503b3966d01b7947"
+    },
+    {
+      "path": "FROZEN_PROTOCOL.md",
+      "bytes": 8552,
+      "sha256": "21a25944baf180e65e9ecbc8466967a75c252019248b7742c1ca3dffb6da13d9"
+    },
+    {
+      "path": "manual_launch.sh",
+      "bytes": 11256,
+      "sha256": "42392e3ec9c14c8888d9014840c9251be5dead67bf0c99fba035f894091eec09"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5395,
+      "sha256": "96b747274b4d0f0898f31848eddb2651eaa12de5933f634a665838fcebec48c2"
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "bytes": 6722,
+      "sha256": "ac0b284eb8548e248622c758943e2be0b8026ab12c2443842258081e80448fcd"
+    },
+    {
+      "path": "REVISION_RECORD.md",
+      "bytes": 3412,
+      "sha256": "1c40d54f1c856afb47d0f14ef1b9bd9d4fa19db6f0c93a64193a54bec1fcfef8"
+    },
+    {
+      "path": "runtime_phases.sh",
+      "bytes": 651,
+      "sha256": "e04b8e2ff1eb29cec560f429a6d98133250a8cced0fda5f9035e3d5f3490cdf3"
+    },
+    {
+      "path": "SEED_CENSUS.json",
+      "bytes": 4215022,
+      "sha256": "d747a0b4cdc8ba621ffd67ca3274bb96e67938124a09e0df9a45f67640e4720b"
+    },
+    {
+      "path": "source_census.ps1",
+      "bytes": 4094,
+      "sha256": "3068373cdaba763e805e35d460ad2a5d616164929e6918a488479887e720f803"
+    },
+    {
+      "path": "SOURCE_PREPARATION_STATUS.md",
+      "bytes": 771,
+      "sha256": "1fa3277ba75b85f320193cac04f46c1fdec9af68192e8f243d0647c0e0a23a82"
+    },
+    {
+      "path": "source_reconciliation.ps1",
+      "bytes": 5305,
+      "sha256": "c3c77f2ffdf03b098e601bafdbdbbd8dde1cea8dcd154501759cd7d305e98f00"
+    },
+    {
+      "path": "SOURCE_REVIEW_TEMPLATE.json",
+      "bytes": 447,
+      "sha256": "296f01cacad2fd3f7b924c6b48d6442d1800cf6a4e46b492f0c116e95490d825"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 9842,
+      "sha256": "d079dcc5b411cbb824d0706c49261d84c9eef1c6a02b2c9a535f828fd7358296"
+    },
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "constraints": {
+    "runtime_total_seconds": 1800,
+    "audit_total_seconds": 600,
+    "additional_storage_bytes": 536870912,
+    "free_reserve_bytes": 2147483648,
+    "previous_runtime_charge_seconds": 2,
+    "runtime_remaining_seconds": 1798
+  },
+  "accepted_planning": {
+    "path": "outputs/sequence-weighting-clipping-interaction-v0133-planning/PROPOSED_PROTOCOL.md",
+    "sha256": "0c5cde22d42db88e7218f29c783e96d20dd4478401ec711cfdbf7c799b44e1d1"
+  },
+  "exclusions": "Manifest self-hash and dynamic reviews/receipts/later results. No PASS or numerical result supplied.",
+  "revision": "r1",
+  "operational_attempt": "20261004-02",
+  "failed_source_manifest_sha256": "bda6d8a4f57bec7a889ca31f367ddacc22a26b93a1a1013792df9b8595a84c77"
+}

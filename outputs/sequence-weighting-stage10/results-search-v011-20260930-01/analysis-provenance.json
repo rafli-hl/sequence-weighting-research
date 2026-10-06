@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-30T13:17:47.213157+00:00",
+  "source_sha256": {
+    "core.py": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a",
+    "search_math.py": "c8227af6f80053b69c36aa92e31d0b5197f3e75cb9fe0be15768b8c9bda3a4df",
+    "independent_math.py": "f7696dbc120757956f1c93fa6343224d7bbf51c5bef46cdf4102c6eda999d743",
+    "common_stage10.py": "9770f92f63114cf6b635c89a6674b32a538720e454b6f2846069979d731349ec",
+    "inputs.py": "f6d9b4a7ad90b25fa6301b949c74bec8bcc744387b71c4f8f56045b1ce28b64f",
+    "stage10.py": "2d24102da8e569e73e54b4b713a05966531642bf647b725bc6eeb315ba36368a",
+    "audit_stage10.py": "9cfdad6b4060d50f3d40570ca4fc8edd79921c9c82a9aaf05a8d2cd5a0fefb37",
+    "check_stage10.py": "725b5da6ecb9919cb1c3f6ecb6a220676b72df7ac5dcbf1cbe6a6eefc08a4f10",
+    "analyze_stage10.py": "141b2d3c1263116efae798496dea4738dd39aff7a965bee91df9173104cf965d",
+    "analysis_checks.py": "a51532b3d3051bdd3f6bfdd86f26f8fca2e976856020c26a347a517286e6bdff",
+    "PROTOCOL_STAGE10.md": "9029187acf42ca5dfbf3893396627ca94e9055f57bf9223a482c6eb4028e2391",
+    "README.md": "696b3f44f1d521077943fa3c4f1e830a7d08344d58d4773cdabb774e64efd0ac",
+    "DERIVATION.json": "6d20752d2ad8aaa3d0a3eb3b3e3c046abd2bb686693831fa96819c116c390981"
+  },
+  "results_sha256": "5651f006223535011df71ec51eca8b00d26c508516396fd67a34aaa9a3549c0a",
+  "stage9_policy_context_sha256": "df20711e0fff6dd40031a9d8b6ed0eb24cbb67a43bb9e42014c91570070efa4d",
+  "END_sha256": "ff43ea361f6e17151218469fb20bbddb9181510be89cc8ac4654fef4941848f9",
+  "AUDIT_sha256": "b5aa3a7143b72095ae79d33b67ebd90318d2f6172bf0ad837a6bf28598b53aa0",
+  "visual_review": "pending"
+}

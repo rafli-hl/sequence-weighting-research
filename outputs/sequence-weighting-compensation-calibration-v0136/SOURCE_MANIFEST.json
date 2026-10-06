@@ -1,0 +1,146 @@
+{
+  "version": "v0136",
+  "status": "SOURCE_CANDIDATE_PENDING_INDEPENDENT_REVIEW_AND_NUMERICAL_APPROVAL",
+  "utc": "2026-10-05T05:41:32.8499215Z",
+  "calibration_only": true,
+  "confirmation_implemented": false,
+  "runtime_seconds": 900,
+  "audit_seconds": 300,
+  "files": [
+    {
+      "path": "audit_fit.py",
+      "bytes": 6751,
+      "sha256": "51c22cf6c6c811ba5132bcbfd04ce470a2c3b9cd2ff1cae27b5f1de2f6223ed6"
+    },
+    {
+      "path": "audit_steps.py",
+      "bytes": 3690,
+      "sha256": "7caeed8d8fd7740e2a040aa8a1b68928b61e97f9788abcdc85d887f9cb14d067"
+    },
+    {
+      "path": "audit.py",
+      "bytes": 18041,
+      "sha256": "a0658c8b4e9c70ea07bf0250fb0761262523858d7642c368894ad3d655c3fbd3"
+    },
+    {
+      "path": "CALIBRATION_RUNTIME_APPROVAL_TEMPLATE.json",
+      "bytes": 310,
+      "sha256": "fe24fcf830f5c2b3d46cca2a3153b9820f7cf3cdebfd3ec7ec38fa8d1c0601d0"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5451,
+      "sha256": "fc856d80ded7a31887d6ec8078b22e99bb13cc4964ac61bdcfd190eae33ffd57"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 1489,
+      "sha256": "cfbc01616e1758eca5eb871950fb3dd2336fd49ff7203ec41329a5ab2eba1fa1"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 20420,
+      "sha256": "a3203c3c8044affddec6dc9a2b5fd6399bf9df572114aa85193f0324859b14d5"
+    },
+    {
+      "path": "fit.py",
+      "bytes": 6340,
+      "sha256": "e3c8e0df0addf711139393df257028904bbb3976cab9b58a06fbeda0685e6200"
+    },
+    {
+      "path": "fixtures.py",
+      "bytes": 3551,
+      "sha256": "00646efa5dd32077d7c6a3d8c2072bdecebe9169b5a85731aa6a7483eccbaac3"
+    },
+    {
+      "path": "FRESHNESS_RECONCILIATION.json",
+      "bytes": 25748,
+      "sha256": "3472a3756873175da8a225a28a299866cad2198fcc3af8d9670a38782cf9bc33"
+    },
+    {
+      "path": "FROZEN_PROTOCOL.md",
+      "bytes": 9806,
+      "sha256": "7a0a1adb80ab5b262d67dea4792cfa19bedded0f0605885593897d52d038c6c6"
+    },
+    {
+      "path": "manual_launch.sh",
+      "bytes": 11301,
+      "sha256": "8260382b4607f5fa8c5617b6063b5eea696f42c790a7bb68872dec3433df1b2b"
+    },
+    {
+      "path": "MANUAL_UBUNTU_COMMANDS.md",
+      "bytes": 3999,
+      "sha256": "e9e1e7ad35e043d79f5263e15c85bfffa3c9c28416772fe77ead2b0e9f975add"
+    },
+    {
+      "path": "PROPOSED_PROTOCOL.md",
+      "bytes": 14000,
+      "sha256": "90742b9f07ffce88357e08166d9801010464c7b607f1b476adaa69a42256dbd1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1308,
+      "sha256": "8fb4072ace20b835a8f1744d4a15c2bd7c98869431a60eab6004b429f00b410f"
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "bytes": 4018,
+      "sha256": "88db8268af0c01b21f34d3dc6eb37d74fbe9d6280423b91f694c8e41b3c61ba4"
+    },
+    {
+      "path": "runtime_phases.sh",
+      "bytes": 728,
+      "sha256": "3de41e0742dc71d2c870bee9fc90a892bbaa9e2acac3ec424c59cb9591186187"
+    },
+    {
+      "path": "SEED_CENSUS.json",
+      "bytes": 4343130,
+      "sha256": "8b3caef8d66a8df8c1ba8fbcdc08b22a916445010852323496c70429cdffa4a7"
+    },
+    {
+      "path": "SEED_LEDGER.json",
+      "bytes": 4434,
+      "sha256": "6b16a543f6eb957f1c47c6c299d2f5f57e524245e39f41b3525cdd2a55ca3efc"
+    },
+    {
+      "path": "SOURCE_PREPARATION_STATUS.json",
+      "bytes": 1522,
+      "sha256": "116cdaf92872f3e452c3d278815855bf5584b60f3593ff81ce5211f4d5d9d5a0"
+    },
+    {
+      "path": "SOURCE_REPAIR_FIXTURE_BINDINGS.md",
+      "bytes": 2138,
+      "sha256": "bf6c94b7b0c1480c400fd22933160f79ccd24c0ebc5b621d04692d00c09f2958"
+    },
+    {
+      "path": "SOURCE_REVIEW_TEMPLATE.json",
+      "bytes": 633,
+      "sha256": "5a06956a08f8540cf9f553fc34cb3ac7c6166b341f8845cfe16fa9afbd333794"
+    },
+    {
+      "path": "STORAGE_BUDGET.json",
+      "bytes": 1656,
+      "sha256": "303fa46a8a6dbc7c098f0ed9ef5e68f340847aad8dede32b66e0ae12703e2fb1"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 10798,
+      "sha256": "a79d8d47c0d0ff2f6420699c69d45839ce6f2edb254965e3d356e1ec631634a9"
+    },
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ]
+}

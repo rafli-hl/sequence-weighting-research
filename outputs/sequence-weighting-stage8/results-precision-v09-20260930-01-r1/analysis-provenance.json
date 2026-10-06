@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T04:59:04.464227+00:00",
+  "source_sha256": {
+    "core.py": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a",
+    "precision_math.py": "cf2c2d9533f7086ec9f342cc886dff13a07672c2e624fbde3027fce2d3e7fe94",
+    "stage8.py": "dee837bef24b3b16a784337b7b6129615c850444d94a9dcb51d32bb5ad14edb0",
+    "check_stage8.py": "6516f918db884a400358697077c08c45938c99033d18a1df0f3a87d0aeab3f68",
+    "audit_stage8.py": "be67e97b440d732f843c3289ae97a33ecd11846687109c576d7cfec2c1bde229",
+    "analyze_stage8.py": "e13d65a362af437c5601bbfb4e81371f9ed6b7f53f768eb58c025eb17b1ba796",
+    "analysis_checks.py": "c8ddadf810e149649e7922d1ff33404e6dc6569ddd43e24c4fd6f640939a957a",
+    "PROTOCOL_STAGE8.md": "ae3a8b4542e44ec32aebe6c122bcca365fb52b0b9e874c2307fb11bf5fcbda34",
+    "README.md": "8967a0cfa56d724226b20d86ad6326fedca56eb839d55c5ae0df227f5e926ef6"
+  },
+  "profiles_sha256": "8592377d4de2f39f4f9ca6b5699297023cd8b0e938d7a5258c2f7eeb72014fcb",
+  "classification_evidence_sha256": "870a4867b95f2f2987635db74fbf1bd232379eb6162bdc3e700ccf29a8d41f9b",
+  "visual_review": "pending"
+}

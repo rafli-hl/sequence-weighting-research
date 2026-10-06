@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "panels": {
+    "P1": {
+      "status": "PASS",
+      "checks": [
+        "paired utility and zero-update gates",
+        "separate scaling gate",
+        "signed K and undefined propagation"
+      ]
+    },
+    "P2": {
+      "status": "PASS",
+      "checks": [
+        "paired utility and zero-update gates",
+        "separate scaling gate",
+        "signed K and undefined propagation"
+      ]
+    },
+    "P3": {
+      "status": "PASS",
+      "checks": [
+        "paired utility and zero-update gates",
+        "separate scaling gate",
+        "signed K and undefined propagation"
+      ]
+    },
+    "P4": {
+      "status": "PASS",
+      "checks": [
+        "paired utility and zero-update gates",
+        "separate scaling gate",
+        "signed K and undefined propagation"
+      ]
+    }
+  }
+}

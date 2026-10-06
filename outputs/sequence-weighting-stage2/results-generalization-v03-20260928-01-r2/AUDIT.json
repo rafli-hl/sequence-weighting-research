@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T13:00:46.095953+00:00",
+  "expected_adaptation_runs": 307,
+  "tuning": 216,
+  "confirmation": 90,
+  "benchmark_excluded": 1,
+  "pretraining_checkpoints": 52,
+  "paired_arm_checks": 153,
+  "test_evaluations": 90,
+  "failed_runs": [],
+  "source_manifest": {
+    "stage2.py": "88e2e876d877a4fa4715df793837fedf753afaf088eabf62fd3f0cf92eef95f4",
+    "model.py": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16",
+    "core.py": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a",
+    "PROTOCOL_STAGE2.md": "8a3c068761e168e8a4eec48e2ea2517781c378dd2e9944c726f4cb53a3f1e379"
+  },
+  "historical_files_rechecked": 457,
+  "selection_sha256": "9bb5663e0926884fd119ce1fa0c36cc1c4bd8e2024ec7eb6c041d56216143a07",
+  "checks": [
+    "complete exact schedule, no failed runs",
+    "all saved source/checkpoint hashes",
+    "historical Stage 0/1 records match migration SHA256 manifest",
+    "full corpus token/label regeneration and test-toggle invariance",
+    "split and pretraining keys disjoint",
+    "all actual weight/order tensors regenerate",
+    "paired full initial losses/components/accuracy identical",
+    "data/weights/orders identical across capacities",
+    "selection independently reconstructed from validation",
+    "selection freeze precedes every confirmation and test call",
+    "test exactly once at selected checkpoint, absent in tuning",
+    "all saved metrics/fit estimates agree with retained signed sequence losses"
+  ]
+}

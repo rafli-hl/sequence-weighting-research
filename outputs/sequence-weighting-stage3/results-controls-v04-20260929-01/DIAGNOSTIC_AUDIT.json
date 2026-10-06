@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "gain_identity_max_abs_error": 1.387670636177063e-06,
+  "fresh_checkpoints": 540,
+  "retrospective_checkpoints": 450,
+  "primary_definition_unchanged": true
+}

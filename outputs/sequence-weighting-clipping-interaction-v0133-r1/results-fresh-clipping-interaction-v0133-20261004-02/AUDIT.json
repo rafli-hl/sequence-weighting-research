@@ -1,0 +1,52 @@
+{
+  "status": "PASS_NUMERICAL_AND_PAIRING_AUDIT",
+  "utc": "2026-10-04T13:32:27.626119+00:00",
+  "manifest_sha256": "baf8a3de3aab342b842f8d2fc0ce4b1899cf77b6e58987745df9d64b27ab5ab3",
+  "checkpoint_reevaluations": 50,
+  "full_input_regenerations": 10,
+  "adaptation_update_trace_rows": 6400,
+  "objective_fixtures": {
+    "status": "PASS",
+    "objective_and_gradient_arms": [
+      "Uclip",
+      "Iclip",
+      "Unoclip",
+      "Inoclip"
+    ],
+    "tolerance": 1e-07,
+    "step_snapshot_arms": [
+      "Uclip",
+      "Iclip",
+      "Unoclip",
+      "Inoclip"
+    ],
+    "step_tolerance": 1e-09,
+    "guarded_zero_norm": true,
+    "nonfinite_rejected": true,
+    "clip_gradient_norm_tolerance": 0.001
+  },
+  "tolerance_nll": 2e-06,
+  "discrepancy_maxima": {
+    "1e-12": 0.0,
+    "1e-09": 6.006306563222097e-14,
+    "1e-07": 8.881784197001252e-16,
+    "2e-06": 4.76837158203125e-07,
+    "0.001": 1.4668231870018644e-05
+  },
+  "discrepancy_check_count": 14494,
+  "paired_seed_rows": 10,
+  "corpus_rows": 5,
+  "trajectories": 40,
+  "source_review_required_separately": true,
+  "output_hashes": {
+    "ALLOCATION.json": "20493022efaa9b153f7431b22c9e01334c4e005f73094da0cd6c01b8814b802b",
+    "CORPUS_CONTRASTS.csv": "bc316882e9a49af753d58a84497fbb0044f20ec9ecb972df2088f37a88fa5910",
+    "CORPUS_SUMMARY.json": "92f3fa92003ab391b8d64982e97616f2a7e828cd6e2703df8bd258a35615e2b9",
+    "PAIRS.json": "996e2a14368931a84ab5ef15444adf8151d70d7daec25b279566f2243f01cc26"
+  },
+  "limitations": [
+    "Fixed optimizer/clipping/teacher-forced synthetic design only",
+    "No universal mechanism or mediation proof",
+    "Trace/source review is evidence of execution policy; intermediate updates not independently replayed"
+  ]
+}

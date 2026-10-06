@@ -1,0 +1,43 @@
+{
+  "version": "v0135",
+  "parent": "completed v0133-r1",
+  "parent_manifest_sha256": "baf8a3de3aab342b842f8d2fc0ce4b1899cf77b6e58987745df9d64b27ab5ab3",
+  "parent_audit_sha256": "915ecc81692fd6f7f7aba52f80d55af66e563139e6a64ae1e54b75ba89a16078",
+  "parent_result_review_turn": "01a1071e-967b-7735-8efd-3fa513484b5e",
+  "latest_background_v0134_audit_sha256": "94ebc3b1195c7c384477d6d82d35de72c9290d2946a3610c596aa96e30d02d9b",
+  "latest_background_v0134_result_review_turn": "01a109f2-031d-70b3-8370-d8f26030baeb",
+  "trusted_vendor": [
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "trusted_launcher_parent_sha256": "42392e3ec9c14c8888d9014840c9251be5dead67bf0c99fba035f894091eec09",
+  "trusted_launcher_tail": "EntirebodyfromexportPYTHONDONTWRITEBYTECODEunchangedafterV0133->V0135andfunctionv0133_->v0135_ substitution;newpreambleidentityand1800s cap",
+  "reused_interfaces": [
+    "G1data/pretraining namespaces",
+    "weights/orders",
+    "baseline+trajectoryhashbinding",
+    "exclusivewrites and resourceaccounting",
+    "r1outerregistration/cancellation/cleanup/reapingreceipts"
+  ],
+  "changed_sources": [
+    "Newglobalnormmatchedoptimizer",
+    "Frozenpretrainingfixtures",
+    "Independentrealstepsnapshotaudit",
+    "Fourpreconditioningarms/primary/gates",
+    "Newfreshseedfreeze"
+  ],
+  "numerical_independence_limit": "Auditsharesvendorforwardandautograd;doesnotimportcandidateoptimizerorobjective;only8realstepsreconstructed,notfullmomentpath"
+}

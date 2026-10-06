@@ -1,0 +1,1106 @@
+{
+  "status": "EXISTING_FILES_ONLY_NO_NEW_PLOTS",
+  "utc": "2026-10-05T03:35:33.8674313Z",
+  "destination": "D:\\codex\\sequence-weighting-research\\figure",
+  "figure_files": 45,
+  "data_table_files": 46,
+  "source_figure_inventory_count": 105,
+  "excluded_fixture_image_count": 36,
+  "excluded_other_images": 24,
+  "studies": [
+    {
+      "prefix": "v01-stage0",
+      "date": "2026-09-28",
+      "folder": "outputs/sequence-weighting-pilot/results-local-wsl-20260928",
+      "report": "RESULTS.md",
+      "topic": "Exploratory pilot: learning curves and shared/group/instance learning",
+      "note": "Single-seed exploratory result; no scaling-law claim",
+      "json": [
+        "summary.json"
+      ]
+    },
+    {
+      "prefix": "v02-stage1",
+      "date": "2026-09-28",
+      "folder": "outputs/sequence-weighting-pilot/results-mechanism-v02",
+      "report": "REPORT.md",
+      "topic": "Calibration, capacity curves, duration, gain fits and public-text check",
+      "note": "Early synthetic peak depends on fixed policy and fit quality; later studies qualify it",
+      "json": [
+        "summary.json",
+        "text-summary.json"
+      ]
+    },
+    {
+      "prefix": "v03-stage2",
+      "date": "2026-09-28",
+      "folder": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2",
+      "report": "REPORT.md",
+      "topic": "Capacity-specific validation selection, paired contrasts and trajectories",
+      "note": "Frozen generalization criterion failed; selected-policy peak disappeared with different selected durations"
+    },
+    {
+      "prefix": "v04-stage3",
+      "date": "2026-09-29",
+      "folder": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01",
+      "report": "REPORT.md",
+      "topic": "Optimizer/duration controls, selection objective and baseline components",
+      "note": "Controlled synthetic schedule/optimizer contrasts; no large-LM mechanism inference"
+    },
+    {
+      "prefix": "v05-stage4",
+      "date": "2026-09-29",
+      "folder": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2",
+      "report": "REPORT.md",
+      "topic": "Pretraining baselines, matched adaptation, gain reference and selected policies",
+      "note": "Final presentation r2; numerical-verification repair documented in source report"
+    },
+    {
+      "prefix": "v06-stage5",
+      "date": "2026-09-29",
+      "folder": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1",
+      "report": "REPORT.md",
+      "topic": "Adaptation utility versus own no-adaptation baseline and selected fits",
+      "note": "Global useful-adaptation criterion failed; undefined p* observations retained"
+    },
+    {
+      "prefix": "v07-stage6",
+      "date": "2026-09-29",
+      "folder": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01",
+      "report": "REPORT.md",
+      "topic": "Tuning-panel selection, held-out utility, crossed gains and fits",
+      "note": "Middle-capacity utility failed in all four panels; epoch0 and undefined outcomes retained"
+    },
+    {
+      "prefix": "v08-stage7",
+      "date": "2026-09-30",
+      "folder": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1",
+      "report": "REPORT.md",
+      "topic": "Signed-gain estimator recovery, cancellation and scale invariance",
+      "note": "Simulation rather than training; guard/undefined outcomes and recovery errors retained"
+    },
+    {
+      "prefix": "v09-stage8",
+      "date": "2026-09-30",
+      "folder": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2",
+      "report": "REPORT.md",
+      "topic": "Objective ranking, contrast errors and reference regret",
+      "note": "Reused synthetic gain profiles; precision agreement is not true-exponent recovery"
+    },
+    {
+      "prefix": "v010-stage9",
+      "date": "2026-09-30",
+      "folder": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2",
+      "report": "REPORT.md",
+      "topic": "Numerical precision on preserved model gains, grid agreement and model context",
+      "note": "179 comparable inputs; seven guards retained; no new training or peak validation"
+    },
+    {
+      "prefix": "v011-stage10",
+      "date": "2026-09-30",
+      "folder": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01",
+      "report": "REPORT.md",
+      "topic": "Continuous-search coverage, objective gaps and parameter differences",
+      "note": "179 comparable inputs and seven guards; four original parameter disagreements retained"
+    },
+    {
+      "prefix": "v0128-stage11",
+      "date": "2026-10-02",
+      "folder": "outputs/sequence-weighting-stage11-v0128/results-analysis-20261002-01",
+      "report": "REPORT.md",
+      "topic": "G1/G16 group learning, validation-selected utility and selected p*",
+      "note": "Five corpora/two nested seeds; rule change also changes teacher-forced context; own baselines required",
+      "json": [
+        "summaries.json"
+      ]
+    },
+    {
+      "prefix": "v0130",
+      "date": "2026-10-03",
+      "folder": "outputs/g1-clipping-diagnostic-v0130/results",
+      "report": "DECISION_RECORD.md",
+      "topic": "Completed no-clip diagnostic: no saved figure",
+      "note": "Frozen width128 validation criterion failed; retain canonical clip1 control",
+      "json": [
+        "AUDIT_AND_ANALYSIS.json"
+      ]
+    },
+    {
+      "prefix": "v0131",
+      "date": "2026-10-03",
+      "folder": "outputs/sequence-weighting-weighting-contrast-v0131/results-fixed-policy-v0131-20261003-01",
+      "report": "SYNTHESIS_AND_DECISION.md",
+      "topic": "Paired random-minus-uniform held-out loss and training allocation",
+      "note": "Historical-corpus reanalysis; adverse held-out tradeoff and preferential allocation do not prove mediation",
+      "json": [
+        "SUMMARY.json"
+      ]
+    },
+    {
+      "prefix": "v0132",
+      "date": "2026-10-04",
+      "folder": "outputs/sequence-weighting-factorial-v0132/results-fresh-factorial-v0132-20261004-01",
+      "report": "RESULT_AND_DECISION_20261004.md",
+      "topic": "Completed fresh four-arm loss-weighting experiment: no saved figure",
+      "note": "Instance-weighting group-test penalty +0.035304929 nats; positive in all five corpus means; fixed-policy effect",
+      "json": [
+        "CORPUS_SUMMARY.json"
+      ]
+    },
+    {
+      "prefix": "v0133-r1",
+      "date": "2026-10-04",
+      "folder": "outputs/sequence-weighting-clipping-interaction-v0133-r1/results-fresh-clipping-interaction-v0133-20261004-02",
+      "report": "RESULT_AND_DECISION_20261004.md",
+      "topic": "Completed fresh clipping interaction: no saved figure",
+      "note": "Primary interaction +0.000743708 nats,3/5 positive; frozen practical criterion failed; penalties persisted with and without clip",
+      "json": [
+        "CORPUS_SUMMARY.json"
+      ]
+    },
+    {
+      "prefix": "v0134",
+      "date": "2026-10-05",
+      "folder": "outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01",
+      "report": "PANEL_REPORT.md",
+      "topic": "Completed fixed existing-checkpoint gradient panel: no saved figure",
+      "note": "Initial cosine -0.07425 is mixed:4/5 negative corpus means,6/10 seeds; component dispersion is not total weighted-gradient variance",
+      "json": [
+        "COHORT_SUMMARY.json",
+        "CORPUS_SUMMARY.json"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "study": "v01-stage0",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v01-stage0__pattern-learning.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-local-wsl-20260928\\pattern-learning.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-local-wsl-20260928/pattern-learning.png",
+      "bytes": 74852,
+      "sha256": "d0d7a95c503f20175e7db0019e9dde8a138d498df498905a7ddd0927e8b16b6f"
+    },
+    {
+      "study": "v01-stage0",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v01-stage0__pattern-learning.svg",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-local-wsl-20260928\\pattern-learning.svg",
+      "source_relative": "outputs/sequence-weighting-pilot/results-local-wsl-20260928/pattern-learning.svg",
+      "bytes": 38189,
+      "sha256": "fa2949643700c8b06e334e72c8cac5de65b0c0c3503a5664ea5c71e47c29df5f"
+    },
+    {
+      "study": "v01-stage0",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v01-stage0__pilot-curves.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-local-wsl-20260928\\pilot-curves.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-local-wsl-20260928/pilot-curves.png",
+      "bytes": 125742,
+      "sha256": "dea7f37ffb8f77ede194b5c86d5603704fb3c6c5bbf6c7e39d7746bae8899673"
+    },
+    {
+      "study": "v01-stage0",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v01-stage0__pilot-curves.svg",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-local-wsl-20260928\\pilot-curves.svg",
+      "source_relative": "outputs/sequence-weighting-pilot/results-local-wsl-20260928/pilot-curves.svg",
+      "bytes": 57021,
+      "sha256": "38c86b3e0d887768e7283a055d9451bee88768a6dc1ec5b06a50aae141e8a41e"
+    },
+    {
+      "study": "v01-stage0",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v01-stage0__summary.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-local-wsl-20260928\\summary.json",
+      "source_relative": "outputs/sequence-weighting-pilot/results-local-wsl-20260928/summary.json",
+      "bytes": 1857,
+      "sha256": "85b22f12f704c1fb1fbba8be3ac4de1096110e481d4ffc98ed984e641074cd52"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v02-stage1__all-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\all-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/all-checkpoints.csv",
+      "bytes": 41278,
+      "sha256": "4bc00923d085be49c13feb6a1c280bd1cacc0c232323fd76d60f641423f3c332"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v02-stage1__calibration.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\calibration.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/calibration.png",
+      "bytes": 81288,
+      "sha256": "2e895e2e47ff12aa2eb80fbe9eefd41cf41d378d8d1551da3b78860655b8625e"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v02-stage1__capacity-curves.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\capacity-curves.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/capacity-curves.png",
+      "bytes": 108591,
+      "sha256": "a3c20fb12bc795cccd3ebb033154a98bfaed9edaaf0f3702fb31e8920142f15f"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v02-stage1__duration-diagnostics.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\duration-diagnostics.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/duration-diagnostics.png",
+      "bytes": 175152,
+      "sha256": "4e92c93880f711fc43312512441f70bd5dff94d7dd4bab1b984f20db35d0f38c"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v02-stage1__gain-fit.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\gain-fit.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/gain-fit.png",
+      "bytes": 133482,
+      "sha256": "a4395f70e6daa7210fdac9170fb77fb62b64e0044e2aa6ae49fb0c193af531f0"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v02-stage1__summary.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\summary.json",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/summary.json",
+      "bytes": 7243,
+      "sha256": "6a6103fa8446d402a4c5bd4d8cda1aa9f7eabedc105e152ec7a8a780e1dc111c"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v02-stage1__text-check.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\text-check.png",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/text-check.png",
+      "bytes": 90154,
+      "sha256": "c42b885c8a68b3f3effec5d8374625591f4848888b1185a37d79529988f1151f"
+    },
+    {
+      "study": "v02-stage1",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v02-stage1__text-summary.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-pilot\\results-mechanism-v02\\text-summary.json",
+      "source_relative": "outputs/sequence-weighting-pilot/results-mechanism-v02/text-summary.json",
+      "bytes": 11032,
+      "sha256": "c0e3cede9a50813ea6cede178db91bd1afb10e7f59c11f55f1da4fb6c4fa1d8d"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v03-stage2__all-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\all-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/all-checkpoints.csv",
+      "bytes": 732875,
+      "sha256": "64f2210a0ea95ed57778a6ec734567808a984187681144322fc7b617711fd999"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v03-stage2__gain-fit.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\gain-fit.png",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/gain-fit.png",
+      "bytes": 125706,
+      "sha256": "8c6c3531323a251afef7e13e569973799ce8c86ef0bd0376649414fb45c6b5e8"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v03-stage2__paired-contrasts.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\paired-contrasts.csv",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/paired-contrasts.csv",
+      "bytes": 1454,
+      "sha256": "97bc439980d60f242fd8b823d3b4103754576a0b3152298819cda55b9ce14c6a"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v03-stage2__paired-contrasts.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\paired-contrasts.png",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/paired-contrasts.png",
+      "bytes": 77423,
+      "sha256": "73378a9d044ddae312c73220102631fde6fda202ca6e3bdb3c697a90d391fde7"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "existing_data_table",
+      "target_file": "v03-stage2__selected-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\selected-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/selected-checkpoints.csv",
+      "bytes": 46720,
+      "sha256": "18c035555c390bedf352e7b1de25b24243516e82fb05bdf6b10434c10eb632c6"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v03-stage2__selected-policy.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\selected-policy.png",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/selected-policy.png",
+      "bytes": 206143,
+      "sha256": "052e66a940dedd6966be5f33c2e36ffc4cf1fe286d39a327ffbcb9b466654701"
+    },
+    {
+      "study": "v03-stage2",
+      "study_date": "2026-09-28",
+      "role": "figure",
+      "target_file": "v03-stage2__trajectories.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage2\\results-generalization-v03-20260928-01-r2\\trajectories.png",
+      "source_relative": "outputs/sequence-weighting-stage2/results-generalization-v03-20260928-01-r2/trajectories.png",
+      "bytes": 190796,
+      "sha256": "3fb9f336826bfeba0704bfab28e4b9073e0a8e7b170620ecbfc9303c01108092"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v04-stage3__all-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\all-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/all-checkpoints.csv",
+      "bytes": 316076,
+      "sha256": "8a34e542709d5a074c0a42206db25d03fbf9f8fb54ccef19a28448f1e309ad0d"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v04-stage3__baseline-components.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\baseline-components.csv",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/baseline-components.csv",
+      "bytes": 7842,
+      "sha256": "d6d9c7b5630ff9b9e3007ceffa04e74a1fb89d49036c8b30c613b4cd0b8a2034"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v04-stage3__baseline-components.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\baseline-components.png",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/baseline-components.png",
+      "bytes": 79189,
+      "sha256": "f2d7e704d4bee1d499b41fbaf5ca12e7dc5ba34453de6b605f9572867710b5c7"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v04-stage3__diagnostics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\diagnostics.csv",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/diagnostics.csv",
+      "bytes": 1044304,
+      "sha256": "4ea33b82e66012661f7ec92ce5677395d39ef08dea87b59db459d5d8030dc140"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v04-stage3__optimizer-duration.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\optimizer-duration.png",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/optimizer-duration.png",
+      "bytes": 107120,
+      "sha256": "6726a63bb6123276be0d755ee49092af2787d619ac3c56244f3694de347ed96d"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v04-stage3__per-capacity-effects.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\per-capacity-effects.csv",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/per-capacity-effects.csv",
+      "bytes": 168651,
+      "sha256": "6f48f1c903e157d7dd78e412305f3c0b87aa9499896826aa5df33f35653d6f1d"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v04-stage3__policy-cells.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\policy-cells.csv",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/policy-cells.csv",
+      "bytes": 585107,
+      "sha256": "5b6356db8e68eae16ec00b7b271c6799bbae44292160ab93289c80f6a314f832"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v04-stage3__selection-objective.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\selection-objective.png",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/selection-objective.png",
+      "bytes": 159836,
+      "sha256": "e4d06937f41cf1acda2ffb30ee5af5c9cafd6be8a9f1e1e37537564f57dbb499"
+    },
+    {
+      "study": "v04-stage3",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v04-stage3__trajectories.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage3\\results-controls-v04-20260929-01\\trajectories.png",
+      "source_relative": "outputs/sequence-weighting-stage3/results-controls-v04-20260929-01/trajectories.png",
+      "bytes": 174935,
+      "sha256": "30f3ee40fe9ac4d0a20ea2bca071746a511c10c8b887b03bb9b6633bc8886c8b"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__all-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\all-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/all-checkpoints.csv",
+      "bytes": 1147648,
+      "sha256": "ad1237745c01482e3c903abe04e4108cd1f24b42bf232d6502281d9cedccc77c"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__baseline-records.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\baseline-records.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/baseline-records.csv",
+      "bytes": 30276,
+      "sha256": "b54aae76dd159fe07ec4254a1cd15a217b922b19368e5032e45b923e43f30840"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v05-stage4__baseline.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\baseline.png",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/baseline.png",
+      "bytes": 119175,
+      "sha256": "ea0dd6272f8d067e2de257ce6b9d8790a3520157f7f84a355f5cc157344018b3"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__diagnostics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\diagnostics.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/diagnostics.csv",
+      "bytes": 1306464,
+      "sha256": "a32cfe3586dbdd4499cf04ef201de61e38e1616dd408e4a61799e915f1514df8"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v05-stage4__matched.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\matched.png",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/matched.png",
+      "bytes": 92747,
+      "sha256": "b694905e39f987b2f23144111d6fc946367ad97ffdc50ae4aab2e6d653690609"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__per-capacity-effects.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\per-capacity-effects.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/per-capacity-effects.csv",
+      "bytes": 501517,
+      "sha256": "a77cb03560a39b218def9a49881adc5902ce261a173874b06428bd5134615c1e"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__policy-cells.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\policy-cells.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/policy-cells.csv",
+      "bytes": 1021321,
+      "sha256": "5f263c751e32d8cf89f574f6f65126255316c5d1b360babbdd50bf1b9106513d"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__reference-capacity-effects.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\reference-capacity-effects.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/reference-capacity-effects.csv",
+      "bytes": 22717,
+      "sha256": "994b4c772b7613b623f3f45449cb0108cf02bd4135702cd75537117da41b2c96"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v05-stage4__reference-sensitivity.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\reference-sensitivity.csv",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/reference-sensitivity.csv",
+      "bytes": 31849,
+      "sha256": "3b91854044095e6776e25ee18d1e0bfbefd2632cd79a8c28644a69353e0d75e3"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v05-stage4__reference.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\reference.png",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/reference.png",
+      "bytes": 134813,
+      "sha256": "a8a182f0563769ac8051d620c6b3fda5327273f579d978470e9080d95cf1bd9a"
+    },
+    {
+      "study": "v05-stage4",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v05-stage4__selected.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage4\\results-baseline-v05-20260929-01-r2\\selected.png",
+      "source_relative": "outputs/sequence-weighting-stage4/results-baseline-v05-20260929-01-r2/selected.png",
+      "bytes": 145373,
+      "sha256": "4088d04c5595ab6e9d891d3f4d5ea39f9d755bd3411fa8eadc0ffb3480773c62"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v06-stage5__all-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\all-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/all-checkpoints.csv",
+      "bytes": 930301,
+      "sha256": "f66758653b35b7bbaaaff1f956e88ebee28821a159a10bbf07a6266ca2c98a22"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v06-stage5__baseline.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\baseline.png",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/baseline.png",
+      "bytes": 117941,
+      "sha256": "2c31ebdf4058f105d1be6e6efb1bb86f170704465f8afee62947847e90179f66"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v06-stage5__canonical-initial.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\canonical-initial.csv",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/canonical-initial.csv",
+      "bytes": 25851,
+      "sha256": "15fcdf9c2add931c7239b67c692a37186ccc00c24644667dcf6d03e6772e10c0"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v06-stage5__diagnostics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\diagnostics.csv",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/diagnostics.csv",
+      "bytes": 525430,
+      "sha256": "19f3abbff70c2884ce0d295b321d2d922d0211a0f0610984e42f6e81ea7fa04f"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v06-stage5__policy-cells.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\policy-cells.csv",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/policy-cells.csv",
+      "bytes": 140982,
+      "sha256": "5af557a99e92905ffa85a928e394b1754425192d2da8308c43292bad633db1e2"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v06-stage5__selected-fits.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\selected-fits.png",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/selected-fits.png",
+      "bytes": 135966,
+      "sha256": "d9cc8abb051ea2c6db66976abcf1876105745d9b98e89ae64ae62dfea4c644e3"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v06-stage5__selection.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\selection.png",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/selection.png",
+      "bytes": 105156,
+      "sha256": "5dbebe606d0a65f95fb1f7109580c92b16262a10ef508b0b2dd23d4ed22c70b5"
+    },
+    {
+      "study": "v06-stage5",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v06-stage5__utility.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage5\\results-utility-v06-20260929-01-r1\\utility.png",
+      "source_relative": "outputs/sequence-weighting-stage5/results-utility-v06-20260929-01-r1/utility.png",
+      "bytes": 201259,
+      "sha256": "20597e46d8d63fd2c8e2e7c398981010aff7940976809ab919aede6b24616f2d"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v07-stage6__all-checkpoints.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\all-checkpoints.csv",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/all-checkpoints.csv",
+      "bytes": 2412064,
+      "sha256": "949b1647285371a08d4f280847e6d9e8b172ce1461ac8a51eef30978f8d91d24"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v07-stage6__canonical-initial.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\canonical-initial.csv",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/canonical-initial.csv",
+      "bytes": 26013,
+      "sha256": "c3abd815ee8d869a42138263e84ea29675b977ad8c5de0524034ab7282789be8"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v07-stage6__crossed-gains.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\crossed-gains.png",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/crossed-gains.png",
+      "bytes": 138058,
+      "sha256": "a626fddd29ff4a9004730038e14bd0fbe31a925d279de02c69e05a9517423211"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v07-stage6__crossed-matrix.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\crossed-matrix.csv",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/crossed-matrix.csv",
+      "bytes": 250870,
+      "sha256": "c043a8ccf8468477e8856e56462cafd889c4061382054b69dabacc7e5448c51b"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v07-stage6__diagnostics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\diagnostics.csv",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/diagnostics.csv",
+      "bytes": 784736,
+      "sha256": "361befbe5b4d2c581705b06b3d9851b089a496a7f08dc8383c9a5d5419ac74ab"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "existing_data_table",
+      "target_file": "v07-stage6__policy-cells.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\policy-cells.csv",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/policy-cells.csv",
+      "bytes": 557923,
+      "sha256": "09b9ff4255d0adee7a93e7eefb7cb15c5dd2a994453aecacb8214b5b66e05005"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v07-stage6__selected-fits.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\selected-fits.png",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/selected-fits.png",
+      "bytes": 156118,
+      "sha256": "21e4e9f8c01e8b338357d7319a8e1799e4df1c2be6ec57e241f8656ed5ef8e4c"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v07-stage6__selection-panels.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\selection-panels.png",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/selection-panels.png",
+      "bytes": 187862,
+      "sha256": "79e0aa43449152ad1408b1305fdcf06c8bf2ba27247f7b35bc21bba51d1de396"
+    },
+    {
+      "study": "v07-stage6",
+      "study_date": "2026-09-29",
+      "role": "figure",
+      "target_file": "v07-stage6__utility-panels.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage6\\results-stability-v07-20260929-01\\utility-panels.png",
+      "source_relative": "outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/utility-panels.png",
+      "bytes": 177347,
+      "sha256": "e353973d746e7a87a2332a1e24e6825d64c16d93e1910788e671549be76c6c4a"
+    },
+    {
+      "study": "v08-stage7",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v08-stage7__cancellation.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage7\\results-estimator-v08-20260930-01-r1\\cancellation.png",
+      "source_relative": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/cancellation.png",
+      "bytes": 343987,
+      "sha256": "fdf765c58c1472e7e754a4c4d21eaa34cc2edffa952a62ac5ad6ddf11c992274"
+    },
+    {
+      "study": "v08-stage7",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v08-stage7__recovery.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage7\\results-estimator-v08-20260930-01-r1\\recovery.png",
+      "source_relative": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/recovery.png",
+      "bytes": 161500,
+      "sha256": "548f7e8dc41eed6f9dda0460ba33252f5f84fe7503cd32701644eec3bc49280d"
+    },
+    {
+      "study": "v08-stage7",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v08-stage7__scale-invariance.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage7\\results-estimator-v08-20260930-01-r1\\scale-invariance.png",
+      "source_relative": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/scale-invariance.png",
+      "bytes": 349660,
+      "sha256": "7477f15ab89e9bd45b20fef419257468c195777d521da611dd520563f7bfff07"
+    },
+    {
+      "study": "v08-stage7",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v08-stage7__scale-pairs.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage7\\results-estimator-v08-20260930-01-r1\\scale-pairs.csv",
+      "source_relative": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/scale-pairs.csv",
+      "bytes": 471218,
+      "sha256": "e9d73a1fc5d0947d0cced7cc08f87b4341e9bb5eeda5951629e2f2152c8b42f8"
+    },
+    {
+      "study": "v08-stage7",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v08-stage7__summaries.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage7\\results-estimator-v08-20260930-01-r1\\summaries.csv",
+      "source_relative": "outputs/sequence-weighting-stage7/results-estimator-v08-20260930-01-r1/summaries.csv",
+      "bytes": 191407,
+      "sha256": "a92e52ba64a6da4a293a3e9bc5cdc5fb322600bcb2bdc4d19c4efed15ba1c843"
+    },
+    {
+      "study": "v09-stage8",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v09-stage8__contrast-errors.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage8\\results-precision-v09-20260930-01-r2\\contrast-errors.png",
+      "source_relative": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/contrast-errors.png",
+      "bytes": 376390,
+      "sha256": "d18685a8264604bdbee1f123b950a7544d3cba3994ad342ebebb850617d041e1"
+    },
+    {
+      "study": "v09-stage8",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v09-stage8__grid-ranking.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage8\\results-precision-v09-20260930-01-r2\\grid-ranking.png",
+      "source_relative": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/grid-ranking.png",
+      "bytes": 345943,
+      "sha256": "92dc8f76fa4dd44f32321e20245995de7dc50e10a7e6481c347a5f09c58dc21a"
+    },
+    {
+      "study": "v09-stage8",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v09-stage8__reference-regret.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage8\\results-precision-v09-20260930-01-r2\\reference-regret.png",
+      "source_relative": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/reference-regret.png",
+      "bytes": 451959,
+      "sha256": "a06e98466ff524571e928c02721c2cfc41ae0799521124f6391a9a5a035a58d8"
+    },
+    {
+      "study": "v09-stage8",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v09-stage8__summaries.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage8\\results-precision-v09-20260930-01-r2\\summaries.csv",
+      "source_relative": "outputs/sequence-weighting-stage8/results-precision-v09-20260930-01-r2/summaries.csv",
+      "bytes": 244347,
+      "sha256": "0890cebd0e9d668e1e517fc60e14bf75b715f7cfc2a16942b3d95ddc6a6dc310"
+    },
+    {
+      "study": "v010-stage9",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v010-stage9__contrast-errors.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage9\\results-model-precision-v010-20260930-01-r2\\contrast-errors.png",
+      "source_relative": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/contrast-errors.png",
+      "bytes": 148787,
+      "sha256": "1c3ea27859533135966a55ad0f9c9d9916ab9340d66335f5ed4a9531a0ec683a"
+    },
+    {
+      "study": "v010-stage9",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v010-stage9__grid-agreement.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage9\\results-model-precision-v010-20260930-01-r2\\grid-agreement.png",
+      "source_relative": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/grid-agreement.png",
+      "bytes": 108648,
+      "sha256": "b8f077d070010f453ed1cc95e7d2b46287372fe8ee87d5f61a0653452e05bd1e"
+    },
+    {
+      "study": "v010-stage9",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v010-stage9__model-context.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage9\\results-model-precision-v010-20260930-01-r2\\model-context.png",
+      "source_relative": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/model-context.png",
+      "bytes": 170468,
+      "sha256": "ede1f2bfbd902d4befd1659d660a8ae3ee1647a91a3909d48de76a39ce161700"
+    },
+    {
+      "study": "v010-stage9",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v010-stage9__policy-reference-metrics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage9\\results-model-precision-v010-20260930-01-r2\\policy-reference-metrics.csv",
+      "source_relative": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/policy-reference-metrics.csv",
+      "bytes": 1339924,
+      "sha256": "fb6a039ecb8538286a40e3be1053a184aa3b09dd96ccf637fcb6ced2b1a3ccfd"
+    },
+    {
+      "study": "v010-stage9",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v010-stage9__profile-metrics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage9\\results-model-precision-v010-20260930-01-r2\\profile-metrics.csv",
+      "source_relative": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/profile-metrics.csv",
+      "bytes": 598046,
+      "sha256": "34b8c7071d65d211d03fe3bada43233b06d22afe5dd778fd9b049f01b0449093"
+    },
+    {
+      "study": "v010-stage9",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v010-stage9__summaries.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage9\\results-model-precision-v010-20260930-01-r2\\summaries.csv",
+      "source_relative": "outputs/sequence-weighting-stage9/results-model-precision-v010-20260930-01-r2/summaries.csv",
+      "bytes": 1243069,
+      "sha256": "57e0fd65e39527465861dd0be515a123d00c5850403502b6bba21769dc6f3137"
+    },
+    {
+      "study": "v011-stage10",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v011-stage10__cohort-coverage.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage10\\results-search-v011-20260930-01\\cohort-coverage.png",
+      "source_relative": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/cohort-coverage.png",
+      "bytes": 85344,
+      "sha256": "4c043dced2bf5bdbffb73d2194cde7febb8d75954b3a49a1ad51fff340686038"
+    },
+    {
+      "study": "v011-stage10",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v011-stage10__input-metrics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage10\\results-search-v011-20260930-01\\input-metrics.csv",
+      "source_relative": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/input-metrics.csv",
+      "bytes": 533878,
+      "sha256": "aaaaaf3b9b62f05c1f731aecdb54a97ac92b435fcf16bf8611c73e59814006b8"
+    },
+    {
+      "study": "v011-stage10",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v011-stage10__objective-gaps.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage10\\results-search-v011-20260930-01\\objective-gaps.png",
+      "source_relative": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/objective-gaps.png",
+      "bytes": 114176,
+      "sha256": "289ef0b5a6e75bf9227b726033fe4a58f57487178a82d086c149a838564d153b"
+    },
+    {
+      "study": "v011-stage10",
+      "study_date": "2026-09-30",
+      "role": "figure",
+      "target_file": "v011-stage10__parameter-differences.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage10\\results-search-v011-20260930-01\\parameter-differences.png",
+      "source_relative": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/parameter-differences.png",
+      "bytes": 122548,
+      "sha256": "3f763566a2145bca07606be3cf5d03177d089cf1ab2e49929a0d292cb69bc8c7"
+    },
+    {
+      "study": "v011-stage10",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v011-stage10__policy-reference-metrics.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage10\\results-search-v011-20260930-01\\policy-reference-metrics.csv",
+      "source_relative": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/policy-reference-metrics.csv",
+      "bytes": 1162653,
+      "sha256": "55df35b324fdac803e2fb33286f0666fca83a72b1c0f95cddbd6591be02b106d"
+    },
+    {
+      "study": "v011-stage10",
+      "study_date": "2026-09-30",
+      "role": "existing_data_table",
+      "target_file": "v011-stage10__summaries.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage10\\results-search-v011-20260930-01\\summaries.csv",
+      "source_relative": "outputs/sequence-weighting-stage10/results-search-v011-20260930-01/summaries.csv",
+      "bytes": 1208213,
+      "sha256": "aae288bd9f0ad1fbab439e2a19ca2a5a51dfef85aa2bd0e523cf8a30508d09e3"
+    },
+    {
+      "study": "v0128-stage11",
+      "study_date": "2026-10-02",
+      "role": "figure",
+      "target_file": "v0128-stage11__group-learning.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage11-v0128\\results-analysis-20261002-01\\group-learning.png",
+      "source_relative": "outputs/sequence-weighting-stage11-v0128/results-analysis-20261002-01/group-learning.png",
+      "bytes": 46224,
+      "sha256": "766108ad3f5b64e4cab5079b97599f6adacbb34e46e6561a9936b5debf99534b"
+    },
+    {
+      "study": "v0128-stage11",
+      "study_date": "2026-10-02",
+      "role": "figure",
+      "target_file": "v0128-stage11__selected-p.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage11-v0128\\results-analysis-20261002-01\\selected-p.png",
+      "source_relative": "outputs/sequence-weighting-stage11-v0128/results-analysis-20261002-01/selected-p.png",
+      "bytes": 47133,
+      "sha256": "4337803544bab63993a46ffaa828602cb6b4bed52dabe8571843f3560c642df0"
+    },
+    {
+      "study": "v0128-stage11",
+      "study_date": "2026-10-02",
+      "role": "figure",
+      "target_file": "v0128-stage11__selected-utility.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage11-v0128\\results-analysis-20261002-01\\selected-utility.png",
+      "source_relative": "outputs/sequence-weighting-stage11-v0128/results-analysis-20261002-01/selected-utility.png",
+      "bytes": 43171,
+      "sha256": "cd3083520ecd7e6a09ecc3af65a0a39e53e92f9443cb2651cde5d699f87c4d17"
+    },
+    {
+      "study": "v0130",
+      "study_date": "2026-10-03",
+      "role": "existing_data_table",
+      "target_file": "v0130__AUDIT_AND_ANALYSIS.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\g1-clipping-diagnostic-v0130\\results\\AUDIT_AND_ANALYSIS.json",
+      "source_relative": "outputs/g1-clipping-diagnostic-v0130/results/AUDIT_AND_ANALYSIS.json",
+      "bytes": 411425,
+      "sha256": "2a2d0154d4779c262d5921372db6f73c3cd816c20090c0d7eb22f3a7c055bf64"
+    },
+    {
+      "study": "v0131",
+      "study_date": "2026-10-03",
+      "role": "existing_data_table",
+      "target_file": "v0131__COMPONENT_TABLE.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-weighting-contrast-v0131\\results-fixed-policy-v0131-20261003-01\\COMPONENT_TABLE.csv",
+      "source_relative": "outputs/sequence-weighting-weighting-contrast-v0131/results-fixed-policy-v0131-20261003-01/COMPONENT_TABLE.csv",
+      "bytes": 485,
+      "sha256": "ca389cbca5c32657f46f3fe88c5e1e7322945365dc75546658ea90375bf242e7"
+    },
+    {
+      "study": "v0131",
+      "study_date": "2026-10-03",
+      "role": "figure",
+      "target_file": "v0131__PAIRED_FIGURE.png",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-weighting-contrast-v0131\\results-fixed-policy-v0131-20261003-01\\PAIRED_FIGURE.png",
+      "source_relative": "outputs/sequence-weighting-weighting-contrast-v0131/results-fixed-policy-v0131-20261003-01/PAIRED_FIGURE.png",
+      "bytes": 62527,
+      "sha256": "b09c8381f9029f34947567e43af74d89e00915413963baf9feb48cbbdce7d067"
+    },
+    {
+      "study": "v0131",
+      "study_date": "2026-10-03",
+      "role": "existing_data_table",
+      "target_file": "v0131__SUMMARY.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-weighting-contrast-v0131\\results-fixed-policy-v0131-20261003-01\\SUMMARY.json",
+      "source_relative": "outputs/sequence-weighting-weighting-contrast-v0131/results-fixed-policy-v0131-20261003-01/SUMMARY.json",
+      "bytes": 35884,
+      "sha256": "4f2b751aab694fabc3a06c591dc54d85b858e864c440e98c8293e8e57d54d297"
+    },
+    {
+      "study": "v0132",
+      "study_date": "2026-10-04",
+      "role": "existing_data_table",
+      "target_file": "v0132__CORPUS_CONTRASTS.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-factorial-v0132\\results-fresh-factorial-v0132-20261004-01\\CORPUS_CONTRASTS.csv",
+      "source_relative": "outputs/sequence-weighting-factorial-v0132/results-fresh-factorial-v0132-20261004-01/CORPUS_CONTRASTS.csv",
+      "bytes": 531,
+      "sha256": "dc31bbf2c89bd74e80d43ecf80aa6c7d4f1d5cb749400917c3d861b90178daca"
+    },
+    {
+      "study": "v0132",
+      "study_date": "2026-10-04",
+      "role": "existing_data_table",
+      "target_file": "v0132__CORPUS_SUMMARY.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-factorial-v0132\\results-fresh-factorial-v0132-20261004-01\\CORPUS_SUMMARY.json",
+      "source_relative": "outputs/sequence-weighting-factorial-v0132/results-fresh-factorial-v0132-20261004-01/CORPUS_SUMMARY.json",
+      "bytes": 1936,
+      "sha256": "2c7398f4cf5e74957997636f28645055909615f44d851e822135357ef04ec627"
+    },
+    {
+      "study": "v0133-r1",
+      "study_date": "2026-10-04",
+      "role": "existing_data_table",
+      "target_file": "v0133-r1__CORPUS_CONTRASTS.csv",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-clipping-interaction-v0133-r1\\results-fresh-clipping-interaction-v0133-20261004-02\\CORPUS_CONTRASTS.csv",
+      "source_relative": "outputs/sequence-weighting-clipping-interaction-v0133-r1/results-fresh-clipping-interaction-v0133-20261004-02/CORPUS_CONTRASTS.csv",
+      "bytes": 521,
+      "sha256": "bc316882e9a49af753d58a84497fbb0044f20ec9ecb972df2088f37a88fa5910"
+    },
+    {
+      "study": "v0133-r1",
+      "study_date": "2026-10-04",
+      "role": "existing_data_table",
+      "target_file": "v0133-r1__CORPUS_SUMMARY.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-clipping-interaction-v0133-r1\\results-fresh-clipping-interaction-v0133-20261004-02\\CORPUS_SUMMARY.json",
+      "source_relative": "outputs/sequence-weighting-clipping-interaction-v0133-r1/results-fresh-clipping-interaction-v0133-20261004-02/CORPUS_SUMMARY.json",
+      "bytes": 2587,
+      "sha256": "92f3fa92003ab391b8d64982e97616f2a7e828cd6e2703df8bd258a35615e2b9"
+    },
+    {
+      "study": "v0134",
+      "study_date": "2026-10-05",
+      "role": "existing_data_table",
+      "target_file": "v0134__COHORT_SUMMARY.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-gradient-alignment-v0134\\results-existing-gradient-panel-v0134-20261004-01\\COHORT_SUMMARY.json",
+      "source_relative": "outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01/COHORT_SUMMARY.json",
+      "bytes": 25269,
+      "sha256": "5e1c8b81ffcc28f27ff6d6909dedd14ef3163985fa0c2455e412426c9e4fe3e3"
+    },
+    {
+      "study": "v0134",
+      "study_date": "2026-10-05",
+      "role": "existing_data_table",
+      "target_file": "v0134__CORPUS_SUMMARY.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-gradient-alignment-v0134\\results-existing-gradient-panel-v0134-20261004-01\\CORPUS_SUMMARY.json",
+      "source_relative": "outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01/CORPUS_SUMMARY.json",
+      "bytes": 21787,
+      "sha256": "21faf0fc99242d23d7870e61ef78396dad9f74a46f576b81ef6fa07164b83f1a"
+    }
+  ],
+  "limitations": [
+    "Existing final presentation files only;fixture/testcase images and superseded presentation revisions excluded",
+    "No MATLAB.fig existed inselectedresults;PNG/SVG copied without conversion",
+    "No saved figure found forcompletedv0130,v0132,v0133-r1,v0134;existingtables included",
+    "v0129hasno savedresultbundle;not countedascompleted;v0135sourceonlyandexcluded",
+    "Historicaldatasets and nestedseedlimitations preserved;no newplottingoranalysis",
+    "The83MBv0128summaries.jsonislinkedatitsoriginalsourceinstead ofduplicated;itsoriginalhashisrecorded"
+  ],
+  "linked_source_tables": [
+    {
+      "study": "v0128-stage11",
+      "study_date": "2026-10-02",
+      "role": "existing_data_table",
+      "target_file": "v0128-stage11__summaries.json",
+      "source_path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-stage11-v0128\\results-analysis-20261002-01\\summaries.json",
+      "source_relative": "outputs/sequence-weighting-stage11-v0128/results-analysis-20261002-01/summaries.json",
+      "bytes": 83270415,
+      "sha256": "e9f61056553dc6c6a988655428ecf84566f627a5dadcd499d26f968b9d8b2354"
+    }
+  ]
+}

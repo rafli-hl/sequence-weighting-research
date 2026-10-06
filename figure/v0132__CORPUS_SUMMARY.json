@@ -1,0 +1,54 @@
+{
+  "version": "v0132",
+  "utc": "2026-10-04T07:31:34.770685+00:00",
+  "primary_mean": 0.03530492875725031,
+  "corpus_values": [
+    {
+      "data_seed": 91320101,
+      "primary": 0.035716461949050426,
+      "group_R_minus_U": 0.049600228667259216,
+      "group_interaction": 0.0038929861038923264,
+      "total_R_minus_U": 0.03733623027801514
+    },
+    {
+      "data_seed": 91320102,
+      "primary": 0.03737721126526594,
+      "group_R_minus_U": 0.061666183173656464,
+      "group_interaction": 0.004707043990492821,
+      "total_R_minus_U": 0.04312881827354431
+    },
+    {
+      "data_seed": 91320103,
+      "primary": 0.02974620647728443,
+      "group_R_minus_U": 0.04677661322057247,
+      "group_interaction": 0.0022276490926742554,
+      "total_R_minus_U": 0.03967544436454773
+    },
+    {
+      "data_seed": 91320104,
+      "primary": 0.042160697281360626,
+      "group_R_minus_U": 0.05864091217517853,
+      "group_interaction": 0.003209218382835388,
+      "total_R_minus_U": 0.043829888105392456
+    },
+    {
+      "data_seed": 91320105,
+      "primary": 0.03152406681329012,
+      "group_R_minus_U": 0.04946471191942692,
+      "group_interaction": 0.006034595891833305,
+      "total_R_minus_U": 0.04233837127685547
+    }
+  ],
+  "corpus_sd": 0.00491578037655869,
+  "minimum": 0.02974620647728443,
+  "maximum": 0.042160697281360626,
+  "positive_corpora": 5,
+  "verdict": "direction_consistent_at_tested_policy",
+  "primary_units": "nats/group answer token; positive = worse group-rule learning",
+  "inference": "Five independent fresh corpus draws; two nested seeds averaged before equal corpus weighting. Descriptive direction and dispersion; no p-value or mediation claim.",
+  "warnings": [
+    "Fixed optimizer/clipping/teacher-forced synthetic design only",
+    "No universal mechanism or mediation proof",
+    "Trace/source review is evidence of execution policy; intermediate updates not independently replayed"
+  ]
+}

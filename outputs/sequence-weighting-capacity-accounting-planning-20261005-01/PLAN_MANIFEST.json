@@ -1,0 +1,36 @@
+{
+  "status": "PLANNING_ONLY_FROZEN_PENDING_INDEPENDENT_ASTRA_REVIEW",
+  "version": "capacity-accounting-plan-20261005-01",
+  "primary_panel": "P1_v0128_G1_U_pretraining_fixed_F10_clip1",
+  "predefined_panels": 6,
+  "random_capacity_references": 177,
+  "structurally_complete_matched_capacity_triples": 59,
+  "triples_with_all_three_recorded_p_defined": 49,
+  "logical_uniform_references": 147,
+  "new_capacity_arithmetic_executed": false,
+  "execution_authorized_by_this_manifest": false,
+  "files": [
+    {
+      "path": "AVAILABILITY_AND_COMPARABILITY.md",
+      "bytes": 11309,
+      "sha256": "d2cffb08c58aed370b4f89d6fe5a943f8324c0d2bac4921c4a3e05cd323ab65e"
+    },
+    {
+      "path": "FROZEN_ANALYSIS_PLAN.md",
+      "bytes": 17588,
+      "sha256": "3d91c01e352d553daf4fa939788f892cc06d547b2e2053812cc7856927d3cb72"
+    },
+    {
+      "path": "INPUT_PROVENANCE.json",
+      "bytes": 1256028,
+      "sha256": "3783b5b4f55b320a876a598ac3b9a6e2b7f1b976995231922fa3b20bde7bb088"
+    },
+    {
+      "path": "PRESERVATION_RECEIPT.json",
+      "bytes": 883,
+      "sha256": "a7d929236710ff7c7bb27cccf65f2b9a0d98e305d9b3c816b627750fd08973d1"
+    }
+  ],
+  "verified_method_anchor_report_sha256": "3ece43295f9d23af51cac38af2dedcbaf431c17a8ca9b5c1087bb8f5450dc84c",
+  "original_v0136_status_unchanged": "CALIBRATION_FAILED"
+}

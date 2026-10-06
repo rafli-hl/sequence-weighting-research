@@ -1,0 +1,40 @@
+{
+  "status": "source_derivation_before_measured_searches",
+  "version": "v0.11",
+  "parents": [
+    {
+      "path": "outputs/sequence-weighting-stage9/core.py",
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "outputs/sequence-weighting-stage9/audit_stage9.py",
+      "sha256": "61cf893b5336e8380847dd137d0d26fc0a3e68b592c53562eff3b87486b69805"
+    },
+    {
+      "path": "outputs/sequence-weighting-stage9/common_stage9.py",
+      "sha256": "1ecad663a19604d8a3c06686d00b3b5dc59f6e4a38b1621fc6a95baf693c0eb2"
+    },
+    {
+      "path": "outputs/sequence-weighting-stage9/analyze_stage9_r1.py",
+      "sha256": "b85f9839757198d9cc3238b6aa763511f171df59e1e3d89e9211c3cb660f0e1b"
+    }
+  ],
+  "exact_copies": ["core.py"],
+  "function_copies": {
+    "inputs.py": "DESIGNS, tensor_hash and provenance copied from Stage9 audit_stage9.py; local imports supplied. Copied function AST equality is checked before freeze."
+  },
+  "new_implementations": {
+    "search_math.py": "Decimal80 shifted-exponential derivative search, every strict mesh sign change, bisection; independent of the original ternary search.",
+    "independent_math.py": "Decimal110 unshifted-exponential cumulative numerator objective search, every specified mesh minimum, golden section; independent search and accumulation route.",
+    "audit_stage10.py": "Cross-evaluation at 110 digits, 80/110 arithmetic checks, signed comparison classifications and candidate structure checks.",
+    "analyze_stage10.py": "Stage10 full-inventory reporting informed by the Stage9 null-preserving repair; original model context copied from the verified final Stage9 report."
+  },
+  "parent_run": "model-precision-v010-20260930-01",
+  "parent_input_manifest_sha256": "376b94969f73fbd986c0769e058ff379a2fb6231d31e871121f00915d8709655",
+  "parent_final_review": {
+    "path": "outputs/sequence-weighting-stage9/FINAL_REVIEW-model-precision-v010-20260930-01-r2.json",
+    "sha256": "1189da54667d52bbc5613869cc0d2ffaefc74506defa0c3310a67a212f6f72d0"
+  },
+  "inputs": "Complete Stage9 snapshot: 186 exact signed weight/gain inputs, 207 native checkpoints and 324 retained policy references from Stage4 fixed30 and Stage5-6 R/random M/U cohorts. No new model inference or fitting.",
+  "checks": "Parent SHA256, exact core copy and copied provenance function AST equality before freeze; outcome-independent math/analysis fixtures and independent design review before measured searches."
+}

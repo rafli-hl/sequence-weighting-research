@@ -1,0 +1,4762 @@
+{
+  "summary": [
+    {
+      "variant": "M",
+      "width": 64,
+      "train_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 3.10967755317688
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 3.1205902099609375
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 3.1324000358581543
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 3.092123031616211
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 3.126939296722412
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 3.089102268218994
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 3.1315481662750244
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 3.1175713539123535
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 3.131403923034668
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 3.116817315419515,
+          "sd": 0.01665365491583847,
+          "minimum": 3.089102268218994,
+          "maximum": 3.1324000358581543
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.1208892663319907,
+            "sd": 0.011364192924928919,
+            "minimum": 3.10967755317688,
+            "maximum": 3.1324000358581543
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.1027215321858725,
+            "sd": 0.02102751393379521,
+            "minimum": 3.089102268218994,
+            "maximum": 3.126939296722412
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.126841147740682,
+            "sd": 0.008028200903246276,
+            "minimum": 3.1175713539123535,
+            "maximum": 3.1315481662750244
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 3.116817315419515,
+          "sd": 0.012564814037746879,
+          "minimum": 3.1027215321858725,
+          "maximum": 3.126841147740682
+        }
+      },
+      "validation_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 3.134394407272339
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 3.1240479946136475
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 3.1520698070526123
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 3.0877583026885986
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 3.1325080394744873
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 3.1007814407348633
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 3.1067423820495605
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 3.1071853637695312
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 3.1028892993927
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 3.1164863374498157,
+          "sd": 0.02042985515370637,
+          "minimum": 3.0877583026885986,
+          "maximum": 3.1520698070526123
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.1368374029795327,
+            "sd": 0.014169744673428575,
+            "minimum": 3.1240479946136475,
+            "maximum": 3.1520698070526123
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.10701592763265,
+            "sd": 0.02301708834237256,
+            "minimum": 3.0877583026885986,
+            "maximum": 3.1325080394744873
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.105605681737264,
+            "sd": 0.002362860127567966,
+            "minimum": 3.1028892993927,
+            "maximum": 3.1071853637695312
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 3.1164863374498157,
+          "sd": 0.017638639389632466,
+          "minimum": 3.105605681737264,
+          "maximum": 3.1368374029795327
+        }
+      },
+      "test_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 3.131875514984131
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 3.1245720386505127
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 3.1462011337280273
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 3.1007578372955322
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 3.128460645675659
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 3.1037237644195557
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 3.086455821990967
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 3.0828628540039062
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 3.078704357147217
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 3.109290440877279,
+          "sd": 0.024322437423838685,
+          "minimum": 3.078704357147217,
+          "maximum": 3.1462011337280273
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.13421622912089,
+            "sd": 0.011002892595611448,
+            "minimum": 3.1245720386505127,
+            "maximum": 3.1462011337280273
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.110980749130249,
+            "sd": 0.015210498622824168,
+            "minimum": 3.1007578372955322,
+            "maximum": 3.128460645675659
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.0826743443806968,
+            "sd": 0.0038791692041602196,
+            "minimum": 3.078704357147217,
+            "maximum": 3.086455821990967
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 3.109290440877279,
+          "sd": 0.025812483939663573,
+          "minimum": 3.0826743443806968,
+          "maximum": 3.13421622912089
+        }
+      },
+      "validation_shared_accuracy": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.0
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      },
+      "validation_shared_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 0.2572159767150879
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 0.25579744577407837
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 0.2527015805244446
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 0.2551168203353882
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 0.2555491030216217
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 0.2518489360809326
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 0.25356316566467285
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 0.25477713346481323
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 0.25435781478881836
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.2545475529299842,
+          "sd": 0.0016491573104100328,
+          "minimum": 0.2518489360809326,
+          "maximum": 0.2572159767150879
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.2552383343378703,
+            "sd": 0.0023085487736016564,
+            "minimum": 0.2527015805244446,
+            "maximum": 0.2572159767150879
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.2541716198126475,
+            "sd": 0.002023082269306924,
+            "minimum": 0.2518489360809326,
+            "maximum": 0.2555491030216217
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.2542327046394348,
+            "sd": 0.0006165783543504415,
+            "minimum": 0.25356316566467285,
+            "maximum": 0.25477713346481323
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.2545475529299842,
+          "sd": 0.0005990134006236607,
+          "minimum": 0.2541716198126475,
+          "maximum": 0.2552383343378703
+        }
+      },
+      "validation_group_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 4.561534881591797
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 4.559806823730469
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 4.617499828338623
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 4.447842597961426
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 4.558030128479004
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 4.449653625488281
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 4.488920211791992
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 4.4891252517700195
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 4.497470378875732
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.518875969780816,
+          "sd": 0.057914760666390924,
+          "minimum": 4.447842597961426,
+          "maximum": 4.617499828338623
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.57961384455363,
+            "sd": 0.03282159916138482,
+            "minimum": 4.559806823730469,
+            "maximum": 4.617499828338623
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.485175450642903,
+            "sd": 0.06310049934134615,
+            "minimum": 4.447842597961426,
+            "maximum": 4.558030128479004
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.491838614145915,
+            "sd": 0.004878328691997025,
+            "minimum": 4.488920211791992,
+            "maximum": 4.497470378875732
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.518875969780816,
+          "sd": 0.05270594379105144,
+          "minimum": 4.485175450642903,
+          "maximum": 4.57961384455363
+        }
+      },
+      "validation_instance_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 4.584432601928711
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 4.556539058685303
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 4.586007118225098
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 4.560315132141113
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 4.5839457511901855
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 4.600841045379639
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 4.5777435302734375
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 4.577654838562012
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 4.556839942932129
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.576035446590847,
+          "sd": 0.015203132373672124,
+          "minimum": 4.556539058685303,
+          "maximum": 4.600841045379639
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.57565959294637,
+            "sd": 0.016577572144719954,
+            "minimum": 4.556539058685303,
+            "maximum": 4.586007118225098
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.5817006429036455,
+            "sd": 0.0203560259964424,
+            "minimum": 4.560315132141113,
+            "maximum": 4.600841045379639
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.570746103922526,
+            "sd": 0.012043170333141152,
+            "minimum": 4.556839942932129,
+            "maximum": 4.5777435302734375
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.576035446590847,
+          "sd": 0.005486932708149892,
+          "minimum": 4.570746103922526,
+          "maximum": 4.5817006429036455
+        }
+      }
+    },
+    {
+      "variant": "M",
+      "width": 128,
+      "train_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 4.016269683837891
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 4.043617248535156
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 4.045236587524414
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 3.9992361068725586
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 4.030330181121826
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 4.0186848640441895
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 4.041644096374512
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 4.045289516448975
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 4.039190769195557
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.031055450439453,
+          "sd": 0.016295942102078086,
+          "minimum": 3.9992361068725586,
+          "maximum": 4.045289516448975
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.035041173299153,
+            "sd": 0.01627673730009378,
+            "minimum": 4.016269683837891,
+            "maximum": 4.045236587524414
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.016083717346191,
+            "sd": 0.015709386890108756,
+            "minimum": 3.9992361068725586,
+            "maximum": 4.030330181121826
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.042041460673015,
+            "sd": 0.003068729917174474,
+            "minimum": 4.039190769195557,
+            "maximum": 4.045289516448975
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.031055450439453,
+          "sd": 0.013430026049530263,
+          "minimum": 4.016083717346191,
+          "maximum": 4.042041460673015
+        }
+      },
+      "validation_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 4.047523021697998
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 4.065481185913086
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 4.064981460571289
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 4.010738849639893
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 4.042781829833984
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 4.01936674118042
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 4.009182929992676
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 4.0206074714660645
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 4.008716583251953
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.032153341505262,
+          "sd": 0.023371800890252876,
+          "minimum": 4.008716583251953,
+          "maximum": 4.065481185913086
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.059328556060791,
+            "sd": 0.010226945416282551,
+            "minimum": 4.047523021697998,
+            "maximum": 4.065481185913086
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.024295806884766,
+            "sd": 0.016580407457841846,
+            "minimum": 4.010738849639893,
+            "maximum": 4.042781829833984
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.012835661570231,
+            "sd": 0.006734622603633804,
+            "minimum": 4.008716583251953,
+            "maximum": 4.0206074714660645
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.032153341505262,
+          "sd": 0.024221951764088073,
+          "minimum": 4.012835661570231,
+          "maximum": 4.059328556060791
+        }
+      },
+      "test_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 4.033823013305664
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 4.056282043457031
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 4.061599254608154
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 4.003748893737793
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 4.037180423736572
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 4.029530048370361
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 3.97849178314209
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 3.9921376705169678
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 3.9757723808288574
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.018729501300388,
+          "sd": 0.0322661662207028,
+          "minimum": 3.9757723808288574,
+          "maximum": 4.061599254608154
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.050568103790283,
+            "sd": 0.014743362069418517,
+            "minimum": 4.033823013305664,
+            "maximum": 4.061599254608154
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 4.023486455281575,
+            "sd": 0.017516008751480308,
+            "minimum": 4.003748893737793,
+            "maximum": 4.037180423736572
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 3.982133944829305,
+            "sd": 0.008769531513188506,
+            "minimum": 3.9757723808288574,
+            "maximum": 3.9921376705169678
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 4.018729501300388,
+          "sd": 0.034464184112763405,
+          "minimum": 3.982133944829305,
+          "maximum": 4.050568103790283
+        }
+      },
+      "validation_shared_accuracy": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.0
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      },
+      "validation_shared_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 0.05024128407239914
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 0.049554791301488876
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 0.04900871217250824
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 0.050359196960926056
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 0.04961549863219261
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 0.04923270642757416
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 0.04979570209980011
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 0.049200087785720825
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 0.04900624603033066
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.049557136164771184,
+          "sd": 0.00050108286196716,
+          "minimum": 0.04900624603033066,
+          "maximum": 0.050359196960926056
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.04960159584879875,
+            "sd": 0.0006176174959769415,
+            "minimum": 0.04900871217250824,
+            "maximum": 0.05024128407239914
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.04973580067356428,
+            "sd": 0.0005727998483776887,
+            "minimum": 0.04923270642757416,
+            "maximum": 0.050359196960926056
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.04933401197195053,
+            "sd": 0.000411414617081729,
+            "minimum": 0.04900624603033066,
+            "maximum": 0.04979570209980011
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.049557136164771184,
+          "sd": 0.00020455081963655935,
+          "minimum": 0.04933401197195053,
+          "maximum": 0.04973580067356428
+        }
+      },
+      "validation_group_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 6.0311360359191895
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 6.076177597045898
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 6.066708087921143
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 5.91115665435791
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 5.990396499633789
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 5.944312572479248
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 5.943045139312744
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 5.946070671081543
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 5.905733108520508
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.979415151807997,
+          "sd": 0.06474349061247565,
+          "minimum": 5.905733108520508,
+          "maximum": 6.076177597045898
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 6.05800724029541,
+            "sd": 0.02374792873573242,
+            "minimum": 6.0311360359191895,
+            "maximum": 6.076177597045898
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.948621908823649,
+            "sd": 0.039795301916598004,
+            "minimum": 5.91115665435791,
+            "maximum": 5.990396499633789
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.931616306304932,
+            "sd": 0.02246649519354776,
+            "minimum": 5.905733108520508,
+            "maximum": 5.946070671081543
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.979415151807997,
+          "sd": 0.06859179913711393,
+          "minimum": 5.931616306304932,
+          "maximum": 6.05800724029541
+        }
+      },
+      "validation_instance_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 6.061191558837891
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 6.070711612701416
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 6.079226970672607
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 6.070702075958252
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 6.088334083557129
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 6.064554214477539
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 6.0347089767456055
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 6.06655216217041
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 6.071409702301025
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 6.06748792860243,
+          "sd": 0.01471418011173408,
+          "minimum": 6.0347089767456055,
+          "maximum": 6.088334083557129
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 6.070376714070638,
+            "sd": 0.009022368748373866,
+            "minimum": 6.061191558837891,
+            "maximum": 6.079226970672607
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 6.074530124664307,
+            "sd": 0.0123434602536142,
+            "minimum": 6.064554214477539,
+            "maximum": 6.088334083557129
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 6.057556947072347,
+            "sd": 0.019935426633731233,
+            "minimum": 6.0347089767456055,
+            "maximum": 6.071409702301025
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 6.06748792860243,
+          "sd": 0.008847655084995527,
+          "minimum": 6.057556947072347,
+          "maximum": 6.074530124664307
+        }
+      }
+    },
+    {
+      "variant": "M",
+      "width": 256,
+      "train_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 5.289731025695801
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 5.315860271453857
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 5.342282772064209
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 5.259178638458252
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 5.302535057067871
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 5.3077521324157715
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 5.2926130294799805
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 5.338173866271973
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 5.336270809173584
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.309377511342366,
+          "sd": 0.02718842128018387,
+          "minimum": 5.259178638458252,
+          "maximum": 5.342282772064209
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.315958023071289,
+            "sd": 0.026276009554846966,
+            "minimum": 5.289731025695801,
+            "maximum": 5.342282772064209
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.289821942647298,
+            "sd": 0.026665774646787047,
+            "minimum": 5.259178638458252,
+            "maximum": 5.3077521324157715
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.322352568308513,
+            "sd": 0.025772767291857686,
+            "minimum": 5.2926130294799805,
+            "maximum": 5.338173866271973
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.309377511342366,
+          "sd": 0.017234783214139557,
+          "minimum": 5.289821942647298,
+          "maximum": 5.322352568308513
+        }
+      },
+      "validation_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 5.319379806518555
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 5.343927383422852
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 5.376338005065918
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 5.2781195640563965
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 5.314704895019531
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 5.330467224121094
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 5.243755340576172
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 5.3019561767578125
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 5.299076080322266
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.311969386206733,
+          "sd": 0.03813572505877734,
+          "minimum": 5.243755340576172,
+          "maximum": 5.376338005065918
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.346548398335774,
+            "sd": 0.028569413449011136,
+            "minimum": 5.319379806518555,
+            "maximum": 5.376338005065918
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.307763894399007,
+            "sd": 0.02685521356781327,
+            "minimum": 5.2781195640563965,
+            "maximum": 5.330467224121094
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.281595865885417,
+            "sd": 0.0328024809371061,
+            "minimum": 5.243755340576172,
+            "maximum": 5.3019561767578125
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.311969386206733,
+          "sd": 0.03267984836160233,
+          "minimum": 5.281595865885417,
+          "maximum": 5.346548398335774
+        }
+      },
+      "test_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 5.306591987609863
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 5.335238456726074
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 5.368532657623291
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 5.270501136779785
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 5.307860374450684
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 5.318886756896973
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 5.2122931480407715
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 5.264763355255127
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 5.254268646240234
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.293215168846978,
+          "sd": 0.04727812737417612,
+          "minimum": 5.2122931480407715,
+          "maximum": 5.368532657623291
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.336787700653076,
+            "sd": 0.030999383348497448,
+            "minimum": 5.306591987609863,
+            "maximum": 5.368532657623291
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.2990827560424805,
+            "sd": 0.02535896285775928,
+            "minimum": 5.270501136779785,
+            "maximum": 5.318886756896973
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 5.243775049845378,
+            "sd": 0.02776449774897726,
+            "minimum": 5.2122931480407715,
+            "maximum": 5.264763355255127
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 5.293215168846978,
+          "sd": 0.046783113803928446,
+          "minimum": 5.243775049845378,
+          "maximum": 5.336787700653076
+        }
+      },
+      "validation_shared_accuracy": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.0
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      },
+      "validation_shared_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 0.008320724591612816
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 0.00789471436291933
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 0.007920943200588226
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 0.008392494171857834
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 0.0078287273645401
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 0.00785719696432352
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 0.008359091356396675
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 0.00778321735560894
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 0.007811789866536856
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.008018766581598256,
+          "sd": 0.00025791779562351144,
+          "minimum": 0.00778321735560894,
+          "maximum": 0.008392494171857834
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.008045460718373457,
+            "sd": 0.00023874596942025103,
+            "minimum": 0.00789471436291933,
+            "maximum": 0.008320724591612816
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.008026139500240484,
+            "sd": 0.00031759162235463445,
+            "minimum": 0.0078287273645401,
+            "maximum": 0.008392494171857834
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.007984699526180824,
+            "sd": 0.0003245474217960492,
+            "minimum": 0.00778321735560894,
+            "maximum": 0.008359091356396675
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.008018766581598256,
+          "sd": 3.1044332270902723e-05,
+          "minimum": 0.007984699526180824,
+          "maximum": 0.008045460718373457
+        }
+      },
+      "validation_group_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 7.962878227233887
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 7.993788719177246
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 8.079602241516113
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 7.825948238372803
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 7.87590217590332
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 7.903733253479004
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 7.750330924987793
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 7.852894306182861
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 7.830646991729736
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 7.897302786509196,
+          "sd": 0.10028048768705289,
+          "minimum": 7.750330924987793,
+          "maximum": 8.079602241516113
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 8.012089729309082,
+            "sd": 0.060475772888186625,
+            "minimum": 7.962878227233887,
+            "maximum": 8.079602241516113
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 7.868527889251709,
+            "sd": 0.039413350802527385,
+            "minimum": 7.825948238372803,
+            "maximum": 7.903733253479004
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 7.811290740966797,
+            "sd": 0.053951924184773715,
+            "minimum": 7.750330924987793,
+            "maximum": 7.852894306182861
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 7.897302786509196,
+          "sd": 0.10344590114622952,
+          "minimum": 7.811290740966797,
+          "maximum": 8.012089729309082
+        }
+      },
+      "validation_instance_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 7.986940860748291
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 8.030097961425781
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 8.041491508483887
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 8.000018119812012
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 8.060382843017578
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 8.079812049865723
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 7.9725751876831055
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 8.045190811157227
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 8.058769226074219
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 8.030586507585314,
+          "sd": 0.036473220826832464,
+          "minimum": 7.9725751876831055,
+          "maximum": 8.079812049865723
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 8.01951011021932,
+            "sd": 0.02877534077940504,
+            "minimum": 7.986940860748291,
+            "maximum": 8.041491508483887
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 8.046737670898438,
+            "sd": 0.041610225425667405,
+            "minimum": 8.000018119812012,
+            "maximum": 8.079812049865723
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 8.025511741638184,
+            "sd": 0.04634438904974012,
+            "minimum": 7.9725751876831055,
+            "maximum": 8.058769226074219
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 8.030586507585314,
+          "sd": 0.01430559164094121,
+          "minimum": 8.01951011021932,
+          "maximum": 8.046737670898438
+        }
+      }
+    },
+    {
+      "variant": "U",
+      "width": 64,
+      "train_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.9905887842178345
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.9972907304763794
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.9979530572891235
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.9906150102615356
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.0011610984802246
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.997509479522705
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.9905704259872437
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.0031356811523438
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.001054525375366
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.9966531991958618,
+          "sd": 0.00493433985132108,
+          "minimum": 1.9905704259872437,
+          "maximum": 2.0031356811523438
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9952775239944458,
+            "sd": 0.004074049548214023,
+            "minimum": 1.9905887842178345,
+            "maximum": 1.9979530572891235
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9964285294214885,
+            "sd": 0.0053554956838823735,
+            "minimum": 1.9906150102615356,
+            "maximum": 2.0011610984802246
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9982535441716511,
+            "sd": 0.006734651521696743,
+            "minimum": 1.9905704259872437,
+            "maximum": 2.0031356811523438
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.9966531991958618,
+          "sd": 0.0015006769820387804,
+          "minimum": 1.9952775239944458,
+          "maximum": 1.9982535441716511
+        }
+      },
+      "validation_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.9916824102401733
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.9970495700836182
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.9985101222991943
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.9899871349334717
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.002880573272705
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.9981942176818848
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.9901273250579834
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.001842737197876
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.998441219329834
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.9965239233440824,
+          "sd": 0.004827917491999704,
+          "minimum": 1.9899871349334717,
+          "maximum": 2.002880573272705
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9957473675409954,
+            "sd": 0.003595304102122004,
+            "minimum": 1.9916824102401733,
+            "maximum": 1.9985101222991943
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9970206419626872,
+            "sd": 0.0065263426226655485,
+            "minimum": 1.9899871349334717,
+            "maximum": 2.002880573272705
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9968037605285645,
+            "sd": 0.006026912467945497,
+            "minimum": 1.9901273250579834,
+            "maximum": 2.001842737197876
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.9965239233440824,
+          "sd": 0.0006812037695123679,
+          "minimum": 1.9957473675409954,
+          "maximum": 1.9970206419626872
+        }
+      },
+      "test_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.9900925159454346
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.997535228729248
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.9988644123077393
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.9896880388259888
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.0016961097717285
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.9973869323730469
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.98842191696167
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.999616265296936
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.9973949193954468
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.9956329266230266,
+          "sd": 0.00488502925212189,
+          "minimum": 1.98842191696167,
+          "maximum": 2.0016961097717285
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9954973856608074,
+            "sd": 0.00472769972887953,
+            "minimum": 1.9900925159454346,
+            "maximum": 1.9988644123077393
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9962570269902546,
+            "sd": 0.006083252139277705,
+            "minimum": 1.9896880388259888,
+            "maximum": 2.0016961097717285
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.9951443672180176,
+            "sd": 0.005926811747501121,
+            "minimum": 1.98842191696167,
+            "maximum": 1.999616265296936
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.9956329266230266,
+          "sd": 0.0005685784523864175,
+          "minimum": 1.9951443672180176,
+          "maximum": 1.9962570269902546
+        }
+      },
+      "validation_shared_accuracy": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.0
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      },
+      "validation_shared_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 0.37300360202789307
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 0.3895415961742401
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 0.3845646381378174
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 0.37129926681518555
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 0.40232163667678833
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 0.3920168876647949
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 0.37037670612335205
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 0.4032505750656128
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 0.3926572799682617
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.3865591320726607,
+          "sd": 0.012675740681964602,
+          "minimum": 0.37037670612335205,
+          "maximum": 0.4032505750656128
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.3823699454466502,
+            "sd": 0.00848462253742907,
+            "minimum": 0.37300360202789307,
+            "maximum": 0.3895415961742401
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.3885459303855896,
+            "sd": 0.015799763171739995,
+            "minimum": 0.37129926681518555,
+            "maximum": 0.40232163667678833
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.3887615203857422,
+            "sd": 0.01677961626056533,
+            "minimum": 0.37037670612335205,
+            "maximum": 0.4032505750656128
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.3865591320726607,
+          "sd": 0.0036295431121148177,
+          "minimum": 0.3823699454466502,
+          "maximum": 0.3887615203857422
+        }
+      },
+      "validation_group_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 2.8006253242492676
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 2.8020005226135254
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 2.805051326751709
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 2.7962722778320312
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.802757740020752
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 2.7953686714172363
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 2.797873020172119
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.8003926277160645
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.7973873615264893
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7997476524776883,
+          "sd": 0.0032363219126497695,
+          "minimum": 2.7953686714172363,
+          "maximum": 2.805051326751709
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.8025590578715005,
+            "sd": 0.00226524739569556,
+            "minimum": 2.8006253242492676,
+            "maximum": 2.805051326751709
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.79813289642334,
+            "sd": 0.004030633928255885,
+            "minimum": 2.7953686714172363,
+            "maximum": 2.802757740020752
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.798551003138224,
+            "sd": 0.00161327365759734,
+            "minimum": 2.7973873615264893,
+            "maximum": 2.8003926277160645
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7997476524776883,
+          "sd": 0.002443706922387724,
+          "minimum": 2.79813289642334,
+          "maximum": 2.8025590578715005
+        }
+      },
+      "validation_instance_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 2.801417827606201
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 2.7996068000793457
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 2.8059144020080566
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 2.8023898601531982
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.803562641143799
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 2.807196855545044
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 2.8021321296691895
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.801884651184082
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.805278778076172
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.8032648828294544,
+          "sd": 0.0024334084017526747,
+          "minimum": 2.7996068000793457,
+          "maximum": 2.807196855545044
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.8023130098978677,
+            "sd": 0.003247687488699409,
+            "minimum": 2.7996068000793457,
+            "maximum": 2.8059144020080566
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.804383118947347,
+            "sd": 0.0025063297955163215,
+            "minimum": 2.8023898601531982,
+            "maximum": 2.807196855545044
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.803098519643148,
+            "sd": 0.0018922094298008496,
+            "minimum": 2.801884651184082,
+            "maximum": 2.805278778076172
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.8032648828294544,
+          "sd": 0.0010450336843866258,
+          "minimum": 2.8023130098978677,
+          "maximum": 2.804383118947347
+        }
+      }
+    },
+    {
+      "variant": "U",
+      "width": 128,
+      "train_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.8767588138580322
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.8766758441925049
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.8751767873764038
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.875701665878296
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.8762812614440918
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.875110387802124
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.8762227296829224
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.8760747909545898
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.8753162622451782
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8759242826037936,
+          "sd": 0.0006265845291304708,
+          "minimum": 1.875110387802124,
+          "maximum": 1.8767588138580322
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8762038151423137,
+            "sd": 0.0008903990764324351,
+            "minimum": 1.8751767873764038,
+            "maximum": 1.8767588138580322
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8756977717081706,
+            "sd": 0.0005854465345225328,
+            "minimum": 1.875110387802124,
+            "maximum": 1.8762812614440918
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8758712609608967,
+            "sd": 0.0004863014987352205,
+            "minimum": 1.8753162622451782,
+            "maximum": 1.8762227296829224
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8759242826037936,
+          "sd": 0.0002571545455002629,
+          "minimum": 1.8756977717081706,
+          "maximum": 1.8762038151423137
+        }
+      },
+      "validation_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.8772478103637695
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.8772222995758057
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.8761411905288696
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.8760814666748047
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.8767430782318115
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.875331997871399
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.875319242477417
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.875105857849121
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.8748297691345215
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8760025236341689,
+          "sd": 0.000915717928348082,
+          "minimum": 1.8748297691345215,
+          "maximum": 1.8772478103637695
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8768704334894817,
+            "sd": 0.0006316717278596754,
+            "minimum": 1.8761411905288696,
+            "maximum": 1.8772478103637695
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8760521809260051,
+            "sd": 0.0007059958832724192,
+            "minimum": 1.875331997871399,
+            "maximum": 1.8767430782318115
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8750849564870198,
+            "sd": 0.0002454051518501417,
+            "minimum": 1.8748297691345215,
+            "maximum": 1.875319242477417
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8760025236341689,
+          "sd": 0.0008937736942618449,
+          "minimum": 1.8750849564870198,
+          "maximum": 1.8768704334894817
+        }
+      },
+      "test_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.877426266670227
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.8771723508834839
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.8758947849273682
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.876298189163208
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.8763842582702637
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.8748595714569092
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.8745160102844238
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.8741360902786255
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.8737543821334839
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8756046560075548,
+          "sd": 0.0013355417699315846,
+          "minimum": 1.8737543821334839,
+          "maximum": 1.877426266670227
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8768311341603596,
+            "sd": 0.0008207805561063377,
+            "minimum": 1.8758947849273682,
+            "maximum": 1.877426266670227
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.875847339630127,
+            "sd": 0.0008565141247018771,
+            "minimum": 1.8748595714569092,
+            "maximum": 1.8763842582702637
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8741354942321777,
+            "sd": 0.0003808144253170755,
+            "minimum": 1.8737543821334839,
+            "maximum": 1.8745160102844238
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8756046560075548,
+          "sd": 0.0013641078260536032,
+          "minimum": 1.8741354942321777,
+          "maximum": 1.8768311341603596
+        }
+      },
+      "validation_shared_accuracy": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.0
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      },
+      "validation_shared_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 0.06187544763088226
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 0.05927705764770508
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 0.05887320637702942
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 0.06190250813961029
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 0.060209356248378754
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 0.059138428419828415
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 0.06059402972459793
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 0.060310762375593185
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 0.05939950793981552
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.06017558938927121,
+          "sd": 0.0011318036908504645,
+          "minimum": 0.05887320637702942,
+          "maximum": 0.06190250813961029
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.06000857055187225,
+            "sd": 0.0016293239344299512,
+            "minimum": 0.05887320637702942,
+            "maximum": 0.06187544763088226
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.060416764269272484,
+            "sd": 0.0013936634241005445,
+            "minimum": 0.059138428419828415,
+            "maximum": 0.06190250813961029
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.06010143334666888,
+            "sd": 0.0006241670892819752,
+            "minimum": 0.05939950793981552,
+            "maximum": 0.06059402972459793
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.06017558938927121,
+          "sd": 0.00021396230210502862,
+          "minimum": 0.06000857055187225,
+          "maximum": 0.060416764269272484
+        }
+      },
+      "validation_group_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 2.7851076126098633
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 2.7869057655334473
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 2.785156488418579
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 2.781033992767334
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.78371262550354
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 2.782095193862915
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 2.7808308601379395
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.7805042266845703
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.780583381652832
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7828811274634466,
+          "sd": 0.002402761213880366,
+          "minimum": 2.7805042266845703,
+          "maximum": 2.7869057655334473
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7857232888539634,
+            "sd": 0.0010243463937126562,
+            "minimum": 2.7851076126098633,
+            "maximum": 2.7869057655334473
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.782280604044596,
+            "sd": 0.0013489073487352671,
+            "minimum": 2.781033992767334,
+            "maximum": 2.78371262550354
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7806394894917807,
+            "sd": 0.0001703919611031326,
+            "minimum": 2.7805042266845703,
+            "maximum": 2.7808308601379395
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7828811274634466,
+          "sd": 0.002594556854488465,
+          "minimum": 2.7806394894917807,
+          "maximum": 2.7857232888539634
+        }
+      },
+      "validation_instance_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 2.7847604751586914
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 2.7854843139648438
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 2.784393787384033
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 2.7853078842163086
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.7863073348999023
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 2.784762382507324
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 2.7845330238342285
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.7845025062561035
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.784506320953369
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7849508921305337,
+          "sd": 0.0006331850762207717,
+          "minimum": 2.784393787384033,
+          "maximum": 2.7863073348999023
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.784879525502523,
+            "sd": 0.0005549250347014116,
+            "minimum": 2.784393787384033,
+            "maximum": 2.7854843139648438
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7854592005411782,
+            "sd": 0.0007835125694347817,
+            "minimum": 2.784762382507324,
+            "maximum": 2.7863073348999023
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7845139503479004,
+            "sd": 1.662787988106031e-05,
+            "minimum": 2.7845025062561035,
+            "maximum": 2.7845330238342285
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7849508921305337,
+          "sd": 0.0004766491148299642,
+          "minimum": 2.7845139503479004,
+          "maximum": 2.7854592005411782
+        }
+      }
+    },
+    {
+      "variant": "U",
+      "width": 256,
+      "train_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.853879451751709
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.8538628816604614
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.8539369106292725
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.8538199663162231
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.8540419340133667
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.853424072265625
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.8541607856750488
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.854001760482788
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.854253888130188
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8539312945471869,
+          "sd": 0.00023743612139135687,
+          "minimum": 1.853424072265625,
+          "maximum": 1.854253888130188
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8538930813471477,
+            "sd": 3.885095185027051e-05,
+            "minimum": 1.8538628816604614,
+            "maximum": 1.8539369106292725
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8537619908650715,
+            "sd": 0.0003129842640337919,
+            "minimum": 1.853424072265625,
+            "maximum": 1.8540419340133667
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8541388114293416,
+            "sd": 0.00012749211054670197,
+            "minimum": 1.854001760482788,
+            "maximum": 1.854253888130188
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8539312945471869,
+          "sd": 0.0001912945919442652,
+          "minimum": 1.8537619908650715,
+          "maximum": 1.8541388114293416
+        }
+      },
+      "validation_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.8544248342514038
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.8544453382492065
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.8543678522109985
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.8542636632919312
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.8541618585586548
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.8537139892578125
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.8533446788787842
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.853614091873169
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.8535213470458984
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8539841837353177,
+          "sd": 0.0004325610263819088,
+          "minimum": 1.8533446788787842,
+          "maximum": 1.8544453382492065
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8544126749038696,
+            "sd": 4.014858439143194e-05,
+            "minimum": 1.8543678522109985,
+            "maximum": 1.8544453382492065
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8540465037027996,
+            "sd": 0.0002924302361643152,
+            "minimum": 1.8537139892578125,
+            "maximum": 1.8542636632919312
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.853493372599284,
+            "sd": 0.00013686770120589287,
+            "minimum": 1.8533446788787842,
+            "maximum": 1.853614091873169
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8539841837353177,
+          "sd": 0.0004628088326343278,
+          "minimum": 1.853493372599284,
+          "maximum": 1.8544126749038696
+        }
+      },
+      "test_nll": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.8542027473449707
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.854282021522522
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.8545126914978027
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.8541295528411865
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.8539103269577026
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.8537225723266602
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.8531502485275269
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.8530939817428589
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.8528802394866943
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8537649313608806,
+          "sd": 0.000589998026756359,
+          "minimum": 1.8528802394866943,
+          "maximum": 1.8545126914978027
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8543324867884319,
+            "sd": 0.00016101677479754656,
+            "minimum": 1.8542027473449707,
+            "maximum": 1.8545126914978027
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.853920817375183,
+            "sd": 0.00020369295875219284,
+            "minimum": 1.8537225723266602,
+            "maximum": 1.8541295528411865
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.8530414899190266,
+            "sd": 0.00014245267357879552,
+            "minimum": 1.8528802394866943,
+            "maximum": 1.8531502485275269
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.8537649313608806,
+          "sd": 0.0006594646057938977,
+          "minimum": 1.8530414899190266,
+          "maximum": 1.8543324867884319
+        }
+      },
+      "validation_shared_accuracy": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 1.0
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 1.0,
+            "sd": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 1.0,
+          "sd": 0.0,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      },
+      "validation_shared_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 0.00985474232584238
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 0.009366514161229134
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 0.00924980454146862
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 0.009652580134570599
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 0.009468775242567062
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 0.009278234094381332
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 0.009804987348616123
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 0.009335576556622982
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 0.009291485883295536
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.009478077809843753,
+          "sd": 0.0002342272936767343,
+          "minimum": 0.00924980454146862,
+          "maximum": 0.00985474232584238
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.009490353676180044,
+            "sd": 0.00032091992745576927,
+            "minimum": 0.00924980454146862,
+            "maximum": 0.00985474232584238
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.009466529823839664,
+            "sd": 0.0001871831212483966,
+            "minimum": 0.009278234094381332,
+            "maximum": 0.009652580134570599
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 0.009477349929511547,
+            "sd": 0.00028459744494065234,
+            "minimum": 0.009291485883295536,
+            "maximum": 0.009804987348616123
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 0.009478077809843753,
+          "sd": 1.1928593480270951e-05,
+          "minimum": 0.009466529823839664,
+          "maximum": 0.009490353676180044
+        }
+      },
+      "validation_group_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 2.7760086059570312
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 2.7769064903259277
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 2.776132822036743
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 2.7754461765289307
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.775287628173828
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 2.7747955322265625
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 2.7737185955047607
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.7739834785461426
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.774552345275879
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7752035193973117,
+          "sd": 0.0010465308422909242,
+          "minimum": 2.7737185955047607,
+          "maximum": 2.7769064903259277
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7763493061065674,
+            "sd": 0.00048651628887726097,
+            "minimum": 2.7760086059570312,
+            "maximum": 2.7769064903259277
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.775176445643107,
+            "sd": 0.00033927226294554067,
+            "minimum": 2.7747955322265625,
+            "maximum": 2.7754461765289307
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7740848064422607,
+            "sd": 0.00042601077111817,
+            "minimum": 2.7737185955047607,
+            "maximum": 2.774552345275879
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7752035193973117,
+          "sd": 0.0011324925710733276,
+          "minimum": 2.7740848064422607,
+          "maximum": 2.7763493061065674
+        }
+      },
+      "validation_instance_loss": {
+        "values": [
+          {
+            "data_seed": 52919,
+            "seed": 801,
+            "value": 2.7774112224578857
+          },
+          {
+            "data_seed": 52919,
+            "seed": 802,
+            "value": 2.7770633697509766
+          },
+          {
+            "data_seed": 52919,
+            "seed": 803,
+            "value": 2.7777209281921387
+          },
+          {
+            "data_seed": 55049,
+            "seed": 801,
+            "value": 2.7776923179626465
+          },
+          {
+            "data_seed": 55049,
+            "seed": 802,
+            "value": 2.777729034423828
+          },
+          {
+            "data_seed": 55049,
+            "seed": 803,
+            "value": 2.7770681381225586
+          },
+          {
+            "data_seed": 57163,
+            "seed": 801,
+            "value": 2.776510715484619
+          },
+          {
+            "data_seed": 57163,
+            "seed": 802,
+            "value": 2.7775235176086426
+          },
+          {
+            "data_seed": 57163,
+            "seed": 803,
+            "value": 2.7767202854156494
+          }
+        ],
+        "all_pairs": {
+          "n": 9,
+          "undefined": 0,
+          "positive": 9,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.7772710588243275,
+          "sd": 0.00045259661202632,
+          "minimum": 2.776510715484619,
+          "maximum": 2.777729034423828
+        },
+        "corpora": [
+          {
+            "data_seed": 52919,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7773985068003335,
+            "sd": 0.00032896358741678724,
+            "minimum": 2.7770633697509766,
+            "maximum": 2.7777209281921387
+          },
+          {
+            "data_seed": 55049,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7774964968363443,
+            "sd": 0.0003714234987014138,
+            "minimum": 2.7770681381225586,
+            "maximum": 2.777729034423828
+          },
+          {
+            "data_seed": 57163,
+            "n": 3,
+            "undefined": 0,
+            "positive": 3,
+            "negative": 0,
+            "zero": 0,
+            "mean": 2.7769181728363037,
+            "sd": 0.0005346135137148187,
+            "minimum": 2.776510715484619,
+            "maximum": 2.7775235176086426
+          }
+        ],
+        "between_corpora": {
+          "n": 3,
+          "undefined": 0,
+          "positive": 3,
+          "negative": 0,
+          "zero": 0,
+          "mean": 2.777271058824327,
+          "sd": 0.0003095107464964829,
+          "minimum": 2.7769181728363037,
+          "maximum": 2.7774964968363443
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "width": 64,
+      "data_seed": 52919,
+      "values": {
+        "M": {
+          "validation_group_loss": 4.57961384455363,
+          "validation_instance_loss": 4.57565959294637,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.8025590578715005,
+          "validation_instance_loss": 2.8023130098978677,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 64,
+      "data_seed": 55049,
+      "values": {
+        "M": {
+          "validation_group_loss": 4.485175450642903,
+          "validation_instance_loss": 4.5817006429036455,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.79813289642334,
+          "validation_instance_loss": 2.804383118947347,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 64,
+      "data_seed": 57163,
+      "values": {
+        "M": {
+          "validation_group_loss": 4.491838614145915,
+          "validation_instance_loss": 4.570746103922526,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.798551003138224,
+          "validation_instance_loss": 2.803098519643148,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 128,
+      "data_seed": 52919,
+      "values": {
+        "M": {
+          "validation_group_loss": 6.05800724029541,
+          "validation_instance_loss": 6.070376714070638,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.7857232888539634,
+          "validation_instance_loss": 2.784879525502523,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 128,
+      "data_seed": 55049,
+      "values": {
+        "M": {
+          "validation_group_loss": 5.948621908823649,
+          "validation_instance_loss": 6.074530124664307,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.782280604044596,
+          "validation_instance_loss": 2.7854592005411782,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 128,
+      "data_seed": 57163,
+      "values": {
+        "M": {
+          "validation_group_loss": 5.931616306304932,
+          "validation_instance_loss": 6.057556947072347,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.7806394894917807,
+          "validation_instance_loss": 2.7845139503479004,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 256,
+      "data_seed": 52919,
+      "values": {
+        "M": {
+          "validation_group_loss": 8.012089729309082,
+          "validation_instance_loss": 8.01951011021932,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.7763493061065674,
+          "validation_instance_loss": 2.7773985068003335,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 256,
+      "data_seed": 55049,
+      "values": {
+        "M": {
+          "validation_group_loss": 7.868527889251709,
+          "validation_instance_loss": 8.046737670898438,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.775176445643107,
+          "validation_instance_loss": 2.7774964968363443,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    },
+    {
+      "width": 256,
+      "data_seed": 57163,
+      "values": {
+        "M": {
+          "validation_group_loss": 7.811290740966797,
+          "validation_instance_loss": 8.025511741638184,
+          "validation_shared_accuracy": 1.0
+        },
+        "U": {
+          "validation_group_loss": 2.7740848064422607,
+          "validation_instance_loss": 2.7769181728363037,
+          "validation_shared_accuracy": 1.0
+        }
+      },
+      "passed": true
+    }
+  ],
+  "manipulation_pass": true
+}

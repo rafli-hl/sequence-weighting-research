@@ -1,0 +1,81 @@
+{
+  "version": "v0135",
+  "status": "STATIC_ESTIMATE_NOT_RUNTIME_PROOF",
+  "parameter_count": 621696,
+  "snapshot_count": 8,
+  "snapshot_vectors_each": 7,
+  "snapshot_payload_bytes": 139259904,
+  "staged_source_allocated_bytes": 4485120,
+  "estimated_normal_allocated_envelope_bytes": 354405376,
+  "normal_write_cap_bytes": 452984832,
+  "normal_headroom_bytes": 98579456,
+  "archive_reserve_bytes": 67108864,
+  "terminal_reserve_bytes": 16777216,
+  "additional_total_cap_bytes": 536870912,
+  "free_reserve_bytes": 2147483648,
+  "D_free_bytes_at_source_preparation": 5545197568,
+  "rows": [
+    {
+      "category": "50 parameter checkpoints",
+      "bytes": 124339200,
+      "basis": "10 pretrained plus40 final;FP32 parameters"
+    },
+    {
+      "category": "8 fixed seven-vector snapshots",
+      "bytes": 139259904,
+      "basis": "theta,m,v before;gradient;theta,m,v after"
+    },
+    {
+      "category": "10 corpus dataset containers",
+      "bytes": 11612160,
+      "basis": "five train512/validation256/test512 andfive pretrain2048/validation256;41tokens+40kinds,int64"
+    },
+    {
+      "category": "10 assignment containers",
+      "bytes": 1331200,
+      "basis": "orders/pretrain_orders/weights/four three-component masks"
+    },
+    {
+      "category": "60 evaluation-array containers",
+      "bytes": 2365440,
+      "basis": "loss,three componentlosses,three accuracies;FP32"
+    },
+    {
+      "category": "Binary serialization/alignment allowance",
+      "bytes": 8388608,
+      "basis": "conservative container overhead;actual allocated counts remain binding"
+    },
+    {
+      "category": "6400 adaptation plus2560 pretraining traces",
+      "bytes": 16777216,
+      "basis": "conservative JSON allowance"
+    },
+    {
+      "category": "Source/census/reviews",
+      "bytes": 12582912,
+      "basis": "actualsource currently 4485120;review allowance"
+    },
+    {
+      "category": "Other JSON metadata/results/manifests",
+      "bytes": 16777216,
+      "basis": "conservative bound"
+    },
+    {
+      "category": "Eight bounded phase logs",
+      "bytes": 16777216,
+      "basis": "2MiB perstream;four phases"
+    },
+    {
+      "category": "Receipt and smallfile normal allocation allowance",
+      "bytes": 4194304,
+      "basis": "above ordinary metadata;terminalreserve separate"
+    }
+  ],
+  "policy": "No archive, optimizer-state checkpoints beyond8snapshots, retries, deletion/thinning or regeneration;runtime actual filesystem allocation is binding",
+  "runtime_risks": [
+    "15-25min estimate unmeasured;newglobalnorm and perstepmoment instrumentation",
+    "18099 historicalfilehashes before newdata;no silent recensus ifdrift",
+    "8snapshot CPUcopies/serialization and audits;GPU and hostmemory overhead unmeasured",
+    "Audit50checkpoints+8gradientrecomputations mayvary;600sechardcap"
+  ]
+}

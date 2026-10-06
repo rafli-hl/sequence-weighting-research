@@ -1,0 +1,105 @@
+{
+  "version": "v0134",
+  "status": "SOURCE_PREPARED_REVIEW_PENDING_NO_EXECUTION",
+  "utc": "2026-10-04T15:57:12.8126413Z",
+  "intended_directory": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-gradient-alignment-v0134",
+  "constraints": {
+    "combined_seconds": 600,
+    "additional_storage_bytes": 16777216,
+    "work_storage_bytes": 12582912,
+    "terminal_reserve_bytes": 4194304,
+    "combined_storage_bytes": 536870912,
+    "free_reserve_bytes": 2147483648
+  },
+  "input_bindings_sha256": "59a846e852d998ae431780eef57a19a4564d4bfc0c6ceb33f7dfeebf890df2f9",
+  "parent_manifest_sha256": "baf8a3de3aab342b842f8d2fc0ce4b1899cf77b6e58987745df9d64b27ab5ab3",
+  "parent_audit_sha256": "915ecc81692fd6f7f7aba52f80d55af66e563139e6a64ae1e54b75ba89a16078",
+  "exclusions": [
+    "SOURCE_MANIFEST.json",
+    "SOURCE_MANIFEST.sha256",
+    "reviews/*",
+    "runtime receipts and outputs"
+  ],
+  "files": [
+    {
+      "path": "audit.py",
+      "bytes": 22792,
+      "sha256": "c040ea6678a61c6d6b2d81b755bc1531e708d9ada0222e77615ae17ef98247ba"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5450,
+      "sha256": "38762275bdca83519fc10a781937a2555a3714b9fcd9820f00a9cab9b1871f16"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 1703,
+      "sha256": "a406d33a971f4f5b7c486b17dd3e95a4c39373b6b710bbf29fdd24c2af4c66bb"
+    },
+    {
+      "path": "diagnose.py",
+      "bytes": 11916,
+      "sha256": "024576a469fb137afad6e7403714085737b9ac7459fd4438076dcebaac343a4c"
+    },
+    {
+      "path": "FROZEN_PROTOCOL.md",
+      "bytes": 9287,
+      "sha256": "664cef99a7da37bcaeeb277eeb3021fdc64f2443c6483a60ea8018e711a0f33e"
+    },
+    {
+      "path": "INPUT_BINDINGS.json",
+      "bytes": 108398,
+      "sha256": "59a846e852d998ae431780eef57a19a4564d4bfc0c6ceb33f7dfeebf890df2f9"
+    },
+    {
+      "path": "inputs.py",
+      "bytes": 5046,
+      "sha256": "a0942b2c2719fd2944fac4d4c38bb26de0740e17c88dceef38c9cf738f4b3744"
+    },
+    {
+      "path": "manual_launch.sh",
+      "bytes": 10842,
+      "sha256": "ed734e2d09c3cb0fc432de8c2bc7df6e9234e87219dd4208fa2e44ea0733b886"
+    },
+    {
+      "path": "panel_phases.sh",
+      "bytes": 715,
+      "sha256": "4fd31ab83ebbbd82dcde7821cbab711fdd596b7b7a6c06e68db3b3cd19e583d8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5816,
+      "sha256": "1557c16ce7502eac7d1c45abf538ab175a542a46031e1de49214cb092be39049"
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "bytes": 5551,
+      "sha256": "f646fce76a13a96eafcb24632a225eb30ee8bf757cc04dac211099225039fde5"
+    },
+    {
+      "path": "SOURCE_PREPARATION_STATUS.md",
+      "bytes": 1826,
+      "sha256": "876c7ce2d6021fca040277451f845294dbc7e842cdea25094a8c7e7e8a4cb32a"
+    },
+    {
+      "path": "SOURCE_REVIEW_TEMPLATE.json",
+      "bytes": 415,
+      "sha256": "fe40da07978a0919dbc9939c7f1b22f322215d58a52074c0f0aa951a0f36fd9c"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 7110,
+      "sha256": "ebaeb56ad17b1a4141b4ce5ac273f51fc399261461fbbdfd08c72b2b0e8aed2a"
+    },
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ]
+}

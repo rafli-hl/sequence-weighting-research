@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-29T08:12:41.107408+00:00",
+  "source_sha256": {
+    "analyze_stage5.py": "f0b2976db003f7193eb8f2a8e65bfad05bdbfe5b751e330f22bcee142f64e357",
+    "analysis_checks.py": "7979c50137756a33466661a2e7aa4dc3424e662a7eb93821ca629f08526b6ec8",
+    "audit_stage5.py": "2444922f2bf89fdc1205151aa80d3b665c209ebb7f583f3902de53bd80627dca",
+    "LITERATURE_CHECK.md": "84446b69f8a139046dd6c0dfa02d55cec24ad3c3a9d68c79f7f5578c86374f47",
+    "ANALYSIS_CLARIFICATIONS.md": "1a4d37c237b30fc20017147602ad07e685588129268476deda345e9ab1cd3bb4"
+  },
+  "protocol_sha256": "87dccda6cdbbf27895b77782519fff150da28853ba0a62e877702da8ccbd84f5",
+  "selection_sha256": "ce7f3e6f95d92ad5298e4aeccfe6866658077e0a5bbeae115f86c9c48ca29cdb",
+  "visual_review": "pending human/agent image inspection; not asserted by this script"
+}

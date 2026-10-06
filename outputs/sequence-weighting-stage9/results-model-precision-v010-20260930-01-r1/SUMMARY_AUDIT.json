@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-30T06:29:13.107232+00:00",
+  "profiles": 186,
+  "policy_references": 324,
+  "native_checkpoints": 207,
+  "cells": 36,
+  "grid_points": 161,
+  "grid_pairs_per_profile": 12880,
+  "original_p_preserved": true,
+  "decimal_calculation_precision": 110,
+  "classification_unresolved": 0,
+  "no_filter_or_replacement": true
+}

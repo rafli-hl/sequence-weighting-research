@@ -1,0 +1,111 @@
+{
+  "status": "EXPLORATORY_MATHEMATICAL_ACCOUNTING_PENDING_INDEPENDENT_REVIEW",
+  "version": "v0136-existing-data-exponent-decomposition-20261005-01",
+  "original_source_manifest_sha256": "6bc67e09f61bbeb78ad38f26778408b2b051671a8e26d4f657e62f6e7b2f7865",
+  "original_calibration_decision_sha256": "777fd45feaf04e1fe7b7462fe12faf56857667d8d4702302461a062608ebde60",
+  "original_decision": "CALIBRATION_FAILED",
+  "files": [
+    {
+      "path": "analyze-kernel-accounting.ps1",
+      "bytes": 11914,
+      "sha256": "856b8a1d39313a80469657f5287fd8240928e28989e4db9f9d5be409eae7ef3e"
+    },
+    {
+      "path": "AUDITED_COMPARISON_METHODS.json",
+      "bytes": 1577,
+      "sha256": "0e3b6051706efb23673a09e790f68c4e7c12e5fcb07fc9987b9a1a27cf568687"
+    },
+    {
+      "path": "AUDITED_CORPUS_COMPARISON.csv",
+      "bytes": 716,
+      "sha256": "79c589d56789dea54b9305a2427df72bbf4f7f622ce1ac6414d0dc7567db09d2"
+    },
+    {
+      "path": "AUDITED_FIT_COMPARISON.csv",
+      "bytes": 1615,
+      "sha256": "40ce3ed7546bf2175cd468718cf0b418c19633c36d0bc06c606762ef0368e970"
+    },
+    {
+      "path": "AUTHOR_REMAINDER_BOUND_CHECK.json",
+      "bytes": 7396,
+      "sha256": "58635d74ed60e8096a1c9e01f4dd102148859598b3eedf11e70c8202c8248f8a"
+    },
+    {
+      "path": "compare-audited-records.ps1",
+      "bytes": 5239,
+      "sha256": "43a19f2ca6189f84122b57d22c3050cf9631c231757de46f9e1df94f470b1753"
+    },
+    {
+      "path": "COMPONENT_KERNEL_ACCOUNTING.csv",
+      "bytes": 5930,
+      "sha256": "cabb610e1d0dd0f4d47304049a22ce3f3905e0ee6f4b67bb8f5987caace38601"
+    },
+    {
+      "path": "CORPUS_COMPONENT_KERNEL_ACCOUNTING.csv",
+      "bytes": 2236,
+      "sha256": "cdec67dcf6d097f6c1eb9867219dc6820418d7fddb35e34c43a4f85d6b54ee34"
+    },
+    {
+      "path": "CORPUS_EXPONENT_ACCOUNTING.csv",
+      "bytes": 857,
+      "sha256": "eeacb71c7a693a938c03e330d45cfd65865e29b93bec8eb400228ef7c2c5f976"
+    },
+    {
+      "path": "EXPLORATORY_EXPONENT_DECOMPOSITION.md",
+      "bytes": 17823,
+      "sha256": "3ece43295f9d23af51cac38af2dedcbaf431c17a8ca9b5c1087bb8f5450dc84c"
+    },
+    {
+      "path": "KernelAccounting.cs",
+      "bytes": 5025,
+      "sha256": "21257e4c9519eb8e0d04e6d05d6ab7230a9188bd1e768f69772d4167ca1fef4d"
+    },
+    {
+      "path": "LOCAL_APPROXIMATION_POINTS.csv",
+      "bytes": 9817,
+      "sha256": "02cf459677d2b50698940ac6df81ce58099ed14aa05a99b77a4d3d5a090d27c5"
+    },
+    {
+      "path": "METHODS_AND_INPUTS.json",
+      "bytes": 10236,
+      "sha256": "52979b9ed1d1600c98b949f6c227c9181dfe8bffd9247547b0d7ab9ab2f7e130"
+    },
+    {
+      "path": "OBJECTIVE_CROSS_TERMS.csv",
+      "bytes": 24950,
+      "sha256": "284b8ffc8dc266f051405eb8d399e689d9e9c4086f8c1a85fdbfc63d40a7aff2"
+    },
+    {
+      "path": "PREEXISTING_FILE_HASHES.json",
+      "bytes": 60058,
+      "sha256": "3718d7ebdd7bef196f3467e33721443a36c14a6ffc2e766bb3de404686884998"
+    },
+    {
+      "path": "PRESERVATION_RECEIPT.json",
+      "bytes": 613,
+      "sha256": "4191db7a351038d362b39e677636372d95f61b6a67272c1caac6ebaa4d6904ab"
+    },
+    {
+      "path": "SavedLossReader.cs",
+      "bytes": 5411,
+      "sha256": "71f0e8cd95859fd27a7b1e4ba21aef1f73084fe1823d594b5710a4172989463c"
+    },
+    {
+      "path": "SEED_EXPONENT_ACCOUNTING.csv",
+      "bytes": 4972,
+      "sha256": "2468c1401a95f5beb9e992a41f01111daed2c6ff23af761e94bbeac4087f9ced"
+    },
+    {
+      "path": "SUMMARY_ACCOUNTING.csv",
+      "bytes": 411,
+      "sha256": "fd473041b00aa59df16f850596a2ae65cf72f00bb16abad4cb806704e3bf8ef7"
+    },
+    {
+      "path": "SUMMARY_COMPONENT_KERNEL_ACCOUNTING.csv",
+      "bytes": 825,
+      "sha256": "bb80c0e8ee46f236f8905853f4e2db4e488b70913f41784fd6c1216cba9a6323"
+    }
+  ],
+  "payload_bytes": 177621,
+  "scope": "Exact existing R fitted-statistic component accounting and two local analytic approximations; no causal attribution, identifiability rescue, component exponent fits, optimization searches, models, WSL, training, generated data or protocol changes"
+}

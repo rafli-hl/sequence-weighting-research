@@ -1,0 +1,26 @@
+{
+  "status": "EXISTING_RECORDED_AUDIT_COMPARISON_AUTHOR_CHECK",
+  "method": "Lookup previously recorded independently fitted p by seed identity, compare against candidate p and analytic approximations; average two seeds then three corpus means. No fit execution.",
+  "candidate_vs_audited_max_abs_difference": 2.4605470785865613E-10,
+  "frozen_PARAM_TOL": 1E-05,
+  "audited_pcal_reproduced": 0.02403094734957752,
+  "original_decision_pcal": 0.02403094734957752,
+  "inputs": [
+    {
+      "path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-compensation-calibration-v0136\\results-fresh-compensation-calibration-v0136-20261005-01\\INDEPENDENT_FITS.json",
+      "sha256": "67a708adc1d3c7f6aa031b6aa3d27268599e6c2d45937d6524065fb2a6fec395"
+    },
+    {
+      "path": "D:\\codex\\sequence-weighting-research\\outputs\\sequence-weighting-compensation-calibration-v0136\\results-fresh-compensation-calibration-v0136-20261005-01\\CALIBRATION_DECISION.json",
+      "sha256": "777fd45feaf04e1fe7b7462fe12faf56857667d8d4702302461a062608ebde60"
+    },
+    {
+      "path": "<LOCAL_USER_HOME>\\Documents\\Codex\\2026-10-04\\task\\v0136-mathematical-decomposition\\derived\\SEED_EXPONENT_ACCOUNTING.csv",
+      "sha256": "2468c1401a95f5beb9e992a41f01111daed2c6ff23af761e94bbeac4087f9ced"
+    },
+    {
+      "path": "<LOCAL_USER_HOME>\\Documents\\Codex\\2026-10-04\\task\\v0136-mathematical-decomposition\\derived\\COMPONENT_KERNEL_ACCOUNTING.csv",
+      "sha256": "cabb610e1d0dd0f4d47304049a22ce3f3905e0ee6f4b67bb8f5987caace38601"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-29T06:21:49.196099+00:00",
+  "tuning_runs": 144,
+  "confirmation_runs": 270,
+  "pretraining": 99,
+  "model_checkpoints": 2070,
+  "test_evaluations": 1350,
+  "baseline_pair_checks": 315,
+  "historical_files_unchanged": 4826,
+  "failed_runs": [],
+  "selection_sha256": "eff703f1082ab9571231f3b179dc8717b7e29db52506f043dde03bc6f705248a",
+  "checks": [
+    "historical hashes/source snapshots unchanged",
+    "fresh validation-only selection independently reconstructed",
+    "exact deduplicated schedule",
+    "all tests preregistered and after selection; none in tuning/epoch0",
+    "full corpus regeneration, M/U equality and test-toggle invariance",
+    "all phase/split keys disjoint",
+    "full cold model tensors equal across conditions",
+    "pretrained checkpoint and full initial losses equal within condition",
+    "weights and orders identical across conditions/capacities/configurations",
+    "all model hashes checked",
+    "all scalar/component metrics and primary p* reconstructed",
+    "three-hour cap respected"
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "status": "PASS_GRADIENT_REDUCTION_AND_PANEL_AUDIT",
+  "utc": "2026-10-05T02:41:09.345060+00:00",
+  "manifest_sha256": "630283aa3b9bca47f4d689482f8bf374291638a781d68fe0b821740ff21d7062",
+  "input_bindings_sha256": "59a846e852d998ae431780eef57a19a4564d4bfc0c6ceb33f7dfeebf890df2f9",
+  "full_population_states": 30,
+  "independent_batch_gradient_rows": 480,
+  "corpus_state_rows": 15,
+  "independent_corpus_count": 5,
+  "fixtures": {
+    "status": "PASS",
+    "analytic_softmax": true,
+    "ignored_context": true,
+    "one_third_scaling": true,
+    "full_validation_group_normalization": true,
+    "centered_logit_differences": true,
+    "ordinary_descent_adverse_favorable_zero": true,
+    "uniform_weights_zero_extra": true,
+    "zero_norm_undefined": true,
+    "strict_null_aggregation": true,
+    "nonfinite_rejected": true
+  },
+  "discrepancy_check_count": 5579,
+  "discrepancy_maxima": {
+    "fixture_analytic_softmax_U": {
+      "checks": 1,
+      "max_absolute_error": 3.469446951953614e-18,
+      "max_tolerance_fraction": 3.469446951953614e-06
+    },
+    "fixture_centered_difference_U": {
+      "checks": 1,
+      "max_absolute_error": 1.3445470431472373e-11,
+      "max_tolerance_fraction": 0.0013445470431472373
+    },
+    "fixture_analytic_softmax_I": {
+      "checks": 1,
+      "max_absolute_error": 6.938893903907228e-18,
+      "max_tolerance_fraction": 6.938893903907228e-06
+    },
+    "fixture_centered_difference_I": {
+      "checks": 1,
+      "max_absolute_error": 1.4204443204339848e-11,
+      "max_tolerance_fraction": 0.0014204443204339848
+    },
+    "fixture_analytic_softmax_D": {
+      "checks": 1,
+      "max_absolute_error": 1.734723475976807e-18,
+      "max_tolerance_fraction": 1.734723475976807e-06
+    },
+    "fixture_centered_difference_D": {
+      "checks": 1,
+      "max_absolute_error": 2.8185263910122937e-13,
+      "max_tolerance_fraction": 2.8185263910122937e-05
+    },
+    "fixture_analytic_softmax_V": {
+      "checks": 1,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_tolerance_fraction": 1.3877787807814457e-05
+    },
+    "fixture_centered_difference_V": {
+      "checks": 1,
+      "max_absolute_error": 2.3432505935616632e-12,
+      "max_tolerance_fraction": 0.00023432505935616632
+    },
+    "fixture_I_minus_U": {
+      "checks": 1,
+      "max_absolute_error": 3.469446951953614e-18,
+      "max_tolerance_fraction": 3.469446951953614e-06
+    },
+    "fixture_uniform_weights_zero_extra": {
+      "checks": 1,
+      "max_absolute_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    "fixture_one_third_scaling": {
+      "checks": 1,
+      "max_absolute_error": 6.938893903907228e-18,
+      "max_tolerance_fraction": 6.938893903907228e-06
+    },
+    "fixture_ordinary_descent_sign": {
+      "checks": 3,
+      "max_absolute_error": 4.999621836532242e-07,
+      "max_tolerance_fraction": 0.4999621836532242
+    },
+    "real_I_minus_U": {
+      "checks": 30,
+      "max_absolute_error": 7.82310962677002e-08,
+      "max_tolerance_fraction": 0.004510016731698187
+    },
+    "batch_uniform_gradient_norm": {
+      "checks": 480,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_tolerance_fraction": 1.5386687150330379e-12
+    },
+    "batch_extra_gradient_norm": {
+      "checks": 480,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_tolerance_fraction": 1.3314292559279597e-12
+    },
+    "batch_validation_gradient_norm": {
+      "checks": 480,
+      "max_absolute_error": 1.99395058242402e-07,
+      "max_tolerance_fraction": 0.0008504051886995246
+    },
+    "batch_dot_validation_extra": {
+      "checks": 480,
+      "max_absolute_error": 3.016016526524723e-07,
+      "max_tolerance_fraction": 0.037770356030496124
+    },
+    "batch_local_descent_slope": {
+      "checks": 480,
+      "max_absolute_error": 3.016016526524723e-07,
+      "max_tolerance_fraction": 0.037770356030496124
+    },
+    "batch_uniform_objective": {
+      "checks": 480,
+      "max_absolute_error": 3.5762786865234375e-07,
+      "max_tolerance_fraction": 0.0009454228753238181
+    },
+    "batch_extra_objective": {
+      "checks": 480,
+      "max_absolute_error": 7.450580596923828e-08,
+      "max_tolerance_fraction": 0.011633187361649412
+    },
+    "batch_cosine": {
+      "checks": 480,
+      "max_absolute_error": 7.602054562239058e-08,
+      "max_tolerance_fraction": 0.00035053855996570576
+    },
+    "batch_extra_to_uniform_population_norm": {
+      "checks": 480,
+      "max_absolute_error": 7.647999700211017e-07,
+      "max_tolerance_fraction": 0.000881733216384943
+    },
+    "real_full_vs_batch_uniform": {
+      "checks": 30,
+      "max_absolute_error": 6.542541086673737e-08,
+      "max_tolerance_fraction": 0.0028961215520809866
+    },
+    "real_full_vs_batch_delta": {
+      "checks": 30,
+      "max_absolute_error": 5.005858838558197e-08,
+      "max_tolerance_fraction": 0.0022498285303458885
+    },
+    "state_validation_gradient_norm": {
+      "checks": 30,
+      "max_absolute_error": 1.99395058242402e-07,
+      "max_tolerance_fraction": 0.0008504051886995246
+    },
+    "state_uniform_gradient_norm": {
+      "checks": 30,
+      "max_absolute_error": 5.847579664930436e-08,
+      "max_tolerance_fraction": 0.0008572273681371542
+    },
+    "state_extra_gradient_norm": {
+      "checks": 30,
+      "max_absolute_error": 9.222133534603216e-08,
+      "max_tolerance_fraction": 0.0006691792684138343
+    },
+    "state_dot_validation_extra": {
+      "checks": 30,
+      "max_absolute_error": 1.1996925930457536e-07,
+      "max_tolerance_fraction": 0.0030240579415484197
+    },
+    "state_cosine": {
+      "checks": 30,
+      "max_absolute_error": 6.734232063654311e-08,
+      "max_tolerance_fraction": 0.00029329674888032084
+    },
+    "state_local_descent_slope": {
+      "checks": 30,
+      "max_absolute_error": 1.1996925930457536e-07,
+      "max_tolerance_fraction": 0.0030240579415484197
+    },
+    "state_extra_to_uniform_norm": {
+      "checks": 30,
+      "max_absolute_error": 1.0832174046626619e-07,
+      "max_tolerance_fraction": 0.0008364762766364918
+    },
+    "state_projection_relative_uniform": {
+      "checks": 30,
+      "max_absolute_error": 6.30374821508628e-08,
+      "max_tolerance_fraction": 0.0002800801295959736
+    },
+    "state_extra_batch_population_variance": {
+      "checks": 30,
+      "max_absolute_error": 3.5438318946034997e-13,
+      "max_tolerance_fraction": 4.095093956512612e-10
+    },
+    "state_uniform_batch_population_variance": {
+      "checks": 30,
+      "max_absolute_error": 4.947153797729698e-13,
+      "max_tolerance_fraction": 1.155871437502206e-09
+    },
+    "state_extra_batch_rms": {
+      "checks": 30,
+      "max_absolute_error": 8.482103908136196e-14,
+      "max_tolerance_fraction": 2.0468365676657226e-10
+    },
+    "state_uniform_batch_rms": {
+      "checks": 30,
+      "max_absolute_error": 1.694200335577989e-13,
+      "max_tolerance_fraction": 5.764721415038964e-10
+    },
+    "state_extra_rms_to_uniform_norm": {
+      "checks": 30,
+      "max_absolute_error": 5.244664325054771e-07,
+      "max_tolerance_fraction": 0.0008808026400579295
+    },
+    "state_extra_to_uniform_batch_rms": {
+      "checks": 30,
+      "max_absolute_error": 1.1879386363489175e-13,
+      "max_tolerance_fraction": 3.9335024126847183e-10
+    },
+    "state_extra_signal_to_dispersion": {
+      "checks": 30,
+      "max_absolute_error": 6.699933313702999e-08,
+      "max_tolerance_fraction": 0.000665543384476066
+    },
+    "state_validation_group_nll": {
+      "checks": 30,
+      "max_absolute_error": 2.682209014892578e-07,
+      "max_tolerance_fraction": 0.0005422278739621584
+    },
+    "state_uniform_training_objective": {
+      "checks": 30,
+      "max_absolute_error": 1.7136335372924805e-07,
+      "max_tolerance_fraction": 0.0005701730990062144
+    },
+    "state_extra_training_objective": {
+      "checks": 30,
+      "max_absolute_error": 1.5832483768463135e-08,
+      "max_tolerance_fraction": 0.005812018968591948
+    },
+    "variance_raw_uniform": {
+      "checks": 30,
+      "max_absolute_error": 4.947153797729698e-13,
+      "max_tolerance_fraction": 1.155871437502206e-09
+    },
+    "variance_raw_extra": {
+      "checks": 30,
+      "max_absolute_error": 3.5438318946034997e-13,
+      "max_tolerance_fraction": 4.095093956512612e-10
+    },
+    "aggregation": {
+      "checks": 555,
+      "max_absolute_error": 2.0847124071465828e-07,
+      "max_tolerance_fraction": 0.03165309835404815
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.7.0+cu126",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "precision": "float32",
+    "threads": 4,
+    "tf32": false,
+    "deterministic_algorithms": false,
+    "no_strict_determinism_claim": true
+  },
+  "output_hashes": {
+    "BATCHES.json": "17463c8f304536dc88d52b09155e4a2da77939df3706cac459b810fc58a0f173",
+    "COHORT_SUMMARY.json": "5e1c8b81ffcc28f27ff6d6909dedd14ef3163985fa0c2455e412426c9e4fe3e3",
+    "CORPUS_SUMMARY.json": "21faf0fc99242d23d7870e61ef78396dad9f74a46f576b81ef6fa07164b83f1a",
+    "PAIRS.json": "243e137160fcb99f4796565d86a4aee2f725b82e05b2ee9a898f9bef82cc351a",
+    "PANEL_REPORT.md": "dd5be259667e99853510f9c626f6e0b7701481eb1a3d896b108f9804fadec7c0"
+  },
+  "limitations": [
+    "Shared trusted forward implementation and PyTorch autograd",
+    "Existing-state gradients are associations, not mediation or actual AdamW updates",
+    "No optimizer moments, intermediate optimization replay or test evaluation",
+    "No retained gradient vectors; audit checks independently recomputed scalar panel and algebra",
+    "Extra-component variance alone does not determine total weighted-gradient variance",
+    "Numerical PASS requires successful inclusive outer panel receipts"
+  ]
+}

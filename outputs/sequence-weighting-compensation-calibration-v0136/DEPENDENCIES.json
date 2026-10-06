@@ -1,0 +1,38 @@
+{
+  "version": "v0136",
+  "trusted_vendor": [
+    {
+      "path": "vendor/core.py",
+      "bytes": 3297,
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "path": "vendor/engine.py",
+      "bytes": 14018,
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "path": "vendor/model.py",
+      "bytes": 11858,
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "parent_manifest_sha256": "60115ef7b9214e0ce1b9cab8fd644d309f6f7f0da4da0f8a3662d29784e84cfd",
+  "trusted_launcher_sha256": "f0578ea901a8bd217da9d10c56b4e4f89f95bc32fb25fa4d44e77d8806fea72c",
+  "containment_tail": "Exact ordered text after V0135/v0135 identity substitution and LF normalization; preamble cap/approval/fit phase changes explicit",
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.7.0+cu126",
+    "CUDA": "12.6",
+    "numpy": "2.2.6",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  },
+  "new_sources": [
+    "Whole-sequence q U/R calibration",
+    "Signed midrank suffix estimator and finite identification rule",
+    "Independent derivative/Decimal/kernel/gate audit",
+    "Four native clipping/optimizer snapshots",
+    "Source-only future fixtures"
+  ],
+  "independence_limit": "Shares trusted forward architecture and autograd, not candidate estimator/objective/gates. Four real steps only, not full moment replay."
+}
