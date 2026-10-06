@@ -28,7 +28,7 @@ These observations describe the prespecified cells; they introduce no quality fi
 
 ## Design and recovery
 
-The unchanged Stage6 estimator fits its original cumulative discrepancy on [0,8]. Gains remain signed. Uniform weights are undefined; the inherited total-gain guard is `sum(gain) <= 1e-10`, including small positive totals. Its historical reason label `nonpositive_total_gain` therefore also covers these small positive cases.
+The unchanged Stage 6 estimator fits its original cumulative discrepancy on [0,8]. Gains remain signed. Uniform weights are undefined; the inherited total-gain guard is `sum(gain) <= 1e-10`, including small positive totals. Its historical reason label `nonpositive_total_gain` therefore also covers these small positive cases.
 
 Recovery: normalized q = w^p / mean(w^p), with p∈{0,.2,1,4}, iid normal noise z, sigma∈{0,.5,2,8}, and gain = scale·(q+sigma·z), scale∈{1,1e-8,1e-14}. No p*/objective-based model or sample selection is performed.
 
@@ -55,7 +55,7 @@ All 130 conditions, signed gain/cancellation statistics, bias/RMSE/MAE, 5/25/50/
 
 Scaling gains by a positive constant leaves their normalized cumulative profile mathematically unchanged when normalization is defined. The fixed absolute guard can change estimator availability. Paired comparisons match n, replicate/block, p and sigma, with identical weight/noise seeds and weight hashes. Absolute p* differences are computed only when both fits exist; a missing paired fit remains undefined in unconditional comparison summaries.
 
-| n | Scale vs1 | Both defined | Matched condition pairs | Maximum absolute p* difference | Guard at scale1 | Guard at target |
+| n | Scale vs 1 | Both defined | Matched condition pairs | Maximum absolute p* difference | Guard at scale 1 | Guard at target |
 | --- | --- | --- | --- | --- | --- | --- |
 | 128 | 1e-08 | 1000 | 1024 | 1.23079e-06 | 24 | 24 |
 | 128 | 1e-14 | 0 | 1024 | undefined | 24 | 1024 |
@@ -150,6 +150,6 @@ Completion metadata (recorded without renaming timer fields):
 
 This experiment diagnoses an unchanged finite estimator under specified gain-generating families. Generating exponents under noisy gains describe the signal construction; they do not guarantee finite-sample identification. The grid has 64 independent draws per condition, two sequence counts and one weight/noise design. For one cell frequency, the worst-case binomial Monte Carlo standard error is .0625; paired conditions do not increase its independent replicate count. Conditional accuracy can look favorable when difficult draws become undefined. No significance test, quality cutoff, novelty claim or publication guarantee is made.
 
-See [the Stage4–6 synthesis](SYNTHESIS_STAGE4_6.md) for the preceding adaptation evidence. Estimator validity and adaptation utility answer different questions; these synthetic estimator results do not establish a large-LM scaling claim.
+See [the Stage 4–6 synthesis](SYNTHESIS_STAGE4_6.md) for the preceding adaptation evidence. Estimator validity and adaptation utility answer different questions; these synthetic estimator results do not establish a large-LM scaling claim.
 
 Protocol SHA256: `32b40e9321cbf6dae142b35a171b62b7b7f89830ec8d1667c6d6ed4e0a69ef66`. All sources and raw evidence are preserved in the SHA/CRC-checked compact archive. Scientific figures require a separate visual review after generation; this script does not assert that review.

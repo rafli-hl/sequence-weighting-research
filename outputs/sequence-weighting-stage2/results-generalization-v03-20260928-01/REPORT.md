@@ -1,26 +1,30 @@
 # Stage 2: capacity-specific validation tuning
 
-Hasil: **puncak p* menghilang** menurut aturan deskriptif yang dibekukan.
-Kontras positif: **1/15** pasangan corpus/seed.
-Kriteria generalisasi primer **tidak terpenuhi**.
-Ini hasil tugas sintetis dengan grid terbatas, bukan replikasi eksak LM besar.
+Result: **the p* peak disappears** under the frozen descriptive rule.
+Positive contrasts: **1/15** corpus/seed pairs.
+The primary generalization criterion was **not met**.
+These are results from a synthetic task with a bounded grid, not an exact large-LM replication.
 
-## Desain dan eksekusi
+<a name="desain-dan-eksekusi"></a>
 
-216 run tuning, 90 run konfirmasi, satu benchmark engineering terpisah,
-52 checkpoint pretraining. Semua selesai; tidak ada run gagal. Training lokal
-RTX 3050 Laptop melalui Ubuntu WSL 2, float32. Kode/protokol dibekukan sebelum
-benchmark dan selection.json dibekukan sebelum konfirmasi. Test hanya sekali
-per run konfirmasi, pada epoch terpilih. Notebook tidak dieksekusi; skrip yang
-menjalankan eksperimen.
+## Design and execution
 
-Dua replikasi tuning masing-masing memakai satu corpus dan satu seed model;
-keduanya tidak disilangkan. Konfirmasi memakai tiga corpus independen dengan
-lima seed model/bobot per corpus. Seed model/bobot bukan 15 replikasi dataset.
-Semua arm memiliki token/label, checkpoint awal, dan urutan batch berpasangan;
-bobot acak identik lintas kapasitas. Data lengkap dihasilkan sebelum toggle tes.
+The study completed 216 tuning runs, 90 confirmation runs, one separate engineering benchmark,
+and 52 pretrained checkpoints. All completed without failed runs. Training ran locally on
+an RTX 3050 Laptop through Ubuntu WSL 2 in float32. Source/protocols were frozen before
+the benchmark, and selection.json was frozen before confirmation. Test evaluation occurred once
+per confirmation run, at the selected epoch. The notebook was not executed;
+scripts ran the experiments.
 
-## Pemilihan hanya berdasarkan validasi
+Each of the two tuning replications used one corpus and one model seed;
+these factors were not crossed. Confirmation used three independent corpora with
+five model/weight seeds per corpus. Model/weight seeds do not constitute 15 dataset replications.
+All arms had paired tokens/labels, initial checkpoints, and batch order;
+random weights were identical across capacities. Full data were generated before toggling test evaluation.
+
+<a name="pemilihan-hanya-berdasarkan-validasi"></a>
+
+## Validation-only selection
 
 | Width/layers | LR | WD | Clip | Epoch | Tuning val NLL | Epoch 0 val NLL |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -28,14 +32,16 @@ bobot acak identik lintas kapasitas. Data lengkap dihasilkan sebelum toggle tes.
 | 128/3 | 0.0003 | 0.1 | 1.0 | 10 | 1.895202 | 4.193495 |
 | 256/4 | 0.0001 | 1.0 | 1.0 | 10 | 1.901818 | 5.450627 |
 
-Rata-rata dua arm × dua replikasi tuning menjadi skor seleksi. Tie rule:
-skor presisi penuh, epoch lebih awal, LR naik, WD naik, clip 1 sebelum disabled.
-Epoch 0 adalah pembanding wajib; kandidat adaptasi adalah epoch 1/3/10/30/60.
-Kapasitas dengan pilihan adaptasi lebih buruk dari epoch 0:
+The mean across two arms × two tuning replications was the selection score. The tie rule was:
+full-precision score, earlier epoch, ascending LR, ascending WD, and clipping 1 before disabled clipping.
+Epoch 0 was a required comparator; adaptation candidates were epochs 1/3/10/30/60.
+Capacities whose selected adaptation was worse than epoch 0:
 [].
-Tidak ada p*, test loss atau bentuk kurva dalam kriteria seleksi.
+Neither p*, test loss, nor curve shape was a selection criterion.
 
-## Hasil pada kebijakan terpilih
+<a name="hasil-pada-kebijakan-terpilih"></a>
+
+## Results under the selected policies
 
 | Arm | Parameters | Epoch | p* mean | Train NLL | Val NLL | Test NLL | Instance train accuracy | Clipping |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,12 +52,12 @@ Tidak ada p*, test loss atau bentuk kurva dalam kriteria seleksi.
 | uniform | 621696 | 10 | undefined | 1.65830 | 1.81381 | 1.81462 | 9.69% | 95.8% |
 | uniform | 3212800 | 10 | undefined | 1.63720 | 1.79727 | 1.79884 | 9.71% | 98.8% |
 
-Angka tabel adalah mean 15 run per arm/kapasitas, dengan jumlah seed sama di
-setiap corpus. Ini perbandingan kebijakan: durasi bisa berbeda antar kapasitas.
-Uniform p* tidak teridentifikasi. CSV menyimpan seluruh komponen, gain, fit,
-clipping dan checkpoint agar angka rata-rata tidak menutupi hasil individual.
+Table entries are means of 15 runs per arm/capacity, with equal seed counts
+within each corpus. This compares policies: duration can differ across capacities.
+Uniform-weight p* is unidentified. The CSV retains all components, gains, fits,
+clipping, and checkpoints so that means do not obscure individual outcomes.
 
-![Kebijakan terpilih](selected-policy.png)
+![Selected policies](selected-policy.png)
 
 | Corpus | Model/weight seed | p* small | p* middle | p* large | Middle minus max endpoint |
 | --- | --- | --- | --- | --- | --- |
@@ -77,15 +83,17 @@ clipping dan checkpoint agar angka rata-rata tidak menutupi hasil individual.
 | 17320 | -0.008043978199351418 | 0.0033604921699118156 | 0 |
 | 57721 | -0.008462625667742302 | 0.0022822826041384125 | 0 |
 
-Mean kontras antar corpus: -0.007981099960658248; SD antar corpus:
-0.0005158470391801077; rentang: [-0.008462625667742302, -0.007436696014881021].
-SD dalam corpus di atas mengukur variasi model/bobot pada data yang sama.
-Tiga corpus terlalu sedikit untuk klaim signifikansi; tidak ada bootstrap
-sequence yang diperlakukan sebagai replikasi dataset.
+Mean contrast across corpora: -0.007981099960658248; between-corpus SD:
+0.0005158470391801077; range: [-0.008462625667742302, -0.007436696014881021].
+The within-corpus SD above measures model/weight variation on the same data.
+Three corpora are insufficient for a significance claim; no sequence-level
+bootstrap was treated as dataset replication.
 
-![Kontras berpasangan](paired-contrasts.png)
+![Paired contrasts](paired-contrasts.png)
 
-## Generalisasi, memorisasi dan kualitas fit
+<a name="generalisasi-memorisasi-dan-kualitas-fit"></a>
+
+## Generalization, memorization, and fit quality
 
 | Corpus | Arm | Test decreases with capacity | Selected val no worse than epoch 0 |
 | --- | --- | --- | --- |
@@ -96,32 +104,34 @@ sequence yang diperlakukan sebagai replikasi dataset.
 | 57721 | random | False | True |
 | 57721 | uniform | True | True |
 
-Aturan primer mewajibkan test NLL random menurun ketat pada ketiga kapasitas
-di setiap corpus serta mean validation NLL terpilih tidak lebih buruk dari
-epoch 0 pada setiap kapasitas/corpus. Nilai lengkapnya ada di summary.json.
-Baseline test tidak dijadwalkan, sehingga tidak ada klaim perbaikan test
-terhadap epoch 0. Kontrol uniform dilaporkan terpisah.
+The primary rule required random-weight test NLL to decrease strictly across all three capacities
+in every corpus, and selected mean validation NLL to be no worse than
+epoch 0 for every capacity/corpus. Full values are in summary.json.
+Baseline test evaluation was not scheduled, so no claim of test improvement
+over epoch 0 is made. Uniform controls are reported separately.
 
-p* random primer undefined: 0/45;
-boundary bawah (p<=.001): 0/45;
-boundary atas (p>=7.999): 0/45.
-Rentang objective fit: 7.517703433987704e-06 sampai 0.00010353193440490573.
-Rentang total gain bertanda: 562.0836169719696 sampai 1848.9171843528748.
-Rentang fraksi gain negatif: 0.0 sampai 0.001953125.
-Jumlah seluruh checkpoint dengan p* undefined menurut alasan:
-{"no_adaptation": 307, "constant_weights": 765}. Termasuk epoch 0,
-kontrol uniform, tuning, konfirmasi dan benchmark engineering; benchmark tidak
-masuk inferensi primer. Tidak ada undefined yang disubstitusi menjadi nol.
-Gain negatif dipertahankan. Objective kecil tidak otomatis membuktikan model
-mekanisme benar. Pilihan clipping dalam grid bukan intervensi kausal tersendiri.
+Primary random-weight p* undefined: 0/45;
+lower boundary (p<=.001): 0/45;
+upper boundary (p>=7.999): 0/45.
+Fit-objective range: 7.517703433987704e-06 to 0.00010353193440490573.
+Total signed-gain range: 562.0836169719696 to 1848.9171843528748.
+Negative-gain fraction range: 0.0 to 0.001953125.
+Counts of all checkpoints with undefined p*, by reason:
+{"no_adaptation": 307, "constant_weights": 765}. This includes epoch 0,
+uniform controls, tuning, confirmation, and the engineering benchmark; the benchmark
+is excluded from primary inference. Undefined values were never replaced with zero.
+Negative gains were retained. A small objective does not itself establish a correct
+mechanistic model. A clipping choice within the grid is not a separate causal intervention.
 
-![Fit pada corpus/seed tetap](gain-fit.png)
+![Fit for a fixed corpus/seed](gain-fit.png)
 
-## Diagnostik sekunder
+<a name="diagnostik-sekunder"></a>
 
-![Trajectory dengan epoch yang sama](trajectories.png)
+## Secondary diagnostics
 
-| Epoch | Kontras positif / 15 | Undefined | Mean kontras per corpus |
+![Trajectories at matched epochs](trajectories.png)
+
+| Epoch | Positive contrasts / 15 | Undefined | Mean contrast by corpus |
 | --- | --- | --- | --- |
 | 1 | 13 | 0 | 14142: 0.0012605589564729624, 17320: 0.004535690078206001, 57721: 0.004257881857760932 |
 | 3 | 15 | 0 | 14142: 0.002444034726352248, 17320: 0.0020939775908275144, 57721: 0.005920298707585646 |
@@ -129,46 +139,50 @@ mekanisme benar. Pilihan clipping dalam grid bukan intervensi kausal tersendiri.
 | 30 | 15 | 0 | 14142: 0.05940599427265688, 17320: 0.06843275785044688, 57721: 0.06458881829756843 |
 | 60 | 10 | 0 | 14142: 0.015776224642135607, 17320: 0.008552526371074742, 57721: 0.013634599809569947 |
 
-Trajektori memakai optimizer terpilih setiap kapasitas, dengan epoch sama.
-Model boleh dilatih setelah epoch pengujian hanya untuk diagnostik yang sudah
-dijadwalkan; tidak ada pemilihan ulang atau test tambahan. Historical v0.2
-adalah pembanding lintas studi, bukan kontrol dengan tensor identik. Belum ada
-kontrol baru yang menyamakan semua optimizer v0.2 pada corpus Stage 2.
+Trajectories use each capacity's selected optimizer at matched epochs.
+Models could continue training beyond their test-evaluation epoch only for prescheduled
+diagnostics; no reselection or additional test evaluation occurred. Historical v0.2
+is a cross-study comparator rather than a control with identical tensors. At this stage,
+no new control matched all v0.2 optimizer settings on the Stage 2 corpora.
 
-## Runtime, audit dan reproduksi
+<a name="runtime-audit-dan-reproduksi"></a>
 
-Wall time grid sampai konfirmasi selesai: 3314.8 detik (55.2 menit),
-termasuk pretraining yang diperlukan, evaluasi dan serialisasi dalam interval
-tersebut; tidak termasuk persiapan, benchmark dan audit. Jumlah waktu per-run
-(termasuk benchmark, dan pretraining pada pemanggilan pertama): 3153.0 detik.
-Puncak alokasi adaptasi: 150.49 MiB;
-reserved: 184.00 MiB. Ini memori
-PyTorch, bukan seluruh penggunaan desktop/driver.
+## Runtime, audit, and reproducibility
 
-AUDIT.json memverifikasi 307 run dan 52 checkpoint, pairing penuh, semua hash,
-rekonstruksi seleksi, urutan freeze/test, seluruh p* dari gain bertanda dan
-ketiadaan test saat tuning. raw-manifest.json mencatat hash seluruh file raw,
-termasuk model penuh yang tidak dimasukkan ke arsip ringkas. run-records.zip
-menyimpan kode, protokol, lingkungan, corpus, assignment/order, semua loss,
-keputusan seleksi, laporan dan gambar. Model penuh tetap di:
+Wall time from the grid start through confirmation completion: 3314.8 seconds (55.2 minutes),
+including required pretraining, evaluation, and serialization within
+that interval; excluding preparation, the benchmark, and audit. Total per-run time
+(including the benchmark, and pretraining on the first invocation): 3153.0 seconds.
+Peak adaptation allocated memory: 150.49 MiB;
+reserved memory: 184.00 MiB. These are
+PyTorch memory measurements, not total desktop/driver usage.
+
+AUDIT.json verifies 307 runs and 52 checkpoints, full pairing, all hashes,
+selection reconstruction, freeze/test ordering, all p* values from signed gains, and
+absence of test evaluation during tuning. raw-manifest.json records hashes of every raw file,
+including full models excluded from the compact archive. run-records.zip
+retains source, protocols, environment, corpora, assignments/order, all losses,
+selection decisions, reports, and figures. Full models remain at:
 `work/runs/generalization-v03-20260928-01/`.
 
-Reproduksi memerlukan environment-lock.txt dan CUDA WSL lokal. Gunakan source
-Stage 2 dengan run-id baru: jalankan fase benchmark, lalu fase experiment bila
-gate lolos, kemudian analyze_stage2.py. Jangan menimpa direktori ini.
+Reproduction requires environment-lock.txt and the local CUDA/WSL runtime. Use Stage 2
+source with a new run-id: run the benchmark phase, then the experiment phase if
+its gate passes, followed by analyze_stage2.py. Do not overwrite this directory.
 
-## Posisi paper dan batas kesimpulan
+<a name="posisi-paper-dan-batas-kesimpulan"></a>
 
-Hasil mendukung pembingkaian paper sebagai batas ketahanan puncak terhadap seleksi validasi dalam tugas sintetis ini. Jangan menjadikannya klaim replikasi kurva Jane Street. Prioritas tindak lanjut adalah kontrol optimizer/durasi pada corpus identik untuk memisahkan kontribusi early stopping dan perubahan regularisasi. Perluasan teks besar dan kompensasi inverse-exponent belum dibenarkan oleh hasil ini.
+## Research positioning and claim boundaries
 
-[Pemeriksaan sumber primer terbaru](../LITERATURE_CHECK.md) membatasi novelty:
-hubungan bobot, regularisasi, durasi dan memorisasi sudah terkait literatur.
-Jane Street memilih hyperparameter untuk validasi dan melaporkan peningkatan
-held-out dengan skala; perbedaan kondisi itu harus tetap eksplisit.
+The results support framing this study around the limits of peak robustness under validation-based selection in this synthetic task. They do not establish replication of Jane Street's curve. At this stage, the follow-up priority was optimizer/duration controls on identical corpora to separate early-stopping effects from regularization changes. Large-text extensions and inverse-exponent compensation were not justified by these results.
 
-Tiga kapasitas hanya memiliki satu titik interior. Pilihan dalam grid bukan
-optimum global. Tidak ada dropout baru atau perubahan proporsi pola. Model dan
-bobot menggunakan seed yang terkait. Tiga corpus mendukung deskripsi lintas
-data yang lebih baik dari Stage 1, tetapi belum cukup untuk klaim universal.
-Satu Pythia size/seed dari Stage 1 tetap tidak membentuk kurva scaling. Tidak
-ada publikasi, upload, pengeluaran cloud, klaim venue atau janji publikasi.
+The [updated primary-source check](../LITERATURE_CHECK.md) limits novelty claims:
+relationships among weighting, regularization, duration, and memorization were already addressed in the literature.
+Jane Street selects hyperparameters for validation and reports improving
+held-out performance with scale; that difference in conditions must remain explicit.
+
+Three capacities provide only one interior point. Selection within the grid does not establish
+a global optimum. No new dropout or pattern-proportion changes were introduced. Model and
+weight assignments use related seeds. Three corpora provide a stronger cross-data
+description than Stage 1, but remain insufficient for universal claims.
+The single Pythia size/seed from Stage 1 still does not constitute a scaling curve. This stage
+involved no publication, upload, cloud spending, venue claim, or publication promise.

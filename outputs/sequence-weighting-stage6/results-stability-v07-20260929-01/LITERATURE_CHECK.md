@@ -7,12 +7,14 @@ below is copied verbatim; its Stage 5 protocol reference remains provenance.
 The Stage 6 scientific definitions are in PROTOCOL_STAGE6.md.
 
 ---
-# Primary-source recheck — 29 September 2026, before Stage5 outcomes
+<a name="primary-source-recheck--29-september-2026-before-stage5-outcomes"></a>
+
+# Primary-source recheck — 29 September 2026, before Stage 5 outcomes
 
 The following primary sources were opened again during preparation. This is a
 focused alignment check, not a systematic novelty search.
 
-- [Jane Street: A study of sequence weighting at scale](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/), Alex Renda and Nitya Mani,14September2026.
+- [Jane Street: A study of sequence weighting at scale](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/), Alex Renda and Nitya Mani, 14 September 2026.
   The methodology uses random log-uniform sequence weights .01..10, validation
   loss for hyperparameters, and reports improving held-out performance with
   capacity. These motivate our separate usefulness and scaling checks. The post
@@ -22,8 +24,8 @@ focused alignment check, not a systematic novelty search.
   Defines loss reduction against a weight-invariant baseline and assumes positive
   expected gain; individual gains may be negative. Its normalized cumulative
   discrepancy motivates retaining signed gains and reporting near-zero totals.
-  Our finite[0,8] search and numerical guards are implementation limitations.
-  Epoch0 has no gain, so it is a legitimate policy choice with undefined p*.
+  Our finite [0,8] search and numerical guards are implementation limitations.
+  Epoch 0 has no gain, so it is a legitimate policy choice with undefined p*.
 - [Pereyra et al.,2017](https://arxiv.org/abs/1701.06548).
   Studies confidence regularization and its relation to label smoothing. This is
   prior context for uniform-target objectives, not evidence that our U procedure

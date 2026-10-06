@@ -14,7 +14,7 @@ canonical fixed control. Both studies stay closed and unchanged.
 
 The new v0132 factorial contributes fresh paired intervention evidence: five
 new corpus draws, two nested seeds per corpus, four component-weight arms,
-G1/width128/F10 and the fixed canonical optimizer policy. The instance-weight
+G1/width 128/F10 and the fixed canonical optimizer policy. The instance-weight
 factor increased unweighted group-token test NLL by **+0.035304929 nats**, with
 corpus SD **0.004915780** and **5/5 positive corpus means**. The penalty also
 appeared with uniform shared/group losses (I−U **+0.033297779**). Fresh R−U

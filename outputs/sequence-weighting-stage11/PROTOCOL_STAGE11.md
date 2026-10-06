@@ -231,7 +231,7 @@ prefreeze analysis revision with its historical guards and null rules.
 Secondary directional prediction at F10: group-component p*(G16) > p*(G1).
 Report all ten paired contrasts and the five corpus means only when fully
 defined; otherwise retain the undefined aggregate and visible defined points.
-Full-estimator K = p_middle − max(p_small,p_large), its complete trajectories
+Full-estimator K = p_middle − max(p_small, p_large), its complete trajectories
 and selected-policy values are descriptive. Any undefined element propagates
 through K and its aggregate. No new peak-survival success label or fit cutoff
 determines the next research decision.

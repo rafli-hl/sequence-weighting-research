@@ -34,7 +34,7 @@ measurements, not additional independent replications.
 
 For n index j=0,1 and replicate r=0,...,63, weight seed is 730000001+10000*j+r,
 noise seed 740000001+10000*j+r. These are fresh separate stdlib random.Random
-streams. Draw log-weights uniformly on [log(.01),log(10)], exponentiate and divide
+streams. Draw log-weights uniformly on [log(.01), log(10)], exponentiate and divide
 by arithmetic mean. Draw z_i using Random.gauss(0,1). Use float64 throughout.
 The cancellation vector is e=(z-mean(z))/RMS(z-mean(z)), using math.fsum for its
 mean and squared norm. It has dependent coordinates and zero conditional
@@ -108,12 +108,12 @@ guard behavior, scalar invariance above guard, cancellation construction,
 deterministic regeneration, paired arrays and undefined-summary propagation.
 Freeze analyzer/auditor with the runner. Independently regenerate every draw,
 reconstruct every gain array and refit every estimate, verify all source/raw
-hashes and schedule. Audit historical manifest coverage: all pre-Stage7 versioned
+hashes and schedule. Audit historical manifest coverage: all pre-Stage 7 versioned
 output files and raw top-level records/source snapshots. Existing historical
 model/sequence arrays are untouched but not all rehashed in this CPU study;
 do not describe this limited integrity check as a full repeat of prior audits.
 
-Save outputs/sequence-weighting-stage7 source and a unique work/runs run,
+Save outputs/sequence-weighting-stage 7 source and a unique work/runs run,
 audited report/tables/figures, lossless raw archive with SHA/CRC, visual review,
 and updated handoff/runbook/next recommendation. Preserve all original stages.
 Synthesis is retrospective; Monte Carlo recovery cannot prove a mechanism,

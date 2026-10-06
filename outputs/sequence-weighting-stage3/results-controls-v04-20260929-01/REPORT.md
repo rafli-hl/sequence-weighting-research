@@ -1,20 +1,24 @@
-# Stage 3 v0.4: optimizer, durasi, tujuan seleksi, dan baseline
+<a name="stage-3-v04-optimizer-durasi-tujuan-seleksi-dan-baseline"></a>
 
-108 run konfirmasi berpasangan dan 27 checkpoint pretraining selesai tanpa
-kegagalan. Tiga corpus baru × tiga seed model/bobot; enam konfigurasi unik
-lintas tiga kapasitas, dengan random dan uniform. Tidak ada grid tuning baru.
-Audit integritas **PASS**. Semua angka di bawah berasal dari protokol yang
-dibekukan sebelum konfirmasi; diagnostik Stage 2 diberi label retrospektif.
+# Stage 3 v0.4: optimizer, duration, selection objective, and baseline
 
-## 1. Optimizer dan durasi
+The study completed 108 paired confirmation runs and 27 pretrained checkpoints without
+failures. Three fresh corpora × three model/weight seeds; six unique configurations
+across three capacities, with random and uniform weighting. No new tuning grid was run.
+The integrity audit returned **PASS**. All figures below follow the protocol
+frozen before confirmation; Stage 2 diagnostics are labeled retrospective.
 
-Pada data baru, perubahan jadwal C30 → EJ menghasilkan mean perubahan K 0.017682 dengan optimizer F dan -0.079479 dengan J. Interaksi optimizer×durasi adalah -0.097161 (tanda mean corpus: negative). Dengan epoch 30 yang sama, F/J memberi verdict disappears / survives; pada jadwal 30/10/10 verdict-nya disappears / disappears. Ini memisahkan perubahan checkpoint pada trajectory yang sama dari perubahan konfigurasi optimizer dalam eksperimen terkontrol ini.
+<a name="1-optimizer-dan-durasi"></a>
 
-F adalah LR 1e-4, WD 0,1, clipping 1 pada semua kapasitas. J adalah konfigurasi
-pilihan joint validation Stage 2. C30 berarti epoch 30/30/30; EJ berarti 30/10/10.
-K = p* menengah − max(p* kecil,p* besar). Optimizer dan jadwal disilangkan pada
-corpus, checkpoint awal, bobot, dan batch order identik. Kontras ini tidak
-menyamakan intervensi gabungan LR/WD dengan efek regularisasi saja.
+## 1. Optimizer and duration
+
+On fresh data, changing the schedule from C30 → EJ produced a mean K change of 0.017682 with optimizer F and -0.079479 with J. The optimizer×duration interaction was -0.097161 (corpus-mean sign: negative). At the same epoch 30, F/J yielded disappears / survives; under the 30/10/10 schedule, the verdicts were disappears / disappears. This separates checkpoint changes along the same trajectory from optimizer-configuration changes in this controlled experiment.
+
+F uses LR 1e-4, WD 0.1, and clipping 1 at every capacity. J is the
+Stage 2 joint-validation-selected configuration. C30 denotes epochs 30/30/30; EJ denotes 30/10/10.
+K = middle-capacity p* − max(small-capacity p*, large-capacity p*). Optimizers and schedules are crossed on
+identical corpora, initial checkpoints, weights, and batch order. This contrast
+does not equate a combined LR/WD intervention with the effect of regularization alone.
 
 | Cell | Alias | Mean K | Between-corpus SD | Positive / 9 | Peak verdict | Random generalization |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -26,10 +30,10 @@ menyamakan intervensi gabungan LR/WD dengan efek regularisasi saja.
 | R_EJ | - | -0.009651 | 0.005316 | 0 | disappears | False |
 | R_ER | R_EJ | -0.009651 | 0.005316 | 0 | disappears | False |
 
-Alias menandai sel yang memakai trajectory dan checkpoint persis sama. Sel-sel
-itu tidak dihitung sebagai replikasi tambahan. F/J identik pada kapasitas kecil.
+Aliases identify cells using exactly the same trajectory and checkpoint.
+They are not counted as additional replications. F/J are identical at the smallest capacity.
 
-![Optimizer dan durasi](optimizer-duration.png)
+![Optimizer and duration](optimizer-duration.png)
 
 | Effect on K | Mean | Between-corpus SD | Corpus-mean sign |
 | --- | --- | --- | --- |
@@ -43,15 +47,17 @@ itu tidak dihitung sebagai replikasi tambahan. F/J identik pada kapasitas kecil.
 | Q2_interaction | 0.000000 | 0.000000 | zero |
 | Q2_total | -0.003779 | 0.000657 | negative |
 
-Seluruh 9 kontras dan mean/SD dalam tiap corpus tersedia di policy-summary.json
-dan policy-cells.csv. SD pada tabel efek adalah SD tiga mean corpus, bukan
-ketidakpastian dari sembilan dataset. Tiga corpus belum mendukung klaim
-signifikansi. Efek konsisten berarti ketiga mean corpus bertanda sama; nol,
-mixed, dan undefined tetap ditampilkan.
+All 9 contrasts and the mean/SD within each corpus are available in policy-summary.json
+and policy-cells.csv. SD in the effect table is the SD of three corpus means,
+not uncertainty estimated from nine datasets. Three corpora do not support
+a significance claim. A consistent effect means all three corpus means have the same sign; zero,
+mixed, and undefined outcomes remain displayed.
 
-## 2. Tujuan seleksi validasi
+<a name="2-tujuan-seleksi-validasi"></a>
 
-Seleksi random-only menghasilkan verdict disappears, 0/9 kontras positif. Perubahan total K terhadap joint selection: -0.003779. EJ=ER persis, sehingga efek perubahan jadwal dan interaksinya pada perbandingan tujuan seleksi adalah nol karena desain terpilih identik. Perbedaan yang tersisa adalah konfigurasi, khususnya WD 0,1 → 1 pada kapasitas menengah dengan LR dan clipping tetap.
+## 2. Validation selection objective
+
+Random-only selection yielded disappears, with 0/9 positive contrasts. The total K change relative to joint selection was -0.003779. EJ=ER exactly, so the schedule-change effect and its interaction in the selection-objective comparison are zero because the selected designs are identical. The remaining difference is configuration, specifically WD 0.1 → 1 at the middle capacity, with LR and clipping unchanged.
 
 | Policy | Width | LR | WD | Clip | Selected epoch |
 | --- | --- | --- | --- | --- | --- |
@@ -65,44 +71,46 @@ Seleksi random-only menghasilkan verdict disappears, 0/9 kontras positif. Peruba
 | R | 128 | 0.0003 | 1.0 | 1.0 | 10 |
 | R | 256 | 0.0001 | 1.0 | 1.0 | 10 |
 
-J dan R dihitung dari **dua replikasi tuning Stage 2 yang digunakan ulang**.
-J meminimalkan mean validation NLL random+uniform; R memakai random saja.
-Tie rule: skor presisi penuh, epoch lebih awal, LR naik, WD naik, clip 1 sebelum
-disabled. Hash semua input/keputusan, kandidat dan jadwal tersimpan dalam
-selection.json. Tidak ada test, p* atau hasil konfirmasi dalam seleksi.
+J and R were computed from **two reused Stage 2 tuning replications**.
+J minimizes mean validation NLL across random+uniform arms; R uses only random weighting.
+The tie rule is full-precision score, earlier epoch, ascending LR, ascending WD, and clipping 1 before
+disabled clipping. Hashes of all inputs/decisions, candidates, and schedules are saved in
+selection.json. Test results, p*, and confirmation outcomes do not enter selection.
 
-![Tujuan seleksi](selection-objective.png)
+![Selection objective](selection-objective.png)
 
-Efek kebijakan ini bersyarat pada dua replikasi tuning tersebut. Hasil tidak
-membuktikan bahwa satu tujuan seleksi selalu lebih baik atau bahwa optimum
-global ditemukan. Per-capacity paired effects untuk p*, train/validation/test
-NLL, memorisasi dan clipping tersedia di per-capacity-effects.csv dan JSON.
+These policy effects are conditional on the two tuning replications. They do not
+establish that one selection objective is universally better or that a global
+optimum was found. Per-capacity paired effects for p*, train/validation/test
+NLL, memorization, and clipping are available in per-capacity-effects.csv and JSON.
 
-## 3. Audit baseline pretraining
+<a name="3-audit-baseline-pretraining"></a>
 
-Pada J/EJ, referensi oracle/uniform alternatif menghasilkan p* undefined pada 27/27 pasangan kapasitas/corpus/seed. Bandingkan aggregate gain terhadap referensi itu dengan gain terhadap pretrained baseline sebelum menafsirkan besarnya loss reduction sebagai pembelajaran pola spesifik. Ini sensitivitas terhadap referensi, bukan efek kausal mengubah pretraining.
+## 3. Pretraining baseline audit
+
+On J/EJ, the alternative oracle/uniform reference produced undefined p* for 27/27 capacity/corpus/seed pairs. Compare aggregate gain against that reference with gain against the pretrained baseline before interpreting loss reduction as learning specific patterns. This is reference sensitivity, not the causal effect of changing pretraining.
 
 | Source | Width | Total val NLL | Shared NLL | Group NLL | Instance NLL |
 | --- | --- | --- | --- | --- | --- |
-| stage2_tuning_retrospective | 64 | 3.234835 | 0.235978 | 4.771241 | 4.697286 |
-| stage2_tuning_retrospective | 128 | 4.193495 | 0.047410 | 6.335068 | 6.198006 |
-| stage2_tuning_retrospective | 256 | 5.450627 | 0.007936 | 8.256560 | 8.087385 |
+| stage 2_tuning_retrospective | 64 | 3.234835 | 0.235978 | 4.771241 | 4.697286 |
+| stage 2_tuning_retrospective | 128 | 4.193495 | 0.047410 | 6.335068 | 6.198006 |
+| stage 2_tuning_retrospective | 256 | 5.450627 | 0.007936 | 8.256560 | 8.087385 |
 | fresh_confirmation | 64 | 3.220053 | 0.234622 | 4.715975 | 4.709560 |
 | fresh_confirmation | 128 | 4.133592 | 0.048944 | 6.166673 | 6.185159 |
 | fresh_confirmation | 256 | 5.398345 | 0.008105 | 8.075870 | 8.111061 |
 
-Komponen NLL pada tabel adalah rata-rata per answer token komponen masing-masing;
-total mixed NLL adalah mean ketiganya. Angka Stage 2 memakai enam baseline
-tuning yang dideduplikasi, sehingga cocok dengan konteks 3,23/4,19/5,45.
-Pretraining shared-only tidak mengoptimalkan group dan instance mixed task.
-Referensi uniform atas 16 jawaban memiliki NLL log(16)=2,772589 per komponen.
+Component NLL in the table is the mean per answer token for each component;
+total mixed NLL is the mean of the three components. Stage 2 values use six deduplicated
+tuning baselines, matching the context of 3.23/4.19/5.45.
+Shared-only pretraining does not optimize the mixed task's group and instance components.
+A uniform reference over 16 answers has NLL log(16)=2.772589 per component.
 
-![Komponen baseline](baseline-components.png)
+![Baseline components](baseline-components.png)
 
-Berikut alokasi gain pada J/EJ, random, konfirmasi baru. Signed mass share
-dapat negatif; gain komponen tidak dipotong. RMS mengukur bentuk kontribusi
-kumulatif terhadap penyimpangan dari alokasi uniform. Cross-terms lengkap
-disimpan dalam diagnostics.json karena kontribusi tidak independen.
+The following shows gain allocation for J/EJ, random weighting, and fresh confirmation data. Signed mass shares
+can be negative; component gains are not clipped. RMS measures the shape of cumulative
+contributions to deviation from uniform allocation. Full cross-terms
+are saved in diagnostics.json because contributions are not independent.
 
 | Width | Component | Initial train NLL | Current NLL | Signed mean gain | Gain mass share | Centered cumulative RMS | Component p* | Undefined / 9 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -128,21 +136,23 @@ disimpan dalam diagnostics.json karena kontribusi tidak independen.
 | J_C60 | 128 | 0.182661 | 0.182266 | 0.833181 | 0 | 0.700048 |
 | J_C60 | 256 | 0.075937 | 0.075765 | 0.299426 | 0 | 1.193213 |
 
-Referensi alternatif [0,log(16),log(16)] adalah oracle shared-rule dan prediksi
-uniform untuk group/instance, **bukan checkpoint pretrained lain**. Nilai
-undefined berarti estimator tidak teridentifikasi atau aggregate gain tidak
-positif; nilai itu tidak dibuang atau diubah menjadi nol. Mean diagnostik hanya
-ditampilkan bila semua sembilan nilai terdefinisi. p* primer tetap estimator
-asli terhadap baseline pretrained dan memakai gain bertanda.
+The alternative reference [0, log(16), log(16)] is an oracle shared rule with
+uniform predictions for group/instance, **not another pretrained checkpoint**.
+Undefined values indicate an unidentified estimator or nonpositive aggregate gain;
+they are not discarded or replaced with zero. Diagnostic means are
+shown only when all nine values are defined. Primary p* remains the original
+estimator against the pretrained baseline and uses signed gains.
 
-Identitas gain total = mean tiga gain komponen diperiksa; maksimum selisih
-float32 adalah 1.38767064e-06. Alokasi kumulatif
-dan matriks cross-term juga direkonstruksi. Diagnostik mencakup seluruh 540
-checkpoint adaptasi Stage 3 dan 450 checkpoint Stage 2 retrospektif. Baseline
-dan perubahan referensi dapat memengaruhi interpretasi gain/p*, tetapi ini
-bukan intervensi pretraining yang mengidentifikasi sebab kausal puncak.
+The identity total gain = mean of the three component gains was checked; the maximum
+float32 difference was 1.38767064e-06. Cumulative allocations
+and the cross-term matrix were also reconstructed. Diagnostics cover all 540
+Stage 3 adaptation checkpoints and 450 retrospective Stage 2 checkpoints. Baselines
+and reference changes can affect gain/p* interpretation, but this is not a
+pretraining intervention that identifies a causal explanation for the peak.
 
-## 4. Generalisasi, memorisasi, dan clipping
+<a name="4-generalisasi-memorisasi-dan-clipping"></a>
+
+## 4. Generalization, memorization, and clipping
 
 | Cell | Arm | Width | Epoch | p* | Train NLL | Validation NLL | Test NLL | Instance train acc | Clipping |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -177,50 +187,54 @@ bukan intervensi pretraining yang mengidentifikasi sebab kausal puncak.
 | R_ER | uniform | 128 | 10 | undefined | 1.690043 | 1.835094 | 1.835852 | 10.32% | 94.4% |
 | R_ER | uniform | 256 | 10 | undefined | 1.653898 | 1.820356 | 1.821334 | 10.63% | 97.2% |
 
-Kriteria generalisasi diterapkan per corpus: test NLL harus menurun ketat
-dengan kapasitas dan validation NLL tidak lebih buruk dari epoch 0 pada setiap
-kapasitas. Hasil masing-masing corpus dan arm ada di policy-summary.json.
-Tidak ada evaluasi test epoch 0 atau seleksi ulang dari konfirmasi.
-Uniform p* selalu undefined. Semua undefined/boundary fits, termasuk komponen
-dan referensi alternatif, disimpan di diagnostics.json dan diagnostics.csv.
+The generalization criterion is applied per corpus: test NLL must decrease strictly
+with capacity, and validation NLL must be no worse than epoch 0 at every
+capacity. Results for each corpus and arm are in policy-summary.json.
+No epoch 0 test evaluation or confirmation-based reselection occurred.
+Uniform-weight p* is always undefined. All undefined/boundary fits, including component
+and alternative-reference fits, are saved in diagnostics.json and diagnostics.csv.
 
-![Trajectory epoch bersama](trajectories.png)
+![Trajectories at matched epochs](trajectories.png)
 
-## 5. Integritas, runtime, reproduksi
+<a name="5-integritas-runtime-reproduksi"></a>
 
-Training-stage wall time 1212.8 detik
-(20.2 menit), termasuk pretraining, evaluasi dan
-serialisasi di interval tersebut; tidak termasuk persiapan/audit/laporan.
-Puncak alokasi adaptasi 150.49 MiB;
-reserved 184.00 MiB.
-Ini memori PyTorch, bukan seluruh desktop/driver. Batas dua jam dan 144 run
-dipenuhi; jumlah aktual 108 didapat melalui deduplikasi sebelum training.
+## 5. Integrity, runtime, and reproducibility
 
-Audit memeriksa 3031 file historis,
-108 run, 27 pretrained checkpoints, 540 model checkpoint adaptasi dan tepat
-540 evaluasi test setelah freeze. Source/tensor/order/weight/checkpoint hashes,
-pairing across-arm dan across-config, split/toggle equality, pemilihan validasi
-independen, seluruh scalar metric dan p* asli direkonstruksi. Tidak ada run gagal.
+Training-stage wall time was 1212.8 seconds
+(20.2 minutes), including pretraining, evaluation, and
+serialization within that interval; excluding preparation, audit, and reporting.
+Peak adaptation allocated memory was 150.49 MiB;
+reserved memory was 184.00 MiB.
+These are PyTorch measurements rather than total desktop/driver usage. The two-hour and 144-run
+limits were met; the actual count of 108 resulted from deduplication before training.
 
-Raw: `work/runs/controls-v04-20260929-01/`. Arsip ringkas menyimpan protokol/source,
-input tuning dan keputusan, data, assignment/order, per-sequence losses,
-retrospective evidence, audit, laporan dan gambar. Model penuh dikecualikan
-dari ZIP tetapi tersedia lokal dengan hash. environment-lock.txt mencatat
-runtime aktual. Notebook tidak dijalankan; skrip ekuivalen menjalankan studi.
+The audit checked 3031 historical files,
+108 runs, 27 pretrained checkpoints, 540 adaptation-model checkpoints, and exactly
+540 test evaluations after the freeze. Source/tensor/order/weight/checkpoint hashes,
+pairing across arms and configurations, split/toggle equality, independent validation
+selection, all scalar metrics, and original p* were reconstructed. No runs failed.
 
-## 6. Posisi paper dan batas klaim
+Raw records: `work/runs/controls-v04-20260929-01/`. The compact archive retains protocols/source,
+tuning inputs and decisions, data, assignments/order, per-sequence losses,
+retrospective evidence, audit, reports, and figures. Full models are excluded
+from the ZIP but remain available locally with hashes. environment-lock.txt records
+the actual runtime. The notebook was not executed; equivalent scripts ran the study.
 
-Kontribusi kandidat adalah kontrol atas kebijakan optimizer/durasi/seleksi dan
-audit baseline pada tugas terstruktur. Efek terukur berlaku untuk konfigurasi
-dan corpus dalam protokol ini. Tiga kapasitas hanya memberi satu titik interior;
-tidak ada bukti perpindahan antara dua lokasi puncak interior. Tiga corpus dan
-dua replikasi tuning yang digunakan ulang membatasi generalisasi inferensi.
+<a name="6-posisi-paper-dan-batas-klaim"></a>
+
+## 6. Research positioning and claim boundaries
+
+The candidate contribution is a controlled study of optimizer/duration/selection policies
+and a baseline audit in a structured task. Measured effects apply to the configurations
+and corpora in this protocol. Three capacities provide only one interior point;
+there is no evidence of movement between two interior peak locations. Three corpora and
+two reused tuning replications limit the generality of inference.
 
 [Jane Street](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/)
-menggunakan tuning held-out dan regularisasi kuat pada LM pretrained; hasil
-sintetis ini tidak setara dengan setting itu. Estimator signed-gain mengikuti
+uses held-out tuning and strong regularization for pretrained LMs; these synthetic
+results do not reproduce that setting. The signed-gain estimator follows the
 [technical note](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/sequence-weighting-note.pdf).
-Hubungan pembobotan dengan durasi dan regularisasi sudah terkait
-[Byrd & Lipton, ICML 2019](https://proceedings.mlr.press/v97/byrd19a.html) dan
-[Xu, Ye & Ruan, 2021](https://arxiv.org/abs/2103.15209). Rincian recheck sumber
-primer ada di LITERATURE_CHECK.md. Tidak ada klaim novelty/venue atau publikasi.
+Relationships between weighting, duration, and regularization were already addressed by
+[Byrd & Lipton, ICML 2019](https://proceedings.mlr.press/v97/byrd19a.html) and
+[Xu, Ye & Ruan, 2021](https://arxiv.org/abs/2103.15209). Primary-source rechecks are
+documented in LITERATURE_CHECK.md. This stage made no novelty/venue claim and involved no publication.

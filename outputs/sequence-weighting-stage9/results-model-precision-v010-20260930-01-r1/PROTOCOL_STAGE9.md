@@ -20,12 +20,12 @@ test scores, p*, objective size, boundary status, signed gain, or visible peaks.
 
 | Cohort | Original run | Confirmation corpus / pretrain seeds | Model/weight seeds | Rule | References |
 |---|---|---|---|---|---:|
-| S4_fixed30 | baseline-v05-20260929-01 | 41843/95201, 43997/95202, 46219/95203 | 601,602,603 | original F,C30; g00, epoch30, LR1e-4, WD.1, clip1 | 54 |
+| S4_fixed30 | baseline-v05-20260929-01 | 41843/95201, 43997/95202, 46219/95203 | 601,602,603 | original F,C30; g00, epoch 30, LR 1e-4, WD .1, clip 1 | 54 |
 | S5_R | utility-v06-20260929-01 | 52919/96201, 55049/96202, 57163/96203 | 801,802,803 | existing primary R validation decision for each variant/width | 54 |
 | S6_P1_R through S6_P4_R | stability-v07-20260929-01 | 61103/97201, 61211/97202, 61319/97203 | 1001,1002,1003 | each of the four existing primary R panel decisions | 216 |
 
 The pre-comparison inventory contains 324 policy references, 207 distinct native
-checkpoints and 186 distinct exact numerical (weight,gain) inputs, each n=512.
+checkpoints and 186 distinct exact numerical (weight, gain) inputs, each n=512.
 There are nine distinct promoted weight vectors. Stage-specific native counts
 are 54/54/99; distinct input counts are 54/48/84. Numerical deduplication retains
 every alias and loss provenance. Distinct zero-gain initializations can share an
@@ -33,8 +33,8 @@ input, and panels can share a native checkpoint. These counts do not represent
 324 independent experiments. Dataset replication is three corpora per stage;
 model/weight seeds are nested and Stage 6 panels share confirmation corpora.
 
-The Stage 4 epoch60/secondary selections, Stage 5–6 J policies, uniform arms and
-arithmetic-reference swaps are outside the prespecified cohort. Epoch0,
+The Stage 4 epoch 60/secondary selections, Stage 5–6 J policies, uniform arms and
+arithmetic-reference swaps are outside the prespecified cohort. Epoch 0,
 negative-total, boundary, failed-fit and undefined records inside the cohorts
 remain included. No new validation tuning or model selection occurs.
 
@@ -45,9 +45,9 @@ The measured scalar train losses are saved float32 tensors. Compute
 as in historical fitting. Promote saved weights to float64 without modification.
 Do not subtract promoted losses or average component gains. The copied loss
 vectors and original files retain both constituent losses for every alias.
-Each saved loss and weight vector has length512, finite values and positive weights.
+Each saved loss and weight vector has length 512, finite values and positive weights.
 
-For canonical epoch0, current loss equals initial loss exactly. Its random weight
+For canonical epoch 0, current loss equals initial loss exactly. Its random weight
 vector comes from the lexicographically first saved M/random assignment for the
 same stage/width/corpus/model-seed, verified against the original pure weights
 function. This only supplies a design weight vector; no model is evaluated.
@@ -93,9 +93,9 @@ Torch float64 sum/mean. Report both routes without requiring universal identity.
 For every defined historical p, J64 at that exact p must equal its original saved
 objective exactly. Verify mathematical guard vs historical policy reason mapping.
 
-80/110 convergence tolerance is 1e-50 times max(1,abs(J110)) for absolute J;
-for D use 1e-50 times max(1,max(abs(D110))). The anchor identity is checked at80
-and110 digits. Reference ranking resolution is tau = 2e-50 times that contrast
+80/110 convergence tolerance is 1e-50 times max(1, abs(J110)) for absolute J;
+for D use 1e-50 times max(1, max(abs(D110))). The anchor identity is checked at 80
+and 110 digits. Reference ranking resolution is tau = 2e-50 times that contrast
 scale. Validate all grid and stored points; compare exact and tau-level minima,
 strict pair order and tau-level pair classifications. Any unresolved
 80/110 classification is reported; do not adapt precision, tolerance or grid.
@@ -122,13 +122,13 @@ Do not re-evaluate, rescue or replace prior utility/scaling/peak gates.
 
 ## Freeze, resource limits and failure policy
 
-Before any measured comparisons, freeze all15 source files, configuration,
+Before any measured comparisons, freeze all 15 source files, configuration,
 source-bound rational/signed/guard/float32 fixtures, aggregation fixtures and an
 independent design review. Snapshot exact input/provenance files and inventory,
-then write FREEZE. Separate START follows it. Primary80 and independent110 each
+then write FREEZE. Separate START follows it. Primary80 and independent 110 each
 have a 3,600-second CPU wall budget, checked with monotonic and UTC elapsed time,
 including source/input checks and all cache construction. Preparation budget is
-1,800seconds; input-source snapshot cap1GiB and minimum free disk2GiB. Fixed
+1,800 seconds; input-source snapshot cap 1 GiB and minimum free disk 2 GiB. Fixed
 counts/grid/precision only; no post-outcome sampling, adaptive stopping or retries.
 No GPU is used. Capture environment, sources, runtime and peak RSS. Preserve all
 partial profiles and failure records. An exceeded budget or failed mandatory

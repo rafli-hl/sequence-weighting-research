@@ -22,7 +22,7 @@ Run `synthetic-raw` ended with status **BUDGET_EXHAUSTED**; infrastructure/prove
 | weak_neighborhood | 0 | 172 | 172 | 14 |
 | unresolved | 10 | 176 | 186 | 0 |
 
-All denominators include the full design. Conditional rates use only available comparisons and are explicitly labeled; an unavailable comparison is not an agreement or disagreement. Guards retain their mathematical reasons, epoch0 retains historical `no_adaptation`, and interruption leaves explicit `not_run` records. Numerical disagreement and incomplete convergence remain reported.
+All denominators include the full design. Conditional rates use only available comparisons and are explicitly labeled; an unavailable comparison is not an agreement or disagreement. Guards retain their mathematical reasons, epoch 0 retains historical `no_adaptation`, and interruption leaves explicit `not_run` records. Numerical disagreement and incomplete convergence remain reported.
 
 ## Frozen search methods and limits
 
@@ -48,7 +48,7 @@ Signed gaps and Decimal strings are preserved without clipping. Summary arithmet
 
 ## Policy cells and preserved model context
 
-Each of the 36 cells contains three corpus seeds × three model/weight seeds. Model seeds within one corpus and reused Stage6 panel selections are paired observations, not additional independent datasets. These tables are descriptive and do not re-evaluate Stage6 usefulness or any p* peak.
+Each of the 36 cells contains three corpus seeds × three model/weight seeds. Model seeds within one corpus and reused Stage 6 panel selections are paired observations, not additional independent datasets. These tables are descriptive and do not re-evaluate Stage 6 usefulness or any p* peak.
 
 | Cohort | Variant | Width | Distinct /9 | Compared | Guard | Unresolved | Not run | Original objective match / available |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -91,7 +91,7 @@ Each of the 36 cells contains three corpus seeds × three model/weight seeds. Mo
 
 ![Complete cohort coverage](cohort-coverage.png)
 
-Historical contexts are copied exactly from the audited Stage9 report and joined by full policy-reference identity. They supply saved training memorization, validation/test losses, clipping, signed gain/cancellation and original fit context; no Stage9 grid statistic is reused as a Stage10 conclusion. All 324 selected test losses remain available. Stage4 intentionally did not measure own-initial epoch0 test metrics, so those 54 test gains remain null; 270/324 test gains are available. No imputation or premixed-baseline proxy is used.
+Historical contexts are copied exactly from the audited Stage 9 report and joined by full policy-reference identity. They supply saved training memorization, validation/test losses, clipping, signed gain/cancellation and original fit context; no Stage 9 grid statistic is reused as a Stage 10 conclusion. All 324 selected test losses remain available. Stage 4 intentionally did not measure own-initial epoch 0 test metrics, so those 54 test gains remain null; 270/324 test gains are available. No imputation or premixed-baseline proxy is used.
 
 | Cohort | Variant | Width | Train NLL gain | Validation NLL gain | Selected test NLL | Test NLL gain | Test gain available /9 | Train instance accuracy | Clipping (available) | Original p (available) | Original fit J (available) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -134,7 +134,7 @@ Historical contexts are copied exactly from the audited Stage9 report and joined
 
 ## Interpretation and provenance
 
-This is a bounded numerical search diagnostic on saved signed gains, not fresh known-truth recovery or model generalization. No model training, inference, retuning, p* replacement, K recomputation or utility-gate revision occurs. Stage6 primary utility failures remain unchanged. Three capacities cannot establish a shift between two interior peaks; one Pythia size/seed cannot establish a scaling curve. No novelty or publication claim is made. The next research focus is a bounded Stage4–10 synthesis, with numerical validity, recovery and held-out usefulness kept distinct. No further experiment is launched automatically.
+This is a bounded numerical search diagnostic on saved signed gains, not fresh known-truth recovery or model generalization. No model training, inference, retuning, p* replacement, K recomputation or utility-gate revision occurs. Stage 6 primary utility failures remain unchanged. Three capacities cannot establish a shift between two interior peaks; one Pythia size/seed cannot establish a scaling curve. No novelty or publication claim is made. The next research focus is a bounded Stage 4–10 synthesis, with numerical validity, recovery and held-out usefulness kept distinct. No further experiment is launched automatically.
 
 Results SHA256: `f716e43de63f23cc9284dfaefaad1e7769a5702309f35ca7e241cf3419a9b05f`. All frozen sources, copied input provenance, raw searches/comparisons, guards, incomplete records, complete histories, fixture checks and report artifacts are archived. CRC and SHA256 are checked; final visual review is recorded separately.
 

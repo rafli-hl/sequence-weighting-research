@@ -19,7 +19,7 @@ sha256sum -c SOURCE_MANIFEST.sha256
 cat reviews/SOURCE_REVIEW.json
 ```
 
-Runtime preparation → pretraining → adaptation, one1800-second envelope:
+Runtime preparation → pretraining → adaptation, one 1800-second envelope:
 
 ```bash
 cd /mnt/d/codex/sequence-weighting-research
@@ -39,7 +39,7 @@ work/.venv-wsl/bin/python -B -u outputs/sequence-weighting-clipping-interaction-
 work/.venv-wsl/bin/python -B -u outputs/sequence-weighting-clipping-interaction-v0133/supervise.py adapt --review outputs/sequence-weighting-clipping-interaction-v0133/reviews/SOURCE_REVIEW.json
 ```
 
-Separate independent audit, only after a successful runtime gate,600 seconds:
+Separate independent audit, only after a successful runtime gate, 600 seconds:
 
 ```bash
 cd /mnt/d/codex/sequence-weighting-research
@@ -51,7 +51,7 @@ cat outputs/sequence-weighting-clipping-interaction-v0133/receipts/outer-audit.e
 cat outputs/sequence-weighting-clipping-interaction-v0133/receipts/audit.exit.json
 ```
 
-Expected successful prints: runtime exit:0 / audit exit:0. Exit alone is not
+Expected successful prints: runtime exit: 0 / audit exit: 0. Exit alone is not
 scientific acceptance. Each inner phase automatically saves admission, worker
 admission, command/PID, stdout/stderr, exit and postwrite receipts, source/review/
 log hashes, UTC/monotonic timing and child-exit status. Outer runtime/audit save
@@ -70,7 +70,7 @@ hashes, completion bindings and exits; preserve any failed/partial evidence.
 
 Anticipated run: work/runs/clipping-interaction-v0133-20261004-01. Immutable
 inputs and manifests; ten pretrained checkpoints, pretraining arrays/traces,
-shared initial train/test arrays; forty F10 checkpoints, final arrays and160-row
+shared initial train/test arrays; forty F10 checkpoints, final arrays and 160-row
 update traces each, including actual step/relative norms. Anticipated output:
 results-fresh-clipping-interaction-v0133-20261004-01/PAIRS.json,
 CORPUS_SUMMARY.json, CORPUS_CONTRASTS.csv, ALLOCATION.json, AUDIT.json. Summary

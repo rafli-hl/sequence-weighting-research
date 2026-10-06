@@ -10,27 +10,27 @@ records and the original failed v0133 attempt remain unchanged.
 The completed v0131 reanalysis found an adverse random-versus-uniform held-out
 tradeoff and preferential high-weight instance allocation on five already seen
 corpora. Its training associations and arithmetic decomposition did not identify
-a mechanism. Historical v0130 failed its frozen width128 no-clip validation
-criterion; clip1 remained the canonical fixed control. These studies remain closed.
+a mechanism. Historical v0130 failed its frozen width 128 no-clip validation
+criterion; clip 1 remained the canonical fixed control. These studies remain closed.
 
 Completed fresh-data v0132 isolated an adverse instance-weighting effect under
 the fixed canonical policy: group-token test NLL +0.035304929 nats, corpus SD
-0.004915780 and5/5 positive corpus means. I-U was +0.033297779. Its factorial
+0.004915780 and 5/5 positive corpus means. I-U was +0.033297779. Its factorial
 intervention strengthened the narrow causal statement about loss weighting under
 that training algorithm, while leaving the pathway unresolved.
 
-New v0133-r1 crossed instance weighting with clip1 versus no clipping on five
+New v0133-r1 crossed instance weighting with clip 1 versus no clipping on five
 fresh G1 corpora, two nested seeds each, ten shared U-pretrained checkpoints and
-forty width128/depth3/F10 adaptations. The primary group-test contrast
+forty width 128/depth 3/F10 adaptations. The primary group-test contrast
 D=(Iclip-Uclip)-(Inoclip-Unoclip) was **+0.000743708 nats/group answer token**,
 corpus SD **0.001968224**, with only **3/5 positive** corpora. It missed both
 the prospective mean>=0.01 and all-five-positive requirements. No corpus was
 discarded and no favorable-result search followed.
 
-The conditional penalties remained **+0.031944954** under clip1 and
+The conditional penalties remained **+0.031944954** under clip 1 and
 **+0.031201246** without clipping, each positive in all five corpus means.
 Unoclip own-baseline group gains were positive in all five, satisfying the frozen
-adequacy gate. A clipping-only explanation is therefore weakened: removing clip1
+adequacy gate. A clipping-only explanation is therefore weakened: removing clip 1
 did not eliminate this penalty under the tested fixed policies. This is not a
 zero-effect or equivalence result for clipping, and does not select a new policy.
 It does not contradict or reopen v0130's different historical criterion.
@@ -51,9 +51,9 @@ The audit verified saved arithmetic and fixtures, not an independent replay of
 every intermediate optimization update. Near-ceiling group accuracy and the
 teacher-forced synthetic design also restrict claims.
 
-The audited record covers50 checkpoint reevaluations,10 full-input regenerations,
-6400 adaptation trace rows and all frozen tolerances. Runtime was713.688034s
-plus the2s failed-attempt charge; audit was57.535809s. Both bounded modes ended
+The audited record covers 50 checkpoint reevaluations, 10 full-input regenerations,
+6400 adaptation trace rows and all frozen tolerances. Runtime was 713.688034 s
+plus the 2 s failed-attempt charge; audit was 57.535809 s. Both bounded modes ended
 successfully with confirmed saved containment. Original failure evidence and
 all numerical outputs are preserved. Source manifest is
 `baf8a3de3aab342b842f8d2fc0ce4b1899cf77b6e58987745df9d64b27ab5ab3`;

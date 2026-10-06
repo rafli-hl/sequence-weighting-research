@@ -9,7 +9,7 @@ review attestation. The numerical source and original artifacts remain unchanged
 The panel contains 30 states: ten shared U-pretrained initial checkpoints and
 ten each of Unoclip_F10 and Inoclip_F10 from the completed v0133-r1 cohort.
 Five corpora, each with two nested model/weight seeds, are the replication units.
-Saved train512/validation256 examples and the first saved epoch's16 batches32
+Saved train 512/validation 256 examples and the first saved epoch's16 batches 32
 were reused. There were 480 state-batch rows, no new corpora, no test evaluation,
 no optimizer step and no checkpoint/layer/example selection from these results.
 
@@ -27,7 +27,7 @@ equally; the mean cosine is not the cosine of an averaged gradient vector.
 | Inoclip_F10 | +0.1424547196 | 0.2030918655 | 2/5 | 3/10 | +0.2365841570 | 1/5 |
 
 Initial adverse alignment is modest and heterogeneous. Four corpus cosine means
-are negative, but four of ten seed cosines are positive and corpus91420105 is
+are negative, but four of ten seed cosines are positive and corpus 91420105 is
 positive. These observations count against a consistent initial-conflict account;
 there is no significance or practical-threshold claim. Endpoint alignment changes
 with the trained state; Inoclip_F10 is favorable on average. Endpoint associations
@@ -37,38 +37,38 @@ Corpus dot and cosine signs can differ because seed cosines are normalized befor
 averaging and seed dots retain magnitude. In Unoclip_F10, four negative corpus
 cosines coexist with three negative corpus dots; in Inoclip_F10, two negative
 cosines coexist with one negative dot. Do not substitute these sign counts.
-All30 seed cosines and all15 corpus cosines are defined; saved seed guards are
-empty. Zero-norm/undefined fixtures passed. The frozen EPS1e-12 guard, explicit
+All 30 seed cosines and all 15 corpus cosines are defined; saved seed guards are
+empty. Zero-norm/undefined fixtures passed. The frozen EPS 1e-12 guard, explicit
 nulls and strict aggregation rule remain binding: an undefined constituent would
 make its aggregate undefined, rather than be dropped or converted to zero.
 
 Extra-component batch population dispersion exceeds uniform-component dispersion
-in every one of the30 states. Equal-corpus mean extra/uniform batch RMS ratios are
-1.12666321 initially,1.53129478 at Unoclip_F10 and1.42534886 at Inoclip_F10.
-Mean extra/uniform population gradient norm ratios are0.79138702,0.88265263
-and0.83013418 respectively. These are scalar component comparisons, not the
+in every one of the 30 states. Equal-corpus mean extra/uniform batch RMS ratios are
+1.12666321 initially, 1.53129478 at Unoclip_F10 and 1.42534886 at Inoclip_F10.
+Mean extra/uniform population gradient norm ratios are 0.79138702,0.88265263
+and 0.83013418 respectively. These are scalar component comparisons, not the
 variance of the total instance-weighted gradient. For centered batch vectors,
-Var(gI)=Var(gU)+Var(gD)+2Cov(gU,gD); the covariance is needed to determine the
+Var(gI)=Var(gU)+Var(gD)+2Cov(gU, gD); the covariance is needed to determine the
 total. Neither larger component dispersion nor the current alignment proves mediation.
 
 ## Completion and audit evidence
 
-The combined diagnostic plus conditional audit finished within the single600s
-cap: inclusive outer postwrite319.216155078s (rounded319.216s). Diagnostic exit0,
-audit exit0 and outer exit0; both children confirmed exited. Saved containment
-confirms no surviving group, wrapper reaped, cancellation exit0, cleanup reason
+The combined diagnostic plus conditional audit finished within the single 600 s
+cap: inclusive outer postwrite 319.216155078 s (rounded 319.216 s). Diagnostic exit 0,
+audit exit 0 and outer exit 0; both children confirmed exited. Saved containment
+confirms no surviving group, wrapper reaped, cancellation exit 0, cleanup reason
 none. The parent-supplied final independent review accepted the execution gate.
 
-AUDIT.json reports PASS_GRADIENT_REDUCTION_AND_PANEL_AUDIT,30 full-population
-states,480 independently recomputed batch rows,15 corpus-state rows and5,579
+AUDIT.json reports PASS_GRADIENT_REDUCTION_AND_PANEL_AUDIT, 30 full-population
+states, 480 independently recomputed batch rows, 15 corpus-state rows and 5,579
 passing discrepancy comparisons. Saved output hashes were checked before writing
 this record. Analytic softmax, ignored context, one-third training scaling,
 full validation normalization, centered finite differences, ordinary-descent
 signs, uniform-zero-extra, zero-norm undefined, strict-null aggregation and
 nonfinite rejection fixtures all passed. The largest recorded tolerance fraction
-was0.4999621837 for an ordinary-descent fixture; all classes were within tolerance.
-The maximum real full I-minus-U gradient discrepancy was7.8231096e-8;
-aggregation maximum absolute discrepancy was2.0847124e-7.
+was 0.4999621837 for an ordinary-descent fixture; all classes were within tolerance.
+The maximum real full I-minus-U gradient discrepancy was 7.8231096e-8;
+aggregation maximum absolute discrepancy was 2.0847124e-7.
 
 The audit independently recomputed direct-token full-population and batch reductions,
 but shares the trusted forward implementation, PyTorch autograd and operational
@@ -76,7 +76,7 @@ input guards. It is not a separate model implementation. No gradient vectors wer
 retained; there was no optimizer-moment replay, intermediate update reconstruction,
 strict determinism claim or test evaluation. Numerical precision was FP32 with
 FP64 gradient accumulation and scalar reductions. This remains a fixed synthetic
-G1,width128,F10,existing-state association and establishes no universal mechanism,
+G1, width 128, F10, existing-state association and establishes no universal mechanism,
 capacity trend, peak criterion or representation mediation.
 
 ## Decision

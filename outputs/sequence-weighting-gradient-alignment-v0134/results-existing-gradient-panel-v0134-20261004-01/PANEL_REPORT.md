@@ -27,7 +27,7 @@ No mechanism, mediation, significance or AdamW-update claim. Final acceptance al
 | Inoclip_F10 | 91420104 | -0.0317690385 | 2/2 | 0.853158488 | 1.48305245 |
 | Inoclip_F10 | 91420105 | 0.345530287 | 2/2 | 0.723094101 | 1.47787248 |
 
-Every seed, batch, undefined case and all15 corpus-state rows remain in the JSON outputs.
+Every seed, batch, undefined case and all 15 corpus-state rows remain in the JSON outputs.
 Negative dot means theta-eta*extra_gradient locally worsens validation group NLL.
 No historical optimizer moments or intermediate optimization replay is available.
 

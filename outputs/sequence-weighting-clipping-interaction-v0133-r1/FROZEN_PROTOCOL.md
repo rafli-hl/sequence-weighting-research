@@ -8,7 +8,7 @@ phase executes no Python, tests, WSL, generation, pretraining, training or audit
 
 ## Cohort and pairing
 
-G1 only; width128/depth3; 621696 parameters; fp32; batch32; adaptation F10.
+G1 only; width 128/depth 3; 621696 parameters; fp32; batch 32; adaptation F10.
 Five fresh corpus units, two nested model/weight seeds each, ten fresh shared
 U-pretrained checkpoints and forty adaptations. Train/validation/test sizes
 512/256/512; four answer tokens per shared/group/instance component.
@@ -22,7 +22,7 @@ U-pretrained checkpoints and forty adaptations. Train/validation/test sizes
 | 91420105 | 91430105 | 91440501, 91440551 |
 
 Uclip/Iclip/Unoclip/Inoclip are run in that fixed order for each pair. Component
-weight masks are (1,1,1)/(1,1,w)/(1,1,1)/(1,1,w). All components have coefficient
+weight masks are (1,1,1)/(1,1, w)/(1,1,1)/(1,1, w). All components have coefficient
 1/3; each component loss averages its four answer tokens. Draw the one random
 vector per pair using Python Random(1000+model_seed), raw exp(Uniform(log(.01),
 log(10))), cast float32 and normalize once to corpus mean one. Reuse it in both
@@ -30,18 +30,18 @@ instance-weighted arms; no batch-weight normalization. Reject nonfinite,
 nonpositive or tied random weights without redraw.
 
 Use the same full tokens, labels, teacher-forced context, initial checkpoint,
-weights and orders within each four-arm set. Reset AdamW for every arm. LR1e-4,
-WD.1 are fixed. Adaptation clip is 1 for Uclip/Iclip and None for no-clip arms.
+weights and orders within each four-arm set. Reset AdamW for every arm. LR 1e-4,
+WD .1 are fixed. Adaptation clip is 1 for Uclip/Iclip and None for no-clip arms.
 No-clip uses an infinite norm threshold solely to measure/check gradients; the
 effective rescaling coefficient is one. Finiteness checks remain active.
 
 Pretraining is unchanged from v0132: 2048 train/256 validation examples, four
-epochs, uniform weights, AdamW LR3e-4/WD.1/clip5; hard shared-rule loss plus soft
+epochs, uniform weights, AdamW LR 3e-4/WD .1/clip 5; hard shared-rule loss plus soft
 uniform sixteen-answer auxiliary loss on group/instance positions. Fresh data
 and model identities create ten baselines; no old checkpoint/data is reused.
 Namespaces remain disjoint. Order RNG is Torch 999+model_seed+epoch, four
 pretraining epochs with N2048 and ten adaptation epochs with N512. Nested model
-seeds differ by fifty; their ten-epoch order ranges are disjoint. Fixed pool991
+seeds differ by fifty; their ten-epoch order ranges are disjoint. Fixed pool 991
 and within-pair Python/Torch seed-integer coincidence are inherited intentional
 pairing. TF32 and strict deterministic algorithms remain disabled; no bitwise
 GPU reproducibility claim.
@@ -88,7 +88,7 @@ memorization, universal weighting disadvantage, p* peak or scaling curve claim.
 Immediately around each adaptation optimizer.step(), after gradient clipping,
 measure actual parameter-step L2 and its ratio to pre-step parameter L2. This
 includes AdamW/WD. One reusable GPU float32 snapshot holds 621696 values =
-2486784 bytes (~2.37MiB), sorted named-parameter order; copy before, subtract
+2486784 bytes (~2.37 MiB), sorted named-parameter order; copy before, subtract
 model values into that buffer after. Float64 scalar norm reductions, no activation
 logging, extra persistent snapshots or optimizer archives. It never writes model
 parameters/gradients. Existing pre-gradient norms/clipping fractions remain.
@@ -117,23 +117,23 @@ source/result reviewers must assess these actual limits.
 
 ## Budgets and provenance
 
-Inclusive runtime1800 seconds: preparation/source/census/hash checks, imports,
+Inclusive runtime 1800 seconds: preparation/source/census/hash checks, imports,
 pretraining, initial/final evaluations, forty adaptations, instrumentation,
-receipts and termination. Separate audit600 seconds, likewise inclusive. Global
-manual outer watchdog TERM at1790/590, KILL after5; remaining5 seconds for final
-receipts. Inner cumulative admission includes15-second grace and postwrite
+receipts and termination. Separate audit 600 seconds, likewise inclusive. Global
+manual outer watchdog TERM at 1790/590, KILL after 5; remaining 5 seconds for final
+receipts. Inner cumulative admission includes 15-second grace and postwrite
 charges. Worker inherits outer process group; inner cleanup is direct-child
-terminate/wait2/kill/wait1. Preserve failure latch and partial evidence, no retry.
+terminate/wait 2/kill/wait 1. Preserve failure latch and partial evidence, no retry.
 
-512MiB additional allocated storage includes planning document, this bundle,
-raw run/results/reviews/receipts and reserves. Preserve64MiB archive+16MiB terminal
-reserves inside the cap; normal writes stop at432MiB. Retain>=2GiB free. No archive
+512 MiB additional allocated storage includes planning document, this bundle,
+raw run/results/reviews/receipts and reserves. Preserve 64 MiB archive +16 MiB terminal
+reserves inside the cap; normal writes stop at 432 MiB. Retain>=2 GiB free. No archive
 is generated. No CPU/cloud fallback or security-policy change. Retain all ten
 pretrained and forty final fp32 checkpoints; no optimizer/intermediate archives.
 
-v0132 measured601.933168 runtime/43.409159 audit seconds, but new no-clip stability,
+v0132 measured 601.933168 runtime/43.409159 audit seconds, but new no-clip stability,
 snapshot/reduction overhead and historical I/O mean v0133 feasibility is unmeasured.
-Expected runtime10–20 minutes is uncertain; exact design must fail closed rather
+Expected runtime 10–20 minutes is uncertain; exact design must fail closed rather
 than grow caps or change cohort. Source review and separate user launch approval
 are still pending. The original planning document and all completed studies stay
 unchanged; SOURCE_MANIFEST.json binds this candidate and inherited dependencies.

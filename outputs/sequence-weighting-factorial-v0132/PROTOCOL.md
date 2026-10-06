@@ -78,7 +78,7 @@ Order seeds are 999 + model_seed + epoch; pretraining uses the first four order
 seeds with N=2048; adaptation uses ten with N=512. The paired nested model seeds
 are separated by fifty, so their order-seed ranges do not overlap. Identical
 numeric weight/order seeds within one matched seed use different PRNG engines
-and are inherited, intentional pairing. Arm execution order is U,R,S,I for each
+and are inherited, intentional pairing. Arm execution order is U, R, S, I for each
 corpus and seed, fixed in advance. The hardware/runtime policy disables TF32 and
 strict deterministic algorithms as in v0128; exact paired inputs do not establish
 strict bitwise GPU determinism.

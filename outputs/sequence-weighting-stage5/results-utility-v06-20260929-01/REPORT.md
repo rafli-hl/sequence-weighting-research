@@ -1,28 +1,34 @@
-# Stage 5 v0.6 — adaptasi berguna dibanding tanpa adaptasi
+<a name="stage-5-v06--adaptasi-berguna-dibanding-tanpa-adaptasi"></a>
 
-Run `utility-v06-20260929-01`. Training lokal selesai: **144 tuning + 144 konfirmasi**, **66 pretrained models**, dan **54 evaluasi awal test**. Protokol/seleksi dibekukan sebelum hasil konfirmasi.
+# Stage 5 v0.6 — useful adaptation compared with no adaptation
 
-## 1. Jawaban utama dan batas interpretasi
+Run `utility-v06-20260929-01`. Local training completed: **144 tuning + 144 confirmation runs**, **66 pretrained models**, and **54 initial test evaluations**. The protocol/selection were frozen before confirmation outcomes.
 
-Kriteria global adaptasi berguna untuk **U / R / random**: **False**. Setiap kapasitas harus memakai update nonzero, memiliki penurunan test NLL positif pada ketiga rerata korpus, dan validation NLL tidak lebih buruk dari baseline pada setiap korpus. Delta = test NLL model awal − test NLL model terpilih; nilai positif berarti perbaikan.
+<a name="1-jawaban-utama-dan-batas-interpretasi"></a>
 
-Pada kebijakan utama, p* undefined pada **9/27** pasangan kapasitas/seed, dan **0/27** mencapai batas atas p*=8. Mean objective fit kecil/menengah/besar: 0.001166, 0.036312, undefined. Fit dibatasi pencarian atau tidak terdefinisi tidak membuktikan mekanisme pangkat; keputusan utility ditentukan oleh perbaikan held-out terhadap baseline sendiri.
+## 1. Main result and interpretation limits
 
-| Lebar | Epoch | Δ test mean | SD antar korpus | Rentang korpus | Update >0 | 3 korpus Δ>0 | 3 korpus val≤awal | Berguna |
+The global useful-adaptation criterion for **U / R / random** was **False**. Every capacity must use nonzero updates, show a positive reduction in test NLL for all three corpus means, and have validation NLL no worse than baseline in each corpus. Delta = initial-model test NLL − selected-model test NLL; positive values indicate improvement.
+
+Under the primary policy, p* was undefined for **9/27** capacity/seed pairs, and **0/27** reached the upper boundary p*=8. Mean fit objectives for small/middle/large capacities were 0.001166, 0.036312, and undefined. Search-boundary-limited or undefined fits do not establish a power mechanism; utility is determined by held-out improvement over each model's own baseline.
+
+| Width | Epoch | Mean Δ test | Between-corpus SD | Corpus range | Update >0 | 3 corpora Δ>0 | 3 corpora val≤initial | Useful |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 64 | 10 | 0.030936 | 0.002429 | 0.028339 … 0.033153 | True | True | True | True |
 | 128 | 3 | 0.001879 | 0.001237 | 0.000763 … 0.003208 | True | True | True | True |
 | 256 | 0 | 0.000000 | 0.000000 | 0.000000 … 0.000000 | False | False | True | False |
 
-Ketiga korpus adalah unit replikasi; tiga seed model/bobot per korpus adalah pasangan bersarang. Sembilan pasangan lengkap dan tiga rerata korpus disimpan di `policy-summary.json` dan `policy-cells.csv`. Pemilihan epoch 0 menghasilkan delta tepat nol dan p* undefined. Itu tidak memenuhi bukti belajar berguna.
+The three corpora are the replication units; three model/weight seeds per corpus are nested pairs. All nine pairs and three corpus means are saved in `policy-summary.json` and `policy-cells.csv`. Selecting epoch 0 gives exactly zero delta and undefined p*. It does not establish useful learning.
 
 ![Test utility](utility.png)
 
-## 2. Keputusan validation yang dibekukan
+<a name="2-keputusan-validation-yang-dibekukan"></a>
 
-R memilih mean validation random; J memilih mean gabungan random/uniform. Kandidat epoch 0 kanonik dibandingkan dengan enam optimizer × enam epoch. Tie: full precision score, epoch terdini, LR lalu WD terkecil. Tidak ada test, p*, peak, atau fit yang dipakai untuk memilih.
+## 2. Frozen validation decisions
 
-| Kondisi | Selektor | Lebar | Grid | LR | WD | Epoch | Validation tuning |
+R selects mean random-weight validation NLL; J selects the joint random/uniform mean. The canonical epoch 0 candidate is compared with six optimizers × six epochs. Ties use the full-precision score, earliest epoch, then smallest LR and WD. Test results, p*, peaks, and fit quality do not enter selection.
+
+| Condition | Selector | Width | Grid | LR | WD | Epoch | Tuning validation |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | M | R | 64 | 4 | 0.0001 | 0.1 | 30 | 2.129973 |
 | M | R | 128 | 5 | 0.0001 | 1.0 | 20 | 2.049507 |
@@ -37,13 +43,15 @@ R memilih mean validation random; J memilih mean gabungan random/uniform. Kandid
 | U | J | 128 | 4 | 0.0001 | 0.1 | 5 | 1.861215 |
 | U | J | 256 | 4 | 0.0001 | 0.1 | 5 | 1.850489 |
 
-Epoch 0 tidak memiliki optimizer. Kebijakan identik mengacu ke hasil yang sama, bukan replikasi tambahan. Confirmation melatih union konfigurasi nonzero yang terpilih sampai 30 epoch; checkpoint lainnya hanya deskriptif.
+Epoch 0 has no optimizer. Identical policies reference the same result rather than additional replications. Confirmation trained the union of selected nonzero configurations through 30 epochs; other checkpoints are descriptive only.
 
 ![Selections](selection.png)
 
-## 3. Semua kebijakan: utility, scaling dan puncak terpisah
+<a name="3-semua-kebijakan-utility-scaling-dan-puncak-terpisah"></a>
 
-| Kebijakan | Arm | Alias | Global useful | Scaling gate | K mean | K undefined/9 | K positif/9 | Verdict |
+## 3. All policies: separate utility, scaling, and peak criteria
+
+| Policy | Arm | Alias | Global useful | Scaling gate | K mean | K undefined/9 | K positive/9 | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | M_R | random | — | True | True | -0.001204 | 0 | 3 | mixed/inconclusive |
 | M_R | uniform | — | True | True | undefined | 9 | 0 | undefined_uniform |
@@ -54,13 +62,15 @@ Epoch 0 tidak memiliki optimizer. Kebijakan identik mengacu ke hasil yang sama, 
 | U_J | random | — | False | False | -0.865673 | 0 | 1 | disappears |
 | U_J | uniform | — | True | True | undefined | 9 | 0 | undefined_uniform |
 
-Scaling mensyaratkan test NLL turun ketat pada tiga kapasitas dan validation≤awal pada setiap kapasitas di setiap korpus. Baseline tanpa update boleh memenuhi scaling; utility tetap memerlukan perbaikan terhadap model awalnya sendiri. K = p* tengah − max(p* kecil, p* besar). Undefined dipropagasikan ke rerata/kontras, tidak dibuang. Uniform selalu memiliki p* undefined.
+Scaling requires test NLL to decrease strictly across three capacities and validation NLL to be ≤initial at every capacity in every corpus. A no-update baseline can satisfy scaling; utility still requires improvement over each model's own initial state. K = middle-capacity p* − max(small-capacity p*, large-capacity p*). Undefined values propagate into means/contrasts rather than being discarded. Uniform-weight p* is always undefined.
 
-## 4. Fit, cancellation dan memorisasi
+<a name="4-fit-cancellation-dan-memorisasi"></a>
 
-Puncak adalah hasil deskriptif estimator signed-gain dengan rentang pencarian [0,8]. Nilai batas, gain total kecil, cancellation kuat dan objective buruk membatasi interpretasi mekanisme. Tidak ada threshold kualitas fit tambahan yang dipakai sebagai filter atau untuk memilih model. Semua nilai dipertahankan.
+## 4. Fit, cancellation, and memorization
 
-| Kebijakan | Lebar | p* mean | Undefined/9 | Batas bawah/9 | Batas atas/9 | Fit objective mean | Cancellation ratio mean | Gain mean |
+The peak is a descriptive result from the signed-gain estimator with search range [0,8]. Boundary values, small total gains, strong cancellation, and poor objectives limit mechanistic interpretation. No additional fit-quality threshold was used to filter results or select models. All values were retained.
+
+| Policy | Width | p* mean | Undefined/9 | Lower boundary/9 | Upper boundary/9 | Fit objective mean | Cancellation ratio mean | Gain mean |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | M_R | 64 | 0.043666 | 0 | 0 | 0 | 0.000068 | 1.000000 | 1.085353 |
 | M_R | 128 | 0.042462 | 0 | 0 | 0 | 0.000061 | 1.000000 | 2.134097 |
@@ -75,11 +85,11 @@ Puncak adalah hasil deskriptif estimator signed-gain dengan rentang pencarian [0
 | U_J | 128 | 1.414657 | 0 | 0 | 0 | 0.023306 | 0.373277 | 0.021449 |
 | U_J | 256 | 2.190293 | 0 | 0 | 0 | 0.093103 | 0.313796 | 0.028469 |
 
-Rasio cancellation = |Σ gain| / Σ |gain|, undefined bila semua gain nol. Gain memakai pengurangan loss float32 asli sebelum konversi estimator ke float64. Garis mean pada gambar tidak ditampilkan jika satu pasangan saja undefined; titik terdefinisi tetap ditampilkan sebagai diagnostik, bukan rerata yang mengecualikan kegagalan.
+Cancellation ratio = |Σ gain| / Σ |gain|, undefined when every gain is zero. Gains use the original float32 loss subtraction before conversion to float64 for the estimator. Mean lines are omitted from figures if even one pair is undefined; defined points remain as diagnostics, rather than a mean that excludes failures.
 
 ![Selected fits](selected-fits.png)
 
-| Kebijakan | Arm | Lebar | Train NLL | Validation NLL | Test NLL | Train instance accuracy | Clipping fraction |
+| Policy | Arm | Width | Train NLL | Validation NLL | Test NLL | Train instance accuracy | Clipping fraction |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | M_R | random | 64 | 2.031464 | 2.112173 | 2.109539 | 0.065158 | 0.999769 |
 | M_R | random | 128 | 1.896959 | 2.053587 | 2.053295 | 0.097385 | 0.999653 |
@@ -106,13 +116,15 @@ Rasio cancellation = |Σ gain| / Σ |gain|, undefined bila semua gain nol. Gain 
 | U_J | uniform | 128 | 1.810724 | 1.849325 | 1.849117 | 0.077691 | 0.043056 |
 | U_J | uniform | 256 | 1.734085 | 1.811832 | 1.813493 | 0.093316 | 0.302778 |
 
-Clipping undefined pada epoch 0 karena tidak ada update. Semua checkpoint, loss/accuracy komponen, massa positif/negatif, komponen/group+instance/oracle-reference p*, signed allocation dan Gram tersimpan dalam CSV/JSON pendamping. Oracle-reference adalah diagnostik berlabel, bukan pengganti estimator utama.
+Clipping is undefined at epoch 0 because no updates occur. All checkpoints, component losses/accuracies, positive/negative mass, component/group+instance/oracle-reference p*, signed allocation, and Gram quantities are saved in the accompanying CSV/JSON. The oracle reference is a labeled diagnostic, not a replacement for the primary estimator.
 
-## 5. Manipulasi baseline
+<a name="5-manipulasi-baseline"></a>
 
-Manipulation check semua kapasitas/korpus: **True**; 9/9 lulus. U harus menurunkan initial group dan instance validation NLL dibanding M, dengan shared accuracy≥95%.
+## 5. Baseline intervention
 
-| Lebar | Korpus | U group NLL | M group NLL | U instance NLL | M instance NLL | U shared accuracy | Lulus |
+Manipulation check across all capacities/corpora: **True**; 9/9 passed. U must reduce initial group and instance validation NLL relative to M, with shared accuracy≥95%.
+
+| Width | Corpus | U group NLL | M group NLL | U instance NLL | M instance NLL | U shared accuracy | Passed |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 64 | 52919 | 2.802559 | 4.579614 | 2.802313 | 4.575660 | 1.000000 | True |
 | 64 | 55049 | 2.798133 | 4.485175 | 2.804383 | 4.581701 | 1.000000 | True |
@@ -124,19 +136,21 @@ Manipulation check semua kapasitas/korpus: **True**; 9/9 lulus. U harus menurunk
 | 256 | 55049 | 2.775176 | 7.868528 | 2.777496 | 8.046738 | 1.000000 | True |
 | 256 | 57163 | 2.774085 | 7.811291 | 2.776918 | 8.025512 | 1.000000 | True |
 
-M/U memakai token, cold state, assignment dan batch order yang sama. U menambah auxiliary uniform-target CE; intervensi dapat mengubah representasi dan dinamika belajar. Karena itu U−M tidak mengisolasi efek satu angka baseline, dan check ini bukan penilaian kalibrasi probabilitas lengkap.
+M/U use the same tokens, cold state, assignments, and batch order. U adds auxiliary uniform-target CE; the intervention can change representations and learning dynamics. U−M therefore does not isolate the effect of a single baseline value, and this check is not a complete assessment of probability calibration.
 
 ![Baseline checks](baseline.png)
 
-## 6. Audit, kegagalan dan runtime
+<a name="6-audit-kegagalan-dan-runtime"></a>
 
-Audit integritas independen: **PASS**. Audit utility/scaling/K: **PASS**. Source beku, corpus penuh, equality token/label/cold state, checkpoint, assignment/order, candidate/tie/schedule, epoch0 aliases dan test sesudah selection diaudit.
+## 6. Audit, failures, and runtime
 
-Original Gram absolute-check failures: **0**. Setiap kegagalan strict tetap dicatat; verifikasi 70 digit dan batas akumulasi float64 yang dipraspesifikasikan harus lulus. Toleransi lainnya tidak dilonggarkan. Nilai fit/p* dan seleksi tidak diubah oleh verifikasi numerik. Detail di `DIAGNOSTIC_AUDIT.json`.
+Independent integrity audit: **PASS**. Utility/scaling/K audit: **PASS**. The audits covered frozen source, complete corpora, token/label/cold-state equality, checkpoints, assignments/order, candidates/ties/schedules, epoch 0 aliases, and test evaluation after selection.
 
-Perbandingan cumulative component-vs-primary undefined akibat guard total gain primer: **0**. Nilai tersebut disimpan null beserta alasan; komponen dan fit aslinya dipertahankan. Klarifikasi serialisasi ini dibekukan sebelum training dalam `ANALYSIS_CLARIFICATIONS.md`.
+Original Gram absolute-check failures: **0**. Every strict-check failure remains recorded; prespecified 70-digit verification and float64 accumulation bounds must pass. No other tolerance was relaxed. Numerical verification did not change fit/p* values or selection. Details are in `DIAGNOSTIC_AUDIT.json`.
 
-Waktu training tercatat: **perf_counter 29.86 menit; UTC 32.38 menit**. Selisih UTC − perf_counter = 151.191739 detik; penyebab selisih tidak disimpulkan. Budget 180 menit diperiksa menggunakan timer yang lebih besar. CPU audit/report di luar budget training.
+Cumulative component-vs-primary comparisons undefined because of the primary total-gain guard: **0**. Such values are saved as null with reasons; original components and fits are retained. This serialization clarification was frozen before training in `ANALYSIS_CLARIFICATIONS.md`.
+
+Recorded training time: **perf_counter 29.86 minutes; UTC 32.38 minutes**. UTC − perf_counter = 151.191739 seconds; no cause is inferred for the discrepancy. The 180-minute budget used the larger timer. CPU audit/reporting was outside the training budget.
 
 | Tahap | Model/evaluasi/run | Peak allocated MiB | Peak reserved MiB |
 | --- | --- | --- | --- |
@@ -144,12 +158,14 @@ Waktu training tercatat: **perf_counter 29.86 menit; UTC 32.38 menit**. Selisih 
 | Initial evaluation | 54 | 60.790527 | 184.000000 |
 | Adaptation | 288 | 150.490234 | 184.000000 |
 
-Tidak ada retry implisit, seed pengganti, cloud, upload, atau publikasi. Semua raw run ada di `work/runs/utility-v06-20260929-01`; model penuh tetap lokal. `raw-manifest.json` menyimpan SHA semua file raw; archive ringkas mempertahankan data, losses, weights/orders, source, checks dan report, dengan model biner besar dikecualikan dan hash tetap tersedia.
+This stage involved no implicit retry, replacement seed, cloud execution, upload, or publication. All raw runs are in `work/runs/utility-v06-20260929-01`; full models remain local. `raw-manifest.json` records SHA hashes of all raw files; the compact archive retains data, losses, weights/orders, source, checks, and reports, while excluding large model binaries and retaining their hashes.
 
-## 7. Batas ilmiah dan provenance
+<a name="7-batas-ilmiah-dan-provenance"></a>
 
-Hanya dua corpus/model tuning dan tiga korpus konfirmasi, tiga kapasitas, satu keluarga task sintetis, grid LR/WD terbatas, dan horizon 30 epoch. Tidak ada klaim optimum global, exact large-LM replication, pergeseran antara dua peak interior, novelty, atau jaminan venue/publikasi. Tidak ada notebook yang diklaim dieksekusi: script setara dijalankan. Arah eksperimen berikutnya harus ditetapkan sebagai protokol baru sebelum melihat hasil baru.
+## 7. Scientific limitations and provenance
 
-Protocol SHA256: `87dccda6cdbbf27895b77782519fff150da28853ba0a62e877702da8ccbd84f5`. Selection SHA256: `ce7f3e6f95d92ad5298e4aeccfe6866658077e0a5bbeae115f86c9c48ca29cdb`. Manifest source training dan analisis, environment lock, audit dan semua keputusan tersedia dalam raw archive. Stage4 memotivasi desain ini; hasil Stage4 tidak diperlakukan sebagai konfirmasi Stage5.
+The study has only two tuning corpus/model pairs and three confirmation corpora, three capacities, one synthetic-task family, a bounded LR/WD grid, and a 30-epoch horizon. It makes no claim of global optimality, exact large-LM replication, movement between two interior peaks, novelty, or guaranteed venue acceptance/publication. The notebook is not claimed to have executed: equivalent scripts ran. Any subsequent experiment must be specified in a new protocol before inspecting new outcomes.
 
-Penyelarasan metode diperiksa terhadap [studi Jane Street](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/) dan [catatan estimatornya](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/sequence-weighting-note.pdf): bobot log-uniform, pemilihan validation, dan gain bertanda terhadap baseline menjadi acuan. [Pereyra et al.](https://arxiv.org/abs/1701.06548) menyediakan konteks prior untuk regularisasi kepercayaan output; U tidak diklaim identik atau baru. Batas pemeriksaan sumber tercatat dalam `LITERATURE_CHECK.md`.
+Protocol SHA256: `87dccda6cdbbf27895b77782519fff150da28853ba0a62e877702da8ccbd84f5`. Selection SHA256: `ce7f3e6f95d92ad5298e4aeccfe6866658077e0a5bbeae115f86c9c48ca29cdb`. Training/analysis source manifests, the environment lock, audits, and all decisions are available in the raw archive. Stage 4 motivated this design; Stage 4 results are not treated as Stage 5 confirmation.
+
+Methodological alignment was checked against the [Jane Street study](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/) and its [estimator note](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/sequence-weighting-note.pdf): log-uniform weights, validation-based selection, and signed gains relative to baseline are the reference framework. [Pereyra et al.](https://arxiv.org/abs/1701.06548) provides prior context for output-confidence regularization; U is not claimed to be identical or novel. Source-check limitations are recorded in `LITERATURE_CHECK.md`.

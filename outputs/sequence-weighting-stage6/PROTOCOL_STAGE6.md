@@ -120,7 +120,7 @@ total/positive/negative mass, cancellation, fit objective, boundary flags,
 component/reference diagnostics, memorization, train/validation/test losses and
 clipping without filtering or selecting by them. No additional fit cutoff.
 
-K = p*_middle − max(p*_small,p*_large). Per-panel descriptive peak survives only
+K = p*_middle − max(p*_small, p*_large). Per-panel descriptive peak survives only
 if all nine K are defined and positive; disappears only if all nine are defined
 and all three corpus means <=0; otherwise mixed or inconclusive_undefined.
 Epoch 0 gives exactly zero gain/utility and undefined p*, K and clipping, never
@@ -155,7 +155,7 @@ from source/environment/data/initial states/orders/seeds, without claiming it
 has been performed. Preparation requires >=11 GiB free; check a >=2 GiB reserve
 during training. Storage failure stops the run and preserves records.
 
-Unique source: outputs/sequence-weighting-stage6/.
+Unique source: outputs/sequence-weighting-stage 6/.
 Unique raw run: work/runs/stability-v07-20260929-01/.
 Never overwrite prior source/results/checkpoints/archives. Verify prior hashes.
 Compact archive retains all non-model evidence and hashes of retained models.

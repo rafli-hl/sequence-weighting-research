@@ -41,4 +41,4 @@ That historical script writes `CORE_CHECKS.json` beside its source. It tests kno
 
 Historical stage READMEs contain original machine paths, approvals, budgets and run IDs as context. Follow the public data-availability notes before attempting reproduction; those launch commands are not portable release entry points. Use fresh unique run directories and root-relative paths for any new run. Some later preparation/analysis phases require excluded checkpoints or manifests; the dependency report identifies literal missing references.
 
-No project-wide license has been selected. Included upstream license metadata describes those upstream assets only. This copy contains no model weights or dataset rows. Publication remains subject to a separate review/approval.
+No project-wide license has been selected. Included upstream license metadata describes those upstream assets only. This copy contains no model weights or dataset rows. The curated bundle has been published separately from the original local research repository.

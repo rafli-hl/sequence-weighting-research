@@ -1,158 +1,178 @@
-# Hasil eksekusi PILOT_NOTES.md
+<a name="hasil-eksekusi-pilot_notesmd"></a>
 
-28 September 2026 · seluruh training lokal di RTX 3050 Laptop 4 GB melalui Ubuntu WSL 2.
+# Execution results for PILOT_NOTES.md
 
-## Status pekerjaan
+28 September 2026 · all training ran locally on an RTX 3050 Laptop with 4 GB VRAM through Ubuntu WSL 2.
 
-Semua tahap dalam catatan sudah dijalankan: 10 checkpoint pretraining sintetis,
-18 run kalibrasi, 3 run diagnostik durasi/inisialisasi, 30 run konfirmasi, dan
-2 run teks publik. Totalnya **53 run adaptasi**, di luar pretraining.
+<a name="status-pekerjaan"></a>
 
-**Hasil utama:** puncak p* pada kapasitas menengah muncul di ketiga seed untuk
-data campuran pada epoch 60. Ini mendukung kemungkinan mekanisme dalam tugas
-terkontrol ini. Hasil belum membuktikan penjelasan Jane Street pada model bahasa
-besar dengan regularisasi optimal.
+## Completion status
 
-## 1. Pretraining dan pemilihan konfigurasi
+All stages in the notes were completed: 10 synthetic pretrained checkpoints,
+18 calibration runs, 3 duration/initialization diagnostic runs, 30 confirmation runs, and
+2 public-text runs. The total was **53 adaptation runs**, excluding pretraining.
 
-Pretraining memakai 2.048 contoh shared-rule, bobot seragam, empat epoch.
-Namespace kunci contoh pretraining, adaptasi, validasi, dan tes terpisah.
-Checkpoint pretrained yang sama dipakai oleh arm berpasangan; state AdamW
-direset ketika adaptasi dimulai. Seluruh pretraining mencapai akurasi validasi
-shared-rule 100%.
+**Main finding:** the middle-capacity p* peak appeared in all three seeds for
+the mixed-data regime at epoch 60. This supports a possible mechanism in this
+controlled task. The results do not establish Jane Street's explanation for
+large language models under optimally tuned regularization.
 
-Kalibrasi memakai 512 contoh adaptasi dan 256 validasi. Grid tiga learning rate
-× tiga clipping × dua pembobotan menghasilkan 18 run. Kriteria pemilihan adalah
-rata-rata validation NLL kedua arm pada epoch 30, bukan p* atau test loss.
-Pilihan: **learning rate 0,0001, clipping 1, weight decay 0,1**; skor 2,04087.
+<a name="1-pretraining-dan-pemilihan-konfigurasi"></a>
 
-Clipping tetap sering aktif. Menonaktifkannya tidak otomatis menjadi pilihan
-terbaik pada grid ini; satu seed kalibrasi tidak cukup untuk memisahkan semua
-interaksi optimizer, clipping, dan kapasitas.
+## 1. Pretraining and configuration selection
 
-![Kalibrasi](calibration.png)
+Pretraining used 2,048 shared-rule examples, uniform weights, and four epochs.
+Example-key namespaces were separate for pretraining, adaptation, validation, and test.
+Paired arms reused the same pretrained checkpoint; AdamW state was reset
+when adaptation began. All pretrained models reached
+100% shared-rule validation accuracy.
 
-## 2. Memorisasi sudah dapat diukur
+Calibration used 512 adaptation examples and 256 validation examples. A grid of three learning rates
+× three clipping settings × two weighting arms produced 18 runs. Selection used
+the mean validation NLL across both arms at epoch 30, excluding p* and test loss.
+The selected settings were **learning rate 0.0001, clipping 1, weight decay 0.1**; score 2.04087.
 
-Pada arm pretrained dengan bobot acak, p* pada epoch 30/60/120 adalah
-0,0959 / 0,1911 / 0,0672. Akurasi instance training meningkat dari 18,4% menjadi
-46,3% dan 83,1%. Kontrol uniform mencapai 64,5% pada epoch 60 dan 99,3% pada 120.
-Gate learnability pertama kali lolos pada **60 epoch**.
+Clipping remained frequently active. Disabling it did not automatically produce
+the best result in this grid; one calibration seed was insufficient to separate
+all interactions among optimizer settings, clipping, and capacity.
 
-Validation loss memburuk ketika memorisasi meningkat. Durasi 60 dipilih untuk
-mengamati mekanisme; ini bukan early stopping yang optimal untuk generalisasi.
-Arm cold-start juga menunjukkan kenaikan lalu penurunan p* terhadap durasi.
-Pretraining tidak terbukti sebagai syarat mutlak untuk fenomena tersebut.
+![Calibration](calibration.png)
 
-![Diagnostik durasi](duration-diagnostics.png)
+<a name="2-memorisasi-sudah-dapat-diukur"></a>
 
-Kurva alokasi gain aktual dan fit eksponennya disimpan agar p* dapat diperiksa
-bersama kualitas fit. Gain negatif tetap dipertahankan.
+## 2. Measurable memorization
 
-![Pemeriksaan fit](gain-fit.png)
+In the pretrained random-weight arm, p* at epochs 30/60/120 was
+0.0959 / 0.1911 / 0.0672. Instance training accuracy increased from 18.4% to
+46.3% and 83.1%. The uniform control reached 64.5% at epoch 60 and 99.3% at 120.
+The learnability gate first passed at **60 epochs**.
 
-## 3. Konfirmasi pada data baru
+Validation loss deteriorated as memorization increased. The duration of 60 epochs was chosen
+to observe the mechanism, rather than to optimize early stopping for generalization.
+The cold-start arm also showed p* rising and then falling with duration.
+Pretraining was not established as a necessary condition for this phenomenon.
 
-Konfigurasi dibekukan sebelum beralih ke seed data 2718. Tiga kapasitas dan tiga
-seed training/bobot (42, 43, 44) dijalankan pada shared, structured, dan mixed.
-Ada tiga kontrol uniform tambahan pada kapasitas menengah untuk mixed.
-Tes dievaluasi sekali pada epoch akhir tetap, tanpa pemilihan konfigurasi dari tes.
+![Duration diagnostics](duration-diagnostics.png)
 
-**Mixed, epoch 60; rata-rata ± simpangan baku antar tiga seed:**
+The observed gain-allocation curves and exponent fits were saved so that p* could be assessed
+alongside fit quality. Negative gains were retained.
 
-| Parameter | p* | Akurasi instance training | Validation NLL |
+![Fit checks](gain-fit.png)
+
+<a name="3-konfirmasi-pada-data-baru"></a>
+
+## 3. Confirmation on fresh data
+
+The configuration was frozen before switching to data seed 2718. Three capacities and three
+training/weight seeds (42, 43, 44) were run in the shared, structured, and mixed regimes.
+Three additional uniform controls were run at the middle capacity in the mixed regime.
+Test evaluation occurred once at the fixed final epoch; test results did not select configurations.
+
+**Mixed regime, epoch 60; mean ± standard deviation across three seeds:**
+
+| Parameters | p* | Instance training accuracy | Validation NLL |
 |---:|---:|---:|---:|
 | 113,408 | 0.1355 ± 0.0113 | 15.4% | 2.2431 |
 | 621,696 | 0.1906 ± 0.0057 | 42.6% | 2.6976 |
 | 3,212,800 | 0.0565 ± 0.0077 | 81.2% | 3.1508 |
 
-Selisih p* model menengah terhadap nilai terbesar dari kedua endpoint positif
-pada ketiga seed: **0,0669; 0,0466; 0,0518**. Ini konsistensi deskriptif, bukan
-uji signifikansi. Shared-only memberi p* hampir nol. Structured menunjukkan
-puncak menengah pada epoch 30, sedangkan pada epoch 60 nilai terbesar berada
-di kapasitas terkecil yang diukur.
+The difference between middle-capacity p* and the larger endpoint value was positive
+in all three seeds: **0.0669; 0.0466; 0.0518**. This is descriptive consistency,
+not a significance test. Shared-only p* was nearly zero. The structured regime
+had a middle-capacity peak at epoch 30, whereas at epoch 60 the largest value
+occurred at the smallest measured capacity.
 
-![Kurva kapasitas](capacity-curves.png)
+![Capacity curves](capacity-curves.png)
 
-Tiga kapasitas hanya menyediakan satu lokasi puncak interior. Perubahan argmax
-ke endpoint belum membuktikan pergeseran antara dua puncak interior. Klaim
-kuat tentang pergeseran puncak dengan epoch masih memerlukan kapasitas tambahan.
+Three capacities provide only one possible interior peak location. An argmax moving
+to an endpoint does not establish a shift between two interior peaks.
+A stronger claim about peak shifts with epoch requires additional capacities.
 
-## 4. Pemeriksaan pada model pretrained dan teks publik
+<a name="4-pemeriksaan-pada-model-pretrained-dan-teks-publik"></a>
 
-Pythia-70M (70.426.624 parameter), seluruh parameter dilatih dalam float32,
-tanpa LoRA. Data: 512 paragraf train, 128 validasi, 128 tes dari WikiText-2 raw;
-masing-masing 129 token dan 128 target. Pemilihan deterministik paragraf panjang,
-truncation, dan pembuangan duplikat token lintas split telah dicatat. Ini bukan
-protokol benchmark WikiText standar; overlap dengan pretraining tidak diketahui.
+## 4. Pretrained-model and public-text check
 
-Learning rate 0,00003 ditetapkan sebelum hasil dilihat, batch efektif 32,
-clipping 1, weight decay 0,1, tiga epoch, seed 42. Tidak ada tuning dari tes.
+Pythia-70M (70,426,624 parameters) was fully fine-tuned in float32,
+without LoRA. The data consisted of 512 training, 128 validation, and 128 test paragraphs from WikiText-2 raw;
+each contained 129 tokens and 128 targets. Deterministic selection of long paragraphs,
+truncation, and removal of cross-split token duplicates were documented. This is not
+the standard WikiText benchmark protocol; overlap with pretraining is unknown.
 
-| Bobot | p* akhir | Train NLL | Validation NLL | Test NLL |
+Learning rate 0.00003 was fixed before inspecting results, with effective batch size 32,
+clipping 1, weight decay 0.1, three epochs, and seed 42. No test-based tuning occurred.
+
+| Weighting | Final p* | Train NLL | Validation NLL | Test NLL |
 |---|---:|---:|---:|---:|
 | random | 0.3482 | 3.6178 | 4.5806 | 4.7951 |
-| uniform | tidak terdefinisi | 3.0459 | 4.3737 | 4.5551 |
+| uniform | undefined | 3.0459 | 4.3737 | 4.5551 |
 
-p* bobot acak naik **0,1905 → 0,2837 → 0,3482**. Baseline validation NLL kedua
-arm adalah 4,3911. Hasil mengonfirmasi bahwa pipeline pengukuran berjalan pada
-teks dan checkpoint pretrained. Satu ukuran model dan satu seed tidak
-mengonfirmasi kurva kapasitas, mekanisme, atau keunggulan metode pembobotan.
-Clipping terjadi pada semua update kedua arm.
+Random-weight p* increased **0.1905 → 0.2837 → 0.3482**. Baseline validation NLL for both
+arms was 4.3911. The results confirm that the measurement pipeline ran on
+text and a pretrained checkpoint. One model size and one seed do not
+confirm a capacity curve, a mechanism, or an advantage for the weighting method.
+Clipping occurred on every update in both arms.
 
-![Pemeriksaan teks](text-check.png)
+![Text check](text-check.png)
 
-## 5. Sumber daya yang benar-benar terukur
+<a name="5-sumber-daya-yang-benar-benar-terukur"></a>
 
-- Sintetis: adaptasi dan evaluasi 51 run berjumlah 368,17 detik; puncak alokasi
-  PyTorch 150,49 MiB dan reserved 184 MiB.
-- Teks: kedua run berjumlah 154,99 detik; puncak alokasi 1.585,79 MiB
-  (sekitar 1,55 GiB), reserved 1.652 MiB.
-- Angka waktu berasal dari bagian program yang diinstrumentasi; tidak mencakup
-  keseluruhan startup, unduhan, instalasi, pretraining, baseline evaluation, dan
-  penyimpanan checkpoint. Angka memori tidak mencakup desktop/driver.
+## 5. Measured resource use
 
-## 6. Batas klaim dan keputusan untuk paper
+- Synthetic study: adaptation and evaluation across 51 runs totaled 368.17 seconds; peak
+  PyTorch allocated memory was 150.49 MiB and reserved memory was 184 MiB.
+- Text study: the two runs totaled 154.99 seconds; peak allocated memory was 1,585.79 MiB
+  (approximately 1.55 GiB), with 1,652 MiB reserved.
+- Times cover instrumented program sections rather than
+  all startup, downloads, installation, pretraining, baseline evaluation, and
+  checkpoint serialization. Memory figures exclude desktop/driver usage.
 
-Jane Street melaporkan kenaikan performa held-out dengan kapasitas dan
-menggunakan regularisasi yang dituning terhadap validasi. Pada data mixed kita,
-validation loss justru meningkat dengan kapasitas. Karena itu hasil sekarang
-paling tepat diposisikan sebagai **demonstrasi mekanisme pada tugas terkontrol
-dengan memorisasi**, belum reproduksi kondisi regularisasi studi asal.
+<a name="6-batas-klaim-dan-keputusan-untuk-paper"></a>
 
-Batas lain: hanya tiga seed training pada satu corpus konfirmasi; weight decay
-tetap; pretraining sintetis shared-only; proporsi pola berubah antarregime;
-clipping sangat sering; dan pemeriksaan teks hanya satu model/seed.
+## 6. Claim boundaries and research direction
 
-Prioritas berikut untuk paper adalah menguji **apakah puncak tersebut bertahan
-ketika setiap kapasitas dituning untuk generalisasi terbaik**. Bekukan grid
-regularisasi, gunakan data baru, dan tambahkan kapasitas yang memungkinkan dua
-puncak interior teramati. Tambahkan beberapa seed data independen. Perluasan
-ini belum dijalankan dan tidak boleh diklaim sudah selesai.
+Jane Street reports improving held-out performance with capacity and
+uses validation-tuned regularization. In our mixed-data regime,
+validation loss instead increased with capacity. The present results are therefore
+best framed as a **mechanism demonstration in a controlled task
+with memorization**, rather than a reproduction of the original study's regularization conditions.
 
-Judul kerja yang sesuai bukti saat ini: *Controlled Pattern Complexity and
-Non-Monotonic Sequence Weighting*. Klaim novelty dan kelayakan venue masih
-memerlukan peninjauan literatur serta eksperimen tambahan.
+Other limitations include only three training seeds on one confirmation corpus; fixed weight decay;
+shared-only synthetic pretraining; changing pattern proportions across regimes;
+frequent clipping; and a text check with only one model/seed.
 
-## Audit dan reproduksi
+At the time of this report, the next research priority was to test **whether the peak persists
+when each capacity is tuned for its best generalization**. Freeze the regularization grid,
+use fresh data, and add capacities that permit two
+interior peak locations to be observed. Include several independent data seeds.
+That extension had not yet been run and must not be described as completed in this report.
 
-- `all-checkpoints.csv`: seluruh checkpoint sintetis yang dievaluasi.
-- `summary.json`, `text-summary.json`: hasil numerik dan keputusan gate.
-- `AUDIT.json`: jumlah run, kesamaan baseline berpasangan, split, dan hash kode.
-- `run-records.zip`: konfigurasi, hasil, bobot/loss per contoh, metadata data,
-  kode, protokol, versi lingkungan, dan provenance teks; checkpoint model penuh
-  tetap disimpan di workspace untuk menghindari arsip besar.
-- `../PROTOCOL_STAGE1.md` dan `../TEXT_PROTOCOL.md`: protokol sebelum run.
+A working title consistent with the evidence at this stage was *Controlled Pattern Complexity and
+Non-Monotonic Sequence Weighting*. Novelty and venue suitability
+required further literature review and experiments.
 
-Tidak ada model atau hasil training yang dipublikasikan ke layanan luar.
+<a name="audit-dan-reproduksi"></a>
 
-## Sumber
+## Audit and reproducibility
 
-- [Studi Jane Street](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/)
-- [Definisi estimator](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/sequence-weighting-note.pdf)
+- `all-checkpoints.csv`: all evaluated synthetic checkpoints.
+- `summary.json`, `text-summary.json`: numerical results and gate decisions.
+- `AUDIT.json`: run counts, paired baseline equality, splits, and source hashes.
+- `run-records.zip`: configurations, results, per-example weights/losses, dataset metadata,
+  source, protocols, environment versions, and text provenance; full model checkpoints
+  remained in the local workspace to avoid a large archive.
+- `../PROTOCOL_STAGE1.md` and `../TEXT_PROTOCOL.md`: protocols established before the runs.
+
+At the time of this report, no models or training results had been published to an external service.
+
+<a name="sumber"></a>
+
+## Sources
+
+- [Jane Street study](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/)
+- [Estimator definition](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/sequence-weighting-note.pdf)
 - [Pythia-70M, EleutherAI](https://huggingface.co/EleutherAI/pythia-70m)
 - [WikiText, Salesforce](https://huggingface.co/datasets/Salesforce/wikitext)
 
-Revisi model: `a39f36b100fe8a5377810d56c3f4789b9c53ac42`.
-Revisi data: `b08601e04326c79dfdd32d625aee71d232d685c3`.
-Model berlisensi Apache-2.0; kartu data mencantumkan CC-BY-SA-3.0 dan GFDL.
+Model revision: `a39f36b100fe8a5377810d56c3f4789b9c53ac42`.
+Dataset revision: `b08601e04326c79dfdd32d625aee71d232d685c3`.
+The model is licensed under Apache-2.0; the dataset card lists CC-BY-SA-3.0 and GFDL.

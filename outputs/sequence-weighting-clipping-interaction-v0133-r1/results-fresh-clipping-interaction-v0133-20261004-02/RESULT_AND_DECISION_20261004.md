@@ -14,15 +14,15 @@ original files; Windows recording checks found them unchanged.
 
 Five fresh G1 corpora and two nested model/weight seeds per corpus supplied ten
 shared U-pretrained checkpoints and forty matched Uclip/Iclip/Unoclip/Inoclip
-adaptations. Width128/depth3/F10, LR1e-4, WD0.1, batch32 and equal component
-coefficients were fixed. Clipped arms used clip1; unclipped arms used no clipping.
+adaptations. Width 128/depth 3/F10, LR 1e-4, WD 0.1, batch 32 and equal component
+coefficients were fixed. Clipped arms used clip 1; unclipped arms used no clipping.
 Tokens, labels, teacher-forced context, initial checkpoints, batch orders and
 random instance-weight assignments were matched. Shared/group weights were one.
 Five corpora, rather than ten model seeds, are the replication units.
 
 The primary contrast is D=(Iclip-Uclip)-(Inoclip-Unoclip), using group-token test
 NLL. Two seed contrasts are averaged within each corpus, then five corpus means
-equally. Positive D means a more adverse instance-weighting effect under clip1.
+equally. Positive D means a more adverse instance-weighting effect under clip 1.
 The frozen practical criterion required mean D>=0.01 nats AND all five corpus
 means positive; this was not a significance test.
 
@@ -42,13 +42,13 @@ criterion failed; verdict: `practical_interaction_not_supported`.
 All entries use nats/group answer token. Exact values and every nested seed remain
 in CORPUS_SUMMARY.json and PAIRS.json, including unfavorable signs. No corpus
 was excluded or replaced. The two conditional mean penalties are
-**+0.03194495439529419** with clip1 and **+0.03120124638080597** without clipping;
+**+0.03194495439529419** with clip 1 and **+0.03120124638080597** without clipping;
 both are positive in all five corpus means. Unoclip adequacy passed in all five
 corpora: own-baseline group gains range from +2.731982704 to +2.749577733,
 mean +2.737849678. The no-clip control therefore learned the group rule under
 the frozen adequacy definition; the interaction verdict is not an inadequacy case.
 
-Removing clip1 did not remove the conditional group-NLL penalty in this design.
+Removing clip 1 did not remove the conditional group-NLL penalty in this design.
 This weakens a clipping-only explanation of that penalty. It does not establish
 policy equivalence, zero clipping effect, statistical significance, mediation,
 capacity competition, or a universal mechanism. D is a continuous signed result,
@@ -64,7 +64,7 @@ memorization. The unweighted mean instance training NLL from PAIRS.json is:
 
 | Policy | Uniform | Random instance weights |
 |---|---:|---:|
-| Clip1 | 2.730193233 | 2.791167092 |
+| Clip 1 | 2.730193233 | 2.791167092 |
 | No clip | 2.741701984 | 2.801520944 |
 
 The random-instance arms have worse overall instance training NLL despite their
@@ -97,17 +97,17 @@ Recorded maxima by tolerance are:
 | 2e-6 NLL | 4.76837158203125e-7 |
 | 0.001 clip-gradient norm | 1.4668231870018644e-5 |
 
-Outer runtime was **713.688033843 seconds** through postwrite, within1798.
-Adding the conservatively charged2 seconds for the preserved failed attempt gives
+Outer runtime was **713.688033843 seconds** through postwrite, within 1798.
+Adding the conservatively charged 2 seconds for the preserved failed attempt gives
 **715.688033843/1800 seconds**. Audit was **57.535809384/600 seconds** through
 postwrite. All phase and outer exits were zero. Saved containment receipts confirm
 group disappearance, no survivors, wrapper reaping and zero cancellation for
 both completed modes. No current r1 failure latch exists. The runtime gate's
-combined rounded allocation was148.328125MiB with80MiB archive/terminal reserves
-and5.166622GiB free; the small audit outputs and these records remain subject to
-the unchanged512MiB/2GiB constraints. The recording-time Windows storage check
-projected148.484375MiB including these records and found more than5.16GiB free;
-including the80MiB reserves remains below512MiB. No unused budget authorizes
+combined rounded allocation was 148.328125 MiB with 80 MiB archive/terminal reserves
+and 5.166622 GiB free; the small audit outputs and these records remain subject to
+the unchanged 512 MiB/2 GiB constraints. The recording-time Windows storage check
+projected 148.484375 MiB including these records and found more than 5.16 GiB free;
+including the 80 MiB reserves remains below 512 MiB. No unused budget authorizes
 another run.
 
 Provenance and bindings, verified from saved Windows files:

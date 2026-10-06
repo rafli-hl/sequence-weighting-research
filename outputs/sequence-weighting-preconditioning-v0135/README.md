@@ -24,7 +24,7 @@ sha256sum -c SOURCE_MANIFEST.sha256
 cat reviews/SOURCE_REVIEW.json
 ```
 
-Phase A: single inclusive1,800s runtime envelope. It automatically runs preparation,
+Phase A: single inclusive 1,800 s runtime envelope. It automatically runs preparation,
 pretraining fixtures, ten pretrainings and forty F10 adaptations sequentially.
 
 ```bash
@@ -41,8 +41,8 @@ cat outputs/sequence-weighting-preconditioning-v0135/receipts/pretrain.exit.json
 cat outputs/sequence-weighting-preconditioning-v0135/receipts/adapt.exit.json
 ```
 
-Phase B: separate inclusive600s independent numerical audit. Run once only after
-Phase A exit0 and saved successful runtime receipts; failure or uncertain cleanup
+Phase B: separate inclusive 600 s independent numerical audit. Run once only after
+Phase A exit 0 and saved successful runtime receipts; failure or uncertain cleanup
 blocks this phase. Do not use missing receipts as permission to rerun.
 
 ```bash
@@ -88,15 +88,15 @@ work/.venv-wsl/bin/python -B -u outputs/sequence-weighting-preconditioning-v0135
 Each supervisor requires the active registered outer group/GO. Successful labels:
 `runtime exit: 0`, then `audit exit: 0`. They are necessary, not sufficient:
 require bound source/review/input/completion/output/log hashes, zero worker exits,
-children exited, group disappearance, wrapper reaped, cancellation0, no failure
-latch, inclusive postwrite<1,800s/<600s,<=512MiB and>=2GiB free. Final independent
+children exited, group disappearance, wrapper reaped, cancellation 0, no failure
+latch, inclusive postwrite<1,800 s/<600 s,<=512 MiB and>=2 GiB free. Final independent
 result review must accept audit scope and scientific claims. Outcome direction
 never changes numerical acceptance or permits retry.
 
-Anticipated RUN: DESIGN_FREEZE,SEED_VERIFICATION,ENVIRONMENT,OPTIMIZER_FIXTURES;
+Anticipated RUN: DESIGN_FREEZE, SEED_VERIFICATION, ENVIRONMENT, OPTIMIZER_FIXTURES;
 inputs with five adaptation/five pretraining datasets and ten assignments;
-INPUT_MANIFEST,ten baselines/checkpoints/initial and pretraining arrays/traces;
-BASELINE_MANIFEST,forty trajectory F10 checkpoints/arrays/160-row traces/records;
+INPUT_MANIFEST, ten baselines/checkpoints/initial and pretraining arrays/traces;
+BASELINE_MANIFEST, forty trajectory F10 checkpoints/arrays/160-row traces/records;
 eight prescribed step snapshots; TRAJECTORY_MANIFEST and phase completion markers.
 OUT: PAIRS.json,CORPUS_SUMMARY.json,CORPUS_CONTRASTS.csv,ALLOCATION.json,AUDIT.json.
 Receipts: phase admissions/worker admissions/launch IDs/command/logs/exit/postwrite,

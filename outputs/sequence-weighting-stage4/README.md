@@ -20,8 +20,8 @@ full repaired analysis. Final r2 clarifies timing and fit/undefined presentation
 all scientific files and figures match r1. Archives retain the earlier frozen
 README snapshot. This completion note was added afterward.
 
-Baseline intervention passes, but the epoch30 U peak has poor fits (2/9 middle
-estimates at the upper bound). It disappears by the frozen epoch60 criterion;
+Baseline intervention passes, but the epoch 30 U peak has poor fits (2/9 middle
+estimates at the upper bound). It disappears by the frozen epoch 60 criterion;
 selected U has undefined values and fails the combined generalization gate.
 No novelty or exact large-LM replication is established.
 

@@ -11,7 +11,7 @@ seeds (91320101–91320105), two nested model/weight seeds per corpus, ten share
 U-pretrained checkpoints, forty matched adaptations. Tokens, labels,
 teacher-forced context, initial checkpoints, batch orders and component loss
 coefficients were fixed within each matched set. The arms apply weights to
-(shared, group, instance) losses as U=(1,1,1), R=(w,w,w), S=(w,w,1), I=(1,1,w).
+(shared, group, instance) losses as U=(1,1,1), R=(w, w, w), S=(w, w, 1), I=(1,1, w).
 
 The primary is **0.5 × [(R−S)+(I−U)] in unweighted F10 group-token test NLL**:
 compute within each matched seed, average the two nested seeds, then average

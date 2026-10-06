@@ -55,7 +55,7 @@ domain decisions and any mismatch; unavailable routes remain null. No filters.
    throughout the objective pipeline, not only the final sum of squares.
 4. **Independent Decimal110 audit:** independently rebuild all model probabilities,
    normalization and prefixes from the same binary64 inputs, without importing
-   precision_math.py or promoting an 80-digit cache. Compute J and D=J-J0 at110.
+   precision_math.py or promoting an 80-digit cache. Compute J and D=J-J0 at 110.
    Preserve every 110-digit profile and all convergence checks in raw audit files.
 
 Caching is per weight block and precision. Every measured cache construction is
@@ -66,13 +66,13 @@ is treated as the unknown unrounded data-generating input.
 ## Numerical verification and frozen summary rules
 
 At every eligible grid and original-p point require
-abs(J80-J110)<=1e-50*max(1,abs(J110)). For contrasts use
-abs(D80-D110)<=1e-50*max(1,max_grid(abs(D110))). The 80-digit factored/direct
+abs(J80-J110)<=1e-50*max(1, abs(J110)). For contrasts use
+abs(D80-D110)<=1e-50*max(1, max_grid(abs(D110))). The 80-digit factored/direct
 identity uses the corresponding contrast-scale 1e-50 bound. Failures are saved
 and stop acceptance; never relax the tolerance or drop difficult profiles.
 The higher precision is a checked numerical reference, not exact arithmetic.
 
-Reference near-tie band per profile is tau=2e-50*max(1,max_grid(abs(D80))).
+Reference near-tie band per profile is tau=2e-50*max(1, max_grid(abs(D80))).
 Save first-index strict minima for every route, exact floating ties and reference
 minimizer sets within tau. For all 12,880 grid pairs per profile, distinguish
 reference near-ties, strict ordering reversals and float ties on reference-strict
@@ -82,7 +82,7 @@ comparison/error calculations; only final plotting may convert metrics to float.
 Report per-case and per-cell: eligibility/domain differences; grid-minimum index
 agreement; reference contrast regret at each route's chosen grid point; exact
 and tolerance-aware ties; objective/contrast maximum errors; errors normalized
-by max(1,max_abs_reference_D); full reference contrast span and top-two gap;
+by max(1, max_abs_reference_D); full reference contrast span and top-two gap;
 legacy-total versus decimal-total difference; original-p contrast gap against
 grid minimum. Tolerance-aware regret is larger than tau, not a new fit-quality
 filter. Near-zero gaps do not prove statistical identification. Retain all
@@ -108,7 +108,7 @@ and independent audit has its own 3,600-second ceiling, measured with both UTC
 and perf_counter and enforced with the larger elapsed time, from before cache
 construction to final checks. No implicit resume/retry, replacement cases,
 reduced grid or adaptive precision; preserve partial output on failure. Record
-per-case timing, phase timing, peak RSS, environment lock and >=1GiB free-space
+per-case timing, phase timing, peak RSS, environment lock and >=1 GiB free-space
 preparation check. Model losses, memorization, clipping, token pairing and GPU
 memory are inapplicable to this fixed-input estimator diagnostic.
 

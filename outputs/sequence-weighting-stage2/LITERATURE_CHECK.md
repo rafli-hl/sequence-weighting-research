@@ -15,22 +15,22 @@ focused positioning check, not an exhaustive novelty search.
   signed gains and powered weights. Positive aggregate gain is assumed;
   individual gains may be negative. Our implementation retains signed gains,
   tests direct kernel equivalence, and reports its finite search bound [0,8].
-- [Byrd & Lipton, 2019, arXiv:1812.03372v3](https://arxiv.org/abs/1812.03372v3):
+- [Byrd & Lipton, 2019, arXiv: 1812.03372v3](https://arxiv.org/abs/1812.03372v3):
   weighting effects can diminish during training, while L2 regularization and
   batch normalization restore some sensitivity in their experiments. Therefore
   an observation that weighting sensitivity changes with training duration or
   regularization is already related to prior work. AdamW weight decay in our
   Transformer is not automatically equivalent to their L2 intervention.
-- [Li et al., 2026, arXiv:2608.14071](https://arxiv.org/abs/2608.14071):
+- [Li et al., 2026, arXiv: 2608.14071](https://arxiv.org/abs/2608.14071):
   studies repetition of domain data with token budgets scaling with model size.
   The abstract reports mildly increasing optimal repetition at fixed
   tokens-per-parameter. Repetition, domain mixing, fixed compute ratios and
   per-sequence loss weighting are different experimental quantities; we should
   not frame Stage 2 as refuting this result.
-- [Zhang et al., ICLR 2017, arXiv:1611.03530v2](https://arxiv.org/abs/1611.03530v2):
+- [Zhang et al., ICLR 2017, arXiv: 1611.03530v2](https://arxiv.org/abs/1611.03530v2):
   neural networks can fit random labels. Observing synthetic instance-label
   memorization is therefore not a standalone novelty claim.
-- [Xu, Ye & Ruan, 2021, arXiv:2103.15209](https://arxiv.org/abs/2103.15209):
+- [Xu, Ye & Ruan, 2021, arXiv: 2103.15209](https://arxiv.org/abs/2103.15209):
   develops formal accounts of importance weighting through gradient-descent
   implicit bias and margin-based learning theory. This further limits claims
   that weight sensitivity and training dynamics are unexplored. Applying a

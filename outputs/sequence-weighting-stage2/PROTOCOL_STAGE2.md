@@ -9,7 +9,7 @@ SHA256 manifest, UTC timestamps and append-only events.
 
 Does the random-weight middle-capacity exponent excess survive independent
 capacity-specific selection for validation generalization? Primary contrast is
-p_middle - max(p_small,p_large), at each capacity's frozen selected epoch.
+p_middle - max(p_small, p_large), at each capacity's frozen selected epoch.
 Different selected epochs define a policy comparison, not a fixed-time curve.
 Matched epochs 1,3,10,30,60 are secondary diagnostics only.
 
@@ -31,7 +31,7 @@ Matched epochs 1,3,10,30,60 are secondary diagnostics only.
 - Tuning: corpus/model/pretraining-data triples (31415,101,93101) and
   (16180,102,93102). This crosses neither tuning model seeds nor corpora;
   it is two joint tuning replications. Grid LR {3e-5,1e-4,3e-4},
-  WD {.1,1,10}, clip {1,disabled}, both arms: 216 runs through 60 epochs.
+  WD {.1,1,10}, clip {1, disabled}, both arms: 216 runs through 60 epochs.
 - Confirmation: corpus/pretraining-data pairs (57721,93201),
   (14142,93202),(17320,93203), each with model/weight seeds 201..205,
   both arms and three capacities: 90 runs. No confirmation seed is used

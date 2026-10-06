@@ -8,7 +8,7 @@ PNG is ready to view; the two pilot SVGs provide vector versions. No native MATL
 .fig or PDF figure was available in the selected result folders.
 
 The collection uses the latest saved final presentation for each study. It excludes
-36 fixture/testcase images and24 superseded presentation images. Those originals,
+36 fixture/testcase images and 24 superseded presentation images. Those originals,
 all raw results and failed/cancelled evidence remain where they were. v0135 is source
 only and has no results in this collection. SOURCE_FILES.csv lists every copied
 source path, file size and SHA-256; FIGURE_MANIFEST.json also records selection and
@@ -170,7 +170,7 @@ Existing data files (copied, not recomputed):
 
 Status: completed saved study; final figures available.
 
-Tuning-panel selection, held-out utility, crossed gains and fits. Middle-capacity utility failed in all four panels; epoch0 and undefined outcomes retained.
+Tuning-panel selection, held-out utility, crossed gains and fits. Middle-capacity utility failed in all four panels; epoch 0 and undefined outcomes retained.
 
 [Original report](../outputs/sequence-weighting-stage6/results-stability-v07-20260929-01/REPORT.md) — source folder: `outputs/sequence-weighting-stage6/results-stability-v07-20260929-01`.
 
@@ -288,7 +288,7 @@ Existing data files (copied, not recomputed):
 
 Status: completed saved study; no saved figure available.
 
-Completed no-clip diagnostic: no saved figure. Frozen width128 validation criterion failed; retain canonical clip1 control.
+Completed no-clip diagnostic: no saved figure. Frozen width 128 validation criterion failed; retain canonical clip 1 control.
 
 [Original report](../outputs/g1-clipping-diagnostic-v0130/results/DECISION_RECORD.md) — source folder: `outputs/g1-clipping-diagnostic-v0130/results`.
 
@@ -332,7 +332,7 @@ Existing data files (copied, not recomputed):
 
 Status: completed saved study; no saved figure available.
 
-Completed fresh clipping interaction: no saved figure. Primary interaction +0.000743708 nats,3/5 positive; frozen practical criterion failed; penalties persisted with and without clip.
+Completed fresh clipping interaction: no saved figure. Primary interaction +0.000743708 nats, 3/5 positive; frozen practical criterion failed; penalties persisted with and without clip.
 
 [Original report](../outputs/sequence-weighting-clipping-interaction-v0133-r1/results-fresh-clipping-interaction-v0133-20261004-02/RESULT_AND_DECISION_20261004.md) — source folder: `outputs/sequence-weighting-clipping-interaction-v0133-r1/results-fresh-clipping-interaction-v0133-20261004-02`.
 
@@ -346,7 +346,7 @@ Existing data files (copied, not recomputed):
 
 Status: completed saved study; no saved figure available.
 
-Completed fixed existing-checkpoint gradient panel: no saved figure. Initial cosine -0.07425 is mixed:4/5 negative corpus means,6/10 seeds; component dispersion is not total weighted-gradient variance.
+Completed fixed existing-checkpoint gradient panel: no saved figure. Initial cosine -0.07425 is mixed: 4/5 negative corpus means, 6/10 seeds; component dispersion is not total weighted-gradient variance.
 
 [Original report](../outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01/PANEL_REPORT.md) — source folder: `outputs/sequence-weighting-gradient-alignment-v0134/results-existing-gradient-panel-v0134-20261004-01`.
 
@@ -358,18 +358,18 @@ Existing data files (copied, not recomputed):
 
 ## Latest findings without saved plots
 
-- **v0130:** the frozen width128 no-clip validation criterion failed; the canonical
-  clip1 control remained. Its existing audit/analysis JSON is included.
-- **v0132:** fresh factorial group-test instance-weighting penalty was+0.035304929
+- **v0130:** the frozen width 128 no-clip validation criterion failed; the canonical
+  clip 1 control remained. Its existing audit/analysis JSON is included.
+- **v0132:** fresh factorial group-test instance-weighting penalty was +0.035304929
   nats, positive in all five corpus means. The fixed-policy causal effect leaves
   the pathway unresolved. Existing corpus contrasts and summary are included.
-- **v0133-r1:** clipping interaction was+0.000743708 nats with3/5 positive corpus
+- **v0133-r1:** clipping interaction was +0.000743708 nats with 3/5 positive corpus
   means; it failed the frozen practical criterion. Instance penalties persisted
   with and without clipping. This weakens a clipping-only account, not an
   equivalence conclusion. Existing corpus contrasts and summary are included.
-- **v0134:** initial alignment averaged-0.07425 cosine, with4/5 negative corpus
-  means but only6/10 negative seeds. Extra-component dispersion exceeded uniform
-  dispersion at all30 states, but total weighted-gradient variance needs covariance.
+- **v0134:** initial alignment averaged -0.07425 cosine, with 4/5 negative corpus
+  means but only 6/10 negative seeds. Extra-component dispersion exceeded uniform
+  dispersion at all 30 states, but total weighted-gradient variance needs covariance.
   These existing-state associations are not AdamW updates or mediation. Both saved
   corpus and cohort summaries are included; no figure has yet been generated.
 
@@ -380,8 +380,8 @@ v0133 attempt is also not a completed study; the completed revision is v0133-r1.
 ## Interpretation limits
 
 Early synthetic capacity/peak plots are historical exploratory or selected-policy
-results, not a cumulative proof of a universal mechanism. Stage2's frozen
-criterion failed; Stage5/6 useful-adaptation gates failed, with zero-adaptation and
+results, not a cumulative proof of a universal mechanism. Stage 2's frozen
+criterion failed; Stage 5/6 useful-adaptation gates failed, with zero-adaptation and
 undefined cases retained. Estimator/precision/search studies measure numerical
 properties on simulations or preserved gains, not independent training replications.
 Do not count nested model/weight seeds as independent corpora. No significance,

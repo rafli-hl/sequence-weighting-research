@@ -1,6 +1,6 @@
 # Stage 8 v0.9 — objective ranking precision on preserved signed gains
 
-Run `precision-v09-20260930-01` evaluates **1,536 preserved Stage7 cancellation profiles** from 128 shared blocks, in **24 cells × 64 replicates**. **1,024 profiles** have both legacy and high-precision objectives; all other profiles and guard outcomes remain recorded. No gains, training runs, fits or p* replacements were generated for this study.
+Run `precision-v09-20260930-01` evaluates **1,536 preserved Stage 7 cancellation profiles** from 128 shared blocks, in **24 cells × 64 replicates**. **1,024 profiles** have both legacy and high-precision objectives; all other profiles and guard outcomes remain recorded. No gains, training runs, fits or p* replacements were generated for this study.
 
 ## Measured results
 
@@ -15,7 +15,7 @@ All 164,864 eligible grid points and 1,024 stored-p points passed the frozen 80/
 | c=1e-12 comparable | Naive D64 | 256 | 219 | 219 | 17 | 102 |
 | c=1e-12 comparable | Factored D64 | 256 | 256 | 256 | 0 | 0 |
 
-These are numerical fidelity results for reused inputs. Grid agreement does not measure recovery of the generating exponent, validate continuous optimization, or identify the cause of Stage7 recovery error.
+These are numerical fidelity results for reused inputs. Grid agreement does not measure recovery of the generating exponent, validate continuous optimization, or identify the cause of Stage 7 recovery error.
 
 ## Question and fixed comparisons
 
@@ -23,7 +23,7 @@ Does binary64 arithmetic preserve grid rankings and objective contrasts of the u
 
 The factored route changes algebra and accumulation, so its differences cannot be assigned solely to removal of a common offset. The high-precision route changes precision throughout the pipeline and is a checked numerical reference to saved rounded inputs, not unknown unrounded data.
 
-The independent auditor reconstructs Decimal110 objectives and direct contrasts. Preregistered convergence bounds are 1e-50·max(1,abs(J110)) for J and 1e-50·max(1,max(abs(D110))) for D. Ranking reference remains D80, with τ = 2e-50·max(1,max(abs(D80))). Reference minimum-set membership is D80≤min(D80)+τ; a reference pair is strict only if its absolute difference exceeds τ.
+The independent auditor reconstructs Decimal110 objectives and direct contrasts. Preregistered convergence bounds are 1e-50·max(1, abs(J110)) for J and 1e-50·max(1, max(abs(D110))) for D. Ranking reference remains D80, with τ = 2e-50·max(1, max(abs(D80))). Reference minimum-set membership is D80≤min(D80)+τ; a reference pair is strict only if its absolute difference exceeds τ.
 
 **0 profiles** have an 80-vs-110 classification difference or lie near a classification boundary relative to the observed precision drift. Such cases are retained and labelled unresolved; tolerance-aware counts use the declared D80 reference and do not assert a fully resolved ordering beyond the checked precision.
 
@@ -64,7 +64,7 @@ The first index resolves raw exact method ties deterministically. Exact ties, ne
 
 ## Errors, reference variation and regret
 
-Binary64 values are promoted with Decimal.from_float. Error subtraction, normalization and summaries are computed with Decimal precision110 and stored as strings; conversion to binary64 is used only for plotting. Each profile records maximum absolute J error, naive/factored D error, and both error/max(1,max|D80|) and error/reference-span. Span normalization is null when span is zero. Decimal strings preserve small differences before any display conversion.
+Binary64 values are promoted with Decimal.from_float. Error subtraction, normalization and summaries are computed with Decimal precision 110 and stored as strings; conversion to binary64 is used only for plotting. Each profile records maximum absolute J error, naive/factored D error, and both error/max(1, max|D80|) and error/reference-span. Span normalization is null when span is zero. Decimal strings preserve small differences before any display conversion.
 
 | n | Generator p | c | Both /64 | Max J error | Max naive D error | Max factored D error | Max naive regret | Max factored regret | Median ref span | Median top-two gap |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -97,7 +97,7 @@ Binary64 values are promoted with Decimal.from_float. Error subtraction, normali
 
 ![Contrast errors](contrast-errors.png)
 
-Grid regret is D80 at a method’s selected grid index minus the grid minimum, so it is nonnegative. The tolerance-aware excess is max(0,regret−τ), while exact agreement and raw regret are also retained. A small absolute objective error does not itself certify a ranking if the relevant gap is smaller. Conversely, a large common objective offset need not change the ranking.
+Grid regret is D80 at a method’s selected grid index minus the grid minimum, so it is nonnegative. The tolerance-aware excess is max(0, regret−τ), while exact agreement and raw regret are also retained. A small absolute objective error does not itself certify a ranking if the relevant gap is smaller. Conversely, a large common objective offset need not change the ranking.
 
 The original stored continuous p* is evaluated separately and is never added to the grid candidate set. Its signed reference contrast minus the grid minimum can be negative. That comparison neither locates a continuous global optimum nor replaces the historical p*.
 
@@ -134,7 +134,7 @@ The original stored continuous p* is evaluated separately and is never added to 
 
 Domain eligibility uses each route’s declared denominator/guard, without retrospective filtering. Exact input preservation does not mean arithmetic routes share the same denominator rounding; the legacy sum, math.fsum and high-precision total are retained. Classification differences between the two precision references are reported rather than removed.
 
-Stage7 already showed that all c=1e-12 cases could be defined while recovery error remained large. This study diagnoses numerical objective/ranking fidelity on those same draws; agreement with a high-precision profile is not accuracy, identifiability, useful adaptation, or a validated sequence-weighting mechanism. Changes in c also change signal-to-noise ratio. No fit-quality threshold, exclusion rule, new target exponent, novelty claim or publication guarantee is introduced.
+Stage 7 already showed that all c=1e-12 cases could be defined while recovery error remained large. This study diagnoses numerical objective/ranking fidelity on those same draws; agreement with a high-precision profile is not accuracy, identifiability, useful adaptation, or a validated sequence-weighting mechanism. Changes in c also change signal-to-noise ratio. No fit-quality threshold, exclusion rule, new target exponent, novelty claim or publication guarantee is introduced.
 
 ## Audit and provenance
 

@@ -1,6 +1,6 @@
 # Stage 9 (v0.10)
 
-Bounded CPU audit of complete saved Stage 4 fixed30 and Stage 5–6 R/random policy
+Bounded CPU audit of complete saved Stage 4 fixed 30 and Stage 5–6 R/random policy
 cohorts. Read PROTOCOL_STAGE9.md before running. No training, inference, new
 selection or original-p replacement. Use the existing WSL environment from the
 current project root; historical absolute paths remain provenance only.

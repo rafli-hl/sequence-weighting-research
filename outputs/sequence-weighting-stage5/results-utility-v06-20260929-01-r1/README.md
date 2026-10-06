@@ -1,15 +1,17 @@
-# Stage 5 v0.6 — useful adaptation with epoch0 selection
+<a name="stage-5-v06--useful-adaptation-with-epoch0-selection"></a>
 
-Authorized local continuation of NEXT_EXPERIMENT.md on29 September2026.
+# Stage 5 v0.6 — useful adaptation with epoch 0 selection
+
+Authorized local continuation of NEXT_EXPERIMENT.md on 29 September 2026.
 Protocol/training snapshot: `work/runs/utility-v06-20260929-01/source/`.
 Read PROTOCOL_STAGE5.md for the frozen estimands, rules, counts and limitations.
 
-M/U pretraining is unchanged from Stage4. The new bounded adaptation grid includes
+M/U pretraining is unchanged from Stage 4. The new bounded adaptation grid includes
 smaller learning rates and a canonical no-adaptation candidate. R selects by
 random-arm validation (primary); J selects jointly (secondary). Confirmation
-contains fresh corpora/seeds, both weighting arms, and mandatory paired epoch0
+contains fresh corpora/seeds, both weighting arms, and mandatory paired epoch 0
 test evaluations after selection. Useful adaptation, monotonic scaling and p*
-peak status are distinct outcomes. Epoch0 never supplies an artificial p*=0.
+peak status are distinct outcomes. Epoch 0 never supplies an artificial p*=0.
 
 ## Reproduction
 
@@ -30,7 +32,7 @@ wsl.exe -d Ubuntu --cd /mnt/d/codex/sequence-weighting-research -- work/.venv-ws
 wsl.exe -d Ubuntu --cd /mnt/d/codex/sequence-weighting-research -- work/.venv-wsl/bin/python outputs/sequence-weighting-stage5/analyze_stage5.py --run-id utility-v06-NEW --wait
 ```
 
-Training allows144 tuning and<=216 confirmation trajectories,66 pretrained
+Training allows 144 tuning and<=216 confirmation trajectories, 66 pretrained
 models and a three-hour ceiling enforced using both perf_counter and UTC elapsed.
 All raw losses/configurations/seeds/hash records stay local. Full model binaries
 remain in raw; compact archives retain their hashes. The prior numerical Gram

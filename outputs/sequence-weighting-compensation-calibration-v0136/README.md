@@ -1,6 +1,6 @@
 # v0136 calibration-only source candidate
 
-This distinct bundle implements the first phase of the inverse-exponent compensation proposal:3 fresh corpora x2 nested seeds,6 shared-U pretrainings and12 U/R adaptations. The output is a gated calibration decision; confirmation is not implemented.
+This distinct bundle implements the first phase of the inverse-exponent compensation proposal: 3 fresh corpora x 2 nested seeds, 6 shared-U pretrainings and 12 U/R adaptations. The output is a gated calibration decision; confirmation is not implemented.
 
 Read FROZEN_PROTOCOL.md, the byte-identical PROPOSED_PROTOCOL.md, REVIEW_REQUEST.md and MANUAL_UBUNTU_COMMANDS.md. The Python/shell sources and prospective fixtures have NOT executed. SOURCE_MANIFEST.json binds this candidate; independent source review and separate user numerical approval are both missing.
 

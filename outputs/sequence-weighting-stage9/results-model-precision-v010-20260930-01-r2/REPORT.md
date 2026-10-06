@@ -2,7 +2,7 @@
 
 Presentation r2 fixes axis-limit expansion in the error and stored-point plots. Every numerical table, model-context value and raw record is byte-identical to r1. The preserved r1 report documents the separate null-handling repair.
 
-Run `model-precision-v010-20260930-01` audits **324 policy references**, **207 saved native checkpoints**, and **186 distinct weight/gain input pairs**. Stage4 contributes its fixed epoch30 random-weight cohort; Stage5 and all four Stage6 panels contribute the previously selected capacity-specific R policies. All M/U variants, capacities, data seeds, model/weight seeds, selected zero-adaptation cases and mathematical guards are retained.
+Run `model-precision-v010-20260930-01` audits **324 policy references**, **207 saved native checkpoints**, and **186 distinct weight/gain input pairs**. Stage 4 contributes its fixed epoch 30 random-weight cohort; Stage 5 and all four Stage 6 panels contribute the previously selected capacity-specific R policies. All M/U variants, capacities, data seeds, model/weight seeds, selected zero-adaptation cases and mathematical guards are retained.
 
 ## Measured numerical results
 
@@ -14,7 +14,7 @@ Independent audit: **PASS**. 179 of 186 distinct inputs have both objectives ava
 | Naive D64 | 179 | 179 | 179 | 0 | 0 |
 | Factored D64 | 179 | 179 | 179 | 0 | 0 |
 
-Grid agreement measures fidelity of these objective evaluations to checked high-precision arithmetic. It does not validate the continuous search, identify a true exponent, establish a capacity peak, or improve adaptation utility. The original p*, K summaries, model selections and Stage6 failed utility gate remain unchanged.
+Grid agreement measures fidelity of these objective evaluations to checked high-precision arithmetic. It does not validate the continuous search, identify a true exponent, establish a capacity peak, or improve adaptation utility. The original p*, K summaries, model selections and Stage 6 failed utility gate remain unchanged.
 
 ## Frozen inputs and arithmetic
 
@@ -22,11 +22,11 @@ The cohort is fixed from the original designs and validation decisions before th
 
 The fixed diagnostic grid contains 161 binary64 values i/20 from 0 to 8 with anchor 0. Legacy J64 follows the original objective arithmetic; naive D64 subtracts the anchor objective; factored D64 uses the declared algebraic contrast and accumulation. These methods share the historical Python-sum denominator. Decimal80 evaluates exact promoted inputs using high-precision sums, logs and exponentials; an independent Decimal110 implementation checks every eligible grid and stored-p point. Factoring changes both algebra and accumulation.
 
-Frozen convergence bounds are 1e-50·max(1,|J110|) for J and 1e-50·max(1,max|D110|) for D. Ranking uses D80 with τ=2e-50·max(1,max|D80|). The first strict minimum index resolves method ties; reference-band membership permits D80≤min(D80)+τ. Reference-strict pairs have separation greater than τ. All exact ties, near ties, float ties, reversals and unresolved precision-boundary classifications are retained.
+Frozen convergence bounds are 1e-50·max(1,|J110|) for J and 1e-50·max(1, max|D110|) for D. Ranking uses D80 with τ=2e-50·max(1, max|D80|). The first strict minimum index resolves method ties; reference-band membership permits D80≤min(D80)+τ. Reference-strict pairs have separation greater than τ. All exact ties, near ties, float ties, reversals and unresolved precision-boundary classifications are retained.
 
 ## Cohort coverage and policy-reference counts
 
-Each row has nine policy references from three data seeds × three model/weight seeds. Seeds on one corpus are paired runs, not independent dataset replications. Stage6 panels reuse selected checkpoints. These 36 cells are descriptive views with repeated inputs; the global numerical summary above deduplicates them.
+Each row has nine policy references from three data seeds × three model/weight seeds. Seeds on one corpus are paired runs, not independent dataset replications. Stage 6 panels reuse selected checkpoints. These 36 cells are descriptive views with repeated inputs; the global numerical summary above deduplicates them.
 
 | Cohort | Variant | Width | Distinct inputs /9 | Both /9 | Original p defined /9 | Zero adaptation | Legacy exact/band | Naive exact/band | Factored exact/band |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -69,7 +69,7 @@ Each row has nine policy references from three data seeds × three model/weight 
 
 ![Grid agreement](grid-agreement.png)
 
-Original policy reasons and mathematical guards remain separate. An epoch0 selection has historical reason `no_adaptation`; its exactly zero gain vector has mathematical reason `nonpositive_total_gain`. Neither becomes a measured p*=0. The historical guard includes constant weights (range below 1e-12) and total gain ≤1e-10, including tiny positive totals; these inputs remain undefined.
+Original policy reasons and mathematical guards remain separate. An epoch 0 selection has historical reason `no_adaptation`; its exactly zero gain vector has mathematical reason `nonpositive_total_gain`. Neither becomes a measured p*=0. The historical guard includes constant weights (range below 1e-12) and total gain ≤1e-10, including tiny positive totals; these inputs remain undefined.
 
 | Counting unit | Total | Comparable | Legacy undefined reasons | Reference undefined reasons |
 | --- | --- | --- | --- | --- |
@@ -84,17 +84,17 @@ Original policy reasons and mathematical guards remain separate. An epoch0 selec
 | Naive D64 | 2.70107e-14 | 0e-80 | 0 | 1.01152e-14 |
 | Factored D64 | 1.73883e-15 | 0e-80 | 0 | 2.35426e-15 |
 
-Binary64 errors are computed after exact Decimal.from_float promotion; all differences and summaries use precision110 and retain Decimal strings. Error is also normalized by max(1,max|D80|) and the reference contrast span. Span-normalized values are undefined for zero span. Conditional summaries display available inputs; unconditional means are null whenever any required value is undefined. No imputation or fit-quality exclusion is applied.
+Binary64 errors are computed after exact Decimal.from_float promotion; all differences and summaries use precision 110 and retain Decimal strings. Error is also normalized by max(1, max|D80|) and the reference contrast span. Span-normalized values are undefined for zero span. Conditional summaries display available inputs; unconditional means are null whenever any required value is undefined. No imputation or fit-quality exclusion is applied.
 
 ![Contrast errors](contrast-errors.png)
 
-The stored continuous point is available for 179 distinct inputs, of which 176 lie below the finite grid minimum in reference contrast. Its signed gap can be negative and it is never inserted into the grid candidate set. This diagnostic cannot certify a continuous optimum or establish recovery. Raw grid regret is nonnegative; regret beyond τ is max(0,regret−τ). A small objective error alone cannot certify ranking when the relevant separation is smaller.
+The stored continuous point is available for 179 distinct inputs, of which 176 lie below the finite grid minimum in reference contrast. Its signed gap can be negative and it is never inserted into the grid candidate set. This diagnostic cannot certify a continuous optimum or establish recovery. Raw grid regret is nonnegative; regret beyond τ is max(0, regret−τ). A small objective error alone cannot certify ranking when the relevant separation is smaller.
 
 ## Preserved model context
 
 The table reports historical saved metrics, with positive NLL gain meaning lower selected loss. Training instance-token accuracy describes memorization; it is distinct from held-out utility. Clipping is undefined when no training updates were selected. Original upper/lower-bound flags and objective values remain unchanged.
 
-Analysis repair R1 retains the 54 Stage4 references whose own-initial test metrics were not measured. Their selected test loss and accuracy remain available; initial test loss/accuracy and corresponding gains remain null. Test NLL gains are available for 270/324 references. No premixed baseline, proxy or imputation is used. The original failed analysis and frozen sources remain preserved; `ANALYSIS_REPAIR.json` records the source and fixture hashes.
+Analysis repair R1 retains the 54 Stage 4 references whose own-initial test metrics were not measured. Their selected test loss and accuracy remain available; initial test loss/accuracy and corresponding gains remain null. Test NLL gains are available for 270/324 references. No premixed baseline, proxy or imputation is used. The original failed analysis and frozen sources remain preserved; `ANALYSIS_REPAIR.json` records the source and fixture hashes.
 
 | Cohort | Variant | Width | Mean train NLL gain | Mean validation NLL gain | Mean selected test NLL | Mean test NLL gain (available) | Test-gain available /9 | Mean train instance accuracy | Mean clipping (available) | Original lower/upper bounds |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -141,7 +141,7 @@ Every policy-reference record preserves the complete selected and initial loss/a
 
 ## Interpretation limits and provenance
 
-This bounded CPU audit uses previously saved arrays; it performs no model training, inference, new continuous optimization, validation retuning, p* replacement, K recomputation or utility-gate revision. Agreement on these arrays cannot show that a peak is causal, rule out sampling or optimization effects, rescue the failed Stage6 usefulness result, or imply exact large-LM replication. Three capacities cannot establish movement between two interior peaks. One Pythia size/seed does not establish a scaling curve. No novelty or publication claim is made.
+This bounded CPU audit uses previously saved arrays; it performs no model training, inference, new continuous optimization, validation retuning, p* replacement, K recomputation or utility-gate revision. Agreement on these arrays cannot show that a peak is causal, rule out sampling or optimization effects, rescue the failed Stage 6 usefulness result, or imply exact large-LM replication. Three capacities cannot establish movement between two interior peaks. One Pythia size/seed does not establish a scaling curve. No novelty or publication claim is made.
 
 The saved loss arrays, full token/label data, pairing records, selected decisions and original files are hashed and audited. Missing historical intermediate model binaries are not regenerated; this is an audit of retained arrays. Original sources and records remain immutable. Each precision phase records runtime/memory and has its preregistered CPU budget.
 

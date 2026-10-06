@@ -13,7 +13,7 @@ cells, retaining 100% shared accuracy. This manipulation also changes learned
 representations and adaptation dynamics; it does not isolate a scalar baseline
 effect or demonstrate complete probability calibration. (S4, §§1–2.)
 
-At fixed LR1e-4, WD.1, clip1 and epoch30, U had nine positive K values,
+At fixed LR 1e-4, WD .1, clip 1 and epoch 30, U had nine positive K values,
 mean 4.561708, versus M −.038544. However, 2/9 middle-capacity U estimates reached
 p*=8; mean fit objective was 2.600139 versus M .000177. Keeping U's trained
 trajectory but substituting M's initial losses changed mean K to −.000385.
@@ -23,16 +23,16 @@ Undefined terms cannot be omitted to obtain a finite decomposition. (S4, §§1,4
 
 ## Duration, optimizer and selection change the question
 
-With the same fixed optimizer at epoch60, U's mean K became −.533549 and all
+With the same fixed optimizer at epoch 60, U's mean K became −.533549 and all
 three corpus means were negative; M retained nine positive K values. Joint-arm
 validation tuning changed both optimizer and capacity-specific stopping times.
 Selected U had an undefined K aggregate and failed the combined generalization
 criterion. Thus matched adaptation, selected duration and selected-policy
 comparisons have different estimands. (S4, §§1,3,5.)
 
-Stage 5 admitted canonical epoch0, used a smaller-LR grid and 30-epoch horizon,
+Stage 5 admitted canonical epoch 0, used a smaller-LR grid and 30-epoch horizon,
 and made random-arm validation selection R primary; joint-arm J remained
-secondary. All nonzero selections nevertheless used LR1e-4. U/R chose epochs
+secondary. All nonzero selections nevertheless used LR 1e-4. U/R chose epochs
 10/3/0. Mean test improvements against own initialization were
 .030936/.001879/0: small and middle capacities passed utility, but largest
 abstention made global utility false. Utility required updates, positive mean
@@ -46,7 +46,7 @@ Stage 6 preserved Stage 5's procedure across four fresh two-pair tuning panels.
 U/R largest-capacity abstention occurred in 3/4 panels; middle abstention in
 2/4. Small utility passed 4/4, middle and global utility 0/4. Positive overall
 middle test gains in the two adapting panels did not satisfy the corpus-level
-test/validation conditions. Panel P4 selected LR1e-5 for middle and large
+test/validation conditions. Panel P4 selected LR 1e-5 for middle and large
 capacities, so Stage 5's absence of smaller-LR selections did not recur.
 M/R and M/J passed utility/scaling throughout, with mixed peak verdicts.
 (S6, §§1–4.)

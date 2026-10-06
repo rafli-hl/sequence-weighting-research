@@ -1,27 +1,33 @@
-# Stage 6 v0.7 — replikasi panel tuning untuk kebijakan tanpa adaptasi
+<a name="stage-6-v07--replikasi-panel-tuning-untuk-kebijakan-tanpa-adaptasi"></a>
 
-Run `stability-v07-20260929-01`: **576 tuning + 216 confirmation trajectories**, **102 pretrained models**, dan **54 evaluasi awal test**. Empat panel tuning baru memakai korpus konfirmasi yang sama.
+# Stage 6 v0.7 — tuning-panel replication of no-adaptation selection
 
-## 1. Hasil utama
+Run `stability-v07-20260929-01`: **576 tuning + 216 confirmation trajectories**, **102 pretrained models**, and **54 initial test evaluations**. Four fresh tuning panels share the same confirmation corpora.
 
-Pada **U / R / random**, kapasitas terbesar memilih tanpa adaptasi pada **3/4 panel**. Kriteria adaptasi berguna kapasitas menengah terpenuhi pada **0/4 panel**. Ini adalah frekuensi deskriptif pada empat panel; tidak diberi label biner “stabil” berdasarkan threshold baru dan tidak diuji dengan uji signifikansi.
+<a name="1-hasil-utama"></a>
 
-| Panel | Terbesar epoch0 | Menengah update>0 | 3 korpus Δtest>0 | 3 korpus val≤awal | Menengah berguna | Global berguna | Scaling | K verdict |
+## 1. Main result
+
+For **U / R / random**, the largest capacity selected no adaptation in **3/4 panels**. The useful-adaptation criterion for the middle capacity passed in **0/4 panels**. These are descriptive frequencies across four panels; no new threshold assigns a binary “stable” label, and no significance test was performed.
+
+| Panel | Largest epoch 0 | Middle update>0 | 3 corpora Δtest>0 | 3 corpora val≤initial | Middle useful | Globally useful | Scaling | K verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P1 | True | True | False | False | False | False | False | inconclusive_undefined |
 | P2 | True | False | False | True | False | False | True | inconclusive_undefined |
 | P3 | True | False | False | True | False | False | True | inconclusive_undefined |
 | P4 | False | True | False | False | False | False | False | inconclusive_undefined |
 
-Δtest = initial test NLL − selected test NLL. Utility pada satu kapasitas memerlukan update nonzero, Δtest mean positif di setiap korpus, dan validation mean tidak lebih buruk dari model awal pada setiap korpus. Epoch0 memberi delta tepat nol dan p* undefined. Scaling adalah gerbang terpisah: test NLL turun ketat sepanjang kapasitas dan validation≤awal di seluruh kapasitas/korpus.
+Δtest = initial test NLL − selected test NLL. Utility at one capacity requires nonzero updates, positive mean Δtest in every corpus, and mean validation NLL no worse than the initial model in every corpus. Epoch 0 gives exactly zero delta and undefined p*. Scaling is a separate gate: test NLL must decrease strictly with capacity and validation NLL must be ≤initial across all capacities/corpora.
 
-**Desain replikasi:** 4 panel tuning × **3 korpus konfirmasi yang sama**, masing-masing dengan 3 seed model/bobot bersarang. Ke-12 sel panel×korpus bukan 12 korpus independen, dan 36 pasangan per kapasitas bukan 36 replikasi data independen. Konfigurasi terpilih yang sama memakai checkpoint konfirmasi yang sama. Tidak ada panel dipilih berdasarkan test, p*, atau peak.
+**Replication design:** 4 tuning panels × **the same 3 confirmation corpora**, each with 3 nested model/weight seeds. The 12 panel×corpus cells are not 12 independent corpora, and the 36 pairs per capacity are not 36 independent dataset replications. Identical selected configurations reuse the same confirmation checkpoints. No panel was selected using test results, p*, or peaks.
 
-## 2. Seluruh keputusan validation dan frekuensinya
+<a name="2-seluruh-keputusan-validation-dan-frekuensinya"></a>
 
-R memilih validation random; J memilih gabungan random/uniform. Setiap panel memakai dua pasangan corpus/model tuning tersendiri. Variasi panel mencakup data tuning, seed model/bobot, dan data pretraining; tidak mengisolasi efek korpus tuning saja. Kandidat epoch0 kanonik dibandingkan dengan enam optimizer×enam epoch; tie full precision, epoch terdini, LR lalu WD terkecil.
+## 2. All validation decisions and their frequencies
 
-| Selektor | Kondisi | Lebar | Epoch0 /4 | Frekuensi setting (grid/epoch: panel) |
+R selects random-weight validation NLL; J selects the joint random/uniform result. Each panel uses two separate tuning corpus/model pairs. Panel variation includes tuning data, model/weight seeds, and pretraining data; it does not isolate the tuning-corpus effect alone. The canonical epoch 0 candidate is compared with six optimizers×six epochs; ties use full precision, earliest epoch, then smallest LR and WD.
+
+| Selector | Condition | Width | Epoch 0 /4 | Setting frequency (grid/epoch: panel) |
 | --- | --- | --- | --- | --- |
 | R | M | 64 | 0 | g4/e30: 4/4 (P1,P2,P3,P4) |
 | R | M | 128 | 0 | g5/e20: 4/4 (P1,P2,P3,P4) |
@@ -38,13 +44,15 @@ R memilih validation random; J memilih gabungan random/uniform. Setiap panel mem
 
 ![All selections](selection-panels.png)
 
-Semua candidate scores, LR/WD, pilihan, dan union konfirmasi dibekukan di `selection.json`. Detail setting identik/alias dipertahankan di `panel-summary.json`. Union optimizer dijalankan dalam kedua arm sampai epoch30; semua enam checkpoint terdeklarasi dievaluasi, tanpa pemilihan ulang memakai konfirmasi.
+All candidate scores, LR/WD settings, selections, and the confirmation union were frozen in `selection.json`. Identical settings/aliases are retained in `panel-summary.json`. The optimizer union was run in both arms through epoch 30; all six declared checkpoints were evaluated, without confirmation-based reselection.
 
-## 3. Matriks gain silang dan dua marginal terpisah
+<a name="3-matriks-gain-silang-dan-dua-marginal-terpisah"></a>
 
-Setiap sel adalah rerata tiga seed pada pasangan panel/korpus. “SD panel” adalah SD empat marginal panel setelah merata-ratakan tiga korpus; “SD korpus” adalah SD tiga marginal korpus setelah merata-ratakan empat panel. Keduanya mengukur sumber variasi berbeda, bukan standard error/CI dan bukan estimasi dengan asumsi seluruh sel independen. Tidak ada SD gabungan 12 sel/36 pasangan yang dipakai untuk inferensi.
+## 3. Crossed gain matrix and two separate margins
 
-| Lebar | Δtest grand mean | SD marginal panel (n=4) | SD marginal korpus (n=3) | Sumber checkpoint unik /36 |
+Each cell is the mean of three seeds for a panel/corpus pair. “Panel SD” is the SD of four panel margins after averaging over three corpora; “corpus SD” is the SD of three corpus margins after averaging over four panels. They measure different sources of variation, rather than standard errors/CIs or estimates assuming all cells are independent. No pooled SD over 12 cells/36 pairs is used for inference.
+
+| Width | Δtest grand mean | Panel-margin SD (n=4) | Corpus-margin SD (n=3) | Unique checkpoint sources /36 |
 | --- | --- | --- | --- | --- |
 | 64 | 0.032417 | 0.001974 | 0.005521 | 18 |
 | 128 | 0.000460 | 0.000531 | 0.001128 | 27 |
@@ -54,11 +62,13 @@ Setiap sel adalah rerata tiga seed pada pasangan panel/korpus. “SD panel” ad
 
 ![Panel utility](utility-panels.png)
 
-`crossed-summary.json` menyimpan matriks, setiap marginal, seluruh 36 nilai pasangan dan referensi checkpoint. `policy-cells.csv` mempertahankan loss/accuracy semua komponen, clipping, gain, p*, dan alasan undefined untuk setiap kebijakan.
+`crossed-summary.json` retains the matrix, each margin, all 36 paired values, and checkpoint references. `policy-cells.csv` retains losses/accuracies for all components, clipping, gains, p*, and undefined reasons for every policy.
 
-## 4. Semua kebijakan dan kualitas fit
+<a name="4-semua-kebijakan-dan-kualitas-fit"></a>
 
-| Panel | Kebijakan | Arm | Useful global | Scaling | K mean | Undefined K /9 | K positif /9 | Verdict |
+## 4. All policies and fit quality
+
+| Panel | Policy | Arm | Useful global | Scaling | K mean | Undefined K /9 | K positive /9 | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P1 | M_R | random | True | True | 0.001486 | 0 | 5 | mixed/inconclusive |
 | P1 | M_R | uniform | True | True | undefined | 9 | 0 | undefined_uniform |
@@ -93,9 +103,9 @@ Setiap sel adalah rerata tiga seed pada pasangan panel/korpus. “SD panel” ad
 | P4 | U_J | random | False | False | -1.270858 | 0 | 1 | disappears |
 | P4 | U_J | uniform | True | True | undefined | 9 | 0 | undefined_uniform |
 
-K = p* tengah − max(p* kecil,p* besar). Setiap undefined dipropagasikan ke rerata dan kontras. Uniform selalu undefined. Tiga kapasitas tidak dapat membuktikan perpindahan antara dua peak interior.
+K = middle-capacity p* − max(small-capacity p*, large-capacity p*). Every undefined value propagates into means and contrasts. Uniform-weight p* is always undefined. Three capacities cannot establish movement between two interior peaks.
 
-| Panel | Kondisi / R random | Lebar | Epoch | p* mean | Undefined /9 | Batas atas /9 | Objective mean | Cancellation mean | Δtest negatif /9 | Δvalidation negatif /9 |
+| Panel | Condition / R random | Width | Epoch | p* mean | Undefined /9 | Upper boundary /9 | Objective mean | Cancellation mean | Negative Δtest /9 | Negative Δvalidation /9 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P1 | M | 64 | 30 | 0.041994 | 0 | 0 | 0.000054 | 1.000000 | 0 | 0 |
 | P1 | M | 128 | 20 | 0.043480 | 0 | 0 | 0.000054 | 1.000000 | 0 | 0 |
@@ -122,11 +132,11 @@ K = p* tengah − max(p* kecil,p* besar). Setiap undefined dipropagasikan ke rer
 | P4 | U | 128 | 20 | 1.767128 | 0 | 1 | 0.522528 | 0.346585 | 3 | 4 |
 | P4 | U | 256 | 10 | undefined | 1 | 0 | undefined | 0.178036 | 7 | 7 |
 
-P* memakai signed gain asli dan rentang pencarian [0,8]. Gain nonpositive/di bawah guard, no adaptation dan bobot uniform tetap undefined. Cancellation ratio = |Σgain|/Σ|gain|, undefined bila semua gain nol. Nilai batas dan objective buruk membatasi interpretasi, tanpa filtering atau perubahan rentang estimator. Gambar objective mempertahankan semua titik; mean dihilangkan bila satu saja nilai undefined.
+P* uses the original signed gains and search range [0,8]. Nonpositive/below-guard gains, no adaptation, and uniform weights remain undefined. Cancellation ratio = |Σgain|/Σ|gain|, undefined when all gains are zero. Boundary values and poor objectives limit interpretation, without filtering or changing the estimator range. Objective figures retain every point; a mean is omitted if even one value is undefined.
 
 ![Selected fits](selected-fits.png)
 
-| Panel | Kebijakan | Arm | Lebar | Train NLL | Validation NLL | Test NLL | Instance train accuracy | Clipping |
+| Panel | Policy | Arm | Width | Train NLL | Validation NLL | Test NLL | Instance train accuracy | Clipping |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P1 | M_R | random | 64 | 2.011199 | 2.083453 | 2.083173 | 0.061903 | 0.999537 |
 | P1 | M_R | random | 128 | 1.895633 | 2.052223 | 2.055430 | 0.097439 | 1.000000 |
@@ -225,13 +235,15 @@ P* memakai signed gain asli dan rentang pencarian [0,8]. Gain nonpositive/di baw
 | P4 | U_J | uniform | 128 | 1.796063 | 1.839831 | 1.839794 | 0.080349 | 0.131944 |
 | P4 | U_J | uniform | 256 | 1.717560 | 1.804598 | 1.807092 | 0.090820 | 0.359722 |
 
-Clipping epoch0 undefined karena tidak ada update. Diagnosis component, group+instance, oracle-reference, signed allocation/Gram, massa gain positif/negatif dan seluruh checkpoint tetap disimpan. Diagnosis ini tidak mengganti estimator utama dan tidak menjadi kriteria seleksi.
+Epoch 0 clipping is undefined because no updates occur. Component, group+instance, oracle-reference, signed-allocation/Gram, positive/negative-gain-mass diagnostics, and all checkpoints are retained. These diagnostics neither replace the primary estimator nor enter selection.
 
-## 5. Manipulasi baseline dan audit
+<a name="5-manipulasi-baseline-dan-audit"></a>
 
-Manipulation check: **9/9** kapasitas/korpus lulus. U harus menurunkan initial group/instance validation NLL terhadap M dengan shared accuracy≥95%.
+## 5. Baseline intervention and audit
 
-| Lebar | Korpus | U group | M group | U instance | M instance | U shared accuracy | Lulus |
+Manipulation check: **9/9** capacities/corpora passed. U must reduce initial group/instance validation NLL relative to M, with shared accuracy≥95%.
+
+| Width | Corpus | U group | M group | U instance | M instance | U shared accuracy | Passed |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 64 | 61103 | 2.792166 | 4.424853 | 2.807484 | 4.628993 | 1.000000 | True |
 | 64 | 61211 | 2.796420 | 4.499488 | 2.799079 | 4.527988 | 1.000000 | True |
@@ -243,15 +255,17 @@ Manipulation check: **9/9** kapasitas/korpus lulus. U harus menurunkan initial g
 | 256 | 61211 | 2.774681 | 7.937776 | 2.775908 | 8.005195 | 1.000000 | True |
 | 256 | 61319 | 2.772776 | 7.826018 | 2.776531 | 8.028852 | 1.000000 | True |
 
-M/U pasangan memakai full token/label, cold state, assignment/order yang sama. U mengubah objective pretraining dan mungkin representasi/dinamika; U−M tidak mengisolasi pengaruh satu angka baseline. Check bukan asesmen kalibrasi probabilitas lengkap.
+M/U pairs share full tokens/labels, cold state, assignments, and order. U changes the pretraining objective and may change representations/dynamics; U−M does not isolate the effect of a single baseline value. This check is not a complete probability-calibration assessment.
 
-Audit integritas independen: **PASS**; utility/scaling/K setiap panel diperiksa ulang. Audit meliputi frozen source, histori Stage0–5, regenerasi data lengkap, seed split, cold/pretrained equality, weights/orders, candidate/tie/schedule seluruh panel, alias epoch0, serta test setelah selection freeze.
+Independent integrity audit: **PASS**; utility/scaling/K were rechecked for every panel. The audit covers frozen source, Stage 0–5 history, complete data regeneration, seed splits, cold/pretrained equality, weights/orders, candidates/ties/schedules across all panels, epoch 0 aliases, and test evaluation after the selection freeze.
 
-Gram original strict absolute-check failures: **0**; semuanya dicatat dan harus melewati verifikasi 70 digit/batas akumulasi float64 yang telah dipraspesifikasikan. Normalisasi cumulative-primary undefined: **0**, disimpan null+alasan. Tidak ada toleransi lain yang dilonggarkan; fit/gain/seleksi tetap. Detail `DIAGNOSTIC_AUDIT.json`.
+Original Gram strict absolute-check failures: **0**; every failure is recorded and must pass prespecified 70-digit verification/float64 accumulation bounds. Undefined cumulative-primary normalizations: **0**, saved as null with reasons. No other tolerance was relaxed; fits/gains/selection are unchanged. See `DIAGNOSTIC_AUDIT.json`.
 
-## 6. Runtime dan keterbatasan penyimpanan
+<a name="6-runtime-dan-keterbatasan-penyimpanan"></a>
 
-Timer training: perf_counter **80.43 menit**, UTC **83.02 menit**; selisih UTC−perf_counter **155.702609 detik**, tanpa mengasumsikan penyebab. Budget180 menit memakai timer yang lebih besar; CPU analisis tidak termasuk.
+## 6. Runtime and storage limitations
+
+Training timers: perf_counter **80.43 minutes**, UTC **83.02 minutes**; UTC−perf_counter difference **155.702609 seconds**, without inferring a cause. The 180-minute budget used the larger timer; CPU analysis is excluded.
 
 | Tahap | Jumlah | Peak allocated MiB | Peak reserved MiB |
 | --- | --- | --- | --- |
@@ -259,12 +273,14 @@ Timer training: perf_counter **80.43 menit**, UTC **83.02 menit**; selisih UTC�
 | Initial evaluation | 54 | 60.790527 | 184.000000 |
 | Adaptation | 792 | 150.490234 | 184.000000 |
 
-**Penyimpanan model:** cold/pretrained dan model epoch30 disimpan penuh. Model adaptasi epoch1/3/5/10/20 tidak disimpan sebagai biner; map SHA tensor model dicatat saat runtime, beserta seluruh per-sequence losses/metrics setiap checkpoint. Audit dapat memeriksa loss/fit/seleksi dari rekaman tersebut, tetapi tidak dapat menghitung ulang hash bobot intermediate dari biner yang tidak disimpan. Model intermediate harus diregenerasi dengan rerun jika dibutuhkan; ketersediaan hash bukan bukti ekuivalen dengan audit ulang binary checkpoint.
+**Model storage:** cold/pretrained models and epoch 30 models were saved in full. Adaptation models at epochs 1/3/5/10/20 were not saved as binaries; model-tensor SHA maps were recorded at runtime, together with all per-sequence losses/metrics at each checkpoint. The audit can check losses/fits/selection from those records, but cannot recompute intermediate-weight hashes from binaries that were not saved. Intermediate models require regeneration through a rerun if needed; hash availability is not equivalent to a fresh binary-checkpoint audit.
 
-Model penuh yang tersedia tetap lokal dan dikecualikan dari archive ringkas; semua raw files dicatat SHA, dataset/losses/assignment/orders/source disertakan, archive diuji CRC dan SHA. Tidak ada retry implisit, seed pengganti, cloud, upload atau publikasi.
+Available full models remain local and are excluded from the compact archive; all raw files have recorded SHA hashes, datasets/losses/assignments/orders/source are included, and the archive was checked by CRC and SHA. This stage involved no implicit retry, replacement seed, cloud execution, upload, or publication.
 
-## 7. Batas ilmiah dan provenance
+<a name="7-batas-ilmiah-dan-provenance"></a>
 
-Empat panel memperluas replikasi proses seleksi; hanya tiga korpus konfirmasi dibagi bersama. Grid optimizer/horizon terbatas, task sintetis dan tiga kapasitas tidak membuktikan optimum global, scaling umum, exact large-LM replication, novelty atau kesiapan venue. Tidak ada notebook yang diklaim telah dieksekusi; script eksperimen digunakan. Interpretasi Stage5 memotivasi desain, bukan data konfirmasi tambahan.
+## 7. Scientific limitations and provenance
 
-Protocol SHA256: `9859d5644b8468506f47bd8c28ee594e2eb93f1371989f0fdb2c7e7c3be37164`. Selection SHA256: `678a1430ca845ab99ede2a4c683c40120a8641df4b76487fe0685f6aa3eb3de7`. Manifest source/environment/checks lengkap tersedia dalam raw archive. Arahan literatur dan batas klaim mengikuti `LITERATURE_CHECK.md`; tidak ada klaim kebaruan baru dalam tahap ini.
+Four panels extend replication of the selection process, but share only three confirmation corpora. The bounded optimizer grid/horizon, synthetic task, and three capacities do not establish a global optimum, general scaling, exact large-LM replication, novelty, or venue readiness. The notebook is not claimed to have executed; experiment scripts were used. Stage 5 interpretation motivated the design rather than providing additional confirmation data.
+
+Protocol SHA256: `9859d5644b8468506f47bd8c28ee594e2eb93f1371989f0fdb2c7e7c3be37164`. Selection SHA256: `678a1430ca845ab99ede2a4c683c40120a8641df4b76487fe0685f6aa3eb3de7`. Complete source/environment/check manifests are available in the raw archive. Literature guidance and claim boundaries follow `LITERATURE_CHECK.md`; this stage makes no new novelty claim.

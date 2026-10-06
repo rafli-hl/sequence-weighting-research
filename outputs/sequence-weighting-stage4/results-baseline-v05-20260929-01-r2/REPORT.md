@@ -1,34 +1,38 @@
-# Stage 4 v0.5: intervensi pretraining dan referensi gain
+<a name="stage-4-v05-intervensi-pretraining-dan-referensi-gain"></a>
 
-**Revisi presentasi r2:** memperjelas timer proses dan interval timestamp UTC, menempatkan peringatan kualitas fit di dekat hasil utama, dan menjelaskan titik undefined pada grafik. Data, estimasi, audit, dan gambar ilmiah identik dengan laporan analisis-r1 yang tetap disimpan.
+# Stage 4 v0.5: pretraining intervention and gain reference
 
-**Catatan analisis:** audit utama lulus pada analisis awal, tetapi satu pemeriksaan Gram float64 melewati toleransi absolut 1e-12. Hasil ini memakai perbaikan verifikasi numerik yang didokumentasikan dalam NUMERICAL_REPAIR.md; kegagalan awal tetap disimpan. Tidak ada training ulang atau perubahan estimator/seleksi.
+**Presentation revision r2:** clarifies the process timer and UTC timestamp interval, places the fit-quality warning beside the main result, and explains undefined plot points. Data, estimates, audits, and scientific figures are identical to the retained analysis-r1 report.
 
-144 run tuning baru dan 270 run konfirmasi selesai; 99 model pretrained.
-Tiga corpus konfirmasi × tiga seed model/bobot, tiga kapasitas, dua arm.
-Audit integritas **PASS**; tidak ada kegagalan run. Formula perbandingan,
-data seeds, grid dan evaluasi test dibekukan sebelum training. Seleksi hanya
-memakai validation NLL dari dua pasangan corpus/model tuning yang terpisah.
+**Analysis note:** the primary audit passed in the initial analysis, but one float64 Gram check exceeded the absolute tolerance of 1e-12. These results use the numerical-verification repair documented in NUMERICAL_REPAIR.md; the original failure is retained. No retraining or estimator/selection change occurred.
 
-## 1. Jawaban utama: pretraining pada adaptasi yang sama
+The study completed 144 fresh tuning runs and 270 confirmation runs, with 99 pretrained models.
+Three confirmation corpora × three model/weight seeds, three capacities, and two arms.
+The integrity audit returned **PASS**; no runs failed. Comparison formulas,
+data seeds, the grid, and test evaluations were frozen before training. Selection used
+only validation NLL from two separate tuning corpus/model pairs.
 
-Pada optimizer F dan epoch 30, perubahan mean K untuk U−M adalah
-**4.600252**, dengan tanda mean corpus
-**positive**. Verdict M adalah
-**disappears**, dan U adalah
+<a name="1-jawaban-utama-pretraining-pada-adaptasi-yang-sama"></a>
+
+## 1. Main result: pretraining under matched adaptation
+
+With optimizer F at epoch 30, the mean K change for U−M was
+**4.600252**, with a
+**positive** corpus-mean sign. The verdict for M was
+**disappears**, and for U it was
 **survives**.
-K = p* menengah − max(p* kecil,p* besar). Nilai undefined tidak dibuang.
+K = middle-capacity p* − max(small-capacity p*, large-capacity p*). Undefined values are not discarded.
 
-S memakai pretraining shared-only sebelumnya. M dan U memakai token mixed yang
-persis sama; M mengoptimalkan shared CE, sedangkan U menambahkan CE target
-uniform pada 16 jawaban di posisi group/instance, koefisien tetap 1. Cold
-checkpoint dan urutan batch sama. F memakai LR1e-4, WD.1, clipping1.
-U−M pada F/C30 menguji intervensi objective pretraining pada adaptasi tetap.
-Intervensi dapat mengubah representasi maupun baseline loss; ia tidak
-mengidentifikasi efek murni satu angka baseline. S−M juga mengubah konteks dan
-jumlah shared-token supervision sehingga merupakan perbandingan kontekstual.
+S uses the earlier shared-only pretraining. M and U use exactly the same mixed
+tokens; M optimizes shared CE, while U adds uniform-target CE
+over 16 answers at group/instance positions, with a fixed coefficient of 1. The cold
+checkpoint and batch order are identical. F uses LR 1e-4, WD .1, and clipping 1.
+U−M at F/C30 tests a pretraining-objective intervention under fixed adaptation.
+The intervention can change both representations and baseline loss; it does not
+identify the isolated effect of a single baseline value. S−M also changes context and
+the amount of shared-token supervision, making it a contextual comparison.
 
-Pada U/F/C30, **2/9** fit kapasitas menengah menyentuh batas pencarian p*=8. Mean objective fit-nya 2.600139, dibanding 0.000177 pada M. Karena fit U jauh lebih buruk dan beberapa nilai dibatasi pencarian, puncak deskriptif ini tidak boleh dianggap bukti mekanisme pangkat yang cocok dengan baik. Pada U/T/ET, 1/27 p* kapasitas/pasangan undefined dan 5/27 menyentuh batas atas. Tidak ada nilai yang dihapus atau rentang pencarian yang diperluas.
+For U/F/C30, **2/9** middle-capacity fits reached the search boundary p*=8. The mean fit objective across all nine U middle-capacity fits was 2.600139, compared with 0.000177 for M. Because U fits were much poorer and some values were search-boundary-limited, this descriptive peak must not be treated as evidence of a well-fitting power mechanism. For U/T/ET, 1/27 capacity/pair p* values were undefined and 5/27 reached the upper boundary. No values were removed and the search range was not expanded.
 
 ![Matched adaptation](matched.png)
 
@@ -50,19 +54,21 @@ Pada U/F/C30, **2/9** fit kapasitas menengah menyentuh batas pencarian p*=8. Mea
 | U_F_ET | 2.034824 | 0.853716 | 7 | 0 | mixed/inconclusive | False | False |
 | U_T_ET | undefined | undefined | 3 | 1 | inconclusive_undefined | False | False |
 
-F/T adalah optimizer tetap/terpilih per kondisi. C30/C60 memakai epoch sama
-antar kapasitas; ET memakai vektor epoch yang dipilih untuk kondisi itu.
-Alias sel identik tercatat dalam policy-summary.json, bukan replikasi tambahan.
-Survives berarti 9/9 kontras terdefinisi dan positif; disappears berarti semua
-terdefinisi dan ketiga mean corpus <=0; selain itu mixed atau undefined.
-SD mengacu pada tiga mean corpus. Ini hasil deskriptif, tanpa klaim signifikansi.
+F/T denotes the fixed/selected optimizer for each condition. C30/C60 uses matched epochs
+across capacities; ET uses the epoch vector selected for that condition.
+Aliases for identical cells are recorded in policy-summary.json, rather than counted as additional replications.
+Survives means 9/9 contrasts are defined and positive; disappears means all
+are defined and all three corpus means are <=0; other outcomes are mixed or undefined.
+SD refers to the three corpus means. These are descriptive results without a significance claim.
 
-## 2. Apakah intervensi memperbaiki baseline yang dituju?
+<a name="2-apakah-intervensi-memperbaiki-baseline-yang-dituju"></a>
 
-Manipulation check keseluruhan: **True**. U menurunkan
-kedua component NLL group/instance dibanding M pada **9/9** sel
-kapasitas/corpus; shared accuracy U >=95% pada **9/9** sel.
-Kedua syarat dilaporkan terpisah dan kegagalan tidak memicu seleksi atau retry.
+## 2. Did the intervention improve the targeted baseline?
+
+Overall manipulation check: **True**. U reduced
+both group/instance component NLLs relative to M in **9/9**
+capacity/corpus cells; U shared accuracy was >=95% in **9/9** cells.
+The two conditions are reported separately; failure did not trigger selection or retry.
 
 | Condition | Width | Initial val NLL | Shared NLL | Group NLL | Instance NLL | Shared accuracy |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -76,14 +82,16 @@ Kedua syarat dilaporkan terpisah dan kegagalan tidak memicu seleksi atau retry.
 | U | 128 | 1.875265 | 0.060029 | 2.781759 | 2.784008 | 100.00% |
 | U | 256 | 1.853632 | 0.009380 | 2.775111 | 2.776404 | 100.00% |
 
-Komponen memiliki empat jawaban masing-masing, sehingga mixed NLL adalah mean
-ketiganya. Uniform-answer NLL ideal pada group/instance adalah log(16)=2.772589.
-NLL yang lebih rendah bukan bukti lengkap kalibrasi probabilitas. S/M/U tetap
-memakai empat epoch pretraining; tidak ada tuning strength atau durasi pretraining.
+Each component has four answers, so mixed NLL is the mean
+of the three components. Ideal uniform-answer NLL for group/instance is log(16)=2.772589.
+Lower NLL is not a complete assessment of probability calibration. S/M/U all
+use four pretraining epochs; neither pretraining strength nor duration was tuned.
 
 ![Baseline](baseline.png)
 
-## 3. Tuning baru, optimizer dan durasi
+<a name="3-tuning-baru-optimizer-dan-durasi"></a>
+
+## 3. Fresh tuning, optimizer, and duration
 
 | Condition | Width | LR | WD | Clip | Epoch | Tuning validation NLL |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -97,12 +105,12 @@ memakai empat epoch pretraining; tidak ada tuning strength atau durasi pretraini
 | U | 128 | 0.0001 | 0.1 | 1.0 | 10 | 1.838469 |
 | U | 256 | 0.0003 | 0.1 | 1.0 | 3 | 1.850748 |
 
-Grid terbatas pada LR {1e-4,3e-4}, WD {.1,1}, clip1 dan epoch {1,3,10,30,60}.
-Skor adalah mean validation NLL kedua arm dan dua tuning pairs. Tie rule: skor
-presisi penuh, epoch awal, LR naik, WD naik. Epoch0 hanya menjadi pemeriksaan
-improvement. Hasil terbaik dalam grid ini tidak berarti optimum global.
-Perbandingan U−M pada T/ET adalah efek total kebijakan yang turut mengubah
-optimizer/durasi, sehingga berbeda dari perbandingan adaptasi tetap di atas.
+The grid is limited to LR {1e-4,3e-4}, WD {.1,1}, clipping 1, and epochs {1,3,10,30,60}.
+The score is mean validation NLL across both arms and two tuning pairs. The tie rule is
+full-precision score, earlier epoch, ascending LR, and ascending WD. Epoch 0 is only an
+improvement check. The best result in this grid does not establish a global optimum.
+The U−M comparison at T/ET is a total policy effect that also changes
+optimizer/duration, and thus differs from the fixed-adaptation comparison above.
 
 | Effect on K | Mean | SD corpus means | Corpus-mean sign |
 | --- | --- | --- | --- |
@@ -123,20 +131,22 @@ optimizer/durasi, sehingga berbeda dari perbandingan adaptasi tetap di atas.
 | U_duration_T | undefined | undefined | undefined |
 | U_interaction | undefined | undefined | undefined |
 
-Dalam tiap kondisi, interaction=(T_ET−T_C30)−(F_ET−F_C30). Seluruh sembilan
-nilai dan tiga mean corpus ada di policy-summary.json. Efek per kapasitas untuk
-p*, loss, memorisasi, fit, clipping dan signed gains ada di per-capacity-effects.csv.
+Within each condition, interaction=(T_ET−T_C30)−(F_ET−F_C30). All nine
+values and three corpus means are in policy-summary.json. Per-capacity effects for
+p*, loss, memorization, fit, clipping, and signed gains are in per-capacity-effects.csv.
 
 ![Selected policies](selected.png)
 
-Titik mean p* U pada kapasitas terbesar tidak ditampilkan: satu dari sembilan nilai undefined membuat mean yang dipropagasikan juga undefined; nilainya tidak diimputasi atau dihapus dari agregasi.
+The mean U p* point at the largest capacity is omitted: one of the nine values is undefined, so the propagated mean is also undefined; the value is neither imputed nor excluded from aggregation.
 
-## 4. Referensi loss saja: sensitivitas aritmetis
+<a name="4-referensi-loss-saja-sensitivitas-aritmetis"></a>
 
-Pada trajectory F yang sama, hitung ulang gain dari baseline awal M atau U.
-Diagonal memakai baseline model itu sendiri dan persis cocok dengan p* utama.
-Off-diagonal hanya mengganti referensi per-sequence loss, bukan menjalankan
-model baru. Propagasi undefined dapat membuat dekomposisi K tidak teridentifikasi.
+## 4. Loss-reference-only changes: arithmetic sensitivity
+
+For the same F trajectory, gains are recomputed using the initial M or U baseline.
+Diagonal cells use each model's own baseline and exactly match primary p*.
+Off-diagonal cells change only the per-sequence loss reference, rather than running
+a new model. Propagating undefined values can leave the K decomposition unidentified.
 
 | Reference cell | Mean K | Undefined K / 9 | p* 64 | p* 128 | p* 256 |
 | --- | --- | --- | --- | --- | --- |
@@ -160,23 +170,25 @@ model baru. Propagasi undefined dapat membuat dekomposisi K tidak teridentifikas
 | e60_interaction | 3.638688 | 0 |
 | e60_total | -0.573252 | 0 |
 
-Efek reference menahan trajectory M; efek trajectory menahan reference M.
-Interaksi adalah selisih kedua efek bersilang. Rincian p* dan signed mean gain
-per kapasitas/pasangan tersedia di reference-sensitivity.csv dan
-reference-capacity-effects.csv. Jangan menjumlahkan hanya komponen yang terdefinisi
-untuk membuat kesimpulan total ketika komponen lain undefined.
+The reference effect holds the M trajectory fixed; the trajectory effect holds reference M fixed.
+The interaction is the difference between the crossed effects. Detailed p* and signed mean gains
+for each capacity/pair are available in reference-sensitivity.csv and
+reference-capacity-effects.csv. Do not sum only the defined components
+to infer a total when another component is undefined.
 
 ![Reference sensitivity](reference.png)
 
-Seluruh checkpoint konfirmasi juga menyimpan p* komponen, group+instance-only,
-referensi oracle [0,log16,log16], signed mass, centered cumulative RMS dan Gram
-cross-terms. Estimator primer tetap memakai seluruh gain bertanda terhadap
-baseline pretrained asli. Maksimum galat identitas gain komponen:
-1.50012784e-06, di bawah toleransi frozen 2e-6.
-Undefined dan boundary fits per kondisi/arm/metric tersimpan di diagnostics.csv
-dan diagnostics.json; uniform p* selalu undefined, termasuk diagnostik.
+All confirmation checkpoints also retain component p*, group+instance-only p*,
+the oracle reference [0, log16, log16], signed mass, centered cumulative RMS, and Gram
+cross-terms. The primary estimator continues to use all signed gains against
+the original pretrained baseline. The maximum component-gain identity error was
+1.50012784e-06, below the frozen tolerance of 2e-6.
+Undefined and boundary fits by condition/arm/metric are saved in diagnostics.csv
+and diagnostics.json; uniform-weight p* is always undefined, including in diagnostics.
 
-## 5. Generalisasi, memorisasi, dan fit
+<a name="5-generalisasi-memorisasi-dan-fit"></a>
+
+## 5. Generalization, memorization, and fit
 
 | Cell | Arm | Width | Epoch | p* | Fit objective | Train | Validation | Test | Instance acc | Clipping |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -217,51 +229,55 @@ dan diagnostics.json; uniform p* selalu undefined, termasuk diagnostik.
 | U_T_ET | uniform | 128 | 10 | undefined | undefined | 1.678010 | 1.822166 | 1.813333 | 9.72% | 42.3% |
 | U_T_ET | uniform | 256 | 3 | undefined | undefined | 1.770996 | 1.822884 | 1.819284 | 8.11% | 50.5% |
 
-Kriteria generalisasi mensyaratkan test NLL turun ketat dengan kapasitas dan
-validation <=epoch0 pada setiap kapasitas, dalam **setiap** corpus. Tabel sel
-di atas melaporkan random dan uniform secara terpisah; hasil per corpus ada
-di policy-summary.json. Tidak ada evaluasi test saat tuning atau pada epoch0.
-Fit objective, negative-gain fraction dan boundary flags bukan kriteria seleksi.
-Memorisasi dan clipping harus dibaca bersama p*, bukan bukti mekanisme kausal
-clipping. Data akhir lengkap ada di all-checkpoints.csv.
+The generalization criterion requires test NLL to decrease strictly with capacity and
+validation NLL to be <=epoch 0 at every capacity, within **every** corpus. The cell table
+above reports random and uniform arms separately; per-corpus results are
+in policy-summary.json. No test evaluation occurred during tuning or at epoch 0.
+The fit objective, negative-gain fraction, and boundary flags are not selection criteria.
+Memorization and clipping must be read alongside p*, rather than as evidence of a causal
+clipping mechanism. Complete final data are in all-checkpoints.csv.
 
-## 6. Integritas, sumber daya dan reproduksi
+<a name="6-integritas-sumber-daya-dan-reproduksi"></a>
 
-Audit memeriksa 4826 file historis tanpa
-perubahan, 2070 checkpoint adaptasi dan tepat
-1350 evaluasi test yang dibekukan sebelumnya.
-Cold-model tensors sama lintas kondisi; pretrained model/loss awal sama lintas
-arm/config dalam tiap kondisi. Full tokens/targets/type masks, bobot, batch
-orders, source hashes, seleksi dan scalar metrics/p* direkonstruksi.
+## 6. Integrity, resources, and reproducibility
 
-Timer `perf_counter` mencatat 84.1 menit untuk pretraining,
-setup, evaluasi dan penyimpanan; tidak mencakup persiapan, audit dan laporan.
+The audit checked 4826 historical files without
+changes, 2070 adaptation checkpoints, and exactly
+1350 prespecified test evaluations.
+Cold-model tensors are identical across conditions; pretrained models/initial losses are identical across
+arms/configurations within each condition. Full tokens/targets/type masks, weights, batch
+orders, source hashes, selection, and scalar metrics/p* were reconstructed.
 
-Interval dari timestamp UTC awal hingga COMPLETE adalah **92.0 menit** (5518.475 detik), sedangkan timer mencatat 5048.784 detik. Selisihnya 469.690 detik; penyebab perbedaan kedua catatan waktu tidak ditetapkan dari bukti yang tersedia. Keduanya di bawah batas tiga jam. Nilai timer asli tetap disimpan tanpa perubahan; perbedaan ini tidak mengubah seleksi, hasil model, atau kontras statistik.
+The `perf_counter` timer recorded 84.1 minutes for pretraining,
+setup, evaluation, and serialization; excluding preparation, audit, and reporting.
 
-Puncak alokasi adaptasi 150.49 MiB;
-reserved 184.00 MiB.
-Memori ini pengukuran PyTorch, bukan seluruh driver/desktop. Batas tiga jam
-dan 468 run dipenuhi. Semua output lokal; tidak ada upload/publikasi.
+The interval from the initial UTC timestamp to COMPLETE was **92.0 minutes** (5518.475 seconds), whereas the timer recorded 5048.784 seconds. The difference was 469.690 seconds; the available evidence does not establish its cause. Both were below the three-hour limit. The original timer value is retained unchanged; this discrepancy does not alter selection, model results, or statistical contrasts.
 
-Raw: `work/runs/baseline-v05-20260929-01/`. Arsip ringkas memuat protokol, kode, data,
-per-sequence loss, assignments, keputusan tuning, audit, laporan dan gambar.
-Model binaries tetap lokal dengan hash di raw-manifest.json. Lingkungan ada
-di environment-lock.txt. Notebook tidak dijalankan; skrip menghasilkan hasil.
+Peak adaptation allocated memory was 150.49 MiB;
+reserved memory was 184.00 MiB.
+These are PyTorch measurements, not total driver/desktop usage. The three-hour
+and 468-run limits were met. At the time of this study, all outputs were local; no upload/publication occurred.
 
-## 7. Posisi ilmiah dan batas klaim
+Raw records: `work/runs/baseline-v05-20260929-01/`. The compact archive contains protocols, source, data,
+per-sequence losses, assignments, tuning decisions, audit, reports, and figures.
+Model binaries remain local, with hashes in raw-manifest.json. The environment is recorded
+in environment-lock.txt. The notebook was not executed; scripts produced the results.
 
-Hasil menguji intervensi objective pretraining dan ketergantungan gain pada
-referensinya dalam tugas sintetis. Tiga kapasitas tidak cukup untuk perpindahan
-antara dua puncak interior. Tiga corpus konfirmasi dan dua tuning pairs memberi
-bukti terbatas. Manipulasi dapat mengubah representasi, kemampuan shared, dan
-dinamika adaptasi sekaligus. Reference swapping membantu diagnosis aritmetis;
-tidak membuktikan mediasi kausal baseline loss.
+<a name="7-posisi-ilmiah-dan-batas-klaim"></a>
+
+## 7. Scientific positioning and claim boundaries
+
+The results test a pretraining-objective intervention and gain dependence on
+its reference in a synthetic task. Three capacities cannot establish movement
+between two interior peaks. Three confirmation corpora and two tuning pairs provide
+limited evidence. The intervention can change representations, shared-rule capability, and
+adaptation dynamics simultaneously. Reference swapping supports arithmetic diagnosis;
+it does not establish causal mediation by baseline loss.
 
 [Jane Street](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/)
-memotivasi metrik dan pertanyaan scaling, tetapi eksperimen ini bukan replikasi
-LM besar/private text mereka. Uniform-target regularization berkaitan dengan
-[Pereyra et al.](https://arxiv.org/abs/1701.06548); pengukuran kalibrasi formal
-berbeda dari NLL, seperti dibahas [Guo et al.](https://proceedings.mlr.press/v70/guo17a.html).
-LITERATURE_CHECK.md mencatat sumber primer yang diperiksa kembali. Tidak ada
-klaim novelty, kelayakan venue atau jaminan publikasi.
+motivates the metric and scaling question, but these experiments do not replicate
+its large-LM/private-text setting. Uniform-target regularization relates to
+[Pereyra et al.](https://arxiv.org/abs/1701.06548); formal calibration assessment
+differs from NLL, as discussed by [Guo et al.](https://proceedings.mlr.press/v70/guo17a.html).
+LITERATURE_CHECK.md records the primary sources rechecked. No
+novelty claim, venue-suitability claim, or publication guarantee is made.

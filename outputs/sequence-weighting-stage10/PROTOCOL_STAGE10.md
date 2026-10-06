@@ -33,7 +33,7 @@ fit quality, gain sign, objective size, boundary status, or visible peaks.
 
 | Cohort | Original run | Selection retained | Policy references |
 |---|---|---|---:|
-| S4_fixed30 | baseline-v05-20260929-01 | Original fixed30, g00, epoch30 | 54 |
+| S4_fixed30 | baseline-v05-20260929-01 | Original fixed 30, g00, epoch 30 | 54 |
 | S5_R | utility-v06-20260929-01 | Original primary R validation decision | 54 |
 | S6_P1_R through S6_P4_R | stability-v07-20260929-01 | Each original primary R panel decision | 216 |
 
@@ -46,10 +46,10 @@ model/weight seeds are nested within corpora, and Stage 6 panels reuse
 confirmation corpora and may select the same checkpoint. These counts are not
 independent experimental replications.
 
-Retain epoch0, negative-total, boundary, failed-fit and undefined cases. The
+Retain epoch 0, negative-total, boundary, failed-fit and undefined cases. The
 complete inventory includes seven numerical guard inputs; their counts are
 already recorded by Stage 9 and are not new Stage 10 outcomes. No uniform arm,
-Stage 4 epoch60 or secondary selection, or Stage 5–6 J policy is newly added.
+Stage 4 epoch 60 or secondary selection, or Stage 5–6 J policy is newly added.
 No model is trained, inferred, retuned, or selected in this diagnostic.
 
 ## Inputs and provenance
@@ -69,7 +69,7 @@ and metadata, alias array identity, original fit metadata, and float32 gain
 operation order. The Stage 9 provenance reconstruction is copied with its
 function AST checked against its immutable parent.
 
-The canonical epoch0 source uses its previously verified design weight vector
+The canonical epoch 0 source uses its previously verified design weight vector
 and identical initial/current losses. Preserve the original reason
 `no_adaptation`, separately from numerical `nonpositive_total_gain`. The
 historical numerical guard is constant weight range <1e-12 first, then total

@@ -11,7 +11,7 @@ Maximum 576 tuning +648 confirmation runs, 102 pretrained models, three-hour
 training ceiling checked against both clocks. Local Ubuntu WSL GPU only.
 
 Every measured per-sequence checkpoint and model tensor hash is retained.
-Only epoch30 adapted full binaries and all cold/pretrained binaries are saved.
+Only epoch 30 adapted full binaries and all cold/pretrained binaries are saved.
 Intermediate hashes cannot independently verify absent binaries. This storage
 policy is fixed before outcomes; no historical file is removed.
 

@@ -59,7 +59,7 @@ tuning pairs. Full-precision ties: earliest epoch, ascending LR, ascending WD.
 Candidates are epochs 1/3/10/30/60; epoch 0 is an improvement check, not a
 candidate. No p*, test, visible peak or memorization enters selection.
 
-F is fixed LR1e-4, WD.1, clip1. T is the fresh validation-selected configuration
+F is fixed LR 1e-4, WD .1, clip 1. T is the fresh validation-selected configuration
 for each condition/capacity; ET its selected epoch vector. Freeze all candidates,
 decisions and confirmation schedule before any confirmation training/test.
 Confirm both F and T configurations, deduplicating exact config equality;
@@ -75,15 +75,15 @@ No silent retry, seed replacement, search expansion or outcome-driven stopping.
 
 ## Frozen comparisons
 
-For random weights, K=p_middle−max(p_small,p_large). Primary pretraining
-comparison: K_U(F,C30)−K_M(F,C30), with all capacity p* and signed gains.
-Matched F,C60 and F at 1/3/10 are secondary trajectories. S comparisons are
+For random weights, K=p_middle−max(p_small, p_large). Primary pretraining
+comparison: K_U(F, C30)−K_M(F, C30), with all capacity p* and signed gains.
+Matched F, C60 and F at 1/3/10 are secondary trajectories. S comparisons are
 contextual secondary results. Native p* always anchors to that trajectory's
 own pretrained model. Uniform weights/nonpositive aggregate gain are undefined.
 
-For each S/M/U, report F,C30; T,C30; F,ET; T,ET. Decompose optimizer effect at
+For each S/M/U, report F, C30; T, C30; F, ET; T, ET. Decompose optimizer effect at
 C30, duration under F and T, and interaction (T_ET−T_C30)−(F_ET−F_C30).
-Compare U−M under their own T,ET only as a total selected-policy effect; it
+Compare U−M under their own T, ET only as a total selected-policy effect; it
 mixes pretrained states and adaptation settings. Never present it as matched
 adaptation. Report per-capacity p*, train/validation/test NLL, instance train
 accuracy, fit objective, negative-gain fraction and clipping for all cells.
@@ -91,13 +91,13 @@ accuracy, fit objective, negative-gain fraction and clipping for all cells.
 Baseline manipulation: report initial adaptation train/validation component
 losses/accuracies, pretraining histories, and U−M paired initial NLL changes.
 At every confirmation checkpoint compute original signed component gains,
-group+instance p*, oracle reference [0,log16,log16] p*, cumulative signed mass,
+group+instance p*, oracle reference [0, log16, log16] p*, cumulative signed mass,
 centered RMS and Gram cross terms as in frozen v0.4 diagnostics. Preserve all
 undefined and boundary fits. Total gain is mean component gains up to float32
-roundoff (<2e-6); cumulative identities tolerance1e-12. No loss clipping.
+roundoff (<2e-6); cumulative identities tolerance 1e-12. No loss clipping.
 
-Preregistered reference-only sensitivity at F,C30 and F,C60: cross initial loss
-reference A in {M,U} with trained trajectory B in {M,U}, same capacity/pair,
+Preregistered reference-only sensitivity at F, C30 and F, C60: cross initial loss
+reference A in {M, U} with trained trajectory B in {M, U}, same capacity/pair,
 fitting gain L_initial(A)−L_final(B). Original diagonal remains primary.
 For each K and per-capacity p* report reference change at M trajectory, trajectory
 change at M reference, and interaction; undefined values propagate through

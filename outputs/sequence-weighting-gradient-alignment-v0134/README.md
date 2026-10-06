@@ -5,8 +5,8 @@ REVIEW_REQUEST.md and SOURCE_PREPARATION_STATUS.md before independent source rev
 The original v0133 failure and completed v0133-r1 source/results remain unchanged.
 There are no v0134 data, gradients, evaluation results, numerical PASS or checkpoints.
 
-INPUT_BINDINGS.json enumerates all30 fixed states,15 shared existing dataset/weight
-containers and106 total checkpoint/metadata/provenance file bindings. Five corpora
+INPUT_BINDINGS.json enumerates all 30 fixed states, 15 shared existing dataset/weight
+containers and 106 total checkpoint/metadata/provenance file bindings. Five corpora
 are the replication units. Existing train/validation tensors, saved random instance
 weights and the first saved epoch's16 batches are reused exactly. Test tensors
 carried in old .pt containers are discarded from the research view; no test NLL
@@ -21,11 +21,11 @@ The audit independently computes full-population direct-token reductions and all
 strict seed/corpus aggregation and parameter immutability. It shares only input/
 environment guards, trusted forward source and PyTorch autograd with the diagnostic.
 
-Combined numerical cap600 seconds, including both phases, imports/input hashing,
-logs, failure evidence and cleanup. No separate second600-second audit allowance.
-Additional16MiB, work cap12MiB plus4MiB terminal reserve; scalar/provenance only.
-Count both preserved v0133 bundles/run/planning within512MiB with80MiB inherited
-reserves, and retain2GiB free. Time estimates2-6min plus1-3min are unmeasured;
+Combined numerical cap 600 seconds, including both phases, imports/input hashing,
+logs, failure evidence and cleanup. No separate second 600-second audit allowance.
+Additional 16 MiB, work cap 12 MiB plus 4 MiB terminal reserve; scalar/provenance only.
+Count both preserved v0133 bundles/run/planning within 512 MiB with 80 MiB inherited
+reserves, and retain 2 GiB free. Time estimates 2-6 min plus 1-3 min are unmeasured;
 no benchmark, fallback, extension or automatic retry is authorized.
 
 After a NEW independent exact-manifest review AND separate user numerical approval,
@@ -41,7 +41,7 @@ sha256sum -c SOURCE_MANIFEST.sha256
 cat reviews/SOURCE_REVIEW.json
 ```
 
-One bounded panel command, phase1 diagnostic followed by conditional phase2 audit:
+One bounded panel command, phase 1 diagnostic followed by conditional phase 2 audit:
 
 ```bash
 cd /mnt/d/codex/sequence-weighting-research
@@ -67,7 +67,7 @@ work/.venv-wsl/bin/python -B -u outputs/sequence-weighting-gradient-alignment-v0
 Expected successful outer print: `panel exit: 0`. Numerical audit alone is not
 acceptance. Require zero exits, bound source/review/input/completion/log hashes,
 child exits, outer group disappearance/wrapper reaping, zero cancellation,
-inclusive outer postwrite<600s and all storage/free-space checks. Audit numerical
+inclusive outer postwrite<600 s and all storage/free-space checks. Audit numerical
 PASS still needs independent result review; outcome direction is not an acceptance
 condition. FAILED.json, any admission or existing run/output blocks retry/resume.
 Preserve partial states, scalar progress journal, logs and uncertain cleanup evidence.
@@ -85,7 +85,7 @@ stdout/stderr, exit/postwrite; outer started, atomic pgid/pending, GO, optional
 cancel/failure, GNU time/logs, containment, exit/postwrite. The r1 outer containment
 body is preserved with v0134 identity. It owns cleanup after supervisor death;
 asynchronous GNU time and direct signal cleanup cover pre-wait/PID races. All
-registration/TERM/KILL/confirmation/reaping grace remains inside the600-second cap.
+registration/TERM/KILL/confirmation/reaping grace remains inside the 600-second cap.
 
 SOURCE_REVIEW_TEMPLATE.json is deliberately nonlaunchable. Only an independent
 reviewer may write reviews/SOURCE_REVIEW.json with PASS_V0134_SOURCE and exact
