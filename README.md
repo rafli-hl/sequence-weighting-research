@@ -12,6 +12,9 @@ This publication copy contains versioned source, mathematical fixtures, protocol
 - [Literature review](outputs/sequence-weighting-paper-track-v1/LITERATURE_REVIEW.md)
 - [Stage 1 report](outputs/sequence-weighting-pilot/results-mechanism-v02/REPORT.md)
 - [Stage 10 synthesis](outputs/sequence-weighting-stage10/SYNTHESIS_STAGE4_10.md)
+- [v0135 preconditioning result: numerical audit passed, scientific gates failed](outputs/sequence-weighting-preconditioning-v0135/results-fresh-preconditioning-v0135-20261005-01/RESULT_AND_DECISION_20261005.md)
+- [v0136 calibration result: CALIBRATION_FAILED; compensation confirmation blocked](outputs/sequence-weighting-compensation-calibration-v0136/results-fresh-compensation-calibration-v0136-20261005-01/RESULT_AND_DECISION_20261005.md)
+- [v0136 descriptive component and exponent accounting: tables and review limits](figure/INDEX.md#descriptive-component-and-exponent-accounting)
 - [Data availability and reproducibility limits](DATA_AVAILABILITY.md)
 - [Distribution changes](PUBLICATION_NOTES.md)
 

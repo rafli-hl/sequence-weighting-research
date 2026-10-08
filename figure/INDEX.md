@@ -9,8 +9,10 @@ PNG is ready to view; the two pilot SVGs provide vector versions. No native MATL
 
 The collection uses the latest saved final presentation for each study. It excludes
 36 fixture/testcase images and 24 superseded presentation images. Those originals,
-all raw results and failed/cancelled evidence remain where they were. v0135 is source
-only and has no results in this collection. SOURCE_FILES.csv lists every copied
+all raw results and failed/cancelled evidence remain where they were. The copied
+figure/data collection ends at v0134. Completed v0135 and v0136 results and
+descriptive tables are linked below from their published output folders; no new
+figure or data copy was added. SOURCE_FILES.csv lists every copied
 source path, file size and SHA-256; FIGURE_MANIFEST.json also records selection and
 study metadata. Copies are verified against originals, not regenerated.
 
@@ -356,6 +358,71 @@ Existing data files (copied, not recomputed):
 - [v0134__COHORT_SUMMARY.json](v0134__COHORT_SUMMARY.json)
 - [v0134__CORPUS_SUMMARY.json](v0134__CORPUS_SUMMARY.json)
 
+### v0135 — 2026-10-05
+
+Status: completed saved study; numerical audit passed, scientific gates failed.
+No saved figure is available in this distribution.
+
+The frozen preconditioning criterion failed: mean attenuation was +0.006226374
+nats per group-answer token, below the prespecified 0.01 threshold despite positive
+values in all five corpus means. The uniform utility margin also failed in all five
+corpora, although both uniform policies learned. Numerical acceptance does not
+rescue these scientific gates or establish zero preconditioning influence,
+equivalence or mediation.
+
+- [Result and decision](../outputs/sequence-weighting-preconditioning-v0135/results-fresh-preconditioning-v0135-20261005-01/RESULT_AND_DECISION_20261005.md)
+- [Corpus contrasts](../outputs/sequence-weighting-preconditioning-v0135/results-fresh-preconditioning-v0135-20261005-01/CORPUS_CONTRASTS.csv)
+- [Corpus summary and gates](../outputs/sequence-weighting-preconditioning-v0135/results-fresh-preconditioning-v0135-20261005-01/CORPUS_SUMMARY.json)
+
+### v0136 — 2026-10-05
+
+Status: completed saved calibration; **CALIBRATION_FAILED**.
+No saved figure is available in this distribution.
+
+The numerical audit passed, but the descriptive mean calibration exponent
+0.02403094735 is not eligible for inverse-exponent compensation. Profile
+identification and the minimum-exponent criterion each passed in 0/6 seeds;
+fit-RMS improvement over p = 0 passed in 0/3 corpora. Defined interior estimates,
+small absolute RMS and positive aggregate learning do not override those failures.
+Compensation confirmation is blocked and was not performed. The design has one
+synthetic capacity and three independent corpora with two nested seeds each.
+
+- [Result and decision](../outputs/sequence-weighting-compensation-calibration-v0136/results-fresh-compensation-calibration-v0136-20261005-01/RESULT_AND_DECISION_20261005.md)
+- [Calibration decision and gates](../outputs/sequence-weighting-compensation-calibration-v0136/results-fresh-compensation-calibration-v0136-20261005-01/CALIBRATION_DECISION.json)
+- [Recorded independent fits](../outputs/sequence-weighting-compensation-calibration-v0136/results-fresh-compensation-calibration-v0136-20261005-01/INDEPENDENT_FITS.json)
+
+#### Descriptive component and exponent accounting
+
+Status: exploratory existing-data accounting; both saved analysis manifests retain
+**pending independent review**. No saved figure is available in these bundles.
+
+The component tables retain signed gains and their responses to assigned weights.
+The exponent tables compare recorded fits with linear and objective-Taylor
+approximations and retain objective cross terms and local approximation points.
+The recorded-fit comparison is an author check, not independent acceptance of
+the decomposition. Some manifest-listed files, including the full descriptive
+reports, are unavailable in this distribution.
+
+Component-response tables:
+
+- [Component response summary](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-component-response-20261005-01/SUMMARY_COMPONENT_RESPONSE.csv)
+- [Corpus responses](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-component-response-20261005-01/CORPUS_RESPONSE.csv)
+- [Component-response manifest and review status](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-component-response-20261005-01/ANALYSIS_MANIFEST.json)
+
+Exponent-accounting tables and methods:
+
+- [Recorded-fit and approximation comparison](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/AUDITED_FIT_COMPARISON.csv)
+- [Corpus comparison](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/AUDITED_CORPUS_COMPARISON.csv)
+- [Objective cross terms](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/OBJECTIVE_CROSS_TERMS.csv)
+- [Local approximation points](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/LOCAL_APPROXIMATION_POINTS.csv)
+- [Recorded comparison methods and author-check status](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/AUDITED_COMPARISON_METHODS.json)
+- [Exponent-accounting manifest and review status](../outputs/sequence-weighting-compensation-calibration-v0136/exploratory-exponent-decomposition-20261005-01/ANALYSIS_MANIFEST.json)
+
+These descriptive component responses and same-data approximations are not
+independent predictions, an identified calibration exponent or causal mediation.
+They do not rescue the failed calibration or resolve the large-scale rise/fall
+mechanism. No new plot or numerical result is introduced by this catalogue.
+
 ## Latest findings without saved plots
 
 - **v0130:** the frozen width 128 no-clip validation criterion failed; the canonical
@@ -372,6 +439,13 @@ Existing data files (copied, not recomputed):
   dispersion at all 30 states, but total weighted-gradient variance needs covariance.
   These existing-state associations are not AdamW updates or mediation. Both saved
   corpus and cohort summaries are included; no figure has yet been generated.
+- **v0135:** numerical acceptance accompanied failed practical attenuation and
+  uniform utility gates. The completed decision and existing corpus tables are
+  linked above; no plot is available in the published result bundle.
+- **v0136:** calibration failed identification, minimum-exponent, seed-stability
+  and fit-improvement gates. Compensation confirmation remains blocked. Existing
+  descriptive component/exponent tables are linked above with their pending-review
+  status; they do not establish identification or mediation.
 
 v0129 has source/protocol files but no saved completed result bundle or figure was
 located; it is not presented as a completed measured study. The original failed
@@ -387,4 +461,6 @@ properties on simulations or preserved gains, not independent training replicati
 Do not count nested model/weight seeds as independent corpora. No significance,
 universal mechanism, large-LM replication, peak shift or mediation follows from
 this figure collection. Negative, null, mixed and guarded outcomes are preserved
-in the selected reports and accompanying tables. No v0135 result is claimed.
+in the selected reports and accompanying tables. The completed v0135 and v0136
+records preserve failed scientific gates; their numerical audits and descriptive
+tables do not establish a successful compensation method.
