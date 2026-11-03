@@ -17,6 +17,7 @@ This publication copy contains versioned source, mathematical fixtures, protocol
 - [v0136 descriptive component and exponent accounting: tables and review limits](figure/INDEX.md#descriptive-component-and-exponent-accounting)
 - [Data availability and reproducibility limits](DATA_AVAILABILITY.md)
 - [Distribution changes](PUBLICATION_NOTES.md)
+- [Pre-registration, 3 Nov 2026: peak confirmation on fresh WikiText-103 draws (published before its analysis)](preregistration/natural-text-peak-confirmation-20261103/README.md)
 
 The measured record includes completed pilot and subsequent synthetic/generalization/estimator studies. A synthetic middle-capacity peak alone does not establish an exact large-language-model replication, utility improvement, causal mechanism, or an interior-to-interior peak shift. Positive, negative, failed, and undefined outcomes remain represented in saved summaries. Later prospective source packages retain their original status statements; inclusion does not mean they ran. Active capacity-reader revisions are excluded.
 
