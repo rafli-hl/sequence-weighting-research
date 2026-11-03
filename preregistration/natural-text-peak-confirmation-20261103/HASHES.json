@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "published": "2026-11-03, before the sealed analysis of Runs C1 and C2 was approved or run",
+  "sealed_source_subject_sha256": "0d9e8f9adee4544bd24550f43a09c309e935ec6816a90769e04625e764711e28",
+  "sealed_source_folder": "sealed-source/ (SOURCE_SUBJECT.json lists every file with its sha256)",
+  "activation_builder_sha256": "026709dcc1fce8daa62c79a0734713c4c1588defc80831e4a65a6f2ae6219b89",
+  "real_engine_check_script_sha256": "2edc0a8216ae23c2dc03e2bc89c0da7e551fc4a51d24259a578971fe78d0c5b2",
+  "real_engine_check_receipts_sha256": {
+    "INPUTS_CHECK.json": "e9b0e0939eaebc8f14a071ed3102b616a5f88b19f9879646a1adafe7aa31e0f8",
+    "SMOKE_CHECK.json": "4f323ee245355a9d7b9529549fb0d890621284dfc365c66451120450e57f2fc7"
+  },
+  "seed_registry_sha256": "0e8b05285a6ad98a32a2041f0907e423c9c8d85fa6408e6a90be9acfb8c326dd",
+  "seed_policy_sha256": "c102baf77b2a49802697b56dca5a300ad8d4d357401ca24c1897188f07bd79ac",
+  "partition_sha256": "3ba24bff0c38612d7d1751505edf8c5e02e9a98e46ff24165195c1199571ab85",
+  "corpus_manifest_sha256": "be911db7a63238a205fc74c5732f78431befd61ba7d26af48202a31163df39ea",
+  "common_rate_selection_sha256": "fa760ba0d693518ba1b98a40f366899ebec3a013ff03863284a3ac2c32b5ad01",
+  "run_terminals_sha256": {
+    "C1 (c01-c03), COMPLETE": "77988d64f5b0e97a75789270202a40f99b9ee0baf4714b847d31777c6149d360",
+    "C2 (c04-c06), COMPLETE": "d7dee4370e03bdafab3fcddec9d47484804da32eecc3358f85b64a86fd7cd205"
+  },
+  "not_included": "run outputs, per-sequence arrays, p* values, gains, losses, model states, approval receipts and owner records"
+}

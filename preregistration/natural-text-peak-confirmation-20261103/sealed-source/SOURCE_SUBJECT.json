@@ -1,0 +1,213 @@
+{
+  "bound_records": {
+    "reports/natural-text-ladder-owner-decisions-20261103-03/OWNER_DECISIONS.md": "1fb21bc1f372fcbeacceae2ffdf1f19e60bf5b424945d5da54e374b8b2789e56",
+    "reports/natural-text-ladder-owner-decisions-20261103-04/OWNER_DECISIONS.md": "1da960aef3f29d5bd81610b7075426999a8b8fd4e71f83c1e82daaffe4541ef8",
+    "reports/natural-text-peak-confirmation-draft-20261103-01/CONFIRMATION_PLANNING.json": "dd152f2efc983184069db3ca2e73b3a7b209c2029e427350fb83b4609d7d2e06",
+    "reports/natural-text-peak-seed-package-20261103-01/FRESH_POOL_CHECK.json": "4646654b7190dbef5c47af071337510330543a945fbdb13a27277b190b641c9c",
+    "reports/natural-text-peak-seed-package-20261103-01/SPLIT_BUDGET.json": "0184a7e301c973085d1a0472273f79a346f1f1dd168c0daa493b08780e8dca92",
+    "reports/natural-text-peak-seed-registry-20261103-01/DISCLOSURE_FIGURES.md": "4b9daba98751a6871db63e03b39358e7dadd71fe47300a94c3f0dcf04d6e3667",
+    "reports/natural-text-peak-seed-registry-20261103-01/REGISTRY.json": "0e8b05285a6ad98a32a2041f0907e423c9c8d85fa6408e6a90be9acfb8c326dd",
+    "reports/natural-text-peak-seed-registry-20261103-01/REGISTRY_AND_PARTITION_CHECK.json": "872326d3a96a8cca7ff8a19d04726b92c1e73458035f817f58b315530ebdcd81",
+    "reports/natural-text-peak-seed-registry-20261103-01/SEED_REGISTRY_POLICY.md": "c102baf77b2a49802697b56dca5a300ad8d4d357401ca24c1897188f07bd79ac",
+    "work/runs/natural-text-fewepoch-a-20261101-01/LR_SELECTION.json": "fa760ba0d693518ba1b98a40f366899ebec3a013ff03863284a3ac2c32b5ad01"
+  },
+  "byte_copies_of_fewepoch_source": {
+    "GPU_CHECK.json": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "ORIGINAL_ENVIRONMENT.json": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "fewepoch_analysis.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "fewepoch_registry.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "fewepoch_worker.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "gpu_check.ps1": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "power_gate.ps1": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "text_analysis.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "text_engine.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "text_framework_setup.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "text_model.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "text_registry.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "text_worker.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+    "vendor/core.py": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a"
+  },
+  "byte_copies_of_registry_source": {
+    "a1_download.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "a2_rows.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "acquire_common.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "acquire_plan.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "fewepoch_data.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "fewepoch_plan.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "peak_data.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "peak_registry.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "text_data.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "text_plan.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34",
+    "wt103_corpus.py": "a58795a462a53289eeb1afbbde612558ae63063aa9c2a3968ff3d4e2dccf0b34"
+  },
+  "disabled_authorization_sha256": "3c9d2ab0c8cea533c6a6ea7b5472740fb69fc34a78c48176d451b67789d19ea1",
+  "files": [
+    {
+      "bytes": 842,
+      "path": "GPU_CHECK.json",
+      "sha256": "f492d8390c167b10b27c02a825589685d112ce4770cef189f083b2452d031254"
+    },
+    {
+      "bytes": 1402,
+      "path": "ORIGINAL_ENVIRONMENT.json",
+      "sha256": "1135b25931539053ee092fbe8160b04b389004d0551d814abd29823be76659fa"
+    },
+    {
+      "bytes": 12433,
+      "path": "PEAK_OWNER_RUN.ps1",
+      "sha256": "a285c39e58eac1a8802f104a9ea2c3e3e648d7ffef7e1db9cc6e7f7b0a09a765"
+    },
+    {
+      "bytes": 13112,
+      "path": "PROTOCOL.md",
+      "sha256": "a0a761ec7ce4a03159dde957fcf672965b5af1f20bd60f6098562d901c73c4a0"
+    },
+    {
+      "bytes": 1486,
+      "path": "README.md",
+      "sha256": "dc54678ec0c28da6ac770eb0c3d2bb8ebceb36ef10fa115027e62e653d8d6fd8"
+    },
+    {
+      "bytes": 7380,
+      "path": "a1_download.py",
+      "sha256": "26823ddd98054ef989ca452228fe1d3b8ca36791cce52283d397bc3a9580dd90"
+    },
+    {
+      "bytes": 6850,
+      "path": "a2_rows.py",
+      "sha256": "e6bb7d6e64c61d68bd7729c9508d9c0d0d5a6b69ebc9362c50447f80215bc8e1"
+    },
+    {
+      "bytes": 3763,
+      "path": "acquire_common.py",
+      "sha256": "aebc39d47460591cb49707b3f04ab3bdb43f039258a80526000dc088ee933e90"
+    },
+    {
+      "bytes": 4180,
+      "path": "acquire_plan.py",
+      "sha256": "5752be05713ca2fb7839497218151be04e1bb400adce1891c4967932793acbff"
+    },
+    {
+      "bytes": 27977,
+      "path": "fewepoch_analysis.py",
+      "sha256": "fab5df60ab9d0acb66de225d3e04eb23b3ad442becaa5562d6a1d421ba63402b"
+    },
+    {
+      "bytes": 3039,
+      "path": "fewepoch_data.py",
+      "sha256": "ac7ef04d9e80421fe6416c7bb217c07cafc2afc0df6c8d95fe572f0e087f245d"
+    },
+    {
+      "bytes": 6907,
+      "path": "fewepoch_plan.py",
+      "sha256": "1b943a554c396570277f186f515369e86286f37eb8cc010c684c689027d52e34"
+    },
+    {
+      "bytes": 14128,
+      "path": "fewepoch_registry.py",
+      "sha256": "6ba3314a89e3a63fa6e3abb0a7fab7b2d429820260eb7121533ee7c46d89f557"
+    },
+    {
+      "bytes": 34875,
+      "path": "fewepoch_worker.py",
+      "sha256": "b0f71fbc45df405aa74678ef9a9ca50120645d2fbe964119ae3024cf0fd198a1"
+    },
+    {
+      "bytes": 9015,
+      "path": "gpu_check.ps1",
+      "sha256": "e51669cb4f18dec918ce9db947a8c8b223bb203a2773ba9c448542294d99840f"
+    },
+    {
+      "bytes": 21715,
+      "path": "peak_analysis.py",
+      "sha256": "3b6e1f1c0029ba427546f4ce25f42b6babbf78142ff26002234efd7052ccf633"
+    },
+    {
+      "bytes": 5705,
+      "path": "peak_data.py",
+      "sha256": "7557f326609bbd398663e6c97ca170588b89dc39fc924208b31ea8ebfd3c07c7"
+    },
+    {
+      "bytes": 4152,
+      "path": "peak_plan.py",
+      "sha256": "36289b975aa83302116a89ea2f1b71f9d5b198ad5ebb8274085c2ffab39dcc9b"
+    },
+    {
+      "bytes": 15398,
+      "path": "peak_registry.py",
+      "sha256": "68ef5e0013a0e842ab0ed093bacf2852b7d5421b56af4bae5e70b560cb9abd57"
+    },
+    {
+      "bytes": 21840,
+      "path": "peak_worker.py",
+      "sha256": "7448ae584ef82f8cb1c9eb79d418e8f4ab14f1145f0333f8bfc2a7bbd32cb1a3"
+    },
+    {
+      "bytes": 8515,
+      "path": "power_gate.ps1",
+      "sha256": "53b882b297392f633ce9b9d19670d677e25ff39aba43af04242cc46d4ddee971"
+    },
+    {
+      "bytes": 33519,
+      "path": "text_analysis.py",
+      "sha256": "f53cf877b57ea424f49dffd13212bfecc713d0019c75ebf7c3d2179a9645f07f"
+    },
+    {
+      "bytes": 5606,
+      "path": "text_data.py",
+      "sha256": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d"
+    },
+    {
+      "bytes": 2607,
+      "path": "text_engine.py",
+      "sha256": "c94b60af0577141da2693724369282e40aaada42ef6fed1dc1156caf0eb3c722"
+    },
+    {
+      "bytes": 1888,
+      "path": "text_framework_setup.py",
+      "sha256": "4a502d067022e1d943943e0a8b8469d895d158f5e46c18f49f99b6744ac0605f"
+    },
+    {
+      "bytes": 2004,
+      "path": "text_model.py",
+      "sha256": "619d83285dab6008f1f11381173b69ef745f62bc660796e5f2d54c196a01ba9e"
+    },
+    {
+      "bytes": 5786,
+      "path": "text_plan.py",
+      "sha256": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343"
+    },
+    {
+      "bytes": 11833,
+      "path": "text_registry.py",
+      "sha256": "1ea87bb7c4bf328b084d3622117674d3753dfb965e90f6143ec280631be41464"
+    },
+    {
+      "bytes": 43215,
+      "path": "text_worker.py",
+      "sha256": "4a1ef8e847ae907273778d76b9214050b9c179964aa5f0567f19c5d79427cf37"
+    },
+    {
+      "bytes": 3657,
+      "path": "vendor/core.py",
+      "sha256": "f9320bae147f01bc8da1747a85f7ee45c7797da2e977147775a1089e30285a0c"
+    },
+    {
+      "bytes": 15289,
+      "path": "wt103_corpus.py",
+      "sha256": "9c76eec785d54e5044fe5ffaa68f809b1806b21039b6f9879fd136ad6da174d1"
+    }
+  ],
+  "kind": "peak confirmation source (WikiText-103, widths 384-768, 3 epochs; INTERIOR_PEAK at 3e-4, control at 1e-4)",
+  "new_files": [
+    "peak_plan.py",
+    "peak_worker.py",
+    "peak_analysis.py",
+    "PEAK_OWNER_RUN.ps1",
+    "PROTOCOL.md",
+    "README.md"
+  ],
+  "runtime_authorized": false,
+  "schema": 1,
+  "status": "SEALED_DISABLED"
+}
