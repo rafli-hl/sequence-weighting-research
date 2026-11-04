@@ -1,0 +1,404 @@
+{
+  "source": "Windows file mtimes (one-second-or-better resolution); seconds are wall intervals between consecutive writes",
+  "files": {
+    "run_b_TERMINAL.json": "ab01d898c6a2888c2a9672346b7990ca99057c51030a62005282257fb90506e4",
+    "run_b_BENCHMARK.json": "2203f7b5ada64d1ecac2945d5897cbab2cf77da4a450940e6c2c69d1c3db8e20",
+    "OWNER_EXIT_RECEIPT.json": "62ff661bf9a19d47b14bfd1f4ddf1d8f0d36ad6de9bb452a0ff7ca2cd56cdfc1"
+  },
+  "run_a_t00": [
+    {
+      "kind": "pretrain",
+      "width": 64,
+      "end": "2026-10-28T21:07:25",
+      "seconds": 9.3
+    },
+    {
+      "kind": "pretrain",
+      "width": 96,
+      "end": "2026-10-28T21:07:35",
+      "seconds": 9.7
+    },
+    {
+      "kind": "pretrain",
+      "width": 128,
+      "end": "2026-10-28T21:07:46",
+      "seconds": 11.0
+    },
+    {
+      "kind": "pretrain",
+      "width": 192,
+      "end": "2026-10-28T21:08:00",
+      "seconds": 14.6
+    },
+    {
+      "kind": "pretrain",
+      "width": 256,
+      "end": "2026-10-28T21:08:20",
+      "seconds": 19.5
+    },
+    {
+      "kind": "pretrain",
+      "width": 384,
+      "end": "2026-10-28T21:08:57",
+      "seconds": 37.3
+    },
+    {
+      "kind": "adapt",
+      "width": 64,
+      "tag": "lr3e-05",
+      "end": "2026-10-28T21:10:04",
+      "seconds": 67.0
+    },
+    {
+      "kind": "adapt",
+      "width": 64,
+      "tag": "lr1e-04",
+      "end": "2026-10-28T21:11:10",
+      "seconds": 65.8
+    },
+    {
+      "kind": "adapt",
+      "width": 64,
+      "tag": "lr3e-04",
+      "end": "2026-10-28T21:12:13",
+      "seconds": 62.8
+    },
+    {
+      "kind": "adapt",
+      "width": 96,
+      "tag": "lr3e-05",
+      "end": "2026-10-28T21:13:20",
+      "seconds": 67.9
+    },
+    {
+      "kind": "adapt",
+      "width": 96,
+      "tag": "lr1e-04",
+      "end": "2026-10-28T21:14:30",
+      "seconds": 69.4
+    },
+    {
+      "kind": "adapt",
+      "width": 96,
+      "tag": "lr3e-04",
+      "end": "2026-10-28T21:15:41",
+      "seconds": 70.9
+    },
+    {
+      "kind": "adapt",
+      "width": 128,
+      "tag": "lr3e-05",
+      "end": "2026-10-28T21:16:55",
+      "seconds": 74.2
+    },
+    {
+      "kind": "adapt",
+      "width": 128,
+      "tag": "lr1e-04",
+      "end": "2026-10-28T21:18:09",
+      "seconds": 74.2
+    },
+    {
+      "kind": "adapt",
+      "width": 128,
+      "tag": "lr3e-04",
+      "end": "2026-10-28T21:19:19",
+      "seconds": 70.2
+    },
+    {
+      "kind": "adapt",
+      "width": 192,
+      "tag": "lr3e-05",
+      "end": "2026-10-28T21:20:54",
+      "seconds": 94.2
+    },
+    {
+      "kind": "adapt",
+      "width": 192,
+      "tag": "lr1e-04",
+      "end": "2026-10-28T21:22:30",
+      "seconds": 96.2
+    },
+    {
+      "kind": "adapt",
+      "width": 192,
+      "tag": "lr3e-04",
+      "end": "2026-10-28T21:24:03",
+      "seconds": 93.2
+    },
+    {
+      "kind": "adapt",
+      "width": 256,
+      "tag": "lr3e-05",
+      "end": "2026-10-28T21:25:54",
+      "seconds": 110.5
+    },
+    {
+      "kind": "adapt",
+      "width": 256,
+      "tag": "lr1e-04",
+      "end": "2026-10-28T21:27:50",
+      "seconds": 116.5
+    },
+    {
+      "kind": "adapt",
+      "width": 256,
+      "tag": "lr3e-04",
+      "end": "2026-10-28T21:29:45",
+      "seconds": 115.1
+    },
+    {
+      "kind": "adapt",
+      "width": 384,
+      "tag": "lr3e-05",
+      "end": "2026-10-28T21:32:43",
+      "seconds": 177.6
+    },
+    {
+      "kind": "adapt",
+      "width": 384,
+      "tag": "lr1e-04",
+      "end": "2026-10-28T21:35:42",
+      "seconds": 178.9
+    },
+    {
+      "kind": "adapt",
+      "width": 384,
+      "tag": "lr3e-04",
+      "end": "2026-10-28T21:38:40",
+      "seconds": 178.7
+    }
+  ],
+  "run_b_d01": [
+    {
+      "kind": "pretrain",
+      "width": 64,
+      "end": "2026-10-28T22:13:23",
+      "seconds": 9.8
+    },
+    {
+      "kind": "pretrain",
+      "width": 96,
+      "end": "2026-10-28T22:13:33",
+      "seconds": 10.0
+    },
+    {
+      "kind": "pretrain",
+      "width": 128,
+      "end": "2026-10-28T22:13:43",
+      "seconds": 10.7
+    },
+    {
+      "kind": "pretrain",
+      "width": 192,
+      "end": "2026-10-28T22:13:57",
+      "seconds": 13.9
+    },
+    {
+      "kind": "pretrain",
+      "width": 256,
+      "end": "2026-10-28T22:14:14",
+      "seconds": 17.3
+    },
+    {
+      "kind": "pretrain",
+      "width": 384,
+      "end": "2026-10-28T22:14:43",
+      "seconds": 28.5
+    },
+    {
+      "kind": "adapt",
+      "width": 64,
+      "tag": "selected",
+      "end": "2026-10-28T22:15:46",
+      "seconds": 63.4
+    },
+    {
+      "kind": "adapt",
+      "width": 96,
+      "tag": "selected",
+      "end": "2026-10-28T22:16:52",
+      "seconds": 65.9
+    },
+    {
+      "kind": "adapt",
+      "width": 128,
+      "tag": "selected",
+      "end": "2026-10-28T22:18:03",
+      "seconds": 70.7
+    },
+    {
+      "kind": "adapt",
+      "width": 192,
+      "tag": "selected",
+      "end": "2026-10-28T22:19:34",
+      "seconds": 90.9
+    },
+    {
+      "kind": "adapt",
+      "width": 256,
+      "tag": "selected",
+      "end": "2026-10-28T22:21:38",
+      "seconds": 124.3
+    },
+    {
+      "kind": "adapt",
+      "width": 384,
+      "tag": "selected",
+      "end": "2026-10-28T22:25:24",
+      "seconds": 225.5
+    }
+  ],
+  "run_b_d02": [
+    {
+      "kind": "pretrain",
+      "width": 64,
+      "end": "2026-10-28T22:25:39",
+      "seconds": 13.5
+    },
+    {
+      "kind": "pretrain",
+      "width": 96,
+      "end": "2026-10-28T22:25:55",
+      "seconds": 16.0
+    },
+    {
+      "kind": "pretrain",
+      "width": 128,
+      "end": "2026-10-28T22:26:15",
+      "seconds": 19.9
+    },
+    {
+      "kind": "pretrain",
+      "width": 192,
+      "end": "2026-10-28T22:26:40",
+      "seconds": 24.8
+    },
+    {
+      "kind": "pretrain",
+      "width": 256,
+      "end": "2026-10-28T22:27:05",
+      "seconds": 25.4
+    },
+    {
+      "kind": "pretrain",
+      "width": 384,
+      "end": "2026-10-28T22:27:55",
+      "seconds": 49.5
+    },
+    {
+      "kind": "adapt",
+      "width": 64,
+      "tag": "selected",
+      "end": "2026-10-28T22:29:39",
+      "seconds": 104.2
+    },
+    {
+      "kind": "adapt",
+      "width": 96,
+      "tag": "selected",
+      "end": "2026-10-28T22:31:33",
+      "seconds": 114.6
+    },
+    {
+      "kind": "adapt",
+      "width": 128,
+      "tag": "selected",
+      "end": "2026-10-28T22:33:39",
+      "seconds": 125.9
+    },
+    {
+      "kind": "adapt",
+      "width": 192,
+      "tag": "selected",
+      "end": "2026-10-28T22:36:20",
+      "seconds": 160.3
+    },
+    {
+      "kind": "adapt",
+      "width": 256,
+      "tag": "selected",
+      "end": "2026-10-28T22:39:32",
+      "seconds": 192.8
+    }
+  ],
+  "run_b_d02_in_progress": {
+    "width": 384,
+    "started_after": "2026-10-28T22:39:32",
+    "terminal_written": "2026-10-28T22:43:44",
+    "seconds_without_finishing": 252.0
+  },
+  "run_b_operational": {
+    "status": "FAILED",
+    "error": {
+      "message": "Original deadline exhausted",
+      "type": "TimeoutError"
+    },
+    "active_stage": "d02",
+    "elapsed_seconds": 1777.9102045,
+    "completed_stages": [
+      {
+        "stage": "d01",
+        "status": "COMPLETE",
+        "seconds": 671.9094491349999
+      }
+    ],
+    "benchmark_projected_stage_seconds": 708.7102605065412,
+    "stage_work_cap_seconds": 1006,
+    "cap_formula": "ceil(1.25*projected+120) <= 2010 s; 10*(cap+60)+900 <= 21600 s",
+    "peaks": {
+      "cuda_allocated": 498439680,
+      "cuda_reserved": 731906048,
+      "device_used_sampled": 1597820108,
+      "worker_peak_rss": 1562259456
+    },
+    "inventory": {
+      "bytes": 457550650,
+      "files": 71
+    },
+    "owner_receipt": {
+      "status": "FAILED",
+      "exit_code": 1,
+      "elapsed_seconds": 1958.9363826,
+      "terminal_sha256": "ab01d898c6a2888c2a9672346b7990ca99057c51030a62005282257fb90506e4"
+    }
+  },
+  "adapt_seconds_by_width": {
+    "64": {
+      "run_a_mean_of_3": 65.2,
+      "run_b_d01": 63.4,
+      "run_b_d02": 104.2,
+      "d02_over_d01": 1.64
+    },
+    "96": {
+      "run_a_mean_of_3": 69.4,
+      "run_b_d01": 65.9,
+      "run_b_d02": 114.6,
+      "d02_over_d01": 1.74
+    },
+    "128": {
+      "run_a_mean_of_3": 72.9,
+      "run_b_d01": 70.7,
+      "run_b_d02": 125.9,
+      "d02_over_d01": 1.78
+    },
+    "192": {
+      "run_a_mean_of_3": 94.5,
+      "run_b_d01": 90.9,
+      "run_b_d02": 160.3,
+      "d02_over_d01": 1.76
+    },
+    "256": {
+      "run_a_mean_of_3": 114.0,
+      "run_b_d01": 124.3,
+      "run_b_d02": 192.8,
+      "d02_over_d01": 1.55
+    },
+    "384": {
+      "run_a_mean_of_3": 178.4,
+      "run_b_d01": 225.5,
+      "run_b_d02": null,
+      "d02_over_d01": null
+    }
+  }
+}

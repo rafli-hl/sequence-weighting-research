@@ -1,0 +1,247 @@
+{
+  "status": "PLANNING_ARITHMETIC_NOT_A_MEASUREMENT",
+  "anchors": {
+    "measured_benchmark": {
+      "128/4": {
+        "seconds_per_update": 0.018401381937500183,
+        "effective_TFLOPs": 0.3422218103721123,
+        "device_used_sampled_GB": 0.9602859
+      },
+      "192/4": {
+        "seconds_per_update": 0.02372483940624992,
+        "effective_TFLOPs": 0.5890821615558874,
+        "device_used_sampled_GB": 1.006423244
+      },
+      "256/4": {
+        "seconds_per_update": 0.028078925249999998,
+        "effective_TFLOPs": 0.8787481636249593,
+        "device_used_sampled_GB": 1.056754892
+      },
+      "32/4": {
+        "seconds_per_update": 0.015540405312500116,
+        "effective_TFLOPs": 0.028434038309449447,
+        "device_used_sampled_GB": 0.901565644
+      },
+      "384/4": {
+        "seconds_per_update": 0.04616235659375034,
+        "effective_TFLOPs": 1.1942815174098769,
+        "device_used_sampled_GB": 1.165806796
+      },
+      "48/4": {
+        "seconds_per_update": 0.024784764562499895,
+        "effective_TFLOPs": 0.038165794862188095,
+        "device_used_sampled_GB": 0.9078571
+      },
+      "64/4": {
+        "seconds_per_update": 0.01697509131250019,
+        "effective_TFLOPs": 0.09653719381133855,
+        "device_used_sampled_GB": 0.926731468
+      },
+      "96/4": {
+        "seconds_per_update": 0.020793970250000182,
+        "effective_TFLOPs": 0.17267282567166164,
+        "device_used_sampled_GB": 0.94980014
+      }
+    },
+    "per_update_floor_seconds": 0.015540405312500116,
+    "planning_TFLOPs": 1.1942815174098769,
+    "note": "Measured at batch 32 x 40 tokens, FP32 (TF32 off); larger token batches are expected to be more efficient but that is unmeasured."
+  },
+  "wikitext2_train": {
+    "rows": 36718,
+    "chars": 10892990,
+    "words": 2051910,
+    "articles_approx": 629,
+    "tokens_estimate": [
+      2359696.5,
+      2770078.5
+    ],
+    "disjoint_draws_at_N": {
+      "1024": [
+        18,
+        21
+      ],
+      "1536": [
+        12,
+        14
+      ],
+      "2048": [
+        9,
+        10
+      ]
+    }
+  },
+  "design": {
+    "layers": 4,
+    "heads": 4,
+    "seq_len": 128,
+    "batch": 32,
+    "vocab": 4096,
+    "n_train": 1536,
+    "n_validation": 512,
+    "epochs": 32,
+    "readouts": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "updates_per_trajectory": 1536
+  },
+  "per_width": {
+    "64": {
+      "params": {
+        "non_embedding": 199936,
+        "embedding": 270336,
+        "output": 262144
+      },
+      "train_flops_per_token": 3145728,
+      "total_flops": 21440476741632.0,
+      "seconds": {
+        "optimistic_2x": 32.84637025172913,
+        "planning": 41.822677943458075,
+        "pessimistic_half": 59.77529332691598
+      },
+      "memory_GB_batch32": 0.523423744,
+      "memory_GB_batch16": 0.2675712
+    },
+    "96": {
+      "params": {
+        "non_embedding": 447360,
+        "embedding": 405504,
+        "output": 393216
+      },
+      "train_flops_per_token": 5603328,
+      "total_flops": 38190849196032.0,
+      "seconds": {
+        "optimistic_2x": 39.85911063589237,
+        "planning": 55.84815871178456,
+        "pessimistic_half": 87.82625486356895
+      },
+      "memory_GB_batch32": 0.602945536,
+      "memory_GB_batch16": 0.311441408
+    },
+    "128": {
+      "params": {
+        "non_embedding": 793088,
+        "embedding": 540672,
+        "output": 524288
+      },
+      "train_flops_per_token": 8650752,
+      "total_flops": 58961311039488.0,
+      "seconds": {
+        "optimistic_2x": 48.554908712254786,
+        "planning": 73.2397548645094,
+        "pessimistic_half": 122.60944716901862
+      },
+      "memory_GB_batch32": 0.684040192,
+      "memory_GB_batch16": 0.35688448
+    },
+    "192": {
+      "params": {
+        "non_embedding": 1779456,
+        "embedding": 811008,
+        "output": 786432
+      },
+      "train_flops_per_token": 16515072,
+      "total_flops": 112562502893568.0,
+      "seconds": {
+        "optimistic_2x": 70.99567794157716,
+        "planning": 118.12129332315415,
+        "pessimistic_half": 212.37252408630812
+      },
+      "memory_GB_batch32": 0.850948096,
+      "memory_GB_batch16": 0.452489216
+    },
+    "256": {
+      "params": {
+        "non_embedding": 3159040,
+        "embedding": 1081344,
+        "output": 1048576
+      },
+      "train_flops_per_token": 26738688,
+      "total_flops": 182244052303872.0,
+      "seconds": {
+        "optimistic_2x": 100.16867793969625,
+        "planning": 176.46729331939233,
+        "pessimistic_half": 329.0645240787845
+      },
+      "memory_GB_batch32": 1.024147456,
+      "memory_GB_batch16": 0.554385408
+    },
+    "384": {
+      "params": {
+        "non_embedding": 7097856,
+        "embedding": 1622016,
+        "output": 1572864
+      },
+      "train_flops_per_token": 54263808,
+      "total_flops": 369848223793152.0,
+      "seconds": {
+        "optimistic_2x": 178.71137024232456,
+        "planning": 333.55267792464895,
+        "pessimistic_half": 643.2352932892977
+      },
+      "memory_GB_batch32": 1.389420544,
+      "memory_GB_batch16": 0.77705216
+    },
+    "512": {
+      "params": {
+        "non_embedding": 12609536,
+        "embedding": 2162688,
+        "output": 2097152
+      },
+      "train_flops_per_token": 91226112,
+      "total_flops": 621773825507328.0,
+      "seconds": {
+        "optimistic_2x": 284.18298562013973,
+        "planning": 544.4959086802793,
+        "pessimistic_half": 1065.1217548005584
+      },
+      "memory_GB_batch32": 1.779859456,
+      "memory_GB_batch16": 1.024884736
+    },
+    "768": {
+      "params": {
+        "non_embedding": 28351488,
+        "embedding": 3244032,
+        "output": 3145728
+      },
+      "train_flops_per_token": 193462272,
+      "total_flops": 1318589319610368.0,
+      "seconds": {
+        "optimistic_2x": 575.9129856013305,
+        "planning": 1127.955908642661,
+        "pessimistic_half": 2232.041754725322
+      },
+      "memory_GB_batch32": 2.636234752,
+      "memory_GB_batch16": 1.59604736
+    }
+  },
+  "totals_hours": {
+    "R_only_7_widths_64_512_10_draws": {
+      "optimistic_2x": 2.098108614843372,
+      "planning": 3.7320771243534074,
+      "pessimistic_half": 7.000014143373479
+    },
+    "R_and_U_7_widths_10_draws": {
+      "optimistic_2x": 4.196217229686744,
+      "planning": 7.464154248706815,
+      "pessimistic_half": 14.000028286746957
+    },
+    "R_only_8_widths_64_768_10_draws": {
+      "optimistic_2x": 3.697866908180402,
+      "planning": 6.865287981694132,
+      "pessimistic_half": 13.200130128721593
+    },
+    "R_only_6_widths_64_384_10_draws": {
+      "optimistic_2x": 1.3087114325652063,
+      "planning": 2.21958848913041,
+      "pessimistic_half": 4.0413426022608165
+    }
+  },
+  "memory_note": "The 2 GiB sampled-device guard counts whole-device use; the follow-up measured about 0.9 GB already in use with the smallest model loaded.",
+  "disk_note": "Per-sequence loss arrays and records only (no model states beyond E0): well under 1 GiB."
+}

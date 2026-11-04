@@ -1,0 +1,38 @@
+{
+ "schema": 1,
+ "purpose": "The note on the pull request edits, checked against the saved responses and the local files",
+ "result_md_sha256": "b06169a860ae331060919f6df07c9c081cedf661c5c2407622c7c1e5618fbd13",
+ "snapshot": {
+  "comments.json": "86322f33f511bab09fd3633d5fca30c6c4f6a9719721020c6154ab222459865a",
+  "edits.json": "4a7530e87e4246990df4bd7f2362269bbfb495114da2a5161e35a3514ce4a28d",
+  "pr.json": "d8f0ba234e200f073c72ec312596198324453f46bf467fdfe9d297516678ebcc",
+  "review_comments.json": "da6d348646264c92f50e9db5613240156e988966875de7550bd4639f5f20c4f9",
+  "reviews.json": "a109adf718f078546d71b593994286900d6d179decc6e33604d832a2515603ea",
+  "timeline.json": "bc711e192efff3f505d2e49644a50dfaac1d05e5d47e93ac68d01b38ec850acc"
+ },
+ "cases": {
+  "the description was last edited at 2026-11-04T03:52:23Z, by rafli-hl": true,
+  "the description now gives the narrower reading": true,
+  "the description no longer has the looser words": true,
+  "the description now gives the timing": true,
+  "the edit history keeps the looser words, in the version before the last edit": true,
+  "the addendum comment is by rafli-hl, at 2026-11-04T03:52:24Z, not edited since": true,
+  "the comment names the layout by the hash of the local file": true,
+  "the comment names the analysis by the hash of the local file": true,
+  "the section order in the comment equals the headings of RESULT.md": true,
+  "the edit and the comment came before ANALYSIS.json was written": true,
+  "ANALYSIS.json came 288 s after the comment": true,
+  "the pull request head and merge time are those of the pinned check": true,
+  "no commit was added after the merge": true,
+  "section 7f has the sentence on the layout": true,
+  "section 7f has the sentence on the looser wording": true,
+  "section 7f mentions neither the edit nor the comment": true,
+  "two inline comments from the review bot, at the two places quoted": true,
+  "the report refuses unless both terminals are the approved ones": true,
+  "the sealed README says what the bot quotes": true,
+  "the note names the hash of RESULT.md": true
+ },
+ "passed": 20,
+ "total": 20,
+ "verdict": "PASS"
+}

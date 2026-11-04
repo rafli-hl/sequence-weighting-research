@@ -1,0 +1,250 @@
+{
+  "status": "FAIL",
+  "checks": 23,
+  "failed": [
+    "reconciliation: run tree = final inventory + TERMINAL.json"
+  ],
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "script_sha256": "0a61452c9c77c052581cefcb9c66c2a443c1a9a77dc59bc47c2f307afef3c0f6",
+  "results": [
+    {
+      "check": "activation subject pin and every bound file",
+      "ok": true,
+      "changed": []
+    },
+    {
+      "check": "source subject pin and every bound file",
+      "ok": true,
+      "changed": []
+    },
+    {
+      "check": "builder file is the approved builder",
+      "ok": true,
+      "builder_sha256": "ad0480cb2e87dc77dce45ec7084174662bb9989fb6746ed6e78076e8748bd70b"
+    },
+    {
+      "check": "approval text and id equal the owner approval; id is not a fixture id",
+      "ok": true
+    },
+    {
+      "check": "preparation evidence bound in the approval record equals the current files (6 pins)",
+      "ok": true
+    },
+    {
+      "check": "authorization enabled, one use, binds approval record, subject, registry, exclusions and draw",
+      "ok": true,
+      "registry_sha256": "00f3ab61ee1cebbaf80eeeb5e3ece18002ba1225b501fe5825260f4e123f7e08",
+      "draw_sha256": "af586d4049da3ae1336bfe65912931b8fa0ea8afeb95ab487735afa88ce7d7bb"
+    },
+    {
+      "check": "activation registry, exclusions and draw are byte copies of the drawn registry directory; claim present; no stop record",
+      "ok": true
+    },
+    {
+      "check": "registry re-derives from its draw under the frozen policy and exclusions; 12 corpora, 61 values from 256 candidates",
+      "ok": true,
+      "detail": true,
+      "accepted": 61,
+      "rejected_before_61st_acceptance": 0,
+      "exclusion_values": 4046
+    },
+    {
+      "check": "activation manifest ARMED_UNUSED at build; every built file unchanged; only the owner claim, receipt and logs were added later",
+      "ok": true,
+      "added": [
+        "OWNER_CLAIM.json",
+        "OWNER_EXIT_RECEIPT.json",
+        "WORKER_STDERR.log",
+        "WORKER_STDOUT.log"
+      ]
+    },
+    {
+      "check": "owner claim and receipt: COMPLETE, exit 0 observed, no retry; binds TERMINAL.json",
+      "ok": true,
+      "terminal_sha256": "00eb980712cb15c095c23b43b1d2745fd84a07c7b7bb4cf9c9e148fdf10bff94",
+      "owner_elapsed": 4839.868572,
+      "worker_elapsed": 4355.461771833
+    },
+    {
+      "check": "twelve stages c01..c12 COMPLETE with 16 trajectories each; receipts equal TERMINAL stage entries",
+      "ok": true,
+      "stage_seconds": [
+        463.9,
+        411.8,
+        433.0,
+        456.2,
+        464.1,
+        468.5,
+        325.6,
+        260.9,
+        232.4,
+        235.2,
+        240.4,
+        263.0
+      ]
+    },
+    {
+      "check": "benchmark cap feasible and at most 1,425 s; every stage within its cap; overall within 21,600 s",
+      "ok": true,
+      "cap": 900,
+      "projected": 519.7359576004355,
+      "benchmark_seconds": 74.138240957,
+      "max_stage_seconds": 468.4525906370004,
+      "sum_stage_seconds": 4254.989284742
+    },
+    {
+      "check": "storage within 3 GiB / 1,000 files by the terminal inventory and by the recomputed run tree",
+      "ok": true,
+      "inventory": {
+        "bytes": 993523223,
+        "files": 638
+      },
+      "tree": {
+        "bytes": 993529413,
+        "files": 638
+      }
+    },
+    {
+      "check": "reconciliation: run tree = final inventory + TERMINAL.json",
+      "ok": false,
+      "difference_bytes": -2355,
+      "difference_files": -1
+    },
+    {
+      "check": "each stage: 50 files and at most 256 MiB",
+      "ok": true,
+      "stage_bytes": [
+        68859466,
+        68866758,
+        68882076,
+        68843681,
+        68874827,
+        68867069,
+        68867418,
+        68882390,
+        68866651,
+        68874234,
+        68874209,
+        68867423
+      ],
+      "stage_files": {
+        "c01": 50,
+        "c02": 50,
+        "c03": 50,
+        "c04": 50,
+        "c05": 50,
+        "c06": 50,
+        "c07": 50,
+        "c08": 50,
+        "c09": 50,
+        "c10": 50,
+        "c11": 50,
+        "c12": 50
+      }
+    },
+    {
+      "check": "sampled peaks within limits (GPU 2 GiB, worker RSS 4,032 MiB), overall and in every stage receipt",
+      "ok": true,
+      "peaks": {
+        "cuda_allocated": 275053568,
+        "cuda_reserved": 301989888,
+        "device_used_sampled": 1167903948,
+        "worker_peak_rss": 1573347328
+      }
+    },
+    {
+      "check": "192 records: 49 checks to update 640, 40 epochs, every fixed epoch validated, array sizes and SHA-256 bindings; stage inputs carry the registry seeds",
+      "ok": true,
+      "bad": [],
+      "validation_blocks": 1875
+    },
+    {
+      "check": "no landmark states saved",
+      "ok": true
+    },
+    {
+      "check": "counts: 147,456 updates, 288 models, 96 pretrained states; evaluation batches equal the recomputation from the records; terminal equals the c12 receipt",
+      "ok": true,
+      "counts": {
+        "eval_batches": 174744,
+        "models": 288,
+        "pretrained_states": 96,
+        "updates": 147456
+      },
+      "expected_eval_batches": 174744,
+      "landmark_validations": 147
+    },
+    {
+      "check": "worker logs empty",
+      "ok": true
+    },
+    {
+      "check": "sealed shift_analysis.py re-run (activation copy) reproduces ANALYSIS.json, POINTS.csv, SECONDARIES.csv and CLIPPING.csv byte for byte",
+      "ok": true,
+      "files": {
+        "ANALYSIS.json": true,
+        "POINTS.csv": true,
+        "SECONDARIES.csv": true,
+        "CLIPPING.csv": true
+      },
+      "sha256": {
+        "ANALYSIS.json": "0de1177a464f7a29fc29f40c80dedbf573aae3742ff50790feae2aadc1f83233",
+        "POINTS.csv": "0c95bf053fd5b9391b8d3ca85542cdfe2caeb2c42929e74322e830400fb9fb85",
+        "SECONDARIES.csv": "37d7bd8e4abecbd2c49716c553f2b173def5f74a5289dafeb02b181be9b82070",
+        "CLIPPING.csv": "de1d4552ad59fe44ce790252a784900ad7750185a7ce2ebb7491932aaeb01aa7"
+      }
+    },
+    {
+      "check": "frozen decision MOVES_SMALLER (G16, R); all twelve corpora available",
+      "ok": true,
+      "decision": "MOVES_SMALLER",
+      "labels": {
+        "primary|R": "MOVES_SMALLER",
+        "primary|S_batch": "MOVES_SMALLER",
+        "E15-E30|R": "MOVES_SMALLER",
+        "E15-E30|S_batch": "MOVES_SMALLER"
+      }
+    },
+    {
+      "check": "read-only: activation, run, source, registry, preparation, owner analysis and re-run unchanged by this verification",
+      "ok": true,
+      "trees": {
+        "activation": {
+          "sha256": "f8a2e3d803db5ded1e506cebce94deea1fc17b8e182878245b15b2f9fff08327",
+          "files": 23,
+          "bytes": 309225
+        },
+        "run": {
+          "sha256": "a0cfc1392bf6e27b230108c150a16bcb86fccd43c232667512af500197689095",
+          "files": 638,
+          "bytes": 993529413
+        },
+        "source": {
+          "sha256": "443dea7798671fa7ece7ad2232b9c814ae1593c9a7f396bd45270c07d22d91a8",
+          "files": 15,
+          "bytes": 173981
+        },
+        "registry": {
+          "sha256": "777057ad875cdf51fbe9bc65b005e0d752c308d89950cd874bce7fd5d09cf450",
+          "files": 5,
+          "bytes": 136241
+        },
+        "analysis": {
+          "sha256": "b6ab037d854063a160e5e68bbbb488e02d00bee07cd07bf28c25c74ec7ebe69b",
+          "files": 4,
+          "bytes": 2319253
+        },
+        "preparation": {
+          "sha256": "35cac351b413d7c1aae76168f182f144dc65ac6cc612220e5703fd1fc55a728d",
+          "files": 65,
+          "bytes": 890869
+        },
+        "rerun": {
+          "sha256": "b6ab037d854063a160e5e68bbbb488e02d00bee07cd07bf28c25c74ec7ebe69b",
+          "files": 4,
+          "bytes": 2319253
+        }
+      }
+    }
+  ]
+}

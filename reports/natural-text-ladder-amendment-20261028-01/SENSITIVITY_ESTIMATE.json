@@ -1,0 +1,47 @@
+{
+  "all_six_widths": {
+    "feasible": true,
+    "formula": "ceil(1.25*projected+120) <= 2010 s; 10*(cap+60)+900 <= 21600 s",
+    "projected_run_hours": 1.9476470863800788,
+    "projected_stage_seconds": 701.1529510968284,
+    "stage_cap_seconds": 997,
+    "stages": 10,
+    "storage_GiB": 1.125073540955782,
+    "widths": [
+      64,
+      96,
+      128,
+      192,
+      256,
+      384
+    ],
+    "worst_case_wall_hours": 3.186111111111111
+  },
+  "benchmark_sha256": "09e8d193ce4afbe3640e71b26b28932f24ec92958e2bbd69487e5939a068d7f1",
+  "run_a_measured": {
+    "elapsed_hours": 0.4965461401455556,
+    "inventory_GiB": 0.34152741078287363,
+    "projected_hours_from_own_benchmark": 0.5203787503190827
+  },
+  "run_a_terminal_sha256": "6c6e7fe29ba35aa6146dfa9ab89e959c5069fe4c0b490ee911380064c7446af2",
+  "source_files": {
+    "text_plan.py": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343",
+    "text_worker.py": "09378d1b90b3fd71fd6198b5a1808d2627dab1235b8c94acea02dab613bf1cc8"
+  },
+  "status": "PLANNING_ARITHMETIC_NOT_A_GUARANTEE",
+  "storage_rule": "per stage: INPUTS and PRETRAINED as measured in Run A, one E0 state per width at its benchmark state size, E0 and readout arrays, one record at its cap; plus three benchmark states per width as in Run A",
+  "widths_64_96_only": {
+    "feasible": true,
+    "formula": "ceil(1.25*projected+120) <= 2010 s; 10*(cap+60)+900 <= 21600 s",
+    "projected_run_hours": 0.4903824436119741,
+    "projected_stage_seconds": 176.53767970031066,
+    "stage_cap_seconds": 341,
+    "stages": 10,
+    "storage_GiB": 0.10329011455178261,
+    "widths": [
+      64,
+      96
+    ],
+    "worst_case_wall_hours": 1.363888888888889
+  }
+}

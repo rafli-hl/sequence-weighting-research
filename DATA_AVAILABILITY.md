@@ -6,7 +6,7 @@ Versioned Python/scripts and prospective protocols, dependency locks, mathematic
 
 ## Intentionally local-only
 
-All full `work/runs/` trees, checkpoints/optimizer states, pretraining assets, raw per-sequence tensors/loss traces, ZIP archives, downloaded wheels and installers, environments/caches, raw dataset rows, private chat, host receipts, user approvals/accounting and copied operational handoffs. No archives are included, so archive-member secret scanning was not needed for this distribution.
+All full `work/runs/` trees, checkpoints/optimizer states, pretraining assets, raw per-sequence tensors/loss traces, ZIP archives, downloaded wheels and installers, environments/caches, raw dataset rows, private chat, host receipts, user approvals/accounting and copied operational handoffs. No archives are included, so archive-member secret scanning was not needed for this distribution. Exception, 4 November 2026: the owner's design decisions for the natural-text studies are included (see `PUBLICATION_NOTES.md`).
 
 The supplied files support reading code/protocols, inspecting reported outcomes and backing tables, and running self-contained mathematical fixtures after environment setup. They do not support bit-for-bit regeneration of every historical training result or fixed-input numerical audit. Scripts that consume saved run directories will need those original inputs. No external dataset/checkpoint hosting or download availability is promised.
 

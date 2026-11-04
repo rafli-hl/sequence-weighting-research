@@ -1,0 +1,41 @@
+{
+ "schema": 1,
+ "purpose": "The check of the peak confirmation results report",
+ "fixture": false,
+ "status": "PASS",
+ "mismatches": [],
+ "comparisons": 2705,
+ "input_differences": [],
+ "tied_values": {
+  "c01": 3,
+  "c02": 4,
+  "c03": 3,
+  "c04": 5,
+  "c05": 3,
+  "c06": 2
+ },
+ "largest_record_array_difference": 7.241033017635345e-07,
+ "t_critical": 2.5705818356363155,
+ "refits_at_bound_32_needed": false,
+ "refits_recomputed": false,
+ "records": {
+  "ANALYSIS.json": "69283574ac1bbd4f1bf482fb0c6af2f7cca6d5b17e52e6ef858b0667cb9a6972",
+  "POINTS.csv": "1fc485744144c86cf5c6c6b297ecdf5fdfcd8e278f43ddfc3c578784ef86f296",
+  "FITS.csv": "34eba346bf07bd3458e88e9feb036012b313a139133e14de2d70a9da0961a89b",
+  "Run C1 TERMINAL.json": "77988d64f5b0e97a75789270202a40f99b9ee0baf4714b847d31777c6149d360",
+  "Run C2 TERMINAL.json": "d7dee4370e03bdafab3fcddec9d47484804da32eecc3358f85b64a86fd7cd205",
+  "SOURCE_SUBJECT.json": "0d9e8f9adee4544bd24550f43a09c309e935ec6816a90769e04625e764711e28",
+  "this layout, make_results_report.py": "af2fecbdc662f4b97662e7cc1d22db6632e9ec90b72db604bd4a3315cf456f3e",
+  "owner decision": "84935b17265d29e00c74ba75ee7bf747563a695aac9e26493ffc70409f672fba"
+ },
+ "inputs": {
+  "reports/natural-text-peak-seed-registry-20261103-01/REGISTRY_AND_PARTITION_CHECK.json": "872326d3a96a8cca7ff8a19d04726b92c1e73458035f817f58b315530ebdcd81",
+  "reports/natural-text-peak-engine-check-result-20261103-01/INPUTS_CHECK.json": "e9b0e0939eaebc8f14a071ed3102b616a5f88b19f9879646a1adafe7aa31e0f8",
+  "reports/natural-text-peak-preparation-20261103-01/ENGINE_CHECK_EXPECTED.json": "fa1cf6c41b53194eb54eaccc7b3aebe0aa17e62debb6817c0ef82bd43b053fc1",
+  "work/runs/natural-text-fewepoch-a-20261101-01/LR_SELECTION.json": "fa760ba0d693518ba1b98a40f366899ebec3a013ff03863284a3ac2c32b5ad01",
+  "reports/natural-text-peak-c1-result-20261103-01/RUN_C1_VERIFICATION.json": "630c18459c89906261c992c14a35c0bda058e72e75724c7b1e6605d26af6e8a9",
+  "reports/natural-text-peak-c2-result-20261103-01/RUN_C2_VERIFICATION.json": "8f7ab377ac59d588c1cf7757801a7b7e992b8cda674d3b45ca473eb30389534e",
+  "reports/natural-text-peak-analysis-approval-20261103-01/PUBLIC_PREREGISTRATION_CHECK.json": "49c8e178be5b8273e9d5eaf454d6359db36a91d0efead88b5e36b5e9aec3c87d"
+ },
+ "seconds": 105.6
+}

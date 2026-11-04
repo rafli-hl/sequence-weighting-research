@@ -1,0 +1,137 @@
+{
+  "attempt_1_terminal_sha256": "ab01d898c6a2888c2a9672346b7990ca99057c51030a62005282257fb90506e4",
+  "byte_copies": {
+    "ORIGINAL_ENVIRONMENT.json": "work\\capacity-shift-followup-source-20261027-01\\ORIGINAL_ENVIRONMENT.json",
+    "vendor/core.py": "work\\capacity-shift-followup-source-20261027-01\\vendor\\core.py"
+  },
+  "corpus_prepared": true,
+  "disabled_authorization_sha256": "23ca06e5e787181c0a2f969a7c7f5b1c8b80de1ca4137c5c7e457de03ec1c255",
+  "files": [
+    {
+      "bytes": 842,
+      "path": "GPU_CHECK.json",
+      "sha256": "f492d8390c167b10b27c02a825589685d112ce4770cef189f083b2452d031254"
+    },
+    {
+      "bytes": 9015,
+      "path": "gpu_check.ps1",
+      "sha256": "e51669cb4f18dec918ce9db947a8c8b223bb203a2773ba9c448542294d99840f"
+    },
+    {
+      "bytes": 1402,
+      "path": "ORIGINAL_ENVIRONMENT.json",
+      "sha256": "1135b25931539053ee092fbe8160b04b389004d0551d814abd29823be76659fa"
+    },
+    {
+      "bytes": 5964,
+      "path": "prepare_corpus.py",
+      "sha256": "be2b8e4ead066a1cfee7fbd71bdff888924f9fbf7819d58761a9c5f2667c398b"
+    },
+    {
+      "bytes": 46463,
+      "path": "PROTOCOL.md",
+      "sha256": "f82d83064cb1c87a0b97b04b20212d003d85b39713459a272c73d2dc134824e8"
+    },
+    {
+      "bytes": 3109,
+      "path": "README.md",
+      "sha256": "d65b89e1780e89a54104c7f82b5b7d1aaa8d34607f3592d5fec5d06f6eb22ad7"
+    },
+    {
+      "bytes": 5125,
+      "path": "select_lr.py",
+      "sha256": "aa6b3357f1030f9f2afc09faad65d9341532b98c93b0c64131ec086be4377f07"
+    },
+    {
+      "bytes": 33519,
+      "path": "text_analysis.py",
+      "sha256": "f53cf877b57ea424f49dffd13212bfecc713d0019c75ebf7c3d2179a9645f07f"
+    },
+    {
+      "bytes": 5606,
+      "path": "text_data.py",
+      "sha256": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d"
+    },
+    {
+      "bytes": 2157,
+      "path": "text_engine.py",
+      "sha256": "c9d9972108678d76384d156e933c85de2bb608646841710bdd206d5b4f259f52"
+    },
+    {
+      "bytes": 1888,
+      "path": "text_framework_setup.py",
+      "sha256": "4a502d067022e1d943943e0a8b8469d895d158f5e46c18f49f99b6744ac0605f"
+    },
+    {
+      "bytes": 2004,
+      "path": "text_model.py",
+      "sha256": "619d83285dab6008f1f11381173b69ef745f62bc660796e5f2d54c196a01ba9e"
+    },
+    {
+      "bytes": 8842,
+      "path": "TEXT_OWNER_RUN.ps1",
+      "sha256": "fd4b026ebbc2af58fd112edd440848c625175092e4bf54afee5495ca41ef85b5"
+    },
+    {
+      "bytes": 5786,
+      "path": "text_plan.py",
+      "sha256": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343"
+    },
+    {
+      "bytes": 11833,
+      "path": "text_registry.py",
+      "sha256": "1ea87bb7c4bf328b084d3622117674d3753dfb965e90f6143ec280631be41464"
+    },
+    {
+      "bytes": 43215,
+      "path": "text_worker.py",
+      "sha256": "4a1ef8e847ae907273778d76b9214050b9c179964aa5f0567f19c5d79427cf37"
+    },
+    {
+      "bytes": 3297,
+      "path": "vendor/core.py",
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    }
+  ],
+  "gpu_baseline_sha256": "0774b9159e690eda2d3b24e4e36913d84c8a003225e0fcb618d582a9d1a2e60c",
+  "registry_drawn": true,
+  "reused": {
+    "amendment_01_sha256": "adc19ccce9b02d959fb94a938b2e4371e09dc98e8be4f527014a6e1a8a789f22",
+    "corpus_manifest_sha256": "72daa1e174caa346494fb9a6cd0ded4ed192038a8918e4569a2a4ddb67a0834f",
+    "lr_selection_sha256": "cb059387dc26f6743199f446940487d55d868700130faa68b9256eb333b2c217",
+    "registry_sha256": "8ce7d597578af702aa96249c0215aed2927383629add78f6fb000a1251dbcfeb",
+    "run_a_terminal_sha256": "6c6e7fe29ba35aa6146dfa9ab89e959c5069fe4c0b490ee911380064c7446af2"
+  },
+  "revision": "05",
+  "revision_04": {
+    "byte_copies": [
+      "ORIGINAL_ENVIRONMENT.json",
+      "prepare_corpus.py",
+      "select_lr.py",
+      "text_data.py",
+      "text_engine.py",
+      "text_framework_setup.py",
+      "text_model.py",
+      "text_plan.py",
+      "text_registry.py",
+      "vendor/core.py"
+    ],
+    "changed": [
+      "PROTOCOL.md",
+      "README.md",
+      "TEXT_OWNER_RUN.ps1",
+      "text_analysis.py",
+      "text_worker.py"
+    ],
+    "new": [
+      "GPU_CHECK.json",
+      "gpu_check.ps1"
+    ],
+    "source": "work\\natural-text-ladder-source-20261028-01",
+    "subject_sha256": "90e3f3ef1c7dcad6e4be54e5bf5ac0eab2f7feb9de2121aa2ed7ce658c8beded"
+  },
+  "runtime_authorized": false,
+  "schema": 1,
+  "seed_policy_sha256": "7e2060c1a23eb618dee34f0e9cbe9ce5da6f9c4d11be12f15a8634a3a9635133",
+  "status": "SEALED_DISABLED_NO_RUNTIME_AUTHORIZATION"
+}

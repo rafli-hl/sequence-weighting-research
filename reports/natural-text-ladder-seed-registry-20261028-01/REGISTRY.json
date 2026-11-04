@@ -1,0 +1,1632 @@
+{
+  "benchmark": {
+    "benchmark_seed": 2516702753,
+    "group": "benchmark"
+  },
+  "corpus_manifest_sha256": "72daa1e174caa346494fb9a6cd0ded4ed192038a8918e4569a2a4ddb67a0834f",
+  "decisions": [
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4245818090
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 169920657
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2680791688
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3028780209
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 972998750
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2493343856
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 707691538
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4261762425
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2839959459
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2708993567
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 230733062
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1870105669
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 764699117
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2025820895
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2301701752
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 768546951
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 468963188
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3401651549
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2930868658
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 496680021
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 55266833
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4285978687
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3067530884
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4212525420
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1796583173
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2603352974
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2706067
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 960922886
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2747834128
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4229348082
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2032546372
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2682036231
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3166723976
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3896649378
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2693853525
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3765257442
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3700781340
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 507461898
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 117580293
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2373570372
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2913096150
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1175667336
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3546892114
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 884213900
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 763279021
+    },
+    {
+      "accepted": true,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2516702753
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2243592718
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 106309446
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 686454438
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3858637118
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1110245462
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2573688897
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2956351812
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1995118678
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2737126528
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2498128490
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1981078077
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2478099696
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 336014803
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2362088217
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 898141637
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 711983789
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 797748340
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2484071428
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2505422146
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3192093119
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4108480160
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1211358527
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1669478325
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2523388298
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 928343151
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2338612640
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 218174425
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1641539061
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3408424932
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1930834336
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1223966360
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1301600890
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 742918158
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4180885371
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 959208303
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3253815710
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3163238461
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3840825544
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1452827750
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2618854161
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2714307279
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 69645957
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 649422963
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1297219276
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3008481653
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4123849477
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1642890822
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1299229442
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1130491616
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1164866898
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3487278590
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 886186254
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1973267926
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4098695890
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1360355922
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2821666367
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1789333361
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 643039974
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2169149751
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4033652000
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 207016365
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1184213313
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 33606744
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3144379881
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1917310766
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4281199323
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1770192579
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 483368275
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2591715793
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2395399436
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1054163036
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1780358411
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2265756522
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3696706615
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 427815162
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3585026090
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3120312547
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3039472572
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1578388832
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3860777925
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1716006217
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 562583695
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3530687892
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3296374534
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3466322545
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 193077056
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1564775181
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3594882315
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 900865991
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 444095707
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2300080462
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3099946713
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3485325228
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 209618556
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1815858525
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1882983513
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 610361750
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1449299919
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 416453735
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1407302757
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3915073974
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2058032954
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2181186131
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 19830299
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2747226237
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2196509309
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3460959349
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 22948828
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1743473499
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2991776372
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1875409699
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2275218601
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 93669514
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1970820271
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2137394546
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3681326252
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 149208898
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1309123313
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4215457599
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2369242967
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 749627491
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3465108559
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 706774908
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1956575716
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4115236893
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3811608915
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2442234990
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3982414743
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 212792248
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2337819816
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 25526964
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1766327699
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2371512575
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 874208399
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2007972818
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2515409121
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1837639395
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1736468119
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1906800269
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 50695232
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3903087970
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4200621502
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 253579993
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1870724426
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3796876717
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2072464956
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 671291892
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1745896544
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 819571411
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3682400520
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2433114661
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3251339156
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3431266586
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2229485535
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1469460054
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4249655785
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2427702816
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2254239735
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1282930717
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 650902903
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2028263394
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 301736568
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1104877860
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1405663114
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1324383677
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1699791324
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2549893467
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1713450400
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1200579597
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3571995579
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3460160425
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3790475804
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3295857040
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1101020816
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3208078560
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 848879022
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3586555568
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 4210479826
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3795623792
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 459653571
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 839247585
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 299994552
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2553205401
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 774968809
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 394126397
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1085595444
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1869053333
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 610824263
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1538752684
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1403916526
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2026727412
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 328964031
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2454384525
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 984286656
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1354259425
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1058117242
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2037087399
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2873338404
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 752570353
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2082022785
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2238079430
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1150296421
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2685739794
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1896174596
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 2597018161
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1320424887
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1213079896
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3210178421
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 1652774200
+    },
+    {
+      "accepted": false,
+      "near_accepted": [],
+      "near_excluded": [],
+      "value": 3854799439
+    }
+  ],
+  "draw_sha256": "3c0304a89f1b610ef4d58f65002aff1741a9e1897c4a3c28c0946ff4423bd2d1",
+  "exclusions_sha256": "ee4fba48a1f563d997089221b1bafe645a525db5a4a8885244d462f8ae6536bd",
+  "groups": [
+    {
+      "adapt_order_seed": 972998750,
+      "group": "t00",
+      "init_seed": 169920657,
+      "pretrain_order_seed": 3028780209,
+      "weight_seed": 2680791688
+    },
+    {
+      "adapt_order_seed": 2839959459,
+      "group": "d01",
+      "init_seed": 2493343856,
+      "pretrain_order_seed": 4261762425,
+      "weight_seed": 707691538
+    },
+    {
+      "adapt_order_seed": 764699117,
+      "group": "d02",
+      "init_seed": 2708993567,
+      "pretrain_order_seed": 1870105669,
+      "weight_seed": 230733062
+    },
+    {
+      "adapt_order_seed": 468963188,
+      "group": "d03",
+      "init_seed": 2025820895,
+      "pretrain_order_seed": 768546951,
+      "weight_seed": 2301701752
+    },
+    {
+      "adapt_order_seed": 55266833,
+      "group": "d04",
+      "init_seed": 3401651549,
+      "pretrain_order_seed": 496680021,
+      "weight_seed": 2930868658
+    },
+    {
+      "adapt_order_seed": 1796583173,
+      "group": "d05",
+      "init_seed": 4285978687,
+      "pretrain_order_seed": 4212525420,
+      "weight_seed": 3067530884
+    },
+    {
+      "adapt_order_seed": 2747834128,
+      "group": "d06",
+      "init_seed": 2603352974,
+      "pretrain_order_seed": 960922886,
+      "weight_seed": 2706067
+    },
+    {
+      "adapt_order_seed": 3166723976,
+      "group": "d07",
+      "init_seed": 4229348082,
+      "pretrain_order_seed": 2682036231,
+      "weight_seed": 2032546372
+    },
+    {
+      "adapt_order_seed": 3700781340,
+      "group": "d08",
+      "init_seed": 3896649378,
+      "pretrain_order_seed": 3765257442,
+      "weight_seed": 2693853525
+    },
+    {
+      "adapt_order_seed": 2913096150,
+      "group": "d09",
+      "init_seed": 507461898,
+      "pretrain_order_seed": 2373570372,
+      "weight_seed": 117580293
+    },
+    {
+      "adapt_order_seed": 763279021,
+      "group": "d10",
+      "init_seed": 1175667336,
+      "pretrain_order_seed": 884213900,
+      "weight_seed": 3546892114
+    }
+  ],
+  "neighborhood": 2048,
+  "outcome_blind_policy": "Single precommitted 1024-byte OS entropy draw; deterministic ordered acceptance against saved exclusions only.",
+  "partition_seed": 4245818090,
+  "policy_sha256": "7e2060c1a23eb618dee34f0e9cbe9ce5da6f9c4d11be12f15a8634a3a9635133",
+  "schema": 2,
+  "status": "FROZEN_DRAWN"
+}
