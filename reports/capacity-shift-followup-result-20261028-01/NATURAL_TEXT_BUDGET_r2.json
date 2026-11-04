@@ -1,0 +1,202 @@
+{
+  "status": "PLANNING_ARITHMETIC_NOT_A_MEASUREMENT",
+  "revision": 2,
+  "anchors": {
+    "planning_TFLOPs": 1.1942815174098769,
+    "per_update_floor_seconds": 0.015540405312500116,
+    "device_in_use_with_smallest_model_GB": 0.901565644,
+    "guard_GB": 2.147483648,
+    "note": "Measured at batch 32 x 40 tokens, FP32 (TF32 off). Batch 16 x 128 = 2,048 tokens per update; the per-update floor is assumed unchanged."
+  },
+  "data": {
+    "words": {
+      "train": 2051910,
+      "validation": 213886,
+      "test": 241211
+    },
+    "tokens_estimate": {
+      "train": [
+        2359696.5,
+        2770078.5
+      ],
+      "validation": [
+        245968.9,
+        288746.10000000003
+      ],
+      "test": [
+        277392.64999999997,
+        325634.85000000003
+      ]
+    },
+    "train_tokens_needed": 2162688,
+    "train_groups_possible": [
+      12,
+      14
+    ],
+    "groups_needed": 11,
+    "pretraining_pool": "test split",
+    "pretraining_tokens_needed": 262144,
+    "pretraining_fits": true,
+    "validation_pool": "validation split",
+    "validation_tokens_needed": 65536,
+    "validation_fits": true
+  },
+  "design": {
+    "layers": 4,
+    "heads": 4,
+    "seq_len": 128,
+    "batch": 16,
+    "vocab": 4096,
+    "widths": [
+      64,
+      96,
+      128,
+      192,
+      256,
+      384
+    ],
+    "optional_widths": [
+      512
+    ],
+    "n_train": 1536,
+    "n_validation": 512,
+    "n_pretraining": 2048,
+    "pretraining_epochs": 4,
+    "pretraining_updates": 512,
+    "epochs": 32,
+    "adaptation_updates": 3072,
+    "readouts": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "primary_epochs": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "draws": 10,
+    "tuning_draws": 1,
+    "lr_grid": 3
+  },
+  "per_width": {
+    "64": {
+      "params": 732416,
+      "memory_estimate_GB": 0.2675712,
+      "with_measured_baseline_GB": 1.169136844,
+      "guard_margin_GB": 0.978346804,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 1.1085735702868704,
+        "planning": 1.2888669299070672,
+        "pessimistic_half": 1.649453649147461
+      }
+    },
+    "96": {
+      "params": 1246080,
+      "memory_estimate_GB": 0.311441408,
+      "with_measured_baseline_GB": 1.213007052,
+      "guard_margin_GB": 0.934476596,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 1.2494277574901493,
+        "planning": 1.5705753043136248,
+        "pessimistic_half": 2.212870397960576
+      }
+    },
+    "128": {
+      "params": 1858048,
+      "memory_estimate_GB": 0.35688448,
+      "with_measured_baseline_GB": 1.258450124,
+      "guard_margin_GB": 0.889033524,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 1.424086949622215,
+        "planning": 1.9198936885777562,
+        "pessimistic_half": 2.911507166488839
+      }
+    },
+    "192": {
+      "params": 3376896,
+      "memory_estimate_GB": 0.452489216,
+      "with_measured_baseline_GB": 1.35405486,
+      "guard_margin_GB": 0.793428788,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 1.874820348672707,
+        "planning": 2.8213604866787407,
+        "pessimistic_half": 4.714440762690808
+      }
+    },
+    "256": {
+      "params": 5288960,
+      "memory_estimate_GB": 0.554385408,
+      "with_measured_baseline_GB": 1.455951052,
+      "guard_margin_GB": 0.691532596,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 2.4607737674383467,
+        "planning": 3.9932673242100205,
+        "pessimistic_half": 7.058254437753367
+      }
+    },
+    "384": {
+      "params": 10292736,
+      "memory_estimate_GB": 0.77705216,
+      "with_measured_baseline_GB": 1.678617804,
+      "guard_margin_GB": 0.468865844,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 4.038340664115069,
+        "planning": 7.1484011175634645,
+        "pessimistic_half": 13.368522024460255
+      }
+    },
+    "512": {
+      "params": 16869376,
+      "memory_estimate_GB": 1.024884736,
+      "with_measured_baseline_GB": 1.92645038,
+      "guard_margin_GB": 0.221033268,
+      "within_guard": true,
+      "minutes_per_draw": {
+        "optimistic_2x": 6.156787639652382,
+        "planning": 11.385295068638092,
+        "pessimistic_half": 21.84230992660951
+      }
+    }
+  },
+  "totals_hours": {
+    "six_widths_64_384": {
+      "optimistic_2x": 2.5792557177296414,
+      "planning": 3.9782694533259413,
+      "pessimistic_half": 6.776296924518539
+    },
+    "seven_widths_with_512": {
+      "optimistic_2x": 3.886557023249184,
+      "planning": 6.396165067342803,
+      "pessimistic_half": 11.415381155530039
+    },
+    "run_A_tuning_only_six_widths": {
+      "optimistic_2x": 0.5532518747920819,
+      "planning": 0.8545419781174953,
+      "pessimistic_half": 1.457122184768322
+    },
+    "run_B_analysis_only_six_widths": {
+      "optimistic_2x": 2.02600384293756,
+      "planning": 3.1237274752084456,
+      "pessimistic_half": 5.319174739750218
+    }
+  },
+  "storage_GiB": 0.8598966598510742,
+  "storage_note": "E0 states for every draw and width, plus per-sequence loss arrays and record bounds; no other states."
+}

@@ -1,0 +1,14 @@
+{
+  "approval_id": "OWNER-20261031-LATETURN-SEEDS-01",
+  "corpus_manifest_sha256": "72daa1e174caa346494fb9a6cd0ded4ed192038a8918e4569a2a4ddb67a0834f",
+  "fixture": false,
+  "policy_sha256": "1050451f48c9a0bcb9b6a7e2f8203b98b424e8d3bad9a4f61d7eadc07f7b0dab",
+  "registry_source_sha256": {
+    "lateturn_data.py": "4931bf77547ea82863f862509df894554e2c5f486303749731aef05d709f11f1",
+    "lateturn_registry.py": "68f55f2ab489f826a12b743e0a8d2984e5d64f010c8a544c3e70f1975a06f3e1",
+    "prepare_corpus.py": "be2b8e4ead066a1cfee7fbd71bdff888924f9fbf7819d58761a9c5f2667c398b",
+    "text_data.py": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d",
+    "text_plan.py": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343"
+  },
+  "status": "CLAIMED_BEFORE_DRAW"
+}

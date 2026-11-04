@@ -1,0 +1,151 @@
+{
+  "byte_copies_of_onerate_revision_02": {
+    "GPU_CHECK.json": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "ORIGINAL_ENVIRONMENT.json": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "gpu_check.ps1": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "power_gate.ps1": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "prepare_corpus.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_analysis.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_data.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_engine.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_framework_setup.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_model.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_plan.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_registry.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "text_worker.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730",
+    "vendor/core.py": "52ad878309ddfa6a5e1e5a501ad91f9dc6d5285194ca6165dd0c74d7db363730"
+  },
+  "byte_copies_of_registry_source": {
+    "lateturn_data.py": "49398ed5123b7ca241d76810088f75085c50320ce61afce2becc4360f133ae69",
+    "lateturn_registry.py": "49398ed5123b7ca241d76810088f75085c50320ce61afce2becc4360f133ae69"
+  },
+  "disabled_authorization_sha256": "892f365dd23ce72ecaa18bc5cfbf6270396e4ed87d14b1545bf02a3e27536f3a",
+  "files": [
+    {
+      "bytes": 842,
+      "path": "GPU_CHECK.json",
+      "sha256": "f492d8390c167b10b27c02a825589685d112ce4770cef189f083b2452d031254"
+    },
+    {
+      "bytes": 11900,
+      "path": "LATETURN_OWNER_RUN.ps1",
+      "sha256": "fc696ecd13115ddc8f0e4e18606b4a451465570ff1231599b4d3bcece6ee09c4"
+    },
+    {
+      "bytes": 1402,
+      "path": "ORIGINAL_ENVIRONMENT.json",
+      "sha256": "1135b25931539053ee092fbe8160b04b389004d0551d814abd29823be76659fa"
+    },
+    {
+      "bytes": 20537,
+      "path": "PROTOCOL.md",
+      "sha256": "df66790af4d6a772eddb570f7c6bdd58ab75109361d0355434a2c8917c52741d"
+    },
+    {
+      "bytes": 2301,
+      "path": "README.md",
+      "sha256": "11d2734c2ad28816ddbddfc059a7238497d5edc6dbb6a9dbee119d1ee9c35961"
+    },
+    {
+      "bytes": 9015,
+      "path": "gpu_check.ps1",
+      "sha256": "e51669cb4f18dec918ce9db947a8c8b223bb203a2773ba9c448542294d99840f"
+    },
+    {
+      "bytes": 22782,
+      "path": "lateturn_analysis.py",
+      "sha256": "547393b74171d93b0a7457d1aa7685b393ca45de5e02886317706b1d88d40f21"
+    },
+    {
+      "bytes": 3007,
+      "path": "lateturn_data.py",
+      "sha256": "4931bf77547ea82863f862509df894554e2c5f486303749731aef05d709f11f1"
+    },
+    {
+      "bytes": 5868,
+      "path": "lateturn_plan.py",
+      "sha256": "415f7450a98923b86a757d3fc07f3c324e2518182392a10a9aa59c802003fe24"
+    },
+    {
+      "bytes": 13521,
+      "path": "lateturn_registry.py",
+      "sha256": "68f55f2ab489f826a12b743e0a8d2984e5d64f010c8a544c3e70f1975a06f3e1"
+    },
+    {
+      "bytes": 27407,
+      "path": "lateturn_worker.py",
+      "sha256": "77b968da79bf143f2c399e87c1df8df75430d9fce877848aab4fe6d612fa0a6d"
+    },
+    {
+      "bytes": 8515,
+      "path": "power_gate.ps1",
+      "sha256": "53b882b297392f633ce9b9d19670d677e25ff39aba43af04242cc46d4ddee971"
+    },
+    {
+      "bytes": 5964,
+      "path": "prepare_corpus.py",
+      "sha256": "be2b8e4ead066a1cfee7fbd71bdff888924f9fbf7819d58761a9c5f2667c398b"
+    },
+    {
+      "bytes": 33519,
+      "path": "text_analysis.py",
+      "sha256": "f53cf877b57ea424f49dffd13212bfecc713d0019c75ebf7c3d2179a9645f07f"
+    },
+    {
+      "bytes": 5606,
+      "path": "text_data.py",
+      "sha256": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d"
+    },
+    {
+      "bytes": 2157,
+      "path": "text_engine.py",
+      "sha256": "c9d9972108678d76384d156e933c85de2bb608646841710bdd206d5b4f259f52"
+    },
+    {
+      "bytes": 1888,
+      "path": "text_framework_setup.py",
+      "sha256": "4a502d067022e1d943943e0a8b8469d895d158f5e46c18f49f99b6744ac0605f"
+    },
+    {
+      "bytes": 2004,
+      "path": "text_model.py",
+      "sha256": "619d83285dab6008f1f11381173b69ef745f62bc660796e5f2d54c196a01ba9e"
+    },
+    {
+      "bytes": 5786,
+      "path": "text_plan.py",
+      "sha256": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343"
+    },
+    {
+      "bytes": 11833,
+      "path": "text_registry.py",
+      "sha256": "1ea87bb7c4bf328b084d3622117674d3753dfb965e90f6143ec280631be41464"
+    },
+    {
+      "bytes": 43215,
+      "path": "text_worker.py",
+      "sha256": "4a1ef8e847ae907273778d76b9214050b9c179964aa5f0567f19c5d79427cf37"
+    },
+    {
+      "bytes": 3297,
+      "path": "vendor/core.py",
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    }
+  ],
+  "kind": "late-turn confirmation source (fresh draws f01-f04, widths 256-768 at 3e-5; primaries P1 -> P3 -> P2)",
+  "new_files": [
+    "lateturn_plan.py",
+    "lateturn_worker.py",
+    "lateturn_analysis.py",
+    "LATETURN_OWNER_RUN.ps1",
+    "PROTOCOL.md",
+    "README.md"
+  ],
+  "owner_decisions": {
+    "reports/natural-text-ladder-owner-decisions-20261031-02/OWNER_DECISIONS.md": "d7c53abf7b4ae07dc43041087d18d67d1e6d4c3b4f43a4d0f0f562f731a7d474",
+    "reports/natural-text-ladder-owner-decisions-20261031-03/OWNER_DECISIONS.md": "9a58f409bd4fbd594add2208bea598c64934c8a6cc6d643ab594af9a51e0d4a5"
+  },
+  "runtime_authorized": false,
+  "schema": 1,
+  "status": "SEALED_DISABLED"
+}

@@ -18,8 +18,10 @@ This publication copy contains versioned source, mathematical fixtures, protocol
 - [Data availability and reproducibility limits](DATA_AVAILABILITY.md)
 - [Distribution changes](PUBLICATION_NOTES.md)
 - [Pre-registration, 3 Nov 2026: peak confirmation on fresh WikiText-103 draws (published before its analysis)](preregistration/natural-text-peak-confirmation-20261103/README.md)
+- [Natural-text studies, 27 Oct – 4 Nov 2026: protocols, results, tables, failed attempts](NATURAL_TEXT_STUDIES.md)
+- [Final claims after the adversarial review (§5)](reports/adversarial-review-response-20261104-01/RESPONSE.md), with the [review](reports/adversarial-review-20261104-01/REVIEW.md)
 
-The measured record includes completed pilot and subsequent synthetic/generalization/estimator studies. A synthetic middle-capacity peak alone does not establish an exact large-language-model replication, utility improvement, causal mechanism, or an interior-to-interior peak shift. Positive, negative, failed, and undefined outcomes remain represented in saved summaries. Later prospective source packages retain their original status statements; inclusion does not mean they ran. Active capacity-reader revisions are excluded.
+The measured record includes completed pilot and subsequent synthetic/generalization/estimator studies. A synthetic middle-capacity peak alone does not establish an exact large-language-model replication, utility improvement, causal mechanism, or an interior-to-interior peak shift. Positive, negative, failed, and undefined outcomes remain represented in saved summaries. Later prospective source packages retain their original status statements; inclusion does not mean they ran. Active capacity-reader revisions are excluded. The natural-text studies use models of at most 34.7 M parameters, at or below the smallest scale in Jane Street's study; their claims are stated in the response's §5 as a small-scale methodological study of p\*, not a replication.
 
 ## Source and dependencies
 

@@ -1,0 +1,1695 @@
+{
+ "schema": 1,
+ "purpose": "Every number quoted in EVIDENCE_CHAIN.md, checked against the saved record it cites",
+ "sources": {
+  "S": {
+   "path": "reports/capacity-shift-followup-result-20261028-01/RESULT_SUMMARY.json",
+   "sha256": "8682a5ca57a43fe59b58c8e98dd3a462127b4353087ac14850d339b7dd480cf1"
+  },
+  "N1": {
+   "path": "reports/natural-text-ladder-analysis-20261029-01/sealed-analysis/ANALYSIS.json",
+   "sha256": "4414abfdfb163b393d1c09a4051505985475c63478829267e35c1014533c62a8"
+  },
+  "N1x": {
+   "path": "reports/natural-text-ladder-exploratory-20261029-01/EXPLORATORY_CHECKS.json",
+   "sha256": "10084de372c3e413203bd991493f427e1e353537113543ca0e9f52d327df8e76"
+  },
+  "N2": {
+   "path": "reports/natural-text-ladder-probe-result-20261030-01/PROBE_READING.json",
+   "sha256": "7b097a013f2c6c157dfff130c24082a9a23485deabb6a0cee2607c4d53f56290"
+  },
+  "N3": {
+   "path": "reports/natural-text-onerate-result-20261031-01/RESULT_CHECK.json",
+   "sha256": "b20050a35d8254607615b9f90ec8772bc5b820205a09c80455e549ca39208e1e"
+  },
+  "N4": {
+   "path": "reports/natural-text-lateturn-result-20261031-01/RESULT_CHECK.json",
+   "sha256": "90e9f490b47cf51babffee610e6cc67ed450f6e27896a162670867ba22647d14"
+  },
+  "N4a": {
+   "path": "reports/natural-text-lateturn-analysis-20261031-01/ANALYSIS.json",
+   "sha256": "a20ab6c9e1dffee24c3c86f555b3918118c652cde962adb00fd61cc465bc75ba"
+  },
+  "N5": {
+   "path": "reports/natural-text-fewepoch-analysis-20261103-01/ANALYSIS.json",
+   "sha256": "df0c56146387142983b60773adbbf1d8eddc7d0fb85eae2231f4d6d28ca9ab26"
+  },
+  "N5c": {
+   "path": "reports/natural-text-fewepoch-result-20261103-01/RESULT_CHECK.json",
+   "sha256": "35bae7a262c110d87ff09d2638a5ddfd47d45e5c734d0238f3ac62ec9489b912"
+  },
+  "N5p": {
+   "path": "reports/natural-text-fewepoch-analysis-20261103-01/POINTS.csv",
+   "sha256": "9a2baad33a711901098ffa365294a18eff6a6761d01293449d0b17cb576de026"
+  },
+  "N5r": {
+   "path": "reports/natural-text-fewepoch-result-20261103-01/RESULT.md",
+   "sha256": "4b9f46933bc6375e422780d3614d0336a752d086099e41a748e18c3abbaea613"
+  },
+  "N6": {
+   "path": "reports/natural-text-peak-analysis-20261103-01/ANALYSIS.json",
+   "sha256": "69283574ac1bbd4f1bf482fb0c6af2f7cca6d5b17e52e6ef858b0667cb9a6972"
+  },
+  "N6c": {
+   "path": "reports/natural-text-peak-result-20261103-01/RESULT_CHECK.json",
+   "sha256": "f01e3de70b72676eaa375721a523742199e6cfa5c8fd16bba8710208f73f5fe1"
+  },
+  "N6p": {
+   "path": "reports/natural-text-peak-analysis-20261103-01/POINTS.csv",
+   "sha256": "1fc485744144c86cf5c6c6b297ecdf5fdfcd8e278f43ddfc3c578784ef86f296"
+  },
+  "N6r": {
+   "path": "reports/natural-text-peak-result-20261103-01/RESULT.md",
+   "sha256": "b06169a860ae331060919f6df07c9c081cedf661c5c2407622c7c1e5618fbd13"
+  },
+  "N6n": {
+   "path": "reports/natural-text-peak-result-20261103-01/PR3_NOTE_CHECK.json",
+   "sha256": "353590a2a33ad7ab551680d44934c68c8fd89e4123d5e6ffd50c22c508cfc9ac"
+  }
+ },
+ "text_sha256": "159e3baceaacd606afd23937a4cf52544f6b79d414496b4172574442b48506a0",
+ "claims": [
+  {
+   "id": "S primary label",
+   "source_value": "MOVES_SMALLER",
+   "shown": "MOVES_SMALLER",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S primary slope",
+   "source_value": "−0.796 [−0.982, −0.609]",
+   "shown": "−0.796 [−0.982, −0.609]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S primary negative corpora",
+   "source_value": "12/12",
+   "shown": "12/12",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S flagged points",
+   "source_value": "19 of 60",
+   "shown": "19 of 60",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S S32",
+   "source_value": "−0.817 [−0.990, −0.644]",
+   "shown": "−0.817 [−0.990, −0.644]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S SD",
+   "source_value": "−0.794 [−0.966, −0.622] on 8 corpora",
+   "shown": "−0.794 [−0.966, −0.622] on 8 corpora",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S S_batch",
+   "source_value": "−0.851 [−0.934, −0.768], 12/12",
+   "shown": "−0.851 [−0.934, −0.768], 12/12",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S R minus S_batch",
+   "source_value": "NO_DETECTED_DIFFERENCE +0.055 [−0.128, +0.237]",
+   "shown": "NO_DETECTED_DIFFERENCE +0.055 [−0.128, +0.237]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S panel peaks",
+   "source_value": "192/4 at E20, 128/4 at E25, 96/4 at E30, 96/4 at E40",
+   "shown": "192/4 at E20, 128/4 at E25, 96/4 at E30, 96/4 at E40",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S panel labels E20-E40",
+   "source_value": [
+    "INTERIOR_PEAK"
+   ],
+   "shown": [
+    "INTERIOR_PEAK"
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "S exposed vs fresh E15-E30",
+   "source_value": "−1.043 on 5 exposed corpora; −0.922 fresh",
+   "shown": "−1.043 on 5 exposed corpora; −0.922 fresh",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 A label",
+   "source_value": "NO_DETECTED_SHIFT_CENSORED",
+   "shown": "NO_DETECTED_SHIFT_CENSORED",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 A slope",
+   "source_value": "0 [0, 0]",
+   "shown": "0 [0, 0]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 A boundary points",
+   "source_value": "70 of 70",
+   "shown": "70 of 70",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 A boundary at the top rung",
+   "source_value": [
+    [
+     0,
+     10
+    ]
+   ],
+   "shown": [
+    [
+     0,
+     10
+    ]
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 B label",
+   "source_value": "CONVEX",
+   "shown": "CONVEX",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 B curvature",
+   "source_value": "+0.0611 [+0.0588, +0.0634], 10/10 positive",
+   "shown": "+0.0611 [+0.0588, +0.0634], 10/10 positive",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 B vertex width",
+   "source_value": "128.6",
+   "shown": "128.6",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1 decision",
+   "source_value": "NO_DETECTED_SHIFT_CENSORED / CONVEX",
+   "shown": "NO_DETECTED_SHIFT_CENSORED / CONVEX",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1x rates",
+   "source_value": "64 at 3e-4, 96 at 1e-4, 128–384 at 3e-5",
+   "shown": "64 at 3e-4, 96 at 1e-4, 128–384 at 3e-5",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1x p* lowest at 128 at all nine epochs",
+   "source_value": [
+    128,
+    9
+   ],
+   "shown": [
+    128,
+    9
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1x p* rises 128-384 at every epoch",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1x gap lowest at 128 at all nine epochs",
+   "source_value": [
+    128
+   ],
+   "shown": [
+    128
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1x Spearman pooled",
+   "source_value": "0.964",
+   "shown": "0.964",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N1x Spearman within epoch",
+   "source_value": "0.43–1.00",
+   "shown": "0.43–1.00",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N2 verdict",
+   "source_value": "FITS_768",
+   "shown": "FITS_768",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N2 reader checks pass",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N2 768 peak",
+   "source_value": "2.2225 GiB",
+   "shown": "2.2225 GiB",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N2 768 margin",
+   "source_value": "28.2 MiB",
+   "shown": "28.2 MiB",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 verifier",
+   "source_value": "PASS",
+   "shown": "PASS",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 turn label",
+   "source_value": "CONTINUES_RISING",
+   "shown": "CONTINUES_RISING",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 turn",
+   "source_value": "+0.0220 [+0.0176, +0.0264]",
+   "shown": "+0.0220 [+0.0176, +0.0264]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 turn draws",
+   "source_value": "10/10",
+   "shown": "10/10",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 dip label",
+   "source_value": "NO_DIP_AT_ONE_RATE",
+   "shown": "NO_DIP_AT_ONE_RATE",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 dip",
+   "source_value": "+0.0428 [+0.0400, +0.0455]",
+   "shown": "+0.0428 [+0.0400, +0.0455]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 dip draws",
+   "source_value": "10/10",
+   "shown": "10/10",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 memo label",
+   "source_value": "TRACKS_MEMORIZATION",
+   "shown": "TRACKS_MEMORIZATION",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 memo",
+   "source_value": "+0.9643 [+0.9619, +0.9667]",
+   "shown": "+0.9643 [+0.9619, +0.9667]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 memo draws",
+   "source_value": "10/10",
+   "shown": "10/10",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 joint",
+   "source_value": "MEMORIZATION_PREDICTIONS_MET",
+   "shown": "MEMORIZATION_PREDICTIONS_MET",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 Jane Street turn-down prediction met",
+   "source_value": false,
+   "shown": false,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 E24 turn",
+   "source_value": "TURNS_DOWN −0.0225 [−0.0314, −0.0136], 10/10",
+   "shown": "TURNS_DOWN −0.0225 [−0.0314, −0.0136], 10/10",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 E32 turn",
+   "source_value": "TURNS_DOWN −0.1748 [−0.1872, −0.1624], 10/10",
+   "shown": "TURNS_DOWN −0.1748 [−0.1872, −0.1624], 10/10",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 panel argmax by epoch",
+   "source_value": "E1 512, E2 512, E4 768, E6 768, E8 768, E12 768, E16 768, E24 512, E32 384",
+   "shown": "E1 512, E2 512, E4 768, E6 768, E8 768, E12 768, E16 768, E24 512, E32 384",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 memorization at E32",
+   "source_value": "0.833",
+   "shown": "0.833",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 validation minimum 384-768",
+   "source_value": [
+    4,
+    4,
+    4
+   ],
+   "shown": [
+    4,
+    4,
+    4
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N3 turn decomposition",
+   "source_value": "+0.0502 and −0.0282",
+   "shown": "+0.0502 and −0.0282",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 verifier",
+   "source_value": "PASS",
+   "shown": "PASS",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 terminal_outside_ledger present",
+   "source_value": false,
+   "shown": false,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P1 label",
+   "source_value": "TURNS_DOWN",
+   "shown": "TURNS_DOWN",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P1",
+   "source_value": "−0.1886 [−0.2083, −0.1688]",
+   "shown": "−0.1886 [−0.2083, −0.1688]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P1 draws",
+   "source_value": "4/4",
+   "shown": "4/4",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P3 label",
+   "source_value": "SHIFTS_TO_SMALLER_WIDTH",
+   "shown": "SHIFTS_TO_SMALLER_WIDTH",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P3",
+   "source_value": "+0.9090 [+0.8641, +0.9539]",
+   "shown": "+0.9090 [+0.8641, +0.9539]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P3 draws",
+   "source_value": "4/4",
+   "shown": "4/4",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P2 label",
+   "source_value": "INCONCLUSIVE",
+   "shown": "INCONCLUSIVE",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P2",
+   "source_value": "−0.0238 [−0.0479, +0.0003]",
+   "shown": "−0.0238 [−0.0479, +0.0003]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 P2 draws",
+   "source_value": "4/4",
+   "shown": "4/4",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 sequence",
+   "source_value": [
+    true,
+    true,
+    false
+   ],
+   "shown": [
+    true,
+    true,
+    false
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 censoring",
+   "source_value": "LOWER_BOUND_IF_CURVES_CONTINUE",
+   "shown": "LOWER_BOUND_IF_CURVES_CONTINUE",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 E8 peaks at the top rung",
+   "source_value": 4,
+   "shown": 4,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 seen P1",
+   "source_value": "−0.1748 [−0.1872, −0.1624]",
+   "shown": "−0.1748 [−0.1872, −0.1624]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 seen P2",
+   "source_value": "−0.0225 [−0.0314, −0.0136]",
+   "shown": "−0.0225 [−0.0314, −0.0136]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 seen P3",
+   "source_value": "+0.9056 [+0.8871, +0.9242]",
+   "shown": "+0.9056 [+0.8871, +0.9242]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 epoch-averaged turn",
+   "source_value": "CONTINUES_RISING +0.0210 [+0.0079, +0.0342]",
+   "shown": "CONTINUES_RISING +0.0210 [+0.0079, +0.0342]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 validation minima",
+   "source_value": {
+    "256": 6,
+    "384": 4,
+    "512": 4,
+    "768": 4
+   },
+   "shown": {
+    "256": 6,
+    "384": 4,
+    "512": 4,
+    "768": 4
+   },
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 panel argmax by epoch",
+   "source_value": "E1 512, E2 512, E4 512, E6 768, E8 768, E12 768, E16 768, E24 512, E32 384",
+   "shown": "E1 512, E2 512, E4 512, E6 768, E8 768, E12 768, E16 768, E24 512, E32 384",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 E32 location kinds",
+   "source_value": [
+    "interior"
+   ],
+   "shown": [
+    "interior"
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 E32 mean location width",
+   "source_value": "409",
+   "shown": "409",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 768 start-up peak",
+   "source_value": "2.2225 GiB",
+   "shown": "2.2225 GiB",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 parameters",
+   "source_value": "5.3–34.7 M",
+   "shown": "5.3–34.7 M",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N4 power stated in advance",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 check",
+   "source_value": "PASS",
+   "shown": "PASS",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 all widths NOT_OVERFIT",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 fit bounds",
+   "source_value": {
+    "upper": 0,
+    "lower": 0,
+    "undefined": 0
+   },
+   "shown": {
+    "upper": 0,
+    "lower": 0,
+    "undefined": 0
+   },
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M label",
+   "source_value": "CAPACITY_BEYOND_MEMORIZATION",
+   "shown": "CAPACITY_BEYOND_MEMORIZATION",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M",
+   "source_value": "−0.0066 [−0.0076, −0.0055]",
+   "shown": "−0.0066 [−0.0076, −0.0055]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M rejected under Holm",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M Holm-adjusted p",
+   "source_value": "3.51e−07",
+   "shown": "3.51e−07",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M draws",
+   "source_value": "10/10 negative",
+   "shown": "10/10 negative",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M memorization_only predicts",
+   "source_value": "NOT_DETECTED",
+   "shown": "NOT_DETECTED",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M jane_street predicts",
+   "source_value": "not fixed by the pattern",
+   "shown": "not fixed by the pattern",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL label",
+   "source_value": "CONTINUES_RISING",
+   "shown": "CONTINUES_RISING",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL",
+   "source_value": "+0.0040 [+0.0010, +0.0069]",
+   "shown": "+0.0040 [+0.0010, +0.0069]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL rejected under Holm",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL Holm-adjusted p",
+   "source_value": "0.0133",
+   "shown": "0.0133",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL draws",
+   "source_value": "9/10 positive",
+   "shown": "9/10 positive",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL memorization_only predicts",
+   "source_value": "CONTINUES_RISING or INCONCLUSIVE",
+   "shown": "CONTINUES_RISING or INCONCLUSIVE",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL jane_street predicts",
+   "source_value": "TURNS_DOWN",
+   "shown": "TURNS_DOWN",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE label",
+   "source_value": "RISES",
+   "shown": "RISES",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE",
+   "source_value": "+0.0275 [+0.0269, +0.0280]",
+   "shown": "+0.0275 [+0.0269, +0.0280]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE rejected under Holm",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE Holm-adjusted p",
+   "source_value": "5.74e−15",
+   "shown": "5.74e−15",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE draws",
+   "source_value": "10/10 positive",
+   "shown": "10/10 positive",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE memorization_only predicts",
+   "source_value": "RISES",
+   "shown": "RISES",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 RISE jane_street predicts",
+   "source_value": "RISES",
+   "shown": "RISES",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 shift",
+   "source_value": "MOVES_LARGER +0.0237 [+0.0117, +0.0357]",
+   "shown": "MOVES_LARGER +0.0237 [+0.0117, +0.0357]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 shift draws",
+   "source_value": "10/10",
+   "shown": "10/10",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 no location at a ladder end",
+   "source_value": 0,
+   "shown": 0,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 panel argmax 512 at all readouts",
+   "source_value": [
+    512
+   ],
+   "shown": [
+    512
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 per-draw argmax 512 at all readouts",
+   "source_value": [
+    512
+   ],
+   "shown": [
+    512
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 FALL by readout",
+   "source_value": "E0.25 −0.0017 [−0.0030, −0.0004]; E0.5 −0.0031 [−0.0042, −0.0020]; E1 −0.0018 [−0.0028, −0.0009]; E2 +0.0016 [−0.0004, +0.0035]; E3 +0.0040 [+0.0010, +0.0069]",
+   "shown": "E0.25 −0.0017 [−0.0030, −0.0004]; E0.5 −0.0031 [−0.0042, −0.0020]; E1 −0.0018 [−0.0028, −0.0009]; E2 +0.0016 [−0.0004, +0.0035]; E3 +0.0040 [+0.0010, +0.0069]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 points",
+   "source_value": 50,
+   "shown": 50,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 768 below 512 in all points",
+   "source_value": 50,
+   "shown": 50,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 smallest 512 minus 768",
+   "source_value": "+0.0037",
+   "shown": "+0.0037",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 panel p* at E3",
+   "source_value": "0.0979, 0.1175, 0.1038 in N5",
+   "shown": "0.0979, 0.1175, 0.1038 in N5",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 reading regime",
+   "source_value": "The few-epoch question is read only where every width a primary uses was still improving its validation loss from E2 to E3 (NOT_OVERFIT). The models are small (0.73-34.7 M parameters, depth 4) and see far fewer tokens per parameter than compute-optimal training; \"closer to Jane Street's setting\" means 3 epochs and no detected overfitting, nothing more.",
+   "shown": "The few-epoch question is read only where every width a primary uses was still improving its validation loss from E2 to E3 (NOT_OVERFIT). The models are small (0.73-34.7 M parameters, depth 4) and see far fewer tokens per parameter than compute-optimal training; \"closer to Jane Street's setting\" means 3 epochs and no detected overfitting, nothing more.",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 reading FALL",
+   "source_value": "FALL: at E3, p* rises with width over 384-768 (CONTINUES_RISING): no turn-down within this ladder. This matches the memorization-only prediction, and also Jane Street's pattern with a peak above 768; the study cannot separate the two.",
+   "shown": "FALL: at E3, p* rises with width over 384-768 (CONTINUES_RISING): no turn-down within this ladder. This matches the memorization-only prediction, and also Jane Street's pattern with a peak above 768; the study cannot separate the two.",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 M reading, quoted to the end of its parenthesis",
+   "source_value": true,
+   "shown": true,
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N5 identical sets",
+   "source_value": "Identical-text sets across groups: 10",
+   "shown": "Identical-text sets across groups: 10",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N5 shared sequences",
+   "source_value": "mean 0.74% of a group over the eleven groups, largest 1.89% (d04)",
+   "shown": "mean 0.74% of a group over the eleven groups, largest 1.89% (d04)",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N5 64-token runs",
+   "source_value": "mean 1.00%, largest 2.21% (d04)",
+   "shown": "mean 1.00%, largest 2.21% (d04)",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N5 tie limit",
+   "source_value": "allows at most n / 1,024 tied values, which is 16 here",
+   "shown": "allows at most n / 1,024 tied values, which is 16 here",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N6 check",
+   "source_value": "PASS",
+   "shown": "PASS",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 mismatches",
+   "source_value": [],
+   "shown": [],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 input differences",
+   "source_value": [],
+   "shown": [],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 decision",
+   "source_value": {
+    "primary": "INTERIOR_PEAK",
+    "control": "RATE_DEPENDENT"
+   },
+   "shown": {
+    "primary": "INTERIOR_PEAK",
+    "control": "RATE_DEPENDENT"
+   },
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 note on the pull request edits",
+   "source_value": "PASS",
+   "shown": "PASS",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 fit bounds",
+   "source_value": {
+    "upper": 0,
+    "lower": 0,
+    "undefined": 0
+   },
+   "shown": {
+    "upper": 0,
+    "lower": 0,
+    "undefined": 0
+   },
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D1",
+   "source_value": "+0.0192 [+0.0179, +0.0204]",
+   "shown": "+0.0192 [+0.0179, +0.0204]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D1 draws",
+   "source_value": "6/6 positive",
+   "shown": "6/6 positive",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D1 none flagged",
+   "source_value": [],
+   "shown": [],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D2",
+   "source_value": "+0.0158 [+0.0131, +0.0185]",
+   "shown": "+0.0158 [+0.0131, +0.0185]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D2 draws",
+   "source_value": "6/6 positive",
+   "shown": "6/6 positive",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D2 none flagged",
+   "source_value": [],
+   "shown": [],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D4",
+   "source_value": "−0.0050 [−0.0090, −0.0010]",
+   "shown": "−0.0050 [−0.0090, −0.0010]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D4 draws",
+   "source_value": "6/6 negative",
+   "shown": "6/6 negative",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D4 none flagged",
+   "source_value": [],
+   "shown": [],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D3",
+   "source_value": "+0.0111 [+0.0072, +0.0150]",
+   "shown": "+0.0111 [+0.0072, +0.0150]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D3 draws",
+   "source_value": "6/6 positive",
+   "shown": "6/6 positive",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D3 none flagged",
+   "source_value": [],
+   "shown": [],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D4 p",
+   "source_value": "0.0232",
+   "shown": "0.0232",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 D4 sd",
+   "source_value": "0.0038",
+   "shown": "0.0038",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 all arms NOT_OVERFIT",
+   "source_value": [
+    "NOT_OVERFIT",
+    "NOT_OVERFIT",
+    "NOT_OVERFIT",
+    "NOT_OVERFIT",
+    "NOT_OVERFIT"
+   ],
+   "shown": [
+    "NOT_OVERFIT",
+    "NOT_OVERFIT",
+    "NOT_OVERFIT",
+    "NOT_OVERFIT",
+    "NOT_OVERFIT"
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 every arm 6/6 below 0",
+   "source_value": [
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "shown": [
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 range of mean delta",
+   "source_value": "−0.0814 to −0.0539",
+   "shown": "−0.0814 to −0.0539",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect p at 512",
+   "source_value": "−0.0161 [−0.0170, −0.0153]",
+   "shown": "−0.0161 [−0.0170, −0.0153]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect p at 512 draws",
+   "source_value": [
+    6,
+    0
+   ],
+   "shown": [
+    6,
+    0
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect validation at 512",
+   "source_value": "+0.0181 [+0.0120, +0.0241]",
+   "shown": "+0.0181 [+0.0120, +0.0241]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect validation at 512 draws",
+   "source_value": [
+    0,
+    6
+   ],
+   "shown": [
+    0,
+    6
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect p at 768",
+   "source_value": "+0.0047 [+0.0015, +0.0079]",
+   "shown": "+0.0047 [+0.0015, +0.0079]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect p at 768 draws",
+   "source_value": [
+    0,
+    6
+   ],
+   "shown": [
+    0,
+    6
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect validation at 768",
+   "source_value": "−0.0166 [−0.0321, −0.0011]",
+   "shown": "−0.0166 [−0.0321, −0.0011]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 rate effect validation at 768 draws",
+   "source_value": [
+    5,
+    1
+   ],
+   "shown": [
+    5,
+    1
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 by readout row E0.25",
+   "source_value": "| E0.25 | +0.0059 [+0.0047, +0.0070] | +0.0075 [+0.0062, +0.0089] | +0.0038 [+0.0027, +0.0049] |",
+   "shown": "| E0.25 | +0.0059 [+0.0047, +0.0070] | +0.0075 [+0.0062, +0.0089] | +0.0038 [+0.0027, +0.0049] |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 by readout row E0.5",
+   "source_value": "| E0.5 | +0.0042 [+0.0037, +0.0048] | +0.0068 [+0.0049, +0.0086] | +0.0044 [+0.0031, +0.0056] |",
+   "shown": "| E0.5 | +0.0042 [+0.0037, +0.0048] | +0.0068 [+0.0049, +0.0086] | +0.0044 [+0.0031, +0.0056] |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 by readout row E1",
+   "source_value": "| E1 | +0.0047 [+0.0040, +0.0055] | +0.0072 [+0.0057, +0.0088] | +0.0043 [+0.0028, +0.0058] |",
+   "shown": "| E1 | +0.0047 [+0.0040, +0.0055] | +0.0072 [+0.0057, +0.0088] | +0.0043 [+0.0028, +0.0058] |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 by readout row E2",
+   "source_value": "| E2 | +0.0116 [+0.0107, +0.0125] | +0.0104 [+0.0083, +0.0125] | −0.0001 [−0.0027, +0.0026] |",
+   "shown": "| E2 | +0.0116 [+0.0107, +0.0125] | +0.0104 [+0.0083, +0.0125] | −0.0001 [−0.0027, +0.0026] |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 by readout row E3",
+   "source_value": "| E3 | +0.0192 [+0.0179, +0.0204] | +0.0158 [+0.0131, +0.0185] | −0.0050 [−0.0090, −0.0010] |",
+   "shown": "| E3 | +0.0192 [+0.0179, +0.0204] | +0.0158 [+0.0131, +0.0185] | −0.0050 [−0.0090, −0.0010] |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 per-draw argmax at 3e-4",
+   "source_value": [
+    512
+   ],
+   "shown": [
+    512
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 FALL at E3",
+   "source_value": "+0.0014 [−0.0013, +0.0041]",
+   "shown": "+0.0014 [−0.0013, +0.0041]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 FALL at E3 draws",
+   "source_value": "4/6",
+   "shown": "4/6",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 M",
+   "source_value": "−0.0078 [−0.0102, −0.0053]",
+   "shown": "−0.0078 [−0.0102, −0.0053]",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 M draws",
+   "source_value": "6/6",
+   "shown": "6/6",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 M note",
+   "source_value": "NOT IN THE SOURCE",
+   "shown": "The primary and the control are pre-registered; D3 is a pre-registered secondary; NOT_OVERFIT is the pre-registered manipulation check; every other section is secondary or descriptive, with no multiplicity adjustment.",
+   "equal": false,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N6 panel p* at E3",
+   "source_value": "0.0979, 0.1171, 0.1013 in N6",
+   "shown": "0.0979, 0.1171, 0.1013 in N6",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 mean gap at E3 behind the caveat",
+   "source_value": "0.5823 at 512 at 3e-4 and 0.5430 at 768 at 1e-4",
+   "shown": "0.5823 at 512 at 3e-4 and 0.5430 at 768 at 1e-4",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 lowest mean validation NLL at E3 in all arms",
+   "source_value": [
+    "E3",
+    "E3",
+    "E3",
+    "E3",
+    "E3"
+   ],
+   "shown": [
+    "E3",
+    "E3",
+    "E3",
+    "E3",
+    "E3"
+   ],
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 reading primary",
+   "source_value": "At 3e-4 at E3, p* at 512 is above p* at 384 and at 768 on fresh draws (INTERIOR_PEAK). This is an ordering of three rungs; it does not place the peak between rungs.",
+   "shown": "At 3e-4 at E3, p* at 512 is above p* at 384 and at 768 on fresh draws (INTERIOR_PEAK). This is an ordering of three rungs; it does not place the peak between rungs.",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 reading control",
+   "source_value": "Peak at 3e-4 only (RATE_DEPENDENT): at 1e-4, 768 is above 512, so the fall seen at 3e-4 is rate-dependent, at the two rates tested.",
+   "shown": "Peak at 3e-4 only (RATE_DEPENDENT): at 1e-4, 768 is above 512, so the fall seen at 3e-4 is rate-dependent, at the two rates tested.",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 reading D3",
+   "source_value": "D3, a pre-registered secondary: p* at 512 at 3e-4 minus p* at 768 at 1e-4, at E3. It is not a test of the rate account, because it compares two rates. Stated in advance: on t00 the gap at 512 at 3e-4 (0.5676) is above the gap at 768 at 1e-4 (0.5382), so if p* simply tracked the gap, D3 would be above 0 with no turn at 768.",
+   "shown": "D3, a pre-registered secondary: p* at 512 at 3e-4 minus p* at 768 at 1e-4, at E3. It is not a test of the rate account, because it compares two rates. Stated in advance: on t00 the gap at 512 at 3e-4 (0.5676) is above the gap at 768 at 1e-4 (0.5382), so if p* simply tracked the gap, D3 would be above 0 with no turn at 768.",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 tally E0.25",
+   "source_value": "| E0.25 | 6 | 0 | 6 | 0 |",
+   "shown": "| E0.25 | 6 | 0 | 6 | 0 |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 tally E0.5",
+   "source_value": "| E0.5 | 6 | 0 | 6 | 0 |",
+   "shown": "| E0.5 | 6 | 0 | 6 | 0 |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 tally E1",
+   "source_value": "| E1 | 6 | 0 | 6 | 0 |",
+   "shown": "| E1 | 6 | 0 | 6 | 0 |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 tally E2",
+   "source_value": "| E2 | 6 | 2 | 3 | 0 |",
+   "shown": "| E2 | 6 | 2 | 3 | 0 |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 tally E3",
+   "source_value": "| E3 | 6 | 6 | 0 | 0 |",
+   "shown": "| E3 | 6 | 6 | 0 | 0 |",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 articles left",
+   "source_value": "16,451 are left over",
+   "shown": "16,451 are left over",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N6 identical sets",
+   "source_value": "0 sets across the fresh groups",
+   "shown": "0 sets across the fresh groups",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N6 runs in another fresh group",
+   "source_value": "64-token runs recurring in another fresh group: mean 0.15%, largest 0.19%",
+   "shown": "64-token runs recurring in another fresh group: mean 0.15%, largest 0.19%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 runs in t00-d10",
+   "source_value": "Recurring in the sequences t00–d10 used: mean 0.26%, largest 0.35%",
+   "shown": "Recurring in the sequences t00–d10 used: mean 0.26%, largest 0.35%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 public timing",
+   "source_value": "about 22.0 minutes after Run C2 ended",
+   "shown": "about 22.0 minutes after Run C2 ended",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "N6 tie limit",
+   "source_value": "allows at most n / 1,024 tied values, which is 16 here",
+   "shown": "allows at most n / 1,024 tied values, which is 16 here",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "N6 V at 768 on t00",
+   "source_value": "minus 3e-4, was −0.0357",
+   "shown": "minus 3e-4, was −0.0357",
+   "equal": true,
+   "in_text": false,
+   "pass": false
+  },
+  {
+   "id": "chain text has 16,451",
+   "source_value": "16,451",
+   "shown": "16,451",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 0.15%",
+   "source_value": "0.15%",
+   "shown": "0.15%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 0.19%",
+   "source_value": "0.19%",
+   "shown": "0.19%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 0.26%",
+   "source_value": "0.26%",
+   "shown": "0.26%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 0.35%",
+   "source_value": "0.35%",
+   "shown": "0.35%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 0.74%",
+   "source_value": "0.74%",
+   "shown": "0.74%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 1.89% (d04)",
+   "source_value": "1.89% (d04)",
+   "shown": "1.89% (d04)",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 1.00%",
+   "source_value": "1.00%",
+   "shown": "1.00%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 2.21%",
+   "source_value": "2.21%",
+   "shown": "2.21%",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has about 22.0 minutes after Run C2 ended",
+   "source_value": "about 22.0 minutes after Run C2 ended",
+   "shown": "about 22.0 minutes after Run C2 ended",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  },
+  {
+   "id": "chain text has 0.0357",
+   "source_value": "0.0357",
+   "shown": "0.0357",
+   "equal": true,
+   "in_text": true,
+   "pass": true
+  }
+ ],
+ "failures": 9,
+ "verdict": "MISMATCH"
+}

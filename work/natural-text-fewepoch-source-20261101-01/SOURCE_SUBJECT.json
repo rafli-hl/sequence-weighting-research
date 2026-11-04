@@ -1,0 +1,180 @@
+{
+  "bound_records": {
+    "reports/natural-text-fewepoch-preparation-20261101-01/FEWEPOCH_PLANNING_r2.json": "328ab27cbc05ed54e4fa8ef0600c7d58c6dd93ed6b420ef3dd4cab02fa23f6f6",
+    "reports/natural-text-fewepoch-proposal-20261101-01/FEWEPOCH_PLANNING.json": "2836a09a5d707991f56524746656e1e0910f7d28c0d20b5ee484dfce45f9e274",
+    "reports/natural-text-fewepoch-seed-registry-20261101-01/SEED_REGISTRY_POLICY.md": "16eb8ba5dafc6fbbfc829fbc5fbcce3ed9ed670bc3a3c05d94b9bb689a797fc9",
+    "reports/natural-text-ladder-owner-decisions-20261101-01/OWNER_DECISIONS.md": "5ae66b7298a1da51ff4632604a243d408b583748c2c96c03d49a503884f38152",
+    "reports/natural-text-ladder-owner-decisions-20261101-02/OWNER_DECISIONS.md": "906b418984053684d516ec687ed0ff985135c75f8c98b10d7aa3ab403139fac5",
+    "reports/natural-text-ladder-owner-decisions-20261102-03/OWNER_DECISIONS.md": "bb34b320f1e9f75c939fbc99e69d60d76e96cf16480eeece5a8bb0321c007d13"
+  },
+  "byte_copies_of_acquisition_source": {
+    "a1_download.py": "2b8033ef98cfbd76a04858a8003d4344a904cc43a81c49dbc599c5357379adda",
+    "a2_rows.py": "2b8033ef98cfbd76a04858a8003d4344a904cc43a81c49dbc599c5357379adda",
+    "acquire_common.py": "2b8033ef98cfbd76a04858a8003d4344a904cc43a81c49dbc599c5357379adda",
+    "acquire_plan.py": "2b8033ef98cfbd76a04858a8003d4344a904cc43a81c49dbc599c5357379adda",
+    "wt103_corpus.py": "2b8033ef98cfbd76a04858a8003d4344a904cc43a81c49dbc599c5357379adda"
+  },
+  "byte_copies_of_lateturn_source": {
+    "GPU_CHECK.json": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "ORIGINAL_ENVIRONMENT.json": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "gpu_check.ps1": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "power_gate.ps1": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_analysis.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_data.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_framework_setup.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_model.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_plan.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_registry.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba",
+    "text_worker.py": "9286f324f9dfb49bdf2b6956c7ea76112c2a24214bdec12e931ea646f543f5ba"
+  },
+  "disabled_authorization_sha256": "659dcd022536212be6d13bdebfb8bccb99193fbc0e7aa9c4a0a45df53b8b4440",
+  "files": [
+    {
+      "bytes": 13713,
+      "path": "FEWEPOCH_OWNER_RUN.ps1",
+      "sha256": "7f13ab27190b6313e9a30430acffb3572cea8a5b46e074a0a1d6ce98ca20d406"
+    },
+    {
+      "bytes": 842,
+      "path": "GPU_CHECK.json",
+      "sha256": "f492d8390c167b10b27c02a825589685d112ce4770cef189f083b2452d031254"
+    },
+    {
+      "bytes": 1402,
+      "path": "ORIGINAL_ENVIRONMENT.json",
+      "sha256": "1135b25931539053ee092fbe8160b04b389004d0551d814abd29823be76659fa"
+    },
+    {
+      "bytes": 24046,
+      "path": "PROTOCOL.md",
+      "sha256": "8377196deb026d3e57f5659cbc72bfd64fa1d9330d0ca8016a99c180ea98df73"
+    },
+    {
+      "bytes": 1910,
+      "path": "README.md",
+      "sha256": "f12f8afe89940f99d5569ce71232c5478605b434f4cb54443a5b26e2d2d0e5fb"
+    },
+    {
+      "bytes": 7380,
+      "path": "a1_download.py",
+      "sha256": "26823ddd98054ef989ca452228fe1d3b8ca36791cce52283d397bc3a9580dd90"
+    },
+    {
+      "bytes": 6850,
+      "path": "a2_rows.py",
+      "sha256": "e6bb7d6e64c61d68bd7729c9508d9c0d0d5a6b69ebc9362c50447f80215bc8e1"
+    },
+    {
+      "bytes": 3763,
+      "path": "acquire_common.py",
+      "sha256": "aebc39d47460591cb49707b3f04ab3bdb43f039258a80526000dc088ee933e90"
+    },
+    {
+      "bytes": 4180,
+      "path": "acquire_plan.py",
+      "sha256": "5752be05713ca2fb7839497218151be04e1bb400adce1891c4967932793acbff"
+    },
+    {
+      "bytes": 27977,
+      "path": "fewepoch_analysis.py",
+      "sha256": "fab5df60ab9d0acb66de225d3e04eb23b3ad442becaa5562d6a1d421ba63402b"
+    },
+    {
+      "bytes": 3039,
+      "path": "fewepoch_data.py",
+      "sha256": "ac7ef04d9e80421fe6416c7bb217c07cafc2afc0df6c8d95fe572f0e087f245d"
+    },
+    {
+      "bytes": 6907,
+      "path": "fewepoch_plan.py",
+      "sha256": "1b943a554c396570277f186f515369e86286f37eb8cc010c684c689027d52e34"
+    },
+    {
+      "bytes": 14128,
+      "path": "fewepoch_registry.py",
+      "sha256": "6ba3314a89e3a63fa6e3abb0a7fab7b2d429820260eb7121533ee7c46d89f557"
+    },
+    {
+      "bytes": 34875,
+      "path": "fewepoch_worker.py",
+      "sha256": "b0f71fbc45df405aa74678ef9a9ca50120645d2fbe964119ae3024cf0fd198a1"
+    },
+    {
+      "bytes": 9015,
+      "path": "gpu_check.ps1",
+      "sha256": "e51669cb4f18dec918ce9db947a8c8b223bb203a2773ba9c448542294d99840f"
+    },
+    {
+      "bytes": 8515,
+      "path": "power_gate.ps1",
+      "sha256": "53b882b297392f633ce9b9d19670d677e25ff39aba43af04242cc46d4ddee971"
+    },
+    {
+      "bytes": 33519,
+      "path": "text_analysis.py",
+      "sha256": "f53cf877b57ea424f49dffd13212bfecc713d0019c75ebf7c3d2179a9645f07f"
+    },
+    {
+      "bytes": 5606,
+      "path": "text_data.py",
+      "sha256": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d"
+    },
+    {
+      "bytes": 2607,
+      "path": "text_engine.py",
+      "sha256": "c94b60af0577141da2693724369282e40aaada42ef6fed1dc1156caf0eb3c722"
+    },
+    {
+      "bytes": 1888,
+      "path": "text_framework_setup.py",
+      "sha256": "4a502d067022e1d943943e0a8b8469d895d158f5e46c18f49f99b6744ac0605f"
+    },
+    {
+      "bytes": 2004,
+      "path": "text_model.py",
+      "sha256": "619d83285dab6008f1f11381173b69ef745f62bc660796e5f2d54c196a01ba9e"
+    },
+    {
+      "bytes": 5786,
+      "path": "text_plan.py",
+      "sha256": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343"
+    },
+    {
+      "bytes": 11833,
+      "path": "text_registry.py",
+      "sha256": "1ea87bb7c4bf328b084d3622117674d3753dfb965e90f6143ec280631be41464"
+    },
+    {
+      "bytes": 43215,
+      "path": "text_worker.py",
+      "sha256": "4a1ef8e847ae907273778d76b9214050b9c179964aa5f0567f19c5d79427cf37"
+    },
+    {
+      "bytes": 3657,
+      "path": "vendor/core.py",
+      "sha256": "f9320bae147f01bc8da1747a85f7ee45c7797da2e977147775a1089e30285a0c"
+    },
+    {
+      "bytes": 15289,
+      "path": "wt103_corpus.py",
+      "sha256": "9c76eec785d54e5044fe5ffaa68f809b1806b21039b6f9879fd136ad6da174d1"
+    }
+  ],
+  "kind": "few-epoch width ladder source (WikiText-103, widths 64-768, 3 epochs; M, FALL and RISE under Holm)",
+  "new_files": [
+    "fewepoch_plan.py",
+    "fewepoch_data.py",
+    "fewepoch_registry.py",
+    "fewepoch_worker.py",
+    "fewepoch_analysis.py",
+    "FEWEPOCH_OWNER_RUN.ps1",
+    "PROTOCOL.md",
+    "README.md",
+    "text_engine.py",
+    "vendor/core.py"
+  ],
+  "pins_pending": false,
+  "runtime_authorized": false,
+  "schema": 1,
+  "status": "SEALED_DISABLED"
+}

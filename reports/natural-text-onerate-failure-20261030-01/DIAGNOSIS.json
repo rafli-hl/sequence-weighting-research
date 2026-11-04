@@ -1,0 +1,1088 @@
+{
+  "note": "Operational records and file times only; no p*, gain or loss was opened or computed.",
+  "terminal": {
+    "sha256": "0b994ed9fbb59717534f5e8e84a19d7f0cd8672101c4715496b790b2aa12d90c",
+    "status": "FAILED",
+    "error": {
+      "message": "Original deadline exhausted",
+      "type": "TimeoutError"
+    },
+    "active_stage": "d06",
+    "elapsed_seconds": 6562.614830522,
+    "ladder": {
+      "reason": "PEAK_768_WITHIN_LIMIT",
+      "top": 768
+    },
+    "peaks": {
+      "cuda_allocated": 1093969408,
+      "cuda_reserved": 1522532352,
+      "device_used_sampled": 2388446412,
+      "worker_peak_rss": 2076307456
+    },
+    "inventory": {
+      "bytes": 2213796,
+      "files": 91
+    },
+    "run_b_verified": {
+      "bytes": 85519707,
+      "files": 220
+    }
+  },
+  "receipt": {
+    "status": "FAILED",
+    "exit_observed": true,
+    "exit_code": 1,
+    "elapsed_seconds": 6724.1099602,
+    "terminal_sha256": "0b994ed9fbb59717534f5e8e84a19d7f0cd8672101c4715496b790b2aa12d90c",
+    "ladder_top": 768,
+    "ladder_reason": "PEAK_768_WITHIN_LIMIT",
+    "stop_reason": null,
+    "gpu_prestart": {
+      "verdict": "IDLE",
+      "mean_utilization_percent": 3.1,
+      "max_memory_used_mib": 536
+    },
+    "gpu_gates": [
+      {
+        "stage": "d01",
+        "verdict": "IDLE",
+        "checks": 2
+      },
+      {
+        "stage": "d02",
+        "verdict": "IDLE",
+        "checks": 1
+      },
+      {
+        "stage": "d03",
+        "verdict": "IDLE",
+        "checks": 1
+      },
+      {
+        "stage": "d04",
+        "verdict": "IDLE",
+        "checks": 1
+      },
+      {
+        "stage": "d05",
+        "verdict": "IDLE",
+        "checks": 1
+      },
+      {
+        "stage": "d06",
+        "verdict": "IDLE",
+        "checks": 1
+      }
+    ]
+  },
+  "receipt_binds_terminal": true,
+  "benchmark": {
+    "projected_stage_seconds": 1005.0861077644429,
+    "stage_work_cap_seconds": 1377,
+    "ladder": {
+      "fit_limit_bytes": 2415919104,
+      "guard_bytes": 2684354560,
+      "reason": "PEAK_768_WITHIN_LIMIT",
+      "top": 768
+    },
+    "failure": null,
+    "per_width": {
+      "64": {
+        "peak_sampled": 1232915660,
+        "seconds_per_update": 0.020938504406250003,
+        "seconds_per_pretraining_update": 0.013902493406249938,
+        "seconds_per_eval_batch": 0.009196640515624965
+      },
+      "96": {
+        "peak_sampled": 1293733068,
+        "seconds_per_update": 0.021529787312499993,
+        "seconds_per_pretraining_update": 0.01883253271874996,
+        "seconds_per_eval_batch": 0.009584078765624948
+      },
+      "512": {
+        "peak_sampled": 1755106508,
+        "seconds_per_update": 0.06998867228125016,
+        "seconds_per_pretraining_update": 0.07152891437499997,
+        "seconds_per_eval_batch": 0.040756572468749974
+      },
+      "768": {
+        "peak_sampled": 2388446412,
+        "seconds_per_update": 0.13401423340624996,
+        "seconds_per_pretraining_update": 0.14556184346875023,
+        "seconds_per_eval_batch": 0.07944334926562502
+      }
+    },
+    "states_deleted": 12,
+    "states_deleted_bytes": 643289136,
+    "state_errors": [],
+    "ledger_released": {
+      "bytes": 643289136,
+      "files": 12
+    }
+  },
+  "draws": {
+    "d01": {
+      "times_local": {
+        "gate": "13:34:50",
+        "inputs": "13:34:50",
+        "e0_768": "13:36:05",
+        "e0_512": "13:36:46",
+        "pretrained": "13:36:46",
+        "adapt_768_done": "13:45:04",
+        "adapt_512_done": "13:49:28",
+        "adapt_96_done": "13:50:35",
+        "adapt_64_done": "13:51:44",
+        "receipt": "13:51:46"
+      },
+      "phases_seconds": {
+        "pretrain_768": 75.4,
+        "pretrain_512": 40.4,
+        "adapt_768": 498.6,
+        "adapt_512": 263.4,
+        "adapt_96": 67.6,
+        "adapt_64": 68.3
+      },
+      "receipt": {
+        "status": "COMPLETE",
+        "seconds": 1008.576253482,
+        "peaks": {
+          "cuda_allocated": 1093969408,
+          "cuda_reserved": 1522532352,
+          "device_used_sampled": 2388446412,
+          "worker_peak_rss": 2076307456
+        },
+        "states_deleted": 4,
+        "state_deletion_errors": 0
+      },
+      "states_deleted": {
+        "files": 4,
+        "bytes": 214429712,
+        "errors": []
+      }
+    },
+    "d02": {
+      "times_local": {
+        "gate": "13:52:00",
+        "inputs": "13:52:00",
+        "e0_768": "13:53:21",
+        "e0_512": "13:54:04",
+        "pretrained": "13:54:04",
+        "adapt_768_done": "14:02:40",
+        "adapt_512_done": "14:07:08",
+        "adapt_96_done": "14:08:14",
+        "adapt_64_done": "14:09:12",
+        "receipt": "14:09:14"
+      },
+      "phases_seconds": {
+        "pretrain_768": 81.4,
+        "pretrain_512": 43.2,
+        "adapt_768": 515.1,
+        "adapt_512": 268.9,
+        "adapt_96": 65.8,
+        "adapt_64": 57.5
+      },
+      "receipt": {
+        "status": "COMPLETE",
+        "seconds": 1011.9296907039998,
+        "peaks": {
+          "cuda_allocated": 1093969408,
+          "cuda_reserved": 1522532352,
+          "device_used_sampled": 2388446412,
+          "worker_peak_rss": 2076307456
+        },
+        "states_deleted": 4,
+        "state_deletion_errors": 0
+      },
+      "states_deleted": {
+        "files": 4,
+        "bytes": 214429712,
+        "errors": []
+      }
+    },
+    "d03": {
+      "times_local": {
+        "gate": "14:09:27",
+        "inputs": "14:09:27",
+        "e0_768": "14:10:48",
+        "e0_512": "14:11:30",
+        "pretrained": "14:11:31",
+        "adapt_768_done": "14:19:50",
+        "adapt_512_done": "14:24:07",
+        "adapt_96_done": "14:25:16",
+        "adapt_64_done": "14:26:19",
+        "receipt": "14:26:21"
+      },
+      "phases_seconds": {
+        "pretrain_768": 80.5,
+        "pretrain_512": 42.5,
+        "adapt_768": 499.3,
+        "adapt_512": 257.6,
+        "adapt_96": 69.0,
+        "adapt_64": 62.9
+      },
+      "receipt": {
+        "status": "COMPLETE",
+        "seconds": 993.5675529349996,
+        "peaks": {
+          "cuda_allocated": 1093969408,
+          "cuda_reserved": 1522532352,
+          "device_used_sampled": 2388446412,
+          "worker_peak_rss": 2076307456
+        },
+        "states_deleted": 4,
+        "state_deletion_errors": 0
+      },
+      "states_deleted": {
+        "files": 4,
+        "bytes": 214429712,
+        "errors": []
+      }
+    },
+    "d04": {
+      "times_local": {
+        "gate": "14:26:35",
+        "inputs": "14:26:35",
+        "e0_768": "14:27:52",
+        "e0_512": "14:28:33",
+        "pretrained": "14:28:34",
+        "adapt_768_done": "14:36:32",
+        "adapt_512_done": "14:40:42",
+        "adapt_96_done": "14:41:49",
+        "adapt_64_done": "14:42:46",
+        "receipt": "14:42:48"
+      },
+      "phases_seconds": {
+        "pretrain_768": 77.7,
+        "pretrain_512": 40.9,
+        "adapt_768": 478.8,
+        "adapt_512": 249.9,
+        "adapt_96": 66.8,
+        "adapt_64": 57.2
+      },
+      "receipt": {
+        "status": "COMPLETE",
+        "seconds": 944.2662618660001,
+        "peaks": {
+          "cuda_allocated": 1093969408,
+          "cuda_reserved": 1522532352,
+          "device_used_sampled": 2388446412,
+          "worker_peak_rss": 2076307456
+        },
+        "states_deleted": 4,
+        "state_deletion_errors": 0
+      },
+      "states_deleted": {
+        "files": 4,
+        "bytes": 214429712,
+        "errors": []
+      }
+    },
+    "d05": {
+      "times_local": {
+        "gate": "14:43:01",
+        "inputs": "14:43:01",
+        "e0_768": "14:44:19",
+        "e0_512": "14:45:01",
+        "pretrained": "14:45:02",
+        "adapt_768_done": "14:53:21",
+        "adapt_512_done": "14:57:40",
+        "adapt_96_done": "14:58:47",
+        "adapt_64_done": "14:59:50",
+        "receipt": "14:59:51"
+      },
+      "phases_seconds": {
+        "pretrain_768": 78.1,
+        "pretrain_512": 41.9,
+        "adapt_768": 499.5,
+        "adapt_512": 259.0,
+        "adapt_96": 66.7,
+        "adapt_64": 62.9
+      },
+      "receipt": {
+        "status": "COMPLETE",
+        "seconds": 972.1849922869997,
+        "peaks": {
+          "cuda_allocated": 1093969408,
+          "cuda_reserved": 1522532352,
+          "device_used_sampled": 2388446412,
+          "worker_peak_rss": 2076307456
+        },
+        "states_deleted": 4,
+        "state_deletion_errors": 0
+      },
+      "states_deleted": {
+        "files": 4,
+        "bytes": 214429712,
+        "errors": []
+      }
+    },
+    "d06": {
+      "times_local": {
+        "gate": "15:00:05",
+        "inputs": "15:00:05",
+        "e0_768": "15:01:24",
+        "e0_512": "15:02:06",
+        "pretrained": "15:02:06",
+        "adapt_768_done": "15:19:14",
+        "adapt_512_done": null,
+        "adapt_96_done": null,
+        "adapt_64_done": null,
+        "receipt": null
+      },
+      "phases_seconds": {
+        "pretrain_768": 78.9,
+        "pretrain_512": 41.8,
+        "adapt_768": 1027.9,
+        "adapt_512": null,
+        "adapt_96": null,
+        "adapt_64": null
+      },
+      "receipt": null,
+      "states_deleted": null
+    }
+  },
+  "adapt_768_d01_d05": {
+    "min": 478.8,
+    "max": 515.1,
+    "mean": 498.3
+  },
+  "adapt_768_d06_over_mean_d01_d05": 2.06,
+  "d06": {
+    "work_cap_reached_local": "15:23:02",
+    "states_on_failure": {
+      "benchmark": {
+        "deleted": [],
+        "deleted_bytes": 0,
+        "errors": []
+      },
+      "d06": {
+        "deleted": [
+          {
+            "bytes": 67497092,
+            "path": "d06/w512/E0.pt",
+            "sha256": "6cb8fd24323f5383ec49f5c890b8e17e50cd00cbfc24f31ca8fa20df910afc91"
+          },
+          {
+            "bytes": 2945540,
+            "path": "d06/w64/E0.pt",
+            "sha256": "9ac23779be2669f67acf149f5ee9ab1cee0427a43ba63f810c254c94911e7cba"
+          },
+          {
+            "bytes": 138986628,
+            "path": "d06/w768/E0.pt",
+            "sha256": "e8a3ef13fd4ec9f009ec0ab8527fccfae04408f3513a2b86f8e437e92eed4642"
+          },
+          {
+            "bytes": 5000452,
+            "path": "d06/w96/E0.pt",
+            "sha256": "942b6c491884d9f82929a5f4cc90f2397fb2b8b2fc82acf03ac3e0fd049e9ac4"
+          }
+        ],
+        "deleted_bytes": 214429712,
+        "errors": []
+      }
+    },
+    "failed_in": "the 512 adaptation (768 adapted and recorded at 15:19:14; no 512 arrays)",
+    "started_local": "15:00:05"
+  },
+  "measured_over_projected_d01_d05": [
+    1.003,
+    1.007,
+    0.989,
+    0.939,
+    0.967
+  ],
+  "gpu_checks": {
+    "PRESTART.json": [
+      {
+        "started_utc": "2026-10-30T06:31:23.6593746Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 3.1,
+        "utilization": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          18,
+          1,
+          6
+        ],
+        "memory_used_mib": [
+          528,
+          528,
+          535,
+          535,
+          535,
+          522,
+          510,
+          536,
+          534,
+          534
+        ],
+        "failed_samples": 0
+      }
+    ],
+    "d01-RESPONSE.json": [
+      {
+        "started_utc": "2026-10-30T06:33:24.5955477Z",
+        "verdict": "BUSY",
+        "mean_utilization_percent": 23.2,
+        "utilization": [
+          38,
+          12,
+          14,
+          14,
+          3,
+          54,
+          30,
+          4,
+          50,
+          13
+        ],
+        "memory_used_mib": [
+          559,
+          562,
+          568,
+          560,
+          560,
+          562,
+          628,
+          623,
+          626,
+          630
+        ],
+        "failed_samples": 0
+      },
+      {
+        "started_utc": "2026-10-30T06:34:37.3385146Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 0.3,
+        "utilization": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        "memory_used_mib": [
+          434,
+          434,
+          434,
+          434,
+          434,
+          434,
+          434,
+          433,
+          429,
+          429
+        ],
+        "failed_samples": 0
+      }
+    ],
+    "d02-RESPONSE.json": [
+      {
+        "started_utc": "2026-10-30T06:51:46.4377313Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 0,
+        "utilization": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "memory_used_mib": [
+          708,
+          708,
+          708,
+          708,
+          708,
+          708,
+          708,
+          708,
+          708,
+          708
+        ],
+        "failed_samples": 0
+      }
+    ],
+    "d03-RESPONSE.json": [
+      {
+        "started_utc": "2026-10-30T07:09:14.5256996Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 0,
+        "utilization": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "memory_used_mib": [
+          392,
+          392,
+          392,
+          392,
+          392,
+          392,
+          392,
+          392,
+          392,
+          392
+        ],
+        "failed_samples": 0
+      }
+    ],
+    "d04-RESPONSE.json": [
+      {
+        "started_utc": "2026-10-30T07:26:21.8967572Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 0,
+        "utilization": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "memory_used_mib": [
+          451,
+          451,
+          451,
+          451,
+          451,
+          451,
+          451,
+          451,
+          451,
+          451
+        ],
+        "failed_samples": 0
+      }
+    ],
+    "d05-RESPONSE.json": [
+      {
+        "started_utc": "2026-10-30T07:42:49.0660951Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 0.5,
+        "utilization": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        "memory_used_mib": [
+          585,
+          585,
+          585,
+          585,
+          585,
+          585,
+          585,
+          585,
+          585,
+          585
+        ],
+        "failed_samples": 0
+      }
+    ],
+    "d06-RESPONSE.json": [
+      {
+        "started_utc": "2026-10-30T07:59:51.9140659Z",
+        "verdict": "IDLE",
+        "mean_utilization_percent": 0,
+        "utilization": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "memory_used_mib": [
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "failed_samples": 0
+      }
+    ]
+  },
+  "owner_progress_log": [
+    "2026-10-30 13:33:37  GPU check before d01: BUSY: mean utilization 23.2% (limit 12%), max memory used 630 MiB (recorded, not gated). Waiting; 30 min left before the run stops. Close GPU apps.",
+    "2026-10-30 13:34:49  GPU check before d01: IDLE (IDLE: mean utilization 0.3% (limit 12%), max memory used 434 MiB (recorded, not gated))",
+    "2026-10-30 13:51:59  GPU check before d02: IDLE (IDLE: mean utilization 0% (limit 12%), max memory used 708 MiB (recorded, not gated))",
+    "2026-10-30 14:09:27  GPU check before d03: IDLE (IDLE: mean utilization 0% (limit 12%), max memory used 392 MiB (recorded, not gated))",
+    "2026-10-30 14:26:34  GPU check before d04: IDLE (IDLE: mean utilization 0% (limit 12%), max memory used 451 MiB (recorded, not gated))",
+    "2026-10-30 14:43:01  GPU check before d05: IDLE (IDLE: mean utilization 0.5% (limit 12%), max memory used 585 MiB (recorded, not gated))",
+    "2026-10-30 15:00:04  GPU check before d06: IDLE (IDLE: mean utilization 0% (limit 12%), max memory used 358 MiB (recorded, not gated))"
+  ],
+  "windows_power_events": [
+    {
+      "time_local": "2026-10-30 01:15:25.432",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnEnter": "23627"
+      }
+    },
+    {
+      "time_local": "2026-10-30 01:24:17.829",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnExit": "23685",
+        "PowerStateAc": "true",
+        "DurationInUs": "532399208"
+      }
+    },
+    {
+      "time_local": "2026-10-30 01:24:17.830",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnEnter": "23685"
+      }
+    },
+    {
+      "time_local": "2026-10-30 01:24:44.880",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnExit": "23685",
+        "PowerStateAc": "true",
+        "DurationInUs": "27058276"
+      }
+    },
+    {
+      "time_local": "2026-10-30 03:38:30.558",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnEnter": "23954"
+      }
+    },
+    {
+      "time_local": "2026-10-30 03:49:34.603",
+      "provider": "WindowsUpdateClient",
+      "id": 44,
+      "message": "Windows Update started downloading an update.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:49:34.603",
+      "provider": "WindowsUpdateClient",
+      "id": 44,
+      "message": "Windows Update started downloading an update.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:49:46.002",
+      "provider": "WindowsUpdateClient",
+      "id": 43,
+      "message": "Installation Started: Windows has started installing the following update: 9WZDNCRFJBMP-MICROSOFT.WINDOWSSTORE",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:49:46.918",
+      "provider": "WindowsUpdateClient",
+      "id": 19,
+      "message": "Installation Successful: Windows successfully installed the following update: 9WZDNCRFJBMP-MICROSOFT.WINDOWSSTORE",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:49:56.130",
+      "provider": "WindowsUpdateClient",
+      "id": 43,
+      "message": "Installation Started: Windows has started installing the following update: 9N7R5S6B0ZZH-B9ECED6F.ASUSPCAssistant",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:49:56.290",
+      "provider": "WindowsUpdateClient",
+      "id": 20,
+      "message": "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N7R5S6B0ZZH-B9ECED6F.ASUSPCAssistant.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:53:32.185",
+      "provider": "WindowsUpdateClient",
+      "id": 43,
+      "message": "Installation Started: Windows has started installing the following update: 9N7R5S6B0ZZH-B9ECED6F.ASUSPCAssistant",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 03:53:32.318",
+      "provider": "WindowsUpdateClient",
+      "id": 20,
+      "message": "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N7R5S6B0ZZH-B9ECED6F.ASUSPCAssistant.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 09:31:35.533",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnExit": "23954",
+        "PowerStateAc": "true",
+        "DurationInUs": "21184976534"
+      }
+    },
+    {
+      "time_local": "2026-10-30 09:31:35.534",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnEnter": "23954"
+      }
+    },
+    {
+      "time_local": "2026-10-30 09:58:02.423",
+      "provider": "Kernel-Power",
+      "id": 105,
+      "message": "Power source change.",
+      "data": {
+        "AcOnline": "false",
+        "RemainingCapacity": "23965",
+        "FullChargeCapacity": "29711"
+      }
+    },
+    {
+      "time_local": "2026-10-30 09:58:02.499",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnExit": "23965",
+        "PowerStateAc": "true",
+        "DurationInUs": "1586976767"
+      }
+    },
+    {
+      "time_local": "2026-10-30 09:58:02.510",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnEnter": "23965"
+      }
+    },
+    {
+      "time_local": "2026-10-30 09:58:04.672",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe (process ID:12112) reset policy scheme from {6fecc5ae-f350-48a5-b669-b472cb895ccf} to {64a64f24-65b9-4b56-befd-5ec1eaced9b3}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 10:39:32.595",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnExit": "15463",
+        "PowerStateAc": "false",
+        "DurationInUs": "2490096957"
+      }
+    },
+    {
+      "time_local": "2026-10-30 10:44:56.355",
+      "provider": "Kernel-Power",
+      "id": 105,
+      "message": "Power source change.",
+      "data": {
+        "AcOnline": "true",
+        "RemainingCapacity": "12485",
+        "FullChargeCapacity": "29711"
+      }
+    },
+    {
+      "time_local": "2026-10-30 10:44:56.519",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe (process ID:12112) reset policy scheme from {64a64f24-65b9-4b56-befd-5ec1eaced9b3} to {6fecc5ae-f350-48a5-b669-b472cb895ccf}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 11:14:57.626",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnEnter": "22611"
+      }
+    },
+    {
+      "time_local": "2026-10-30 11:27:24.919",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnExit": "23627",
+        "PowerStateAc": "true",
+        "DurationInUs": "747293981"
+      }
+    },
+    {
+      "time_local": "2026-10-30 12:09:17.941",
+      "provider": "WindowsUpdateClient",
+      "id": 44,
+      "message": "Windows Update started downloading an update.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 12:09:17.941",
+      "provider": "WindowsUpdateClient",
+      "id": 44,
+      "message": "Windows Update started downloading an update.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 12:09:17.941",
+      "provider": "WindowsUpdateClient",
+      "id": 43,
+      "message": "Installation Started: Windows has started installing the following update: Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.463.33.0) - Current Channel (Broad)",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 12:09:24.085",
+      "provider": "WindowsUpdateClient",
+      "id": 19,
+      "message": "Installation Successful: Windows successfully installed the following update: Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.463.33.0) - Current Channel (Broad)",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 12:09:24.390",
+      "provider": "WindowsUpdateClient",
+      "id": 43,
+      "message": "Installation Started: Windows has started installing the following update: Update for Windows Security platform - KB5007651 (Version 10.0.29680.1000) - Current Channel (Broad)",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 12:09:24.581",
+      "provider": "WindowsUpdateClient",
+      "id": 19,
+      "message": "Installation Successful: Windows successfully installed the following update: Update for Windows Security platform - KB5007651 (Version 10.0.29680.1000) - Current Channel (Broad)",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 15:04:47.290",
+      "provider": "Kernel-Power",
+      "id": 105,
+      "message": "Power source change.",
+      "data": {
+        "AcOnline": "false",
+        "RemainingCapacity": "23685",
+        "FullChargeCapacity": "29711"
+      }
+    },
+    {
+      "time_local": "2026-10-30 15:04:50.175",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe (process ID:12112) reset policy scheme from {6fecc5ae-f350-48a5-b669-b472cb895ccf} to {64a64f24-65b9-4b56-befd-5ec1eaced9b3}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 15:05:46.970",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe (process ID:18328) reset policy scheme from {64a64f24-65b9-4b56-befd-5ec1eaced9b3} to {64a64f24-65b9-4b56-befd-5ec1eaced9b3}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 15:08:51.520",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnEnter": "19819"
+      }
+    },
+    {
+      "time_local": "2026-10-30 15:10:22.852",
+      "provider": "WindowsUpdateClient",
+      "id": 43,
+      "message": "Installation Started: Windows has started installing the following update: 9N7R5S6B0ZZH-B9ECED6F.ASUSPCAssistant",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 15:10:23.916",
+      "provider": "WindowsUpdateClient",
+      "id": 20,
+      "message": "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N7R5S6B0ZZH-B9ECED6F.ASUSPCAssistant.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 15:21:19.816",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnExit": "7288",
+        "PowerStateAc": "false",
+        "DurationInUs": "748298529"
+      }
+    },
+    {
+      "time_local": "2026-10-30 15:24:34.582",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "false",
+        "BatteryRemainingCapacityOnEnter": "4672"
+      }
+    },
+    {
+      "time_local": "2026-10-30 15:24:56.541",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnExit": "4531",
+        "PowerStateAc": "false",
+        "DurationInUs": "21961102"
+      }
+    },
+    {
+      "time_local": "2026-10-30 15:26:56.773",
+      "provider": "Kernel-Power",
+      "id": 109,
+      "message": "The kernel power manager has initiated a shutdown transition.",
+      "data": {
+        "ShutdownActionType": "6",
+        "ShutdownReason": "5"
+      }
+    },
+    {
+      "time_local": "2026-10-30 15:27:01.576",
+      "provider": "Kernel-Power",
+      "id": 577,
+      "message": "The system has prepared for a system initiated reboot from Active.",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 19:41:10.652",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Windows\\System32\\DriverStore\\FileRepository\\dptf_cpu.inf_amd64_897ea327b3fe52f7\\esif_uf.exe (process ID:6264) reset policy scheme from {64a64f24-65b9-4b56-befd-5ec1eaced9b3} to {64a64f24-65b9-4b56-befd-5ec1eaced9b3}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 19:41:10.748",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Windows\\System32\\DriverStore\\FileRepository\\dptf_cpu.inf_amd64_897ea327b3fe52f7\\esif_uf.exe (process ID:6264) reset policy scheme from {64a64f24-65b9-4b56-befd-5ec1eaced9b3} to {64a64f24-65b9-4b56-befd-5ec1eaced9b3}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 19:41:24.697",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe (process ID:12244) reset policy scheme from {64a64f24-65b9-4b56-befd-5ec1eaced9b3} to {6fecc5ae-f350-48a5-b669-b472cb895ccf}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 19:41:25.940",
+      "provider": "UserModePowerService",
+      "id": 12,
+      "message": "Process C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe (process ID:12244) reset policy scheme from {6fecc5ae-f350-48a5-b669-b472cb895ccf} to {6fecc5ae-f350-48a5-b669-b472cb895ccf}",
+      "data": {}
+    },
+    {
+      "time_local": "2026-10-30 19:41:58.784",
+      "provider": "Kernel-Power",
+      "id": 506,
+      "message": "The system is entering Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnEnter": "3842"
+      }
+    },
+    {
+      "time_local": "2026-10-30 19:47:02.996",
+      "provider": "Kernel-Power",
+      "id": 507,
+      "message": "The system is exiting Modern Standby ",
+      "data": {
+        "LidOpenState": "true",
+        "BatteryRemainingCapacityOnExit": "5921",
+        "PowerStateAc": "true",
+        "DurationInUs": "304214391"
+      }
+    }
+  ],
+  "model_states": {
+    "benchmark": 12,
+    "draws_d01_d05": 20,
+    "d06_on_failure": 4,
+    "total_files": 36,
+    "total_bytes": 1929867408,
+    "errors": [],
+    "left_in_run_folder": []
+  },
+  "diagnose_py_sha256": "c4907d83bcc35227fe045ea752f1ec37b903c05cb4856fb2ad0ff0f3e6708f01"
+}

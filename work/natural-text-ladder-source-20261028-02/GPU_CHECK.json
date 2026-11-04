@@ -1,0 +1,14 @@
+{
+  "baseline_sha256": "0774b9159e690eda2d3b24e4e36913d84c8a003225e0fcb618d582a9d1a2e60c",
+  "busy_window_seconds": 1800,
+  "nvidia_smi": "C:\\Windows\\System32\\nvidia-smi.exe",
+  "prestart_memory_used_max_mib": 658,
+  "recheck_interval_seconds": 60,
+  "rule": "BUSY if the mean utilization of a check exceeds utilization_mean_max_percent (before start and before every draw), or, before start only, if any reading exceeds prestart_memory_used_max_mib; before a draw memory is recorded, not gated (owner change of 29 Oct 2026); UNVERIFIED if any reading fails; before a draw, recheck every recheck_interval_seconds until busy_window_seconds, then BUSY_TIMEOUT",
+  "sample_interval_seconds": 1,
+  "samples_per_check": 10,
+  "schema": 1,
+  "settle_seconds": 3,
+  "smi_timeout_seconds": 15,
+  "utilization_mean_max_percent": 12
+}

@@ -1,0 +1,86 @@
+{
+  "byte_copies_of_ladder_source": [
+    "framework_setup.py",
+    "ladder_analysis.py",
+    "ORIGINAL_ENVIRONMENT.json",
+    "vendor/core.py",
+    "vendor/engine.py",
+    "vendor/model.py"
+  ],
+  "derived_from": "work/capacity-ladder-source-20261026-01",
+  "disabled_authorization_sha256": "10aa20e01189697c0faccf7a3586807753688b16b78360d2b0b5e00ccc51c964",
+  "files": [
+    {
+      "bytes": 4720,
+      "path": "FOLLOWUP_OWNER_RUN.ps1",
+      "sha256": "7a446221343c553f9b70248502eb0552583df067b95a80ab5aef861c062c5e49"
+    },
+    {
+      "bytes": 1747,
+      "path": "framework_setup.py",
+      "sha256": "12333946ef1b4ba6c5f9356e57a97e5b0e3d335ea2ff77865c6ae7fc2593f93c"
+    },
+    {
+      "bytes": 35463,
+      "path": "ladder_analysis.py",
+      "sha256": "45bc92416665d89ab33dc0d5a9769982d1adb1e55f0daee7c093bb78e570856a"
+    },
+    {
+      "bytes": 6041,
+      "path": "ladder_plan.py",
+      "sha256": "a2ec35c68dc326a5097debaf789fbbeee7c93e26571d784a0ab29b3282fe3bdc"
+    },
+    {
+      "bytes": 10645,
+      "path": "ladder_registry.py",
+      "sha256": "9493b5da00bc6b54d10abd809ab2da6b130a43262495f5e6fc881cc5128bb2ef"
+    },
+    {
+      "bytes": 33757,
+      "path": "ladder_worker.py",
+      "sha256": "9bcafe414490272e3be9e077cb3b2946353648f5c63d718b7a0bda49090bdaef"
+    },
+    {
+      "bytes": 1402,
+      "path": "ORIGINAL_ENVIRONMENT.json",
+      "sha256": "1135b25931539053ee092fbe8160b04b389004d0551d814abd29823be76659fa"
+    },
+    {
+      "bytes": 21452,
+      "path": "PROTOCOL.md",
+      "sha256": "41eebcceaf516e6fbfca57a607237a7832cd19a292392eafc31debbb41ba3bc8"
+    },
+    {
+      "bytes": 1753,
+      "path": "README.md",
+      "sha256": "806c76f64a516459f70e737b3883a6c97df560eaa29704f8179fc044bd08a7ca"
+    },
+    {
+      "bytes": 24844,
+      "path": "shift_analysis.py",
+      "sha256": "ed9e7a30a2da215b5db525f117d0b4f54396397e8eba5ebb71486676afc16df3"
+    },
+    {
+      "bytes": 3297,
+      "path": "vendor/core.py",
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    },
+    {
+      "bytes": 14018,
+      "path": "vendor/engine.py",
+      "sha256": "1ef5cbfc6e8713f41f2a9a51ebe0148c79e5710227262cdea859a2c86f93cf6b"
+    },
+    {
+      "bytes": 11858,
+      "path": "vendor/model.py",
+      "sha256": "88e39015d0c814377236eaec2f9f32a0b72f0080636a5d885d504c3849eafd16"
+    }
+  ],
+  "ladder_source_subject_sha256": "9c0e41d134319cf4376f28ded496226c71ad4ef5809adf8fb4e2ccdd592a07b2",
+  "registry_drawn": false,
+  "runtime_authorized": false,
+  "schema": 1,
+  "seed_policy_sha256": "501c41008e29b75542b60bb10d9b6c882dd571f395a24aa3630e51d05d9a02cb",
+  "status": "SEALED_DISABLED_NO_RUNTIME_AUTHORIZATION",
+  "vendor_origin": "work/v0128-fresh-confirmation-integration-source-20261026-01/vendor (byte copies, via the ladder source)"
+}

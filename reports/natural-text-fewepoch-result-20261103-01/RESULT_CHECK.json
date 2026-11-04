@@ -1,0 +1,45 @@
+{
+ "schema": 1,
+ "purpose": "The check of the few-epoch results report",
+ "fixture": false,
+ "status": "PASS",
+ "mismatches": [],
+ "comparisons": 4889,
+ "input_differences": [],
+ "tied_values": {
+  "d01": 2,
+  "d02": 0,
+  "d03": 4,
+  "d04": 2,
+  "d05": 2,
+  "d06": 2,
+  "d07": 1,
+  "d08": 2,
+  "d09": 3,
+  "d10": 4
+ },
+ "largest_record_array_difference": 1.016072928905487e-06,
+ "t_critical": 2.2621571627982062,
+ "refits_at_bound_32_needed": false,
+ "refits_recomputed": false,
+ "records": {
+  "ANALYSIS.json": "df0c56146387142983b60773adbbf1d8eddc7d0fb85eae2231f4d6d28ca9ab26",
+  "POINTS.csv": "9a2baad33a711901098ffa365294a18eff6a6761d01293449d0b17cb576de026",
+  "FITS.csv": "262fea51f7d6f933a56cf1adcb56f8e83a34127bc20ad86a1c8165b9a8dd05e8",
+  "Run B1 TERMINAL.json": "7b04d74b62d10847e288c8972a861f179d06e528e2f60ce31a432f04473c8ae2",
+  "Run B2 TERMINAL.json": "eef9f17516f836042b124b50c17a5a28a5d01cb8659b6e8b296d4c96d80ab95e",
+  "SOURCE_SUBJECT.json": "62f05466d1f3c0ef09de3d9ed12e8683036c82912978e0d77a91eeb34be3602a",
+  "this layout, make_results_report.py": "91a61d0a4c074e095071416bc87e2edad07518e561199cfceed306a66e1a4a41",
+  "owner decision": "b3899baa4016c379e6bc210777845de7dda89c25e95b8af453378a7e6d194283"
+ },
+ "inputs": {
+  "reports/natural-text-fewepoch-runa-package-20261102-02/DISCLOSURE_FIGURES.json": "7438e369aba4c3eff6d11e56d63926ea69eeccfc284ac68266f14300b0c240f0",
+  "reports/natural-text-fewepoch-analysis-approval-20261103-01/SHARED_SEQUENCES.json": "9931753d3e8996b74cc31d47d1adf5d98c0986a7e79ccd11264b340487fe7457",
+  "reports/natural-text-fewepoch-engine-check-result-20261102-01/INPUTS_CHECK.json": "c8bb14ef4aee1b098adf6e939ba5d6ae0801cfa02fd8a49b51182fdb3e4aebe4",
+  "reports/natural-text-fewepoch-runa-package-20261102-02/ENGINE_CHECK_EXPECTED.json": "217701cf13da8ff52c7ac52fde5f183c02f29b34645baf2589f22b54a4e11a46",
+  "work/runs/natural-text-fewepoch-a-20261101-01/LR_SELECTION.json": "fa760ba0d693518ba1b98a40f366899ebec3a013ff03863284a3ac2c32b5ad01",
+  "reports/natural-text-fewepoch-b1-result-20261102-01/RUN_B1_VERIFICATION.json": "decb6f6153a3674779f50eea94c0fd9ff44f92320e8b47b93da7920042b114e3",
+  "reports/natural-text-fewepoch-b2-result-20261103-01/RUN_B2_VERIFICATION.json": "b30569024bbb00b61cb7b707949bb0cf75168a474b08f7f76aad17168833ca42"
+ },
+ "seconds": 303.3
+}

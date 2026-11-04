@@ -1,0 +1,152 @@
+{
+  "byte_copies_of_revision_05": {
+    "GPU_CHECK.json": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "ORIGINAL_ENVIRONMENT.json": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "gpu_check.ps1": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "prepare_corpus.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_analysis.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_data.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_engine.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_framework_setup.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_model.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_plan.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_registry.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "text_worker.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d",
+    "vendor/core.py": "2ac27fe79e699805cd02087c13abd27c703c5adf937c0d2ebe2e2e0f2faf401d"
+  },
+  "changed_from_revision_01": [
+    "ONERATE_OWNER_RUN.ps1",
+    "PROTOCOL.md",
+    "README.md",
+    "onerate_analysis.py",
+    "onerate_plan.py",
+    "onerate_worker.py",
+    "power_gate.ps1"
+  ],
+  "disabled_authorization_sha256": "892f365dd23ce72ecaa18bc5cfbf6270396e4ed87d14b1545bf02a3e27536f3a",
+  "files": [
+    {
+      "bytes": 842,
+      "path": "GPU_CHECK.json",
+      "sha256": "f492d8390c167b10b27c02a825589685d112ce4770cef189f083b2452d031254"
+    },
+    {
+      "bytes": 12205,
+      "path": "ONERATE_OWNER_RUN.ps1",
+      "sha256": "f610a1fe868620904b0c0e9403a9e0cc3003578c744508324e71d839c4f9dfa7"
+    },
+    {
+      "bytes": 1402,
+      "path": "ORIGINAL_ENVIRONMENT.json",
+      "sha256": "1135b25931539053ee092fbe8160b04b389004d0551d814abd29823be76659fa"
+    },
+    {
+      "bytes": 33281,
+      "path": "PROTOCOL.md",
+      "sha256": "16c4d34f3efa129c9660a2e7b43678b7ac8b6c84dd236ffb6cfe030d967c1536"
+    },
+    {
+      "bytes": 2512,
+      "path": "README.md",
+      "sha256": "0cc7380f0f8c818476977b9c2ab1aa6e02c17dfe57de568e868eed23cbc06280"
+    },
+    {
+      "bytes": 9015,
+      "path": "gpu_check.ps1",
+      "sha256": "e51669cb4f18dec918ce9db947a8c8b223bb203a2773ba9c448542294d99840f"
+    },
+    {
+      "bytes": 22255,
+      "path": "onerate_analysis.py",
+      "sha256": "3acf3a3f830fa4ceb15383aac3c74160ece05833b84febd72e9d37c4a6e5ab17"
+    },
+    {
+      "bytes": 5713,
+      "path": "onerate_plan.py",
+      "sha256": "912d6aff83fd989f6bb57c6c1f838846787310549236c87845838f2e1a287e97"
+    },
+    {
+      "bytes": 29214,
+      "path": "onerate_worker.py",
+      "sha256": "960c2d5181b13b1de261d576e4ed6c4f7951d012c831c3af424a3f316d1e05ee"
+    },
+    {
+      "bytes": 8515,
+      "path": "power_gate.ps1",
+      "sha256": "53b882b297392f633ce9b9d19670d677e25ff39aba43af04242cc46d4ddee971"
+    },
+    {
+      "bytes": 5964,
+      "path": "prepare_corpus.py",
+      "sha256": "be2b8e4ead066a1cfee7fbd71bdff888924f9fbf7819d58761a9c5f2667c398b"
+    },
+    {
+      "bytes": 33519,
+      "path": "text_analysis.py",
+      "sha256": "f53cf877b57ea424f49dffd13212bfecc713d0019c75ebf7c3d2179a9645f07f"
+    },
+    {
+      "bytes": 5606,
+      "path": "text_data.py",
+      "sha256": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d"
+    },
+    {
+      "bytes": 2157,
+      "path": "text_engine.py",
+      "sha256": "c9d9972108678d76384d156e933c85de2bb608646841710bdd206d5b4f259f52"
+    },
+    {
+      "bytes": 1888,
+      "path": "text_framework_setup.py",
+      "sha256": "4a502d067022e1d943943e0a8b8469d895d158f5e46c18f49f99b6744ac0605f"
+    },
+    {
+      "bytes": 2004,
+      "path": "text_model.py",
+      "sha256": "619d83285dab6008f1f11381173b69ef745f62bc660796e5f2d54c196a01ba9e"
+    },
+    {
+      "bytes": 5786,
+      "path": "text_plan.py",
+      "sha256": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343"
+    },
+    {
+      "bytes": 11833,
+      "path": "text_registry.py",
+      "sha256": "1ea87bb7c4bf328b084d3622117674d3753dfb965e90f6143ec280631be41464"
+    },
+    {
+      "bytes": 43215,
+      "path": "text_worker.py",
+      "sha256": "4a1ef8e847ae907273778d76b9214050b9c179964aa5f0567f19c5d79427cf37"
+    },
+    {
+      "bytes": 3297,
+      "path": "vendor/core.py",
+      "sha256": "8d730bf1837473f6e5212df67cbb7d29ca4de36e641267b9f25f435cbc4bbc7a"
+    }
+  ],
+  "kind": "natural-text one-rate ladder extension source, revision 02, the final attempt (R1: the same ten draws at 3e-5, widths 64-768)",
+  "new_files": [
+    "onerate_plan.py",
+    "onerate_worker.py",
+    "onerate_analysis.py",
+    "ONERATE_OWNER_RUN.ps1",
+    "power_gate.ps1",
+    "PROTOCOL.md",
+    "README.md"
+  ],
+  "new_in_revision_02": [
+    "power_gate.ps1"
+  ],
+  "owner_decisions": {
+    "reports/natural-text-ladder-owner-decisions-20261030-01/OWNER_DECISIONS.md": "2861c25f2e546a5aa252deb7444fae36afc2de896ca1f64dca763846be960ee7",
+    "reports/natural-text-ladder-owner-decisions-20261030-02/OWNER_DECISIONS.md": "3a7ff7920998f0c24fb0abda57f33ea551a7cf301a51f646ab74f00a4f662042",
+    "reports/natural-text-ladder-owner-decisions-20261030-03/OWNER_DECISIONS.md": "fc98c6b8bb8afa1b51f0df762812caa0ef627ea9778ebaa1771198c8e34d65ac"
+  },
+  "revision": 2,
+  "revision_01_subject": "4ca9833cad1152165552a8b2a42ea8f2b003f8cab4c39a3e3ab2105d2698d672",
+  "runtime_authorized": false,
+  "schema": 1,
+  "status": "SEALED_DISABLED"
+}

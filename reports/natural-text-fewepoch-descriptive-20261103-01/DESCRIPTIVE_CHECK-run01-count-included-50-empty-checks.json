@@ -1,0 +1,144 @@
+{
+ "schema": 1,
+ "purpose": "The check of the DESCRIPTIVE section; owner decision 20261103-02",
+ "inputs": {
+  "ANALYSIS.json": "df0c56146387142983b60773adbbf1d8eddc7d0fb85eae2231f4d6d28ca9ab26",
+  "POINTS.csv": "9a2baad33a711901098ffa365294a18eff6a6761d01293449d0b17cb576de026",
+  "RESULT.md": "4b9f46933bc6375e422780d3614d0336a752d086099e41a748e18c3abbaea613",
+  "RESULT_CHECK.json": "35bae7a262c110d87ff09d2638a5ddfd47d45e5c734d0238f3ac62ec9489b912",
+  "LR_SELECTION.json": "fa760ba0d693518ba1b98a40f366899ebec3a013ff03863284a3ac2c32b5ad01"
+ },
+ "passed": 149,
+ "total": 149,
+ "claims": [
+  {
+   "claim": "At every readout E0.25-E3, the per-draw argmax width is 512 in 10/10 draws",
+   "verdict": "HOLDS",
+   "holds": true,
+   "source": "ANALYSIS.json by_readout.*.per_draw_argmax; recomputed from POINTS.csv"
+  },
+  {
+   "claim": "p* at 768 is below p* at 512",
+   "verdict": "HOLDS",
+   "holds": true,
+   "source": "ANALYSIS.json by_readout.*.curve for the panel; POINTS.csv for each of the 50 draw-readout points"
+  },
+  {
+   "claim": "E3 panel 0.098, 0.118, 0.104 at 384, 512, 768",
+   "verdict": "HOLDS",
+   "holds": true,
+   "source": "ANALYSIS.json by_readout.E3.curve"
+  },
+  {
+   "claim": "The FALL slope over 384-768 stays positive",
+   "verdict": "DOES NOT HOLD AS WORDED",
+   "holds": true,
+   "source": "ANALYSIS.json by_readout.*.fall"
+  },
+  {
+   "claim": "It is positive because 768 sits above 384",
+   "verdict": "HOLDS AS ARITHMETIC ON THE PANEL",
+   "holds": true,
+   "source": "ANALYSIS.json curves and fall means; the OLS weights, checked against every FALL value in POINTS.csv"
+  },
+  {
+   "claim": "On t00, 768 had lower validation NLL at 1e-4 than at 3e-4",
+   "verdict": "HOLDS",
+   "holds": true,
+   "source": "LR_SELECTION.json and t00/w768/*/record.json. ANALYSIS.json holds no t00 value, so this one could not be verified from it"
+  }
+ ],
+ "ols_weights": {
+  "384": -0.9343652214193366,
+  "512": -0.1122033950889936,
+  "768": 1.0465686165083337
+ },
+ "sign_mismatches": [
+  {
+   "readout": "E0.25",
+   "draw": "d02"
+  },
+  {
+   "readout": "E0.25",
+   "draw": "d05"
+  },
+  {
+   "readout": "E0.25",
+   "draw": "d06"
+  },
+  {
+   "readout": "E0.5",
+   "draw": "d02"
+  },
+  {
+   "readout": "E1",
+   "draw": "d02"
+  },
+  {
+   "readout": "E2",
+   "draw": "d01"
+  },
+  {
+   "readout": "E2",
+   "draw": "d07"
+  },
+  {
+   "readout": "E3",
+   "draw": "d08"
+  }
+ ],
+ "largest_identity_difference": 3.7686867515596134e-16,
+ "e3_panel": {
+  "384": 0.09792151330530831,
+  "512": 0.11753333377440203,
+  "768": 0.10380466097323252
+ },
+ "draws_with_768_above_384_at_e3": 10,
+ "checks": [
+  {
+   "check": "the OLS weights reproduce every FALL value in POINTS, and the two-term form equals them",
+   "ok": true,
+   "detail": 3.7686867515596134e-16
+  },
+  {
+   "check": "E3 FALL values in ANALYSIS equal POINTS",
+   "ok": true,
+   "detail": null
+  },
+  {
+   "check": "LR_SELECTION equals the t00 records at 768",
+   "ok": true,
+   "detail": null
+  },
+  {
+   "check": "claim: At every readout E0.25-E3, the per-draw argmax width is 512 in 10/10 draws",
+   "ok": true,
+   "detail": "HOLDS"
+  },
+  {
+   "check": "claim: p* at 768 is below p* at 512",
+   "ok": true,
+   "detail": "HOLDS"
+  },
+  {
+   "check": "claim: E3 panel 0.098, 0.118, 0.104 at 384, 512, 768",
+   "ok": true,
+   "detail": "HOLDS"
+  },
+  {
+   "check": "claim: The FALL slope over 384-768 stays positive",
+   "ok": true,
+   "detail": "DOES NOT HOLD AS WORDED"
+  },
+  {
+   "check": "claim: It is positive because 768 sits above 384",
+   "ok": true,
+   "detail": "HOLDS AS ARITHMETIC ON THE PANEL"
+  },
+  {
+   "check": "claim: On t00, 768 had lower validation NLL at 1e-4 than at 3e-4",
+   "ok": true,
+   "detail": "HOLDS"
+  }
+ ]
+}

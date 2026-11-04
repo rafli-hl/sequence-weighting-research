@@ -1,0 +1,668 @@
+{
+  "status": "PASS",
+  "checks": 69,
+  "failed": [],
+  "results": [
+    {
+      "check": "decision",
+      "value": "MOVES_SMALLER",
+      "quoted": "**MOVES_SMALLER** (G16, full weighting R; not censored)",
+      "ok": true
+    },
+    {
+      "check": "primary R mean",
+      "value": -0.7957758175697132,
+      "quoted": "−0.796",
+      "ok": true
+    },
+    {
+      "check": "primary R interval",
+      "value": [
+        -0.982207098998363,
+        -0.6093445361410633
+      ],
+      "quoted": "[−0.982, −0.609]",
+      "ok": true
+    },
+    {
+      "check": "primary R sd",
+      "value": 0.293421743520155,
+      "quoted": "0.293",
+      "ok": true
+    },
+    {
+      "check": "S32 mean",
+      "value": -0.8166875715484451,
+      "quoted": "−0.817",
+      "ok": true
+    },
+    {
+      "check": "S32 interval",
+      "value": [
+        -0.98972513806536,
+        -0.6436500050315301
+      ],
+      "quoted": "[−0.990, −0.644]",
+      "ok": true
+    },
+    {
+      "check": "S32 sd",
+      "value": 0.2723415516580545,
+      "quoted": "0.272",
+      "ok": true
+    },
+    {
+      "check": "SD mean",
+      "value": -0.794100003002253,
+      "quoted": "−0.794",
+      "ok": true
+    },
+    {
+      "check": "SD interval",
+      "value": [
+        -0.9663996905941725,
+        -0.6218003154103335
+      ],
+      "quoted": "[−0.966, −0.622]",
+      "ok": true
+    },
+    {
+      "check": "SD sd",
+      "value": 0.2060949470335889,
+      "quoted": "0.206",
+      "ok": true
+    },
+    {
+      "check": "primary negative 12/12",
+      "value": 12,
+      "quoted": "12/12",
+      "ok": true
+    },
+    {
+      "check": "SD corpora",
+      "value": 8,
+      "quoted": "(df 7) | 8",
+      "ok": true
+    },
+    {
+      "check": "defined points",
+      "value": 59,
+      "quoted": "59 of 60 corpus-epoch points are defined",
+      "ok": true
+    },
+    {
+      "check": "undefined point c01 E15 256/4",
+      "value": [
+        {
+          "corpus": "c01",
+          "epoch": 15,
+          "widths": [
+            256
+          ],
+          "reasons": [
+            "nonpositive_total_gain"
+          ]
+        }
+      ],
+      "quoted": "c01 at E15, where the 256/4 fit",
+      "ok": true
+    },
+    {
+      "check": "flagged 19",
+      "value": 19,
+      "quoted": "19 of 60 points were flagged (31.7%",
+      "ok": true
+    },
+    {
+      "check": "unresolved 2",
+      "value": 2,
+      "quoted": "2 of the 19 bound-32 refits were unresolved",
+      "ok": true
+    },
+    {
+      "check": "refit mean change",
+      "value": 0.0508640764419826,
+      "quoted": "+0.051 on average (largest |change| 0.450)",
+      "ok": true
+    },
+    {
+      "check": "SD dropped",
+      "value": [
+        "c01",
+        "c03",
+        "c04",
+        "c10"
+      ],
+      "quoted": "SD dropped c01, c03, c04 and c10",
+      "ok": true
+    },
+    {
+      "check": "flagged by epoch",
+      "value": {
+        "E15": 9,
+        "E20": 5,
+        "E25": 4,
+        "E30": 1,
+        "E40": 0
+      },
+      "quoted": "| 9 | 5 | 4 | 1 | 0 | 19 / 60 |",
+      "ok": true
+    },
+    {
+      "check": "upper by epoch",
+      "value": {
+        "E15": 15,
+        "E20": 11,
+        "E25": 5,
+        "E30": 2,
+        "E40": 0
+      },
+      "quoted": "| 15 | 11 | 5 | 2 | 0 | 33 |",
+      "ok": true
+    },
+    {
+      "check": "S_batch slope",
+      "value": [
+        -0.8506196820023524,
+        0.13053898142956502,
+        -0.933560193814262,
+        -0.7676791701904427
+      ],
+      "quoted": "−0.851 | 0.131 | [−0.934, −0.768]",
+      "ok": true
+    },
+    {
+      "check": "E15-E30 R",
+      "value": [
+        -0.9215300058465633,
+        0.4401558595544353,
+        -1.20119169669677,
+        -0.6418683149963567
+      ],
+      "quoted": "−0.922 | 0.440 | [−1.201, −0.642]",
+      "ok": true
+    },
+    {
+      "check": "E15-E30 S",
+      "value": [
+        -1.0182968058543096,
+        0.24978138656339854,
+        -1.1770003273295022,
+        -0.8595932843791171
+      ],
+      "quoted": "−1.018 | 0.250 | [−1.177, −0.860]",
+      "ok": true
+    },
+    {
+      "check": "difference primary",
+      "value": [
+        "NO_DETECTED_DIFFERENCE",
+        0.0548438644326392,
+        -0.12756629576972908,
+        0.23725402463500747
+      ],
+      "quoted": "+0.055 | — | [−0.128, +0.237]",
+      "ok": true
+    },
+    {
+      "check": "difference E15_E30",
+      "value": [
+        "NO_DETECTED_DIFFERENCE",
+        0.09676680000774639,
+        -0.23599119399585344,
+        0.42952479401134624
+      ],
+      "quoted": "+0.097 | — | [−0.236, +0.430]",
+      "ok": true
+    },
+    {
+      "check": "E15-E30 R sensitivities",
+      "value": [
+        -0.9393165673285919,
+        -1.0853486333946019,
+        7
+      ],
+      "quoted": "S32 −0.939; SD on 7 corpora −1.085",
+      "ok": true
+    },
+    {
+      "check": "two-point R",
+      "value": [
+        -0.49815677753800514,
+        0.32063189175649176,
+        -0.7018765623430769,
+        -0.2944369927329334,
+        11
+      ],
+      "quoted": "−0.498 | 0.321 | [−0.702, −0.294] | 11/12",
+      "ok": true
+    },
+    {
+      "check": "two-point S_batch",
+      "value": [
+        -0.31282081137833595,
+        0.20877074558323036,
+        -0.44546741471781476,
+        -0.18017420803885714,
+        11
+      ],
+      "quoted": "−0.313 | 0.209 | [−0.445, −0.180] | 11/12",
+      "ok": true
+    },
+    {
+      "check": "curve R E5",
+      "value": [
+        "UNDEFINED",
+        1
+      ],
+      "quoted": "UNDEFINED | — | 1",
+      "ok": true
+    },
+    {
+      "check": "curve R E10",
+      "value": [
+        "UNDEFINED",
+        2
+      ],
+      "quoted": "UNDEFINED | — | 2",
+      "ok": true
+    },
+    {
+      "check": "curve R E15",
+      "value": [
+        "UNDEFINED",
+        1
+      ],
+      "quoted": "UNDEFINED | — | 1",
+      "ok": true
+    },
+    {
+      "check": "curve R E20",
+      "value": [
+        "INTERIOR_PEAK",
+        192,
+        162.98479585107467
+      ],
+      "quoted": "INTERIOR_PEAK | 192 (163)",
+      "ok": true
+    },
+    {
+      "check": "curve R E25",
+      "value": [
+        "INTERIOR_PEAK",
+        128,
+        133.99886405270104
+      ],
+      "quoted": "INTERIOR_PEAK | 128 (134)",
+      "ok": true
+    },
+    {
+      "check": "curve R E30",
+      "value": [
+        "INTERIOR_PEAK",
+        96,
+        110.43469795801975
+      ],
+      "quoted": "INTERIOR_PEAK | 96 (110)",
+      "ok": true
+    },
+    {
+      "check": "curve R E40",
+      "value": [
+        "INTERIOR_PEAK",
+        96,
+        98.073430643484
+      ],
+      "quoted": "INTERIOR_PEAK | 96 (98)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E5",
+      "value": [
+        "PLATEAU_OR_INCONCLUSIVE",
+        256,
+        289.736808071519
+      ],
+      "quoted": "PLATEAU_OR_INCONCLUSIVE | 256 (290)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E10",
+      "value": [
+        "RISING_TO_LARGEST",
+        384,
+        384.0
+      ],
+      "quoted": "RISING_TO_LARGEST | 384 (384)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E15",
+      "value": [
+        "INTERIOR_PEAK",
+        256,
+        236.64542854895515
+      ],
+      "quoted": "INTERIOR_PEAK | 256 (237)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E20",
+      "value": [
+        "INTERIOR_PEAK",
+        128,
+        143.5438000736128
+      ],
+      "quoted": "INTERIOR_PEAK | 128 (144)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E25",
+      "value": [
+        "INTERIOR_PEAK",
+        128,
+        123.18500299687891
+      ],
+      "quoted": "INTERIOR_PEAK | 128 (123)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E30",
+      "value": [
+        "INTERIOR_PEAK",
+        96,
+        107.62071850514792
+      ],
+      "quoted": "INTERIOR_PEAK | 96 (108)",
+      "ok": true
+    },
+    {
+      "check": "curve S_batch E40",
+      "value": [
+        "INTERIOR_PEAK",
+        96,
+        91.76514131518272
+      ],
+      "quoted": "INTERIOR_PEAK | 96 (92)",
+      "ok": true
+    },
+    {
+      "check": "losses R|32/4|E15",
+      "value": {
+        "n": 12,
+        "train": 2.321256680220055,
+        "validation": 2.333579857600853,
+        "train_instance": 2.8112633992762617,
+        "validation_instance": 2.8262156932614744,
+        "gap": 0.012323177380797912,
+        "instance_gap": 0.014952293985212695
+      },
+      "quoted": "2.321 | 2.334 | 0.012 | 2.826 |",
+      "ok": true
+    },
+    {
+      "check": "losses R|32/4|E40",
+      "value": {
+        "n": 12,
+        "train": 2.1817396278881156,
+        "validation": 2.233861705598732,
+        "train_instance": 2.7940314350028834,
+        "validation_instance": 2.8642438768874854,
+        "gap": 0.05212207771061639,
+        "instance_gap": 0.07021244188460196
+      },
+      "quoted": "2.182 | 2.234 | 0.052 | 2.864 |",
+      "ok": true
+    },
+    {
+      "check": "losses R|128/4|E15",
+      "value": {
+        "n": 12,
+        "train": 1.8160335648523567,
+        "validation": 2.0210724455149225,
+        "train_instance": 2.8428938072562837,
+        "validation_instance": 3.1133662554978705,
+        "gap": 0.20503888066256581,
+        "instance_gap": 0.2704724482415868
+      },
+      "quoted": "1.816 | 2.021 | 0.205 | 3.113 |",
+      "ok": true
+    },
+    {
+      "check": "losses R|128/4|E40",
+      "value": {
+        "n": 12,
+        "train": 1.6551146014923386,
+        "validation": 2.5042594764769697,
+        "train_instance": 2.653969680313215,
+        "validation_instance": 3.9360192728151255,
+        "gap": 0.8491448749846311,
+        "instance_gap": 1.2820495925019104
+      },
+      "quoted": "1.655 | 2.504 | 0.849 | 3.936 |",
+      "ok": true
+    },
+    {
+      "check": "losses R|384/4|E15",
+      "value": {
+        "n": 12,
+        "train": 1.7272612717048712,
+        "validation": 2.535772956480893,
+        "train_instance": 2.8433579276867627,
+        "validation_instance": 4.050683933271405,
+        "gap": 0.8085116847760216,
+        "instance_gap": 1.2073260055846426
+      },
+      "quoted": "1.727 | 2.536 | 0.809 | 4.051 |",
+      "ok": true
+    },
+    {
+      "check": "losses R|384/4|E40",
+      "value": {
+        "n": 12,
+        "train": 0.7155994233357509,
+        "validation": 3.0647983304418935,
+        "train_instance": 1.388517332628851,
+        "validation_instance": 5.568798280340464,
+        "gap": 2.3491989071061425,
+        "instance_gap": 4.180280947711613
+      },
+      "quoted": "0.716 | 3.065 | 2.349 | 5.569 |",
+      "ok": true
+    },
+    {
+      "check": "R-S validation 128/4 E40",
+      "value": {
+        "n": 12,
+        "df": 11,
+        "mean": 0.17836188222281635,
+        "sd": 0.046639835220997204,
+        "low": 0.1487283447025326,
+        "high": 0.2079954197431001,
+        "negative": 0,
+        "positive": 12
+      },
+      "quoted": "+0.178 [+0.149, +0.208]",
+      "ok": true
+    },
+    {
+      "check": "R-S validation 384/4 E40",
+      "value": {
+        "n": 12,
+        "df": 11,
+        "mean": -0.10341542745785166,
+        "sd": 0.07091462388658085,
+        "low": -0.1484724298619625,
+        "high": -0.058358425053740844,
+        "negative": 11,
+        "positive": 1
+      },
+      "quoted": "−0.103 [−0.148, −0.058]",
+      "ok": true
+    },
+    {
+      "check": "R-S validation 384/4 E15",
+      "value": 0.33694598546329263,
+      "quoted": "+0.337 at E15",
+      "ok": true
+    },
+    {
+      "check": "clip fraction range",
+      "value": [
+        0.8921875,
+        1.0
+      ],
+      "quoted": "0.89–1.00",
+      "ok": true
+    },
+    {
+      "check": "gradient norm range E31-E40",
+      "value": [
+        2.3429722716876618,
+        10.342024152477583
+      ],
+      "quoted": "2.3–10.3",
+      "ok": true
+    },
+    {
+      "check": "P50 crossings",
+      "value": [
+        {
+          "crossed": 12,
+          "missed": 0,
+          "undefined_E0": 0,
+          "median_update": 464.0
+        },
+        9,
+        3
+      ],
+      "quoted": "at 256/4 in 9/12 (R) and 3/12 (S_batch)",
+      "ok": true
+    },
+    {
+      "check": "P90 never",
+      "value": true,
+      "quoted": "P = 0.90 was never crossed",
+      "ok": true
+    },
+    {
+      "check": "P10 never at 32/4",
+      "value": [
+        0,
+        0
+      ],
+      "quoted": "never at 32/4",
+      "ok": true
+    },
+    {
+      "check": "selected E0/E40",
+      "value": [
+        33,
+        22,
+        12,
+        16
+      ],
+      "quoted": "E0 for 33/96 R and 22/96 S_batch trajectories, and at E40 for 12 and 16",
+      "ok": true
+    },
+    {
+      "check": "exposed ladder slope",
+      "value": -1.0427905826211006,
+      "quoted": "−1.043 on 5 corpora",
+      "ok": true
+    },
+    {
+      "check": "verification 23/23",
+      "value": [
+        "PASS",
+        23
+      ],
+      "quoted": "23/23 PASS",
+      "ok": true
+    },
+    {
+      "check": "owner elapsed",
+      "value": 4839.868572,
+      "quoted": "4,839.9 s",
+      "ok": true
+    },
+    {
+      "check": "worker elapsed",
+      "value": 4355.461771833,
+      "quoted": "Worker 4,355.5 s",
+      "ok": true
+    },
+    {
+      "check": "stage seconds range",
+      "value": [
+        463.9,
+        411.8,
+        433.0,
+        456.2,
+        464.1,
+        468.5,
+        325.6,
+        260.9,
+        232.4,
+        235.2,
+        240.4,
+        263.0
+      ],
+      "quoted": "stages took 232–468 s",
+      "ok": true
+    },
+    {
+      "check": "cap",
+      "value": [
+        900,
+        519.7359576004355
+      ],
+      "quoted": "Benchmark projection 519.7 s per stage, cap 900 s",
+      "ok": true
+    },
+    {
+      "check": "inventory",
+      "value": {
+        "bytes": 993523223,
+        "files": 638
+      },
+      "quoted": "993,523,223 bytes in 638 files",
+      "ok": true
+    },
+    {
+      "check": "peaks",
+      "value": {
+        "cuda_allocated": 275053568,
+        "cuda_reserved": 301989888,
+        "device_used_sampled": 1167903948,
+        "worker_peak_rss": 1573347328
+      },
+      "quoted": "Sampled GPU 1.17 GB and worker RSS 1.57 GB",
+      "ok": true
+    },
+    {
+      "check": "eval batches",
+      "value": 174744,
+      "quoted": "174,744 evaluation batches",
+      "ok": true
+    },
+    {
+      "check": "landmark validations",
+      "value": 147,
+      "quoted": "(147 landmark validations)",
+      "ok": true
+    },
+    {
+      "check": "vanished bytes",
+      "value": 2355,
+      "quoted": "one file of 2,355 bytes",
+      "ok": true
+    },
+    {
+      "check": "exclusion values",
+      "value": 4046,
+      "quoted": "against 4,046 exclusion values",
+      "ok": true
+    }
+  ]
+}
