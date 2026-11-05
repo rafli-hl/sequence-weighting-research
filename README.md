@@ -18,6 +18,7 @@ This publication copy contains versioned source, mathematical fixtures, protocol
 - [Data availability and reproducibility limits](DATA_AVAILABILITY.md)
 - [Distribution changes](PUBLICATION_NOTES.md)
 - [Pre-registration, 3 Nov 2026: peak confirmation on fresh WikiText-103 draws (published before its analysis)](preregistration/natural-text-peak-confirmation-20261103/README.md)
+- [Pre-registration, 4 Nov 2026: matched-progress confirmation on fresh WikiText-103 draws (published before its runs)](preregistration/natural-text-matched-confirmation-20261104/README.md)
 - [Natural-text studies, 27 Oct – 4 Nov 2026: protocols, results, tables, failed attempts](NATURAL_TEXT_STUDIES.md)
 - [Final claims after the adversarial review (§5)](reports/adversarial-review-response-20261104-01/RESPONSE.md), with the [review](reports/adversarial-review-20261104-01/REVIEW.md)
 

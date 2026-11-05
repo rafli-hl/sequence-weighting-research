@@ -1,0 +1,214 @@
+{
+ "schema": 1,
+ "purpose": "Post-draw checks and disclosure of the N7 seed draw (owner decision 20261104-02). Outcome-blind; from the corpus manifest only.",
+ "fixture": false,
+ "all_pass": true,
+ "checks": {
+  "no REGISTRY_STOPPED.json": {
+   "ok": true
+  },
+  "validate() re-derives the registry from its own bytes, under the pins": {
+   "ok": true
+  },
+  "registry: FROZEN_DRAWN, the frozen policy, the manifest and both earlier registries and partitions": {
+   "ok": true
+  },
+  "claim: this approval, the same policy and manifest": {
+   "ok": true,
+   "detail": "OWNER-20261104-MATCHED-SEEDS-01"
+  },
+  "every registry-source hash in the claim and the registry equals the sealed source": {
+   "ok": true
+  },
+  "26 distinct values, each more than 2,048 from every exclusion and each other; every N5 and N6 value excluded": {
+   "ok": true,
+   "detail": {
+    "nearest_exclusion": 53491,
+    "nearest_other_role": 46842,
+    "exclusions": 4316,
+    "unreadable": 515,
+    "census": 4311
+   }
+  },
+  "the sealed rule re-derives the draw's own PARTITION.json, and the registry records its hash": {
+   "ok": true,
+   "detail": "b7eb3d3ba200b86046c6d731d2f0200ff657b6c2aaeebd43423cd4aec530e33b"
+  },
+  "matched_data.disjoint passes on the partition": {
+   "ok": true
+  },
+  "an independent implementation from the policy text gives the same groups": {
+   "ok": true,
+   "detail": {
+    "fresh_articles": 16451
+   }
+  },
+  "the fresh pool has the size N6's draw left unused": {
+   "ok": true,
+   "detail": {
+    "expected": 16451,
+    "fresh_articles": 16451
+   }
+  },
+  "six groups of exactly N sequences": {
+   "ok": true,
+   "detail": {
+    "m01": {
+     "articles": 407,
+     "sequences": 16384
+    },
+    "m02": {
+     "articles": 388,
+     "sequences": 16384
+    },
+    "m03": {
+     "articles": 376,
+     "sequences": 16384
+    },
+    "m04": {
+     "articles": 425,
+     "sequences": 16384
+    },
+    "m05": {
+     "articles": 421,
+     "sequences": 16384
+    },
+    "m06": {
+     "articles": 395,
+     "sequences": 16384
+    }
+   }
+  },
+  "no article of N5 or N6, no text of theirs and no excluded article, counted separately": {
+   "ok": true,
+   "detail": {
+    "assigned_articles": 11099,
+    "n5": 8692,
+    "n6": 2407
+   }
+  },
+  "disjoint by article and by sequence, counted separately": {
+   "ok": true,
+   "detail": {
+    "articles": 2412,
+    "sequences": 98304
+   }
+  },
+  "the tied values of every draw are within the limit of n / 1,024": {
+   "ok": true,
+   "detail": {
+    "limit": 16,
+    "ties": {
+     "m01": 3,
+     "m02": 4,
+     "m03": 0,
+     "m04": 1,
+     "m05": 1,
+     "m06": 1
+    }
+   }
+  }
+ },
+ "registry_sha256": "bee578826fbdb5e66fbb36d577e45929af756e05b12b62d6cd141b4b5da7ea64",
+ "exclusions_sha256": "a90573e7eb6e4ead368c189899939e6ec1202d1f091746db17535f5c49522236",
+ "draw_sha256": "ae25d9af79865f81bf639842fdc32637acc1280520a1ee56a3fbc3ab58daf1cf",
+ "partition_sha256": "b7eb3d3ba200b86046c6d731d2f0200ff657b6c2aaeebd43423cd4aec530e33b",
+ "partition_bytes": 1619789,
+ "policy_sha256": "323b5ae492243b9f9b34fd7a3e2bf516b4d96572aa497d065ae89ca8a1921080",
+ "corpus_manifest_sha256": "be911db7a63238a205fc74c5732f78431befd61ba7d26af48202a31163df39ea",
+ "registry_source_sha256": {
+  "a1_download.py": "26823ddd98054ef989ca452228fe1d3b8ca36791cce52283d397bc3a9580dd90",
+  "a2_rows.py": "e6bb7d6e64c61d68bd7729c9508d9c0d0d5a6b69ebc9362c50447f80215bc8e1",
+  "acquire_common.py": "aebc39d47460591cb49707b3f04ab3bdb43f039258a80526000dc088ee933e90",
+  "acquire_plan.py": "5752be05713ca2fb7839497218151be04e1bb400adce1891c4967932793acbff",
+  "fewepoch_data.py": "ac7ef04d9e80421fe6416c7bb217c07cafc2afc0df6c8d95fe572f0e087f245d",
+  "fewepoch_plan.py": "1b943a554c396570277f186f515369e86286f37eb8cc010c684c689027d52e34",
+  "matched_data.py": "b634f4b74157d1270e257434ab1624e801389b794109e278c33fbec8afdcb481",
+  "matched_registry.py": "857152d83bcff0ccd54696fe843802a9a28bb1e2c0cd02ccd0b8c07eed9f194b",
+  "peak_data.py": "7557f326609bbd398663e6c97ca170588b89dc39fc924208b31ea8ebfd3c07c7",
+  "text_data.py": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d",
+  "text_plan.py": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343",
+  "wt103_corpus.py": "9c76eec785d54e5044fe5ffaa68f809b1806b21039b6f9879fd136ad6da174d1"
+ },
+ "approval_id": "OWNER-20261104-MATCHED-SEEDS-01",
+ "pool": {
+  "eligible_articles": 27859,
+  "assigned_articles": 11099,
+  "unused_articles": 16760,
+  "removed_text_duplicates_of_assigned": 94,
+  "removed_repeats_inside_the_pool": 215,
+  "sets_of_repeats_inside_the_pool": 107,
+  "fresh_articles": 16451,
+  "fresh_sequences": 681075
+ },
+ "left_over_articles": 14039,
+ "per_group": {
+  "m01": {
+   "articles": 407,
+   "sequences": 16384
+  },
+  "m02": {
+   "articles": 388,
+   "sequences": 16384
+  },
+  "m03": {
+   "articles": 376,
+   "sequences": 16384
+  },
+  "m04": {
+   "articles": 425,
+   "sequences": 16384
+  },
+  "m05": {
+   "articles": 421,
+   "sequences": 16384
+  },
+  "m06": {
+   "articles": 395,
+   "sequences": 16384
+  }
+ },
+ "disclosure": {
+  "N": 16384,
+  "identical_text": {
+   "sets_across_fresh_groups": 0,
+   "fresh_texts_equal_to_an_assigned_article": 0,
+   "repeated_inside_a_group": 0
+  },
+  "titles": {
+   "sets_across_fresh_groups": 0,
+   "fresh_articles_sharing_a_title_with_an_assigned_article": 0
+  },
+  "tied_weights": {
+   "limit": 16,
+   "by_group": {
+    "m01": {
+     "before_division": 3,
+     "after_division_numpy_mean": 3
+    },
+    "m02": {
+     "before_division": 3,
+     "after_division_numpy_mean": 4
+    },
+    "m03": {
+     "before_division": 0,
+     "after_division_numpy_mean": 0
+    },
+    "m04": {
+     "before_division": 1,
+     "after_division_numpy_mean": 1
+    },
+    "m05": {
+     "before_division": 1,
+     "after_division_numpy_mean": 1
+    },
+    "m06": {
+     "before_division": 1,
+     "after_division_numpy_mean": 1
+    }
+   }
+  },
+  "token_level": "not measured: it would read the corpus split files, and this step may open only the manifest"
+ },
+ "seconds": 0.7
+}

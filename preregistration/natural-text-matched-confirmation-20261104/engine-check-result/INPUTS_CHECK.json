@@ -1,0 +1,169 @@
+{
+ "all_six_seed_rows_read": true,
+ "approval_id": "OWNER-20261104-MATCHED-ENGINE-01",
+ "check_sha256": "8681f196224cc5d54d0f66cd549013452b89f4f6925f7085b6155cc81b174bba",
+ "corpus_read": false,
+ "draws": {
+  "benchmark": {
+   "limit": 2.0,
+   "n": 2048,
+   "status": "PASS",
+   "tied_values": 0,
+   "weights_hash": "ab83dfe6466e4cf01be5610c6b5d626b9a580f70bd580cfb55ac8394bf5e8a00"
+  },
+  "m01": {
+   "estimator_on_synthetic_gains": {
+    "objective_differs_if_ties_are_reversed": true,
+    "objective_hex": "0x1.f896ce56ec364p-19",
+    "p_hex": "0x1.f3377c8269860p-2",
+    "repeats_bit_for_bit": true,
+    "repeats_in_a_fresh_process": true,
+    "ties_in_ascending_index": true
+   },
+   "hashes_equal_the_native_ones": {
+    "pool": true,
+    "sequence_indices": true,
+    "train": true,
+    "validation": true
+   },
+   "limit": 16.0,
+   "n": 16384,
+   "orders_are_permutations": true,
+   "orders_hash": "74eb25bec9959b213aff8c3da642b4bd87707eb9d3cf2b9af663905831875038",
+   "pool_orders_hash": "f28b0fe0863850185a3d448b1c855401c5443b35ae5020c648462d26f57ddba8",
+   "status": "PASS",
+   "tied_values": 3,
+   "weights_hash": "4fe327af0638b73140b9382b1824f97d1f3fa38daf6562b61dad29b3519621f7"
+  },
+  "m02": {
+   "estimator_on_synthetic_gains": {
+    "objective_differs_if_ties_are_reversed": true,
+    "objective_hex": "0x1.d60b1908aca8ap-18",
+    "p_hex": "0x1.fa7fcd2168c9ap-2",
+    "repeats_bit_for_bit": true,
+    "ties_in_ascending_index": true
+   },
+   "hashes_equal_the_native_ones": {
+    "pool": true,
+    "sequence_indices": true,
+    "train": true,
+    "validation": true
+   },
+   "limit": 16.0,
+   "n": 16384,
+   "orders_are_permutations": true,
+   "orders_hash": "2c60facaaf7c1830d55d799cd356461e2d0b6e951669077bfade1e6e3ae96181",
+   "pool_orders_hash": "dc430dc7090b2c524f08f8cdcaba48b94eb9b91e876d1a5b6b67876d9a968758",
+   "status": "PASS",
+   "tied_values": 4,
+   "weights_hash": "61a3e1249e3d67914ff3cb28df92c35ace7cc0e13267bc02e8063717c3518457"
+  },
+  "m03": {
+   "estimator_on_synthetic_gains": {
+    "objective_differs_if_ties_are_reversed": true,
+    "objective_hex": "0x1.d68e87394751ap-18",
+    "p_hex": "0x1.0117139a35abep-1",
+    "repeats_bit_for_bit": true,
+    "ties_in_ascending_index": true
+   },
+   "hashes_equal_the_native_ones": {
+    "pool": true,
+    "sequence_indices": true,
+    "train": true,
+    "validation": true
+   },
+   "limit": 16.0,
+   "n": 16384,
+   "orders_are_permutations": true,
+   "orders_hash": "e1bb14b0702574e32b329edcacbe58f5b3b6590bdba21e18c950de9fc6f83710",
+   "pool_orders_hash": "a5fbdd640b30dcfeaf655bc4bb89ad1f38c20b15e31149d12b154016e55551ac",
+   "status": "PASS",
+   "tied_values": 1,
+   "weights_hash": "4e252810b759312b964390c1368973586f05bebc3dfc6f056d013b76198d9fb2"
+  },
+  "m04": {
+   "estimator_on_synthetic_gains": {
+    "objective_differs_if_ties_are_reversed": true,
+    "objective_hex": "0x1.574559a598012p-18",
+    "p_hex": "0x1.f6d1deea9e384p-2",
+    "repeats_bit_for_bit": true,
+    "repeats_in_a_fresh_process": true,
+    "ties_in_ascending_index": true
+   },
+   "hashes_equal_the_native_ones": {
+    "pool": true,
+    "sequence_indices": true,
+    "train": true,
+    "validation": true
+   },
+   "limit": 16.0,
+   "n": 16384,
+   "orders_are_permutations": true,
+   "orders_hash": "00ba615203355dc6872627926d40e954f2b90f82d2fc3caad2f56601d4ffece7",
+   "pool_orders_hash": "ff40a5d1636eeb348f2814d7fd063bb1d38735673d4f2a49ac6e08cac2816a10",
+   "status": "PASS",
+   "tied_values": 1,
+   "weights_hash": "da7b262df1555714c8b896380d93f2fec23de1adab03cc7c8f10838a6eb39627"
+  },
+  "m05": {
+   "estimator_on_synthetic_gains": {
+    "objective_differs_if_ties_are_reversed": true,
+    "objective_hex": "0x1.ce8e9045f912fp-18",
+    "p_hex": "0x1.038b85d96d196p-1",
+    "repeats_bit_for_bit": true,
+    "ties_in_ascending_index": true
+   },
+   "hashes_equal_the_native_ones": {
+    "pool": true,
+    "sequence_indices": true,
+    "train": true,
+    "validation": true
+   },
+   "limit": 16.0,
+   "n": 16384,
+   "orders_are_permutations": true,
+   "orders_hash": "3a41b59db055303b041c11145a061a549ded90e3af998bc0b5badba859aaa509",
+   "pool_orders_hash": "4ba2dfb0f4ba0e318be5ba3a90f79c60604f7e6ed6343a56cc44da8fb8825f10",
+   "status": "PASS",
+   "tied_values": 1,
+   "weights_hash": "0b98abcd5ec20bc732c5f6cb34a92050a737b55cab9d09bd1876b84d96522ac2"
+  },
+  "m06": {
+   "estimator_on_synthetic_gains": {
+    "objective_differs_if_ties_are_reversed": true,
+    "objective_hex": "0x1.59f8af138f4d0p-15",
+    "p_hex": "0x1.026e91b9ea8fap-1",
+    "repeats_bit_for_bit": true,
+    "ties_in_ascending_index": true
+   },
+   "hashes_equal_the_native_ones": {
+    "pool": true,
+    "sequence_indices": true,
+    "train": true,
+    "validation": true
+   },
+   "limit": 16.0,
+   "n": 16384,
+   "orders_are_permutations": true,
+   "orders_hash": "5b29c4e3bea68f546b0ab30cc4bbf0db817f85318e954ccc6616631e310bbc20",
+   "pool_orders_hash": "fd4cc4945672cfc3b4f7c8fc3847b984f9429464e1ad61b3b0bd922eed7f0ecb",
+   "status": "PASS",
+   "tied_values": 1,
+   "weights_hash": "a7c6e26d97f79ae7656b97f9e37995df7f77bfcf6e2250fe1b996a995ca36e6e"
+  }
+ },
+ "fixture": false,
+ "kind": "matched-progress confirmation real-engine check: real seeds on synthetic tokens, CPU only",
+ "loss_read": false,
+ "peak_rss_bytes": 513540096,
+ "python": "3.12.3",
+ "schema": 1,
+ "seconds": 20.0,
+ "smoke_seed_weights_hash": "13b6ef43266553b78dfb18d05e03f1a2909b8929ec304d88ba8d1b469f84ba88",
+ "source_files_unchanged": true,
+ "source_subject_sha256": "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56",
+ "status": "PASS",
+ "study_paths_absent": true,
+ "threads": 4,
+ "torch": "2.7.0+cu126"
+}

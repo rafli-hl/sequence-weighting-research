@@ -1,0 +1,175 @@
+{
+ "schema": 1,
+ "purpose": "The assistant check of the owner-run real-engine check of N7; outcome-blind; smoke-run/ and work/runs/ not opened",
+ "all_pass": true,
+ "passed": 25,
+ "total": 25,
+ "checks": {
+  "the owner console output names both receipts and both guard records by these hashes": {
+   "ok": true,
+   "detail": {
+    "INPUTS_CHECK.json": "022591d909988e2fd3dddb65e202f54fe3cf12897956a6602d076d9feff35d27",
+    "SMOKE_CHECK.json": "ecea693004fa9500bbe18a3ee5327a66b3389597700737fbad103e43d74d17ad",
+    "GUARD_INPUTS.json": "fcfeaec1b0c4e9950840616adee8d31584687b6b5d2fb2886063a618b713f9b9",
+    "GUARD_SMOKE.json": "745c3bf4d8f43c6f5d41fdb5311468c1abe70325f0757282bc6fd24977a8fc43"
+   }
+  },
+  "the sealed subject on disk is the one the receipts name": {
+   "ok": true,
+   "detail": "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56"
+  },
+  "inputs: PASS, real, this approval, this subject and check, no loss read, source unchanged, no study path existed": {
+   "ok": true
+  },
+  "inputs: the pinned framework": {
+   "ok": true,
+   "detail": [
+    "2.7.0+cu126",
+    "3.12.3"
+   ]
+  },
+  "smoke: PASS, real, this approval, this subject and check, no loss read, source unchanged, no study path existed": {
+   "ok": true
+  },
+  "smoke: the pinned framework": {
+   "ok": true,
+   "detail": [
+    "2.7.0+cu126",
+    "3.12.3"
+   ]
+  },
+  "inputs guard: this part and approval, this check and guard script, exit 0, the hook stopped nothing, no connection": {
+   "ok": true,
+   "detail": {
+    "opens_seen": 1075,
+    "processes": [
+     "subprocess.Popen python",
+     "subprocess.Popen python"
+    ]
+   }
+  },
+  "smoke guard: this part and approval, this check and guard script, exit 0, the hook stopped nothing, no connection": {
+   "ok": true,
+   "detail": {
+    "opens_seen": 2472,
+    "processes": []
+   }
+  },
+  "inputs: the literal corpus_read false, all six seed rows and the benchmark, each PASS": {
+   "ok": true
+  },
+  "inputs: train, validation, pool and sequence hashes equal those computed without Torch": {
+   "ok": true
+  },
+  "inputs: orders are permutations, at n = 16,384, within the tie limit of 16": {
+   "ok": true,
+   "detail": {
+    "m01": 3,
+    "m02": 4,
+    "m03": 1,
+    "m04": 1,
+    "m05": 1,
+    "m06": 1
+   }
+  },
+  "inputs: the benchmark weights are within their limit": {
+   "ok": true,
+   "detail": 0
+  },
+  "inputs: p* on synthetic gains repeats bit for bit, ties in ascending index, and in a fresh process for m01 and m04": {
+   "ok": true
+  },
+  "inputs: each draw has its own weights and orders": {
+   "ok": true
+  },
+  "smoke: no problem listed, and the weights equal the CPU check": {
+   "ok": true
+  },
+  "smoke: the layout ran, width 96 at both rates and width 64 at 3e-4, ten readouts at the planned updates, one exact tie": {
+   "ok": true,
+   "detail": 1
+  },
+  "smoke: the two arms of width 96 differ by hash": {
+   "ok": true
+  },
+  "smoke: counts recomputed here": {
+   "ok": true,
+   "detail": {
+    "eval_batches": 1088,
+    "models": 5,
+    "pretrained_states": 2,
+    "updates": 800
+   }
+  },
+  "smoke: every array at its exact size": {
+   "ok": true,
+   "detail": {
+    "w64/E0.f32": 4352,
+    "w64/lr3e-04/arrays.f32": 43520,
+    "w96/E0.f32": 4352,
+    "w96/lr1e-04/arrays.f32": 43520,
+    "w96/lr3e-04/arrays.f32": 43520
+   }
+  },
+  "no record has a key for a loss or a gain; the one key with gain in its name holds p* on synthetic gains": {
+   "ok": true,
+   "detail": []
+  },
+  "engine_check.py names no corpus file": {
+   "ok": true
+  },
+  "the copies are byte for byte": {
+   "ok": true
+  },
+  "this folder is where the builder looks": {
+   "ok": true,
+   "detail": "D:\\sequence-weighting-research\\reports\\natural-text-matched-engine-check-result-20261104-01"
+  },
+  "the builder accepts the receipts": {
+   "ok": true
+  },
+  "no activation of this study exists": {
+   "ok": true
+  }
+ },
+ "subject": "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56",
+ "receipts": {
+  "INPUTS_CHECK.json": "022591d909988e2fd3dddb65e202f54fe3cf12897956a6602d076d9feff35d27",
+  "SMOKE_CHECK.json": "ecea693004fa9500bbe18a3ee5327a66b3389597700737fbad103e43d74d17ad",
+  "GUARD_INPUTS.json": "fcfeaec1b0c4e9950840616adee8d31584687b6b5d2fb2886063a618b713f9b9",
+  "GUARD_SMOKE.json": "745c3bf4d8f43c6f5d41fdb5311468c1abe70325f0757282bc6fd24977a8fc43"
+ },
+ "tied_values_real_torch": {
+  "m01": 3,
+  "m02": 4,
+  "m03": 1,
+  "m04": 1,
+  "m05": 1,
+  "m06": 1
+ },
+ "tied_values_numpy_mean": {
+  "m01": 3,
+  "m02": 4,
+  "m03": 0,
+  "m04": 1,
+  "m05": 1,
+  "m06": 1
+ },
+ "benchmark_tied_values": 0,
+ "inputs_seconds": 20.0,
+ "smoke_seconds": 46.9,
+ "inputs_peak_rss_bytes": 513540096,
+ "smoke_peaks": {
+  "cuda_allocated": 239145472,
+  "cuda_reserved": 429916160,
+  "device_used_sampled": 1293733068,
+  "worker_peak_rss": 1304121344
+ },
+ "guard_processes": {
+  "inputs": [
+   "subprocess.Popen python",
+   "subprocess.Popen python"
+  ],
+  "smoke": []
+ }
+}

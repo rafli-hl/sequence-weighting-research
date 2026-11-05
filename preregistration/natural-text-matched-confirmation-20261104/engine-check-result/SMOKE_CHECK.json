@@ -1,0 +1,124 @@
+{
+ "approval_id": "OWNER-20261104-MATCHED-ENGINE-01",
+ "arms": {
+  "64": [
+   0.0003
+  ],
+  "96": [
+   0.0003,
+   0.0001
+  ]
+ },
+ "check_sha256": "8681f196224cc5d54d0f66cd549013452b89f4f6925f7085b6155cc81b174bba",
+ "fixture": false,
+ "kind": "matched-progress confirmation real-engine check: GPU smoke test on synthetic tokens and test seeds",
+ "loss_read": false,
+ "peak_rss_bytes": 1304121344,
+ "problems": [],
+ "python": "3.12.3",
+ "schema": 1,
+ "seconds": 46.9,
+ "source_files_unchanged": true,
+ "source_subject_sha256": "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56",
+ "stages": [
+  {
+   "arms_of_width_96_differ_by_hash": true,
+   "array_bytes": {
+    "w64/E0.f32": 4352,
+    "w64/lr3e-04/arrays.f32": 43520,
+    "w96/E0.f32": 4352,
+    "w96/lr1e-04/arrays.f32": 43520,
+    "w96/lr3e-04/arrays.f32": 43520
+   },
+   "counts": {
+    "eval_batches": 1088,
+    "models": 5,
+    "pretrained_states": 2,
+    "updates": 800
+   },
+   "files": [
+    "INPUTS.json",
+    "PRETRAINED.json",
+    "STATES_DELETED.json",
+    "w64/E0.f32",
+    "w64/lr3e-04/arrays.f32",
+    "w64/lr3e-04/record.json",
+    "w96/E0.f32",
+    "w96/lr1e-04/arrays.f32",
+    "w96/lr1e-04/record.json",
+    "w96/lr3e-04/arrays.f32",
+    "w96/lr3e-04/record.json"
+   ],
+   "guard_calls": {
+    "epoch": 43,
+    "full": 10,
+    "tick": 2560
+   },
+   "limit": 1.0,
+   "n": 1024,
+   "name": "smoke-study",
+   "peaks": {
+    "cuda_allocated": 239145472,
+    "cuda_reserved": 429916160,
+    "device_used_sampled": 1293733068,
+    "worker_peak_rss": 1304121344
+   },
+   "problems": [],
+   "records": {
+    "w64/lr3e-04": {
+     "status": "COMPLETE",
+     "updates": [
+      16,
+      32,
+      64,
+      128,
+      144,
+      160,
+      176,
+      192,
+      208,
+      224
+     ]
+    },
+    "w96/lr1e-04": {
+     "status": "COMPLETE",
+     "updates": [
+      16,
+      32,
+      64,
+      128,
+      144,
+      160,
+      176,
+      192,
+      208,
+      224
+     ]
+    },
+    "w96/lr3e-04": {
+     "status": "COMPLETE",
+     "updates": [
+      16,
+      32,
+      64,
+      128,
+      144,
+      160,
+      176,
+      192,
+      208,
+      224
+     ]
+    }
+   },
+   "seconds": 37.58,
+   "tied_values": 1,
+   "trajectories": 3,
+   "weights_hash": "13b6ef43266553b78dfb18d05e03f1a2909b8929ec304d88ba8d1b469f84ba88"
+  }
+ ],
+ "status": "PASS",
+ "study_paths_absent": true,
+ "torch": "2.7.0+cu126",
+ "weights_equal_the_cpu_check": true
+}
