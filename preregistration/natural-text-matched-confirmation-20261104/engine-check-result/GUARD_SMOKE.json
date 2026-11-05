@@ -1,0 +1,14 @@
+{
+ "approval_id": "OWNER-20261104-MATCHED-ENGINE-01",
+ "check_sha256": "8681f196224cc5d54d0f66cd549013452b89f4f6925f7085b6155cc81b174bba",
+ "connections": [],
+ "exit_code": 0,
+ "guard_script_sha256": "437febe06dbc1d1c3ca6a9556cd32fea20bea4ceaa467cdb0b52d920386e74d3",
+ "opens_seen": 2472,
+ "part": "smoke",
+ "processes": [],
+ "purpose": "What the audit hook saw around one part of the real-engine check of N7",
+ "schema": 1,
+ "seconds": 47.4,
+ "stopped_at": null
+}

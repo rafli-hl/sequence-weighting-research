@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "published": "before any activation or training run of this study",
+  "sealed_source_subject_sha256": "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56",
+  "pending_seal_before_the_draw_sha256": "1e96d8d82ab702cb6e40f040e5433d99527ba5e9c5a4c60f4a3963147f6e2cec",
+  "sealed_source_folder": "sealed-source/ (SOURCE_SUBJECT.json lists every file with its sha256)",
+  "seed_registry_sha256": "bee578826fbdb5e66fbb36d577e45929af756e05b12b62d6cd141b4b5da7ea64",
+  "seed_policy_sha256": "323b5ae492243b9f9b34fd7a3e2bf516b4d96572aa497d065ae89ca8a1921080",
+  "exclusions_sha256": "a90573e7eb6e4ead368c189899939e6ec1202d1f091746db17535f5c49522236",
+  "draw_sha256": "ae25d9af79865f81bf639842fdc32637acc1280520a1ee56a3fbc3ab58daf1cf",
+  "partition_sha256": "b7eb3d3ba200b86046c6d731d2f0200ff657b6c2aaeebd43423cd4aec530e33b",
+  "corpus_manifest_sha256": "be911db7a63238a205fc74c5732f78431befd61ba7d26af48202a31163df39ea",
+  "common_rate_selection_sha256": "fa760ba0d693518ba1b98a40f366899ebec3a013ff03863284a3ac2c32b5ad01",
+  "owner_decisions_sha256": "bab8f6f50703aa75e477714e0f4f23366148eefe77f8a0798662141a767e8acc",
+  "owner_decisions_addendum_sha256": "c68095be0071e8aae9ead3ddce8f77f2edb765b7a4963d615c819d70150d7a4b",
+  "real_engine_check_script_sha256": "8681f196224cc5d54d0f66cd549013452b89f4f6925f7085b6155cc81b174bba",
+  "real_engine_check_guard_sha256": "437febe06dbc1d1c3ca6a9556cd32fea20bea4ceaa467cdb0b52d920386e74d3",
+  "real_engine_check_command_sha256": "6848de66d5b90fe8331d8419c112cb184ec68e7061aec2263073d987c074c6be",
+  "real_engine_check_receipts_sha256": {
+    "INPUTS_CHECK.json": "022591d909988e2fd3dddb65e202f54fe3cf12897956a6602d076d9feff35d27",
+    "SMOKE_CHECK.json": "ecea693004fa9500bbe18a3ee5327a66b3389597700737fbad103e43d74d17ad"
+  },
+  "real_engine_check_guard_records_sha256": {
+    "GUARD_INPUTS.json": "fcfeaec1b0c4e9950840616adee8d31584687b6b5d2fb2886063a618b713f9b9",
+    "GUARD_SMOKE.json": "745c3bf4d8f43c6f5d41fdb5311468c1abe70325f0757282bc6fd24977a8fc43"
+  },
+  "real_engine_check_not_published_sha256": {
+    "OWNER_CONSOLE_OUTPUT.txt": "045b7397430b942689bb595aff538ada4630b75d73d45ee0b708341458038d5d",
+    "verify_engine_check.py": "ed476e83922234925ce5ae36aec2e8a6d6465173d73b6bd00723f7e659866786"
+  },
+  "activation_builder_before_its_registration_pin_sha256": "f673631987078d3488818242ca5d2b3b529f8b03a8f50e85b08da8cfbbb65422",
+  "activation_builder_note": "After the seal the builder gained one refusal: its fixture mode no longer falls through to the real input folders (it was 5d6f6d17... at the pin step). It records this registration in one line, with apply_registration_pin.py, after the merge, so its hash then changes",
+  "registration_pin_tool_sha256": "7198b5d9266b12f520a8d448639bcddc18d75d3c29fbd6fb516cec0cc1826f97",
+  "native_suite_record_at_the_check_sha256": "e973f4f98aea680eb6d2175ac77c2badc16102ca8b0fe2b21d3ad55169eb7c99",
+  "native_suite_record_sha256": "a6a3c5f5715bb2be9a78fc72e4c0c778447cad695cd4067e7f566925b3d79140",
+  "owner_decisions_addendum_02_sha256": "f1807b8891f63a0718f661fb771313b45142b18201aa60966c7238a7438260e4",
+  "protocol_section_6_review_record_sha256": "77dd7dc99ab6c24daa5d9877d08e320e95b377c52bd578574261bfa8025a06c5",
+  "scoped_review_findings_sha256": "cf4538d365bce7dbbd7e4d31684f9730acd1f21b27e6a22e5682d7ad7aca073b",
+  "registration_tool_review_findings_sha256": "487f9e11c992d9777a945dec01bf42827717fe9831f3ed7de64be9d98de7c095",
+  "final_read_findings_sha256": "fbbc77d9a43a2b66fc7aeafe5d09fa2c4e6bdae0aa845bce93d20fbcf2d832c5",
+  "not_included": "the corpus, run outputs (none exist), per-sequence arrays, model states, and the preparation and review folders"
+}

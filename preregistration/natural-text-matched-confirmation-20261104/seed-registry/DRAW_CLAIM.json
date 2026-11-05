@@ -1,0 +1,21 @@
+{
+  "approval_id": "OWNER-20261104-MATCHED-SEEDS-01",
+  "corpus_manifest_sha256": "be911db7a63238a205fc74c5732f78431befd61ba7d26af48202a31163df39ea",
+  "fixture": false,
+  "policy_sha256": "323b5ae492243b9f9b34fd7a3e2bf516b4d96572aa497d065ae89ca8a1921080",
+  "registry_source_sha256": {
+    "a1_download.py": "26823ddd98054ef989ca452228fe1d3b8ca36791cce52283d397bc3a9580dd90",
+    "a2_rows.py": "e6bb7d6e64c61d68bd7729c9508d9c0d0d5a6b69ebc9362c50447f80215bc8e1",
+    "acquire_common.py": "aebc39d47460591cb49707b3f04ab3bdb43f039258a80526000dc088ee933e90",
+    "acquire_plan.py": "5752be05713ca2fb7839497218151be04e1bb400adce1891c4967932793acbff",
+    "fewepoch_data.py": "ac7ef04d9e80421fe6416c7bb217c07cafc2afc0df6c8d95fe572f0e087f245d",
+    "fewepoch_plan.py": "1b943a554c396570277f186f515369e86286f37eb8cc010c684c689027d52e34",
+    "matched_data.py": "b634f4b74157d1270e257434ab1624e801389b794109e278c33fbec8afdcb481",
+    "matched_registry.py": "857152d83bcff0ccd54696fe843802a9a28bb1e2c0cd02ccd0b8c07eed9f194b",
+    "peak_data.py": "7557f326609bbd398663e6c97ca170588b89dc39fc924208b31ea8ebfd3c07c7",
+    "text_data.py": "0caa3cabe3a60a7b6bb0b08ce327a4bf96e8ef7adedbe1efe60de02e6b7d2e5d",
+    "text_plan.py": "99f6e484c093ef7410e452f3518b0fc86bf174f309e1aefdbbf5441c32f1b343",
+    "wt103_corpus.py": "9c76eec785d54e5044fe5ffaa68f809b1806b21039b6f9879fd136ad6da174d1"
+  },
+  "status": "CLAIMED_BEFORE_DRAW"
+}
