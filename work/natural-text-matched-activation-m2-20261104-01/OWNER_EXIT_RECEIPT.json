@@ -1,0 +1,88 @@
+{
+    "status":  "COMPLETE",
+    "mode":  "M2",
+    "subject":  "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56",
+    "exit_observed":  true,
+    "exit_code":  0,
+    "elapsed_seconds":  9603.8184751,
+    "terminal_status":  "COMPLETE",
+    "terminal_sha256":  "6ac3614815ce884dffbfb1b093188fb72699a636a24fbd9c7070b6b4fe8c3737",
+    "terminal_unreadable":  false,
+    "terminal_outside_ledger":  false,
+    "startup_decision":  "GO",
+    "startup_reason":  "ALL_WIDTHS_WITHIN_LIMIT",
+    "stop_reason":  null,
+    "stage_folders":  [
+                          "m04",
+                          "m05",
+                          "m06"
+                      ],
+    "counted_as_attempt":  true,
+    "gpu_prestart":  {
+                         "verdict":  "IDLE",
+                         "mean_utilization_percent":  1.8,
+                         "max_memory_used_mib":  390
+                     },
+    "power_prestart":  {
+                           "utc":  "2026-11-05T10:21:00.4361596Z",
+                           "power":  "AC",
+                           "battery_percent":  80,
+                           "scheme_guid":  "6fecc5ae-f350-48a5-b669-b472cb895ccf",
+                           "scheme_name":  "Turbo",
+                           "error":  null
+                       },
+    "gpu_gates":  [
+                      {
+                          "stage":  "m04",
+                          "verdict":  "IDLE",
+                          "checks":  1,
+                          "off_ac_checks":  0
+                      },
+                      {
+                          "stage":  "m05",
+                          "verdict":  "IDLE",
+                          "checks":  1,
+                          "off_ac_checks":  0
+                      },
+                      {
+                          "stage":  "m06",
+                          "verdict":  "IDLE",
+                          "checks":  1,
+                          "off_ac_checks":  0
+                      }
+                  ],
+    "gpu_check_files":  [
+                            {
+                                "name":  "m04-RESPONSE.json",
+                                "sha256":  "d79fca66ad19f1b0065a215cb6a8881ea8a544587bbed6bdf750ac685c2e505f"
+                            },
+                            {
+                                "name":  "m05-RESPONSE.json",
+                                "sha256":  "8a3c1d9905b45c59e4c2b1c73713b01b6fe87066ac7962395e703ce4fb6784f5"
+                            },
+                            {
+                                "name":  "m06-RESPONSE.json",
+                                "sha256":  "5d729f958b5b8e61bcd56cd5ee9373bccf9534eff31f4e8f3abf1256d189ebd3"
+                            },
+                            {
+                                "name":  "PRESTART.json",
+                                "sha256":  "327a8d1c5d06b32f719432c61d68008bc9932f2ba3552779f1c15d3ad7a94533"
+                            }
+                        ],
+    "power_during_run":  {
+                             "samples":  1882,
+                             "log_write_failures":  0,
+                             "scheme_read_failures":  0,
+                             "off_ac_samples":  0,
+                             "min_battery_percent":  80,
+                             "schemes":  [
+                                             "Turbo"
+                                         ],
+                             "changes":  [
+
+                                         ]
+                         },
+    "power_log_sha256":  "5ad9800130aa4398c7e8fed13f341b46144d367477fd3839ae61bc9025b562f3",
+    "retry":  false,
+    "note":  "Native exit does not prove Linux process absence. Preserve every directory; do not rerun."
+}

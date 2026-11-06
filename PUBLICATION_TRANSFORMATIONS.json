@@ -38,6 +38,13 @@
       "kind": "unavailable-relative-link-annotation",
       "before_sha256": "212fe0a648dc1f9964a2396926dc6f7c0dad41767a53562832e0c4138883ec1f",
       "publication_sha256": "171b343181d1cc35225ea34583fc962aad563ce09b400523af3ad2a81d463e28"
+    },
+    {
+      "path": "reports/natural-text-matched-result-20261105-01/RESULT.md",
+      "kind": "personal-home-prefix-redaction",
+      "matches": 1,
+      "original_sha256": "ac482f31a60d8d295a4f1e5807b5c882eea0d533f78979a44c22d64023bec3c8",
+      "publication_sha256": "8e64cc2ca39e0602cb30e7beb86815372202f54ac249799e5b678e1b2de62f45"
     }
   ]
 }

@@ -1,0 +1,202 @@
+{
+ "schema": 1,
+ "purpose": "Per-run file checks of N7; operational records only (owner decision 20261104-02)",
+ "mode": "M1",
+ "ended": "COMPLETE",
+ "fixture": false,
+ "checked_local": "2026-11-05 14:44:47",
+ "all_pass": true,
+ "passed": 20,
+ "total": 20,
+ "source_subject_sha256": "7ef133ad0120d0852c93ebe65f020718f51cebbf75abd43c29f89cdec8674f56",
+ "terminal_sha256": "1392187d518d55ce9463fd7c687d258a791e7e1780d68e4be46b11de1337e65d",
+ "exit_receipt_sha256": "0422688f6998241b4c27e045c4a56370f2ee6e510158a249ceec1e21fb49f675",
+ "completed_draws": [
+  "m01",
+  "m02",
+  "m03"
+ ],
+ "admits_run_m2": true,
+ "draws_completed_across_runs": 3,
+ "checks": {
+  "the run has a terminal": {
+   "ok": true,
+   "detail": null
+  },
+  "the activation has an owner exit receipt": {
+   "ok": true,
+   "detail": null
+  },
+  "terminal: this study, this run, under the sealed subject, with the planned arms and readouts": {
+   "ok": true,
+   "detail": {
+    "ended": "COMPLETE",
+    "n_train": 16384
+   }
+  },
+  "the terminal's hash is in the owner receipt": {
+   "ok": true,
+   "detail": "1392187d518d"
+  },
+  "the ending has the shape it should": {
+   "ok": true,
+   "detail": {
+    "ended": "COMPLETE",
+    "completed_draws": [
+     "m01",
+     "m02",
+     "m03"
+    ],
+    "stop_reason": null,
+    "error_type": null
+   }
+  },
+  "the terminal's stage folders equal the listing": {
+   "ok": true,
+   "detail": [
+    "m01",
+    "m02",
+    "m03"
+   ]
+  },
+  "the receipts on disk equal the terminal's stage records": {
+   "ok": true,
+   "detail": [
+    "m01",
+    "m02",
+    "m03"
+   ]
+  },
+  "bound to the approval, registry, partition, corpus and both earlier registries": {
+   "ok": true,
+   "detail": null
+  },
+  "the approval record holds the owner text, the builder, the registration and the real-engine check receipts": {
+   "ok": true,
+   "detail": null
+  },
+  "the activation holds the sealed source, and the source is unchanged": {
+   "ok": true,
+   "detail": null
+  },
+  "the owner receipt agrees with the terminal, with no retry": {
+   "ok": true,
+   "detail": {
+    "status": "COMPLETE",
+    "exit_code": 0
+   }
+  },
+  "every completed draw passed its gate, and the gate files equal the receipt": {
+   "ok": true,
+   "detail": {
+    "gates": [
+     [
+      "m01",
+      "IDLE",
+      1
+     ],
+     [
+      "m02",
+      "IDLE",
+      1
+     ],
+     [
+      "m03",
+      "IDLE",
+      1
+     ]
+    ]
+   }
+  },
+  "the power log equals the receipt, with no write failure": {
+   "ok": true,
+   "detail": {
+    "off_ac_samples": 0,
+    "schemes": [
+     "Turbo"
+    ]
+   }
+  },
+  "on AC throughout": {
+   "ok": true,
+   "detail": {
+    "off_ac_samples": 0
+   }
+  },
+  "counts: every draw has its pre-trainings and adaptations": {
+   "ok": true,
+   "detail": {
+    "eval_batches": 66528,
+    "models": 18,
+    "pretrained_states": 6,
+    "updates": 46080
+   }
+  },
+  "every completed draw has all its adaptations, and its states deleted without error": {
+   "ok": true,
+   "detail": null
+  },
+  "no model state or partial file remains in the run": {
+   "ok": true,
+   "detail": null
+  },
+  "each completed draw holds the expected files with the expected sizes, by listing only": {
+   "ok": true,
+   "detail": {
+    "m01": 3269180,
+    "m02": 3268848,
+    "m03": 3268843
+   }
+  },
+  "the worker wrote nothing to stdout or stderr": {
+   "ok": true,
+   "detail": {
+    "WORKER_STDOUT.log": 0,
+    "WORKER_STDERR.log": 0
+   }
+  },
+  "memory within the limits": {
+   "ok": true,
+   "detail": {
+    "cuda_allocated": 1093707264,
+    "cuda_reserved": 1522532352,
+    "device_used_sampled": 2386349260,
+    "worker_peak_rss": 2463473664
+   }
+  }
+ },
+ "measured": {
+  "stage_seconds": {
+   "m01": 2770.4,
+   "m02": 2805.0,
+   "m03": 2769.4
+  },
+  "worker_elapsed_seconds": 8456.371095853,
+  "owner_elapsed_seconds": 9278.3793503,
+  "windows_over_worker_clock": 1.0972057925473626,
+  "worker_seconds_outside_the_stages": 111.50799057399854,
+  "inventory": {
+   "bytes": 9835404,
+   "files": 51
+  },
+  "kept_bytes_per_draw": {
+   "m01": 3269180,
+   "m02": 3268848,
+   "m03": 3268843
+  },
+  "peaks": {
+   "cuda_allocated": 1093707264,
+   "cuda_reserved": 1522532352,
+   "device_used_sampled": 2386349260,
+   "worker_peak_rss": 2463473664
+  },
+  "activation_bytes": 2553523,
+  "battery_percent": {
+   "first": 80,
+   "last": 80,
+   "lowest": 80,
+   "highest": 80
+  }
+ },
+ "not_opened": "Every file in a draw folder, and BENCHMARK.json."
+}
