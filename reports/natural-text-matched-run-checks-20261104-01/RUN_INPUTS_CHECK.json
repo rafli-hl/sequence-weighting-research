@@ -1,0 +1,191 @@
+{
+ "schema": 1,
+ "purpose": "Each draw's inputs against the real-engine check, from the six INPUTS.json only; no loss, p* or gain (owner-run, after the sealed analysis)",
+ "checked_local": "2026-11-06 01:00:34",
+ "check_sha256": "f88bd66444f84158fb9402a52d9ab691821dbc1a02e9f3932f26b9be57e505b3",
+ "analysis_json_sha256": "a4af7bad78fdf9f4fe34317f73e6a1932fd0d29367b5da188b79ae73db95ce65",
+ "inputs_sha256": {
+  "m01": "bd03597728361563fbe993094b30a565f8679cf7d3cfd5d4d3a0f35b0e09c16a",
+  "m02": "2578eed46a580c44c6a78b99445897e854616093a3be676cf912e364fc7b86ab",
+  "m03": "91840101cc9e39d35279e19337c4bef9fc6475430d969770e3fe15db9ef580f8",
+  "m04": "3e0b91dbd7e5ed2ad71c7ce9b00f66bc932f91e9f8f7f171da38f809648e789c",
+  "m05": "aceffc9d00ec6dffb672e51bccc1cac88021c8122702da95e58c73e3e98527e6",
+  "m06": "e120c96935ad0ec90053df7d5d97abc82414379e808af1add7349f6140398075"
+ },
+ "engine_check_sha256": "022591d909988e2fd3dddb65e202f54fe3cf12897956a6602d076d9feff35d27",
+ "status": "PASS",
+ "comparisons": 67,
+ "differences": [],
+ "training_hashes_distinct": true,
+ "draws": {
+  "m01": {
+   "items": {
+    "n_train": "equal",
+    "weights": "equal",
+    "weights_list": "equal",
+    "orders": "equal",
+    "pool_orders": "equal",
+    "tied_values": "equal",
+    "seeds": "equal",
+    "articles": "equal",
+    "sequence_indices": "equal",
+    "validation": "equal",
+    "pool": "equal"
+   },
+   "tied_values_in_the_run": 3,
+   "tied_values_in_the_engine_check": 3,
+   "limit": 16.0,
+   "hashes": {
+    "weights": "4fe327af0638b73140b9382b1824f97d1f3fa38daf6562b61dad29b3519621f7",
+    "weights_list": "4fe327af0638b73140b9382b1824f97d1f3fa38daf6562b61dad29b3519621f7",
+    "orders": "74eb25bec9959b213aff8c3da642b4bd87707eb9d3cf2b9af663905831875038",
+    "pool_orders": "f28b0fe0863850185a3d448b1c855401c5443b35ae5020c648462d26f57ddba8",
+    "train": "9d7f7386a4fb44a5a0bdc53253c3ef40cc52470e4989be5bc2eb2d4b213fb94f",
+    "validation": "f73d511a5e32a869b9ebc88e97c251a53cf109265f5d6688fbdd1ba691641591",
+    "pool": "c41969fdc69df377582c80a4bff1f661a7b7c5c3670eca1936b4a9cdbafa56cc",
+    "sequence_indices": "b738d74ef0b1b36fe21541d7419dce2bdabb01cb0853fa8e6d696a53086af8fe"
+   }
+  },
+  "m02": {
+   "items": {
+    "n_train": "equal",
+    "weights": "equal",
+    "weights_list": "equal",
+    "orders": "equal",
+    "pool_orders": "equal",
+    "tied_values": "equal",
+    "seeds": "equal",
+    "articles": "equal",
+    "sequence_indices": "equal",
+    "validation": "equal",
+    "pool": "equal"
+   },
+   "tied_values_in_the_run": 4,
+   "tied_values_in_the_engine_check": 4,
+   "limit": 16.0,
+   "hashes": {
+    "weights": "61a3e1249e3d67914ff3cb28df92c35ace7cc0e13267bc02e8063717c3518457",
+    "weights_list": "61a3e1249e3d67914ff3cb28df92c35ace7cc0e13267bc02e8063717c3518457",
+    "orders": "2c60facaaf7c1830d55d799cd356461e2d0b6e951669077bfade1e6e3ae96181",
+    "pool_orders": "dc430dc7090b2c524f08f8cdcaba48b94eb9b91e876d1a5b6b67876d9a968758",
+    "train": "0991d5185a7521354720e706e011710f3d3e428875fb161ef9cd42eaa8a1de20",
+    "validation": "f73d511a5e32a869b9ebc88e97c251a53cf109265f5d6688fbdd1ba691641591",
+    "pool": "c41969fdc69df377582c80a4bff1f661a7b7c5c3670eca1936b4a9cdbafa56cc",
+    "sequence_indices": "9bb26d1bfba46679288b2707493ed80b077330849f09f692e351b94478849732"
+   }
+  },
+  "m03": {
+   "items": {
+    "n_train": "equal",
+    "weights": "equal",
+    "weights_list": "equal",
+    "orders": "equal",
+    "pool_orders": "equal",
+    "tied_values": "equal",
+    "seeds": "equal",
+    "articles": "equal",
+    "sequence_indices": "equal",
+    "validation": "equal",
+    "pool": "equal"
+   },
+   "tied_values_in_the_run": 1,
+   "tied_values_in_the_engine_check": 1,
+   "limit": 16.0,
+   "hashes": {
+    "weights": "4e252810b759312b964390c1368973586f05bebc3dfc6f056d013b76198d9fb2",
+    "weights_list": "4e252810b759312b964390c1368973586f05bebc3dfc6f056d013b76198d9fb2",
+    "orders": "e1bb14b0702574e32b329edcacbe58f5b3b6590bdba21e18c950de9fc6f83710",
+    "pool_orders": "a5fbdd640b30dcfeaf655bc4bb89ad1f38c20b15e31149d12b154016e55551ac",
+    "train": "2855d9ae2915066d41aef5d99cb4ef1ee06e525344966751dbec24a611168893",
+    "validation": "f73d511a5e32a869b9ebc88e97c251a53cf109265f5d6688fbdd1ba691641591",
+    "pool": "c41969fdc69df377582c80a4bff1f661a7b7c5c3670eca1936b4a9cdbafa56cc",
+    "sequence_indices": "4d6125333748e48507d47b92b10c8d839d2dc7bd50dc78b8fbce8afe778e32d9"
+   }
+  },
+  "m04": {
+   "items": {
+    "n_train": "equal",
+    "weights": "equal",
+    "weights_list": "equal",
+    "orders": "equal",
+    "pool_orders": "equal",
+    "tied_values": "equal",
+    "seeds": "equal",
+    "articles": "equal",
+    "sequence_indices": "equal",
+    "validation": "equal",
+    "pool": "equal"
+   },
+   "tied_values_in_the_run": 1,
+   "tied_values_in_the_engine_check": 1,
+   "limit": 16.0,
+   "hashes": {
+    "weights": "da7b262df1555714c8b896380d93f2fec23de1adab03cc7c8f10838a6eb39627",
+    "weights_list": "da7b262df1555714c8b896380d93f2fec23de1adab03cc7c8f10838a6eb39627",
+    "orders": "00ba615203355dc6872627926d40e954f2b90f82d2fc3caad2f56601d4ffece7",
+    "pool_orders": "ff40a5d1636eeb348f2814d7fd063bb1d38735673d4f2a49ac6e08cac2816a10",
+    "train": "c0c2e2c42f51b6945ff87c4c44ca87a6016a042987b970266a12bf945865c446",
+    "validation": "f73d511a5e32a869b9ebc88e97c251a53cf109265f5d6688fbdd1ba691641591",
+    "pool": "c41969fdc69df377582c80a4bff1f661a7b7c5c3670eca1936b4a9cdbafa56cc",
+    "sequence_indices": "0c782d1f77214e68673f64d394637e843902a33226bde361198d8b58cb3012db"
+   }
+  },
+  "m05": {
+   "items": {
+    "n_train": "equal",
+    "weights": "equal",
+    "weights_list": "equal",
+    "orders": "equal",
+    "pool_orders": "equal",
+    "tied_values": "equal",
+    "seeds": "equal",
+    "articles": "equal",
+    "sequence_indices": "equal",
+    "validation": "equal",
+    "pool": "equal"
+   },
+   "tied_values_in_the_run": 1,
+   "tied_values_in_the_engine_check": 1,
+   "limit": 16.0,
+   "hashes": {
+    "weights": "0b98abcd5ec20bc732c5f6cb34a92050a737b55cab9d09bd1876b84d96522ac2",
+    "weights_list": "0b98abcd5ec20bc732c5f6cb34a92050a737b55cab9d09bd1876b84d96522ac2",
+    "orders": "3a41b59db055303b041c11145a061a549ded90e3af998bc0b5badba859aaa509",
+    "pool_orders": "4ba2dfb0f4ba0e318be5ba3a90f79c60604f7e6ed6343a56cc44da8fb8825f10",
+    "train": "8b0c65370fab2ba46dbef3a9307768155d00521b4dcec705db62ed61ae2e7ee8",
+    "validation": "f73d511a5e32a869b9ebc88e97c251a53cf109265f5d6688fbdd1ba691641591",
+    "pool": "c41969fdc69df377582c80a4bff1f661a7b7c5c3670eca1936b4a9cdbafa56cc",
+    "sequence_indices": "f3f7139b687e2f64871bd4c0a6a4587e38c9c797e2210869529abab4f56de1b1"
+   }
+  },
+  "m06": {
+   "items": {
+    "n_train": "equal",
+    "weights": "equal",
+    "weights_list": "equal",
+    "orders": "equal",
+    "pool_orders": "equal",
+    "tied_values": "equal",
+    "seeds": "equal",
+    "articles": "equal",
+    "sequence_indices": "equal",
+    "validation": "equal",
+    "pool": "equal"
+   },
+   "tied_values_in_the_run": 1,
+   "tied_values_in_the_engine_check": 1,
+   "limit": 16.0,
+   "hashes": {
+    "weights": "a7c6e26d97f79ae7656b97f9e37995df7f77bfcf6e2250fe1b996a995ca36e6e",
+    "weights_list": "a7c6e26d97f79ae7656b97f9e37995df7f77bfcf6e2250fe1b996a995ca36e6e",
+    "orders": "5b29c4e3bea68f546b0ab30cc4bbf0db817f85318e954ccc6616631e310bbc20",
+    "pool_orders": "fd4cc4945672cfc3b4f7c8fc3847b984f9429464e1ad61b3b0bd922eed7f0ecb",
+    "train": "d5ef7025e23dff4f26d82eedd50c12c94349238cf6f2ef39be67c61554eeb8c4",
+    "validation": "f73d511a5e32a869b9ebc88e97c251a53cf109265f5d6688fbdd1ba691641591",
+    "pool": "c41969fdc69df377582c80a4bff1f661a7b7c5c3670eca1936b4a9cdbafa56cc",
+    "sequence_indices": "9764e783fb188d77b22b5160475eec6c1ac812187b4784a0be76d6f6249d0453"
+   }
+  }
+ },
+ "not_opened": "Under work/runs/: everything but the six INPUTS.json."
+}

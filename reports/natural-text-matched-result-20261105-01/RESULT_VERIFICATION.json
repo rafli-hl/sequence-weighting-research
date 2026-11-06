@@ -1,0 +1,37 @@
+{
+ "schema": 1,
+ "purpose": "The verifier of the results report: the report's numbers against the analysis output",
+ "fixture": false,
+ "status": "PASS",
+ "problems": [],
+ "outputs_against_themselves": {
+  "comparisons": 2861,
+  "mismatches": []
+ },
+ "report_against_outputs": {
+  "tables": 36,
+  "cells": 1456,
+  "numbers_in_the_wording": 63,
+  "readings": 10,
+  "mismatches": []
+ },
+ "report_equals_the_frozen_layouts_output": true,
+ "layout_error": null,
+ "not_recomputed": "p* itself and the other fields of FITS.csv; the training and validation NLL in POINTS.csv, from each record.json, on which every target, bracket and matched contrast rests; the E0 losses; clipping; any refit at bound 32, which can move a label; and the record-against-array difference: they need the run files under work/runs/, which only the sealed analysis read",
+ "hashes": {
+  "result": "ac482f31a60d8d295a4f1e5807b5c882eea0d533f78979a44c22d64023bec3c8",
+  "verifier": "00e013dcfd197401df529c379dd9741be6696143c8bf87b0f472bf23070b97d9",
+  "layout": "db330602333ad0c2058c60be0c071948d763e698881dd29376f40dd57d7837dd",
+  "outputs": {
+   "ANALYSIS.json": "a4af7bad78fdf9f4fe34317f73e6a1932fd0d29367b5da188b79ae73db95ce65",
+   "POINTS.csv": "234434a34cf64d98e0d45cfe029bb37935207176fd996cafe85756956c7d860f",
+   "FITS.csv": "b1cd03dec3a6e13ba2d82a6a95a48e99342ace8aaf4a0cdf1b36392fa8c7aa67",
+   "MATCHED.csv": "86ea11d7210682375717d7eb67a58c74d806ad22dc57ec87ab9db4e836421e3b"
+  }
+ },
+ "t_critical": {
+  "4": 2.7764451051977943,
+  "5": 2.5705818356363146
+ },
+ "seconds": 0.2
+}
